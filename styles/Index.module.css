@@ -1,0 +1,147 @@
+.root {
+  position: relative;
+  padding-top: 50vh;
+
+  @media (--s) {
+    /* margin-left: 64px; */
+  }
+
+  & span {
+    background: red;
+    color: white;
+    margin-left: 1em;
+  }
+}
+
+.main {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #000 url(../pages/index/images/Star.jpg) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+
+  @media (--s) {
+    background-image: url(../pages/index/images/StarX.jpg);
+  }
+}
+
+.introWrapper{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.intro {
+  font-family: var(--ff_sans_header);
+  color: white;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gradient {
+  font-size: calc(var(--yr) * 12);
+  line-height: calc(var(--yr) * 15);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#d63517, #8a1f2f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid white;
+  padding-bottom: var(--yr);
+
+  @media (min-width: 480px) {
+    font-size: calc(var(--yr) * 17);
+    line-height: calc(var(--yr) * 20);
+    padding-bottom: calc(var(--yr) * 2);
+  }
+
+  @media (--s) {
+    font-size: calc(var(--yr) * 24);
+    line-height: calc(var(--yr) * 27);
+    padding-bottom: calc(var(--yr) * 3.5);
+  }
+}
+
+.under {
+  font-size: calc(var(--yr) * 5);
+  line-height: calc(var(--yr) * 6);
+
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-top: var(--yr);
+  background: -webkit-linear-gradient(#fff, #cbcfd2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (min-width: 480px) {
+    font-size: calc(var(--yr) * 7);
+    line-height: calc(var(--yr) * 8);
+    margin-top: calc(var(--yr) * 2);
+  }
+
+  @media (--s) {
+    font-size: calc(var(--yr) * 10);
+    line-height: calc(var(--yr) * 11);
+    margin-top: calc(var(--yr) * 3);
+  }
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.factories {
+  /* background-color: green; */
+  min-height: 200vh;
+  position: relative;
+  z-index: 1;
+  padding: 0 calc(1 / 11 * 100%) calc(var(--yr) * var(--s6));
+  opacity: 0;
+
+  @media (--s) {
+    margin-left: 64px;
+  }
+}
+
+.factory {
+  transition: 0.2s opacity;
+
+  & a {
+    padding: calc(var(--yr) * var(--s5) / 2) 0;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.title {
+  composes: h1sans from './Fonts.module.css';
+}
+
+.desc {
+  composes: h2 from './Fonts.module.css';
+  margin-top: calc(var(--yr) * var(--s2));
+}
+
+.selected {
+  & .factory {
+    opacity: 0.4;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+.sep {
+  margin: calc(var(--yr) * var(--s6)) 0;
+  border-top: 1px solid color-mod(#fff a(0.3));
+}

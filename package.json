@@ -10,6 +10,7 @@
   "dependencies": {
     "next": "9.5.5",
     "postcss-preset-env": "^6.7.0",
+    "lax.js": "https://github.com/alexfoxy/lax.js#version-2",
     "react": "16.14.0",
     "react-dom": "16.14.0"
   }

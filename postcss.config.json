@@ -7,6 +7,7 @@
           "flexbox": "no-2009"
         },
         "stage": 3,
+        "importFrom": "./styles/Vars.css",
         "features": {
           "custom-media-queries": true,
           "nesting-rules": true
