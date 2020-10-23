@@ -1,0 +1,7 @@
+
+.vrezka {
+  color: var(--hl_color);
+  font-family: var(--ff_sans_header);
+  composes: bt from '../Fonts.module.css';
+  margin: 0 0 calc(var(--yr) * var(--s4));
+}

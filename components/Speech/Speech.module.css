@@ -1,0 +1,43 @@
+.root {
+  border-left: 1px solid var(--hl_color);
+  padding-left: calc(var(--xr) * 1.5);
+
+  &:not(:last-child) {
+    margin-bottom: calc(var(--yr) * var(--s5));
+  }
+}
+
+.intro {
+  color: var(--hl_color);
+  font-family: var(--ff_sans_narrow);
+  composes: mt from '../Fonts.module.css';
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.text {
+  margin-top: calc(var(--yr) * var(--s2));
+  font-family: var(--ff_serif);
+  composes: bt from '../Fonts.module.css';
+}
+
+.author {
+  margin-top: calc(var(--yr) * var(--s4));
+  display: flex;
+  align-items: flex-end;
+
+  & img {
+    display: block;
+    height: 145px;
+    margin-right: var(--xr);
+  }
+}
+
+.who {
+  composes: at from '../Fonts.module.css';
+  font-family: var(--ff_sans_narrow);
+
+  & span {
+    color: var(--gr_text_color);
+  }
+}

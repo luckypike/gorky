@@ -1,0 +1,9 @@
+.text {
+  composes: bt from '../Fonts.module.css';
+}
+
+.root {
+  @media (--l) {
+    padding-left: 30%;
+  }
+}

@@ -19,16 +19,16 @@
   width: 100%;
   left: 0;
   top: 0;
-  background: #000 url(../pages/index/images/Star.jpg) no-repeat center;
+  background: #000 url("../assets/index/images/Star.jpg") no-repeat center;
   background-size: cover;
   z-index: -1;
 
   @media (--s) {
-    background-image: url(../pages/index/images/StarX.jpg);
+    background-image: url("../assets/index/images/StarX.jpg");
   }
 }
 
-.introWrapper{
+.introWrapper {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -123,11 +123,11 @@
 }
 
 .title {
-  composes: h1sans from './Fonts.module.css';
+  composes: h1sans from "../components/Fonts.module.css";
 }
 
 .desc {
-  composes: h2 from './Fonts.module.css';
+  composes: h2 from "../components/Fonts.module.css";
   margin-top: calc(var(--yr) * var(--s2));
 }
 

@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: var(--ff_sans_main);
   font-size: calc(var(--yr) * 3.5);
   line-height: calc(var(--yr) * 5);
@@ -65,8 +65,7 @@ body {
   } */
 }
 
-.h1,
-h1 {
+.h1 {
   font-family: var(--ff_serif);
   font-weight: normal;
   text-transform: uppercase;
@@ -98,8 +97,7 @@ h1 {
   }
 }
 
-.h2,
-h2 {
+.h2 {
   font-family: var(--ff_sans_header);
   font-weight: normal;
   margin: 0 0 calc(var(--yr) * var(--s3));
@@ -117,8 +115,7 @@ h2 {
   }
 }
 
-.h3,
-h3 {
+.h3 {
   font-family: var(--ff_sans_header);
   font-weight: normal;
   margin: 0 0 calc(var(--yr) * var(--s2));
@@ -131,7 +128,7 @@ h3 {
   }
 }
 
-p {
+.p {
   margin: 0 0 calc(var(--yr) * var(--s3));
   hyphens: auto;
 

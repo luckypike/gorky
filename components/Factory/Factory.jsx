@@ -1,9 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import ScrollBooster from "scrollbooster";
 import PropTypes from "prop-types";
-import lax from 'lax.js'
 
-import styles from './Factory.module.css'
+import styles from "./Factory.module.css";
 
 const Factory = ({ children }) => {
   const [scroller, setScroller] = useState(false);
@@ -24,10 +23,6 @@ const Factory = ({ children }) => {
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
     updateDimensions();
-
-    lax.addDriver("scrollX", function () {
-      return xRef.current;
-    });
 
     return () => {
       window.removeEventListener("resize", updateDimensions);
