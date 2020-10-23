@@ -1,0 +1,17 @@
+.root {
+  overflow: hidden;
+
+  @media (--s) {
+    margin-left: 64px;
+  }
+}
+
+.factory {
+  padding-top: calc(var(--yr) * var(--s6));
+
+  @media (--l) {
+    height: 100vh;
+    padding-top: 0;
+    display: flex;
+  }
+}
