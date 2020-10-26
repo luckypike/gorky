@@ -1,0 +1,31 @@
+.root {
+  & rect {
+    fill: #141414;
+    transform-origin: center center;
+  }
+}
+
+.dark {
+  & rect {
+    fill: #fff;
+  }
+}
+
+.close {
+  transform: rotate(45deg);
+  display: none;
+}
+
+.close:last-child {
+  transform: rotate(-45deg);
+}
+
+.active {
+  & .close {
+    display: block;
+  }
+
+  & :not(.close) {
+    display: none;
+  }
+}

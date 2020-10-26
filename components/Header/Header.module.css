@@ -1,0 +1,106 @@
+.root {
+  background: var(--wht_color);
+  border-bottom: 1px solid var(--sp_color);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 48px;
+  z-index: 9;
+
+  &.dark {
+    background: none;
+    border-bottom: 1px solid color-mod(var(--wht_color) a(0.3));
+
+    & .logo {
+      background-color: var(--wht_color);
+    }
+  }
+
+  &.active {
+    background: var(--red_color);
+
+    & .logo {
+      background-color: var(--wht_color);
+    }
+  }
+
+  @media (--s) {
+    width: 64px;
+    height: 100%;
+    border-bottom: none;
+    border-right: 1px solid var(--sp_color);
+
+    &.dark {
+      border-right: 1px solid color-mod(var(--wht_color) a(0.3));
+      border-bottom: none;
+
+      & .burger {
+        border-bottom: 1px solid color-mod(var(--wht_color) a(0.3));
+      }
+    }
+  }
+}
+
+.burger {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+
+  @media (--s) {
+    width: 64px;
+    height: 128px;
+    padding: 40px 8px;
+    border-bottom: 1px solid var(--sp_color);
+  }
+
+  &.active {
+    & rect {
+      fill: var(--wht_color);
+    }
+
+    @media (--s) {
+      border-bottom: 1px solid color-mod(var(--wht_color) a(0.3));
+    }
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--red_color);
+  z-index: 8;
+  display: none;
+
+  &.active {
+    display: block;
+    overflow-y: scroll;
+  }
+
+  @media (--m) {
+    width: calc(calc(2 / 3) * 100%);
+  }
+}
+
+.logo {
+  height: 47px;
+  width: 115px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  mask-image: url("../../assets/header/images/logo-sm.svg");
+  mask-size: cover;
+  background-color: var(--red_color);
+
+  @media (--s) {
+    mask-image: url("../../assets/header/images/logo-lg.svg");
+    mask-size: cover;
+    width: 64px;
+    height: 74px;
+    bottom: 0;
+    top: auto;
+  }
+}

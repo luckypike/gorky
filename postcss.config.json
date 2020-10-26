@@ -10,7 +10,8 @@
         "importFrom": "./css/variables.css",
         "features": {
           "custom-media-queries": true,
-          "nesting-rules": true
+          "nesting-rules": true,
+          "color-mod-function": true
         }
       }
     ]

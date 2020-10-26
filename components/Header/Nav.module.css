@@ -1,0 +1,87 @@
+.root {
+  padding: calc(var(--yr) * var(--s6)) calc(var(--xr) * 2);
+
+  @media (--s) {
+    padding: 0 calc(var(--yr) * calc(var(--s6) * 2.75));
+  }
+
+  @media (--l) {
+    padding: 0 calc(var(--yr) * calc(var(--s6) * 2.75));
+  }
+}
+
+.search {
+  display: flex;
+  padding: calc(var(--yr) * 2.5) 0;
+
+  @media (--s) {
+    padding: calc(var(--yr) * 10) 0;
+  }
+
+  & input {
+    color: var(--wht_color);
+    font-size: calc(var(--yr) * 6);
+    line-height: calc(var(--yr) * 7);
+    border: none;
+    background: none;
+    padding: calc(var(--yr) * 2) 0;
+    flex-grow: 1;
+    padding-right: calc(var(--yr) * 3);
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: color-mod(var(--wht_color) a(0.3));
+      opacity: 1;
+    }
+
+    @media (--s) {
+      font-size: calc(var(--yr) * 8);
+      line-height: calc(var(--yr) * 9);
+    }
+  }
+
+  & .submit {
+    display: flex;
+    align-items: center;
+
+    & svg {
+      display: block;
+    }
+  }
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  color: var(--wht_color);
+  composes: h2 from '../Fonts.module.css';
+  position: relative;
+  cursor: pointer;
+  text-transform: none;
+  margin-top: calc(var(--yr) * calc(var(--s3) * 2));
+  transition: color 0.3s;
+
+  &:hover {
+    color: #141414;
+  }
+}
+
+.desc {
+  composes: bt from '../Fonts.module.css';
+  color: #57150a;
+  margin-top: calc(var(--yr) * var(--s2));
+}
+
+.li,
+.menu,
+.a {
+  text-decoration: none;
+  display: block;
+}
