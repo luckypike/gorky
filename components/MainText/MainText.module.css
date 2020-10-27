@@ -3,6 +3,7 @@
 }
 
 .root {
+  width: 50vw;
   @media (--l) {
     padding-left: 30%;
   }

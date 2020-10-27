@@ -1,14 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Speech = ({ title, text, author }) => {
+import styles from './Speech.module.css';
+
+const Speech = ({ title, author, children }) => {
   return (
     <div className={styles.root}>
       <div className={styles.intro}>Прямая речь</div>
 
       {title && <h3>{title}</h3>}
 
-      {text && <div className={styles.text}>{text}</div>}
+      {children && <div className={styles.text}>{children}</div>}
       {author && (
         <figure className={styles.author}>
           {author.image && (
@@ -28,7 +30,7 @@ const Speech = ({ title, text, author }) => {
 
 Speech.propTypes = {
   title: PropTypes.string,
-  text: PropTypes.string,
+  children: PropTypes.node,
   author: PropTypes.shape({
     image: PropTypes.string,
     name: PropTypes.string,

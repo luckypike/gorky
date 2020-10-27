@@ -8,7 +8,8 @@ const MainImage = ({ image, caption }) => {
       <figure
         ref={ImgRef}
       >
-        {image}
+        <img src={image} alt="img" />
+        {caption && <figcaption>{caption}</figcaption>}
       </figure>
     </div>
   );

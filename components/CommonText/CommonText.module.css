@@ -1,3 +1,6 @@
+.root {
+  width: 50vw;
+}
 
 .vrezka {
   color: var(--hl_color);

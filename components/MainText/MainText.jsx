@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import styles from './MainText.module.css'
 
-const MainText = ({ title, body }) => {
+const MainText = ({ title, children }) => {
   return (
     <div className={styles.root}>
       <h2>
@@ -11,7 +11,7 @@ const MainText = ({ title, body }) => {
       </h2>
 
       <div className={styles.text}>
-        {body}
+        {children}
       </div>
     </div>
   )
@@ -19,7 +19,7 @@ const MainText = ({ title, body }) => {
 
 MainText.propTypes = {
   title: PropTypes.string,
-  body: PropTypes.node
+  children: PropTypes.node
 }
 
 export default MainText;

@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const CommonText = ({ body }) => {
-  return <div>{body}</div>;
+import styles from './CommonText.module.css';
+
+const CommonText = ({ children }) => {
+  return <div className={styles.root}>{children}</div>;
 };
 
 CommonText.propTypes = {
-  body: PropTypes.node,
+  children: PropTypes.node,
 };
 
 export default CommonText;
