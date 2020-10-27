@@ -1,6 +1,6 @@
 import React from "react";
 
-import Factory from "../../components/Factory/Factory";
+import { Factory } from "../../components";
 
 import styles from "./index.module.css";
 
