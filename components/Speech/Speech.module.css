@@ -1,11 +1,14 @@
 .root {
   width: 50vw;
-  border-left: 1px solid var(--hl_color);
-  padding-left: calc(var(--xr) * 1.5);
-
   &:not(:last-child) {
     margin-bottom: calc(var(--yr) * var(--s5));
   }
+  padding: 1rem 2rem
+}
+
+.content {
+  border-left: 1px solid var(--hl_color);
+  padding-left: calc(var(--xr) * 1.5);
 }
 
 .intro {
