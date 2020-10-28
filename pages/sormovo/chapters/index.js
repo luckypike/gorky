@@ -4,3 +4,6 @@ export { default as BuildingTanks } from "./BuildingTanks/BuildingTanks";
 export { default as Rubinchik } from "./Rubinchik/Rubinchik";
 export { default as Reworking } from "./Reworking/Reworking";
 export { default as Women } from "./Women/Women";
+export { default as Ammunition } from "./Ammunition/Ammunition";
+export { default as ShellsForKatyush } from "./ShellsForKatyush/ShellsForKatyush";
+export { default as AfterWar } from "./AfterWar/AfterWar";

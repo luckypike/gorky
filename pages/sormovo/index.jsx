@@ -8,6 +8,9 @@ import {
   Rubinchik,
   Reworking,
   Women,
+  Ammunition,
+  ShellsForKatyush,
+  AfterWar
 } from "./chapters";
 
 import styles from "./index.module.css";
@@ -22,6 +25,9 @@ const Sormovo = () => {
         <Rubinchik />
         <Reworking />
         <Women />
+        <Ammunition />
+        <ShellsForKatyush />
+        <AfterWar />
       </div>
     </Factory>
   );
