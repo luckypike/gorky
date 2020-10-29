@@ -1,14 +1,20 @@
-import Head from "next/head";
-import React, { useState, useEffect, useRef, useContext } from "react";
+import React, { useState, useEffect } from "react";
+
+import { Factory } from "../../components";
+import {
+  Intro
+} from "./chapters";
 
 import styles from "./index.module.css";
 
-export default function Home() {
+const Gaz = () => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>Test</h1>
-      </main>
-    </div>
+    <Factory>
+      <div className={styles.root}>
+        <Intro />
+      </div>
+    </Factory>
   );
-}
+};
+
+export default Gaz;
