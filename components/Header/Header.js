@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useContext } from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 import Burger from './Burger'
 import Nav from './Nav'
 
-
 import styles from './Header.module.css'
 
-const Header = () => {
+const Header = ({ dark }) => {
   const [activeNav, setActiveNav] = useState(false);
   
   useEffect(() => {
@@ -27,9 +26,9 @@ const Header = () => {
 
   return (
     <>
-      <header className={classNames(styles.root, styles.dark, { [styles.active]: activeNav })}>
+      <header className={classNames(styles.root,  { [styles.dark]: dark, [styles.active]: activeNav })}>
         <div className={classNames(styles.burger, { [styles.active]: activeNav })} onClick={() => setActiveNav(!activeNav)}>
-          <Burger dark={true} activeNav={activeNav} />
+          <Burger dark={dark} activeNav={activeNav} />
         </div>
 
         <div className={styles.logo}></div>
@@ -42,6 +41,10 @@ const Header = () => {
       </div>
     </>
   )
+}
+
+Header.propTypes = {
+  dark: PropTypes.bool
 }
 
 export default Header;
