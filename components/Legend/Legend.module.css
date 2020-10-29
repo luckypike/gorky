@@ -1,0 +1,12 @@
+.root {
+  width: 50vw;
+}
+
+.content {
+  padding: 1rem 2rem;
+  background-color: var(--grey_color);
+}
+
+.title {
+  color: var(--hl_color);
+}
