@@ -1,0 +1,74 @@
+.root {
+  @media (--l) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.mainImg {
+  padding-top: calc(2 / 3 * 100%);
+  /* composes: ari from '../../Images.module.css'; */
+}
+
+.page1 {
+  margin: 0 0 calc(var(--yr) * var(--s4));
+}
+
+.page {
+  padding: 0 var(--xr);
+
+  @media (--s) {
+    padding: 0 calc(1 / 11 * 100%);
+  }
+
+  @media (--l) {
+    padding: calc(10vh * var(--fs_mod)) calc(2 / 11 * 100%) 0;
+    height: 100vh;
+  }
+}
+
+.page2 {
+  margin: 0 0 calc(var(--yr) * var(--s4));
+
+  @media (--s) {
+    padding: 0 calc(1 / 11 * 100%);
+  }
+
+  @media (--l) {
+    align-self: center;
+    height: auto;
+    padding: 0;
+  }
+}
+
+.page3,
+.page5 {
+  /* margin: 0 0 calc(var(--yr) * var(--s4)); */
+  padding-top: 0;
+  align-self: center;
+  height: auto;
+}
+
+.images {
+  display: grid;
+  grid-gap: var(--xr);
+}
+
+.image {
+  padding-top: calc(2 / 3 * 100%);
+  /* composes: ari from '../../Images.module.css'; */
+}
+
+.ford {
+  margin: calc(var(--yr) * var(--s4)) 0;
+  max-width: 7rem;
+
+  @media (--s) {
+    margin: calc(var(--yr) * var(--s5)) 0 0;
+    max-width: 10rem;
+  }
+}
+
+.vrezka {
+  composes: vrezka from '../../../../components/CommonText/CommonText.module.css';
+}

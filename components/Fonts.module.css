@@ -1,19 +1,3 @@
-.body {
-  font-family: var(--ff_sans_main);
-  font-size: calc(var(--yr) * 3.5);
-  line-height: calc(var(--yr) * 5);
-
-  @media (--s) {
-    font-size: calc(var(--yr) * 4);
-    line-height: calc(var(--yr) * 6);
-  }
-
-  @media (--l) {
-    font-size: calc(var(--yr) * 4 * var(--fs_mod));
-    line-height: calc(var(--yr) * 6 * var(--fs_mod));
-  }
-}
-
 .mt {
   font-size: calc(var(--yr) * 2.5);
   line-height: calc(var(--yr) * 3);

@@ -1,0 +1,21 @@
+.root {
+  @media (--l) {
+    overflow: hidden;
+    height: 100vh;
+    width: 75vw;
+  }
+}
+
+.img1 {
+  padding-top: calc(1800 / 2800 * 100%);
+  height: 100%;
+  composes: ari from '../../../../components/Images.module.css';
+
+  @media (--l) {
+    padding-top: 0;
+
+    & img {
+      width: auto;
+    }
+  }
+}

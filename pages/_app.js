@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import Head from "next/head";
+import Head from 'next/head';
 import React, { useState, useEffect, useRef } from "react";
 
 import Header from '../components/Header/Header'
@@ -37,12 +37,14 @@ function MyApp({ Component, pageProps }) {
   }, [])
   
   useEffect(() => {
+    document.documentElement.style.setProperty('--fs_mod', fsMod)
+  }, [fsMod])
+
+  useEffect(() => {
     if(router.pathname === '/') {
       setDark(true)
     }
-
-    document.documentElement.style.setProperty('--fs_mod', fsMod)
-  }, [fsMod])
+  }, [router.pathname])
 
   return (
     <>
