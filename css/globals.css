@@ -31,7 +31,12 @@ body {
   }
 }
 
-h1 {
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* h1 {
   font-family: var(--ff_serif);
   font-weight: normal;
   text-transform: uppercase;
@@ -71,4 +76,4 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
-}
+} */

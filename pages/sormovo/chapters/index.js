@@ -1,4 +1,6 @@
-export { default as OldestPlant } from "./OldestPlant/OldestPlant";
+export { default as Intro } from "./01_Intro/Intro";
+export { default as Img } from "./02_Img/Img";
+export { default as OldestPlant } from "./03_OldestPlant/OldestPlant";
 export { default as Reconstruction } from "./Reconstruction/Reconstruction";
 export { default as BuildingTanks } from "./BuildingTanks/BuildingTanks";
 export { default as Rubinchik } from "./Rubinchik/Rubinchik";

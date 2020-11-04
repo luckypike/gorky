@@ -2,6 +2,8 @@ import React from "react";
 
 import { Factory } from "../../components";
 import {
+  Intro,
+  Img,
   OldestPlant,
   Reconstruction,
   BuildingTanks,
@@ -19,15 +21,26 @@ const Sormovo = () => {
   return (
     <Factory>
       <div className={styles.root}>
-        <OldestPlant />
-        <Reconstruction />
+        <div className={styles.intro}>
+          <Intro />
+        </div>
+
+        <div className={styles.img}>
+          <Img />
+        </div>
+
+        <div className={styles.oldest}>
+          <OldestPlant />
+        </div>
+
+        {/* <Reconstruction />
         <BuildingTanks />
         <Rubinchik />
         <Reworking />
         <Women />
         <Ammunition />
         <ShellsForKatyush />
-        <AfterWar />
+        <AfterWar /> */}
       </div>
     </Factory>
   );

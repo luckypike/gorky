@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 
   const updateDimensions = () => {
     const height = window.innerHeight
-  
+
     if (height < 760) {
       const k = (height >= 400 ? (height - 400) / 400 : 0) * 0.5 + 0.5
       setFsMod(k)
@@ -26,16 +26,16 @@ function MyApp({ Component, pageProps }) {
       setFsMod(1)
     }
   }
-  
+
   useEffect(() => {
     window.addEventListener('resize', updateDimensions)
     updateDimensions()
-  
+
     return () => {
       window.removeEventListener('resize', updateDimensions)
     }
   }, [])
-  
+
   useEffect(() => {
     document.documentElement.style.setProperty('--fs_mod', fsMod)
   }, [fsMod])
@@ -56,7 +56,7 @@ function MyApp({ Component, pageProps }) {
 
       <Header dark={dark} />
 
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   )
 }

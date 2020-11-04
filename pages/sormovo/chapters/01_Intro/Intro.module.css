@@ -1,0 +1,32 @@
+.root {
+  composes: root from "../../../gaz/chapters/01_Intro/Intro.module.css";
+}
+
+.title {
+  composes: title from "../../../gaz/chapters/01_Intro/Intro.module.css";
+}
+
+.desc {
+  composes: desc from "../../../gaz/chapters/01_Intro/Intro.module.css";
+
+}
+
+.items {
+  composes: items from "../../../gaz/chapters/01_Intro/Intro.module.css";
+}
+
+.item {
+  composes: item from "../../../gaz/chapters/01_Intro/Intro.module.css";
+}
+
+.digit {
+  composes: digit from "../../../gaz/chapters/01_Intro/Intro.module.css";
+}
+
+.rd {
+  composes: rd from "../../../gaz/chapters/01_Intro/Intro.module.css";
+}
+
+.what {
+  composes: what from "../../../gaz/chapters/01_Intro/Intro.module.css";
+}

@@ -1,4 +1,5 @@
 export { default as CommonText } from "./CommonText/CommonText";
+export { default as CommonImage } from "./CommonImage/CommonImage";
 export { default as Factory } from "./Factory/Factory";
 export { default as Gallery } from "./Gallery/Gallery";
 export { default as Header } from "./Header/Header";
