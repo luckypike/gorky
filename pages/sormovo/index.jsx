@@ -33,7 +33,17 @@ const Sormovo = () => {
           <OldestPlant />
         </div>
 
-        {/* <Reconstruction />
+        <div className={styles.reconstruction}>
+          <Reconstruction />
+        </div>
+
+        <div className={styles.building}>
+          <BuildingTanks />
+        </div>
+
+
+
+        {/*
         <BuildingTanks />
         <Rubinchik />
         <Reworking />

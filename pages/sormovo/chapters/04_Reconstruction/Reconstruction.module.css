@@ -1,0 +1,28 @@
+.root {
+  display: grid;
+
+  @media (--l) {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+.img {
+  height: 100%;
+  composes: ari from "../../../../components/Images.module.css";
+
+  &.main {
+    padding-top: calc(1014 / 841 * 100%);
+  }
+
+  &._1 {
+    padding-top: calc(829 / 1368 * 100%);
+  }
+  
+  &._2 {
+    padding-top: calc(1296 / 1014 * 100%);
+  }
+
+  &._3 {
+    padding-top: calc(2250 / 1468 * 100%);
+  }
+}
