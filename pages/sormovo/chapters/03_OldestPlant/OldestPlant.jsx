@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import Image from "next/image";
 
 import {
@@ -14,7 +15,7 @@ import styles from "./OldestPlant.module.css";
 const OldestPlant = () => {
   return (
     <div className={styles.root}>
-      <div>
+      <div className={styles.page}>
         <MainText title="Старейший завод">
           «Красное Сормово» — одно из старейших предприятий не только в Нижнем
           Новгороде, но и в России: завод основан в 1849 году. Почти половина
@@ -24,13 +25,13 @@ const OldestPlant = () => {
 
       <div>
         <CommonImage>
-          <figure className={`${styles.img} ${styles.main}`}>
+          <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sormovo/3/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>
 
-      <div>
+      <div className={styles.page}>
         <CommonText>
           <p>
             На заводе запустили первую в России мартеновскую печь в 1870 году,
@@ -41,14 +42,14 @@ const OldestPlant = () => {
           </p>
 
           <CommonImage>
-          <figure className={`${styles.img} ${styles._1}`}>
-            <Image src="/images/sormovo/3/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
+            <figure className={classNames(styles.img, styles._1)}>
+              <Image src="/images/sormovo/3/2.jpg" layout="fill" />
+            </figure>
+          </CommonImage>
         </CommonText>
       </div>
 
-      <div>
+      <div className={styles.page}>
         <CommonText>
           <p>
             В начале ХХ века сормовичи спускали на воду канонерские лодки для

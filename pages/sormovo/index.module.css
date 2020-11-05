@@ -51,6 +51,6 @@
 
   @media (--l) {
     margin-bottom: 0;
-    min-width: 300vw;
+    min-width: 350vw;
   }
 }

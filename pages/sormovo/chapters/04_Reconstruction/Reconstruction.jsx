@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from 'classnames';
 import Image from "next/image";
 
 import {
@@ -13,7 +14,7 @@ import styles from "./Reconstruction.module.css";
 const Reconstruction = () => {
   return (
     <div className={styles.root}>
-      <div>
+      <div className={styles.page}>
         <MainText title="Перестройка производства">
           Первое постановление Государственного комитета обороны СССР от 1 июля
           1941 года обязывало «Красное Сормово» наладить выпуск танков Т-34.
@@ -22,13 +23,13 @@ const Reconstruction = () => {
 
       <div>
         <CommonImage>
-          <figure className={`${styles.img} ${styles.main}`}>
+          <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sormovo/4/2.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>
 
-      <div>
+      <div className={styles.page}>
         <CommonText>
           <p>
             Сначала из-за нехватки дизельных моторов В-2 в танки устанавливали
@@ -40,14 +41,14 @@ const Reconstruction = () => {
           </p>
 
           <CommonImage>
-            <figure className={`${styles.img} ${styles._1}`}>
+            <figure className={classNames(styles.img, styles._1)}>
               <Image src="/images/sormovo/4/1.jpg" layout="fill" />
             </figure>
           </CommonImage>
         </CommonText>
       </div>
 
-      <div>
+      <div className={styles.page}>
         <CommonText>
           <p>
             Танк Т-34 разработали конструкторы танкового отдела харьковского
@@ -72,38 +73,40 @@ const Reconstruction = () => {
         </CommonText>
       </div>
 
-      <div>
+      <div className={styles.page}>
         <CommonImage>
-          <figure className={`${styles.img} ${styles._2}`}>
+          <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/sormovo/4/3.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>
 
-      <div>
-        <Speech
-          title="«Т-34 стал сенсацией»"
-          author={{ name: "Немецкий генерал Э. Шнейдер" }}
-        >
-          «Танк Т-34 произвел сенсацию. Этот 26-тонный русский танк был вооружен
-          76,2-мм пушкой, снаряды которой пробивали броню немецких танков с
-          1,5–2 тысяч метров, тогда как немецкие … не более чем с 500 метров, и
-          то лишь в том случае, если снаряды попадали в бортовую или кормовую
-          часть танка Т-34».
-        </Speech>
-        <Speech
-          title="«Помощь пришла вовремя»"
-          author={{ name: "Маршал Советского Союза Г. К. Жуков" }}
-        >
-          «В октябре 1941 года, когда мне была поручена операция по обороне
-          Москвы, мы начали получать с сормовского завода танки Т-34. Эта помощь
-          пришла вовремя и сыграла большую роль в битве за Москву».
-        </Speech>
+      <div className={styles.page}>
+        <CommonText>
+          <Speech
+            title="«Т-34 стал сенсацией»"
+            author={{ name: "Немецкий генерал Э. Шнейдер" }}
+          >
+            «Танк Т-34 произвел сенсацию. Этот 26-тонный русский танк был
+            вооружен 76,2-мм пушкой, снаряды которой пробивали броню немецких
+            танков с 1,5–2 тысяч метров, тогда как немецкие … не более чем с 500
+            метров, и то лишь в том случае, если снаряды попадали в бортовую или
+            кормовую часть танка Т-34».
+          </Speech>
+          <Speech
+            title="«Помощь пришла вовремя»"
+            author={{ name: "Маршал Советского Союза Г. К. Жуков" }}
+          >
+            «В октябре 1941 года, когда мне была поручена операция по обороне
+            Москвы, мы начали получать с сормовского завода танки Т-34. Эта
+            помощь пришла вовремя и сыграла большую роль в битве за Москву».
+          </Speech>
+        </CommonText>
       </div>
 
-      <div>
+      <div className={styles.page}>
         <CommonImage>
-          <figure className={`${styles.img} ${styles._3}`}>
+          <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/sormovo/4/4.jpg" layout="fill" />
           </figure>
         </CommonImage>

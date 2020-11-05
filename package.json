@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "lax.js": "https://github.com/alexfoxy/lax.js#version-2",
     "next": "10.0.1",
     "postcss-preset-env": "^6.7.0",

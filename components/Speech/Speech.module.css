@@ -1,5 +1,5 @@
 .root {
-  width: 50vw;
+  /* width: 50vw; */
   &:not(:last-child) {
     margin-bottom: calc(var(--yr) * var(--s5));
   }
