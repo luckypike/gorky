@@ -7,7 +7,7 @@
 }
 
 .root {
-  padding: 0 var(--xr);
+  /* padding: 0 var(--xr); */
 
   @media (--l) {
     padding-left: 30%;

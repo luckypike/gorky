@@ -23,14 +23,14 @@ const BuildingTanks = () => {
         </MainText>
       </div>
 
-      <div>
+      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sormovo/5/2.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>
-      {/* <MainImage image={main}/> */}
+
       <div className={styles.page}>
         <CommonText>
           <p>
@@ -68,7 +68,7 @@ const BuildingTanks = () => {
           </Speech>
         </CommonText>
       </div>
-      {/* <Gallery image={main}/> */}
+
       <div className={styles.page}>
         <CommonText>
           <p>
@@ -120,7 +120,7 @@ const BuildingTanks = () => {
         </Speech>
       </div>
 
-      <div className={styles.page}>
+      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/sormovo/5/3.jpg" layout="fill" />

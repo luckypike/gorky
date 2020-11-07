@@ -21,7 +21,7 @@ const Reconstruction = () => {
         </MainText>
       </div>
 
-      <div>
+      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sormovo/4/2.jpg" layout="fill" />
@@ -66,14 +66,17 @@ const Reconstruction = () => {
             производил. Усложнялась технология производства деталей, росло их
             количество. Кроме того, необходимо было изменить конструкцию танка
             Т-34 и приспособить ее под установку бензинового двигателя М-17.
-            Чтобы организовать производство Т-34, завод начал реконструкцию. В
-            эксплуатацию ввели более 26 тыс. кв. м производственных площадей и
-            смонтировали около 600 станков.
+          </p>
+
+          <p className={styles.vrezka}>
+            Чтобы организовать производство Т-34, завод начал реконструкцию:
+            ввели более 26 тыс. кв. м производственных площадей и
+            смонтировали около 600 станков
           </p>
         </CommonText>
       </div>
 
-      <div className={styles.page}>
+      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/sormovo/4/3.jpg" layout="fill" />
@@ -104,7 +107,7 @@ const Reconstruction = () => {
         </CommonText>
       </div>
 
-      <div className={styles.page}>
+      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/sormovo/4/4.jpg" layout="fill" />
