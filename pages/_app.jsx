@@ -57,7 +57,7 @@ export default function App({ Component, props }) {
 
       <Header dark={dark} />
 
-      <Component { ...props } />
+      <Component {...props} />
     </>
   );
 }
