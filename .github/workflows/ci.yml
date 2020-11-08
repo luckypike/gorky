@@ -3,7 +3,7 @@ name: Node CI environment
 on: push
 
 jobs:
-  app:
+  linters:
     name: ESlint
     runs-on: ubuntu-latest
 
