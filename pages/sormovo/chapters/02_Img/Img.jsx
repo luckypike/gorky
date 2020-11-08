@@ -12,7 +12,7 @@ export default function Img () {
   return (
     <figure className={styles.root}>
       <div className={styles.img}>
-        <Image src="/images/sormovo/Img.jpg" alt="QQ"  layout="fill" ref={ImgRef} />
+        <Image src="/images/sormovo/Img.jpg" alt="QQ" layout="fill" ref={ImgRef} />
       </div>
     </figure>
   )

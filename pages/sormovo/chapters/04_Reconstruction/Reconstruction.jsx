@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from 'classnames';
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonImage,
   CommonText,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./Reconstruction.module.css";
+import styles from './Reconstruction.module.css'
 
 const Reconstruction = () => {
   return (
@@ -88,7 +88,7 @@ const Reconstruction = () => {
         <CommonText>
           <Speech
             title="«Т-34 стал сенсацией»"
-            author={{ name: "Немецкий генерал Э. Шнейдер" }}
+            author={{ name: 'Немецкий генерал Э. Шнейдер' }}
           >
             «Танк Т-34 произвел сенсацию. Этот 26-тонный русский танк был
             вооружен 76,2-мм пушкой, снаряды которой пробивали броню немецких
@@ -98,7 +98,7 @@ const Reconstruction = () => {
           </Speech>
           <Speech
             title="«Помощь пришла вовремя»"
-            author={{ name: "Маршал Советского Союза Г. К. Жуков" }}
+            author={{ name: 'Маршал Советского Союза Г. К. Жуков' }}
           >
             «В октябре 1941 года, когда мне была поручена операция по обороне
             Москвы, мы начали получать с сормовского завода танки Т-34. Эта
@@ -115,7 +115,7 @@ const Reconstruction = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Reconstruction;
+export default Reconstruction

@@ -1,51 +1,51 @@
-import { useRouter } from 'next/router';
-import Head from 'next/head';
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import { useRouter } from 'next/router'
+import Head from 'next/head'
+import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 
-import Header from '../components/Header/Header';
+import Header from '../components/Header/Header'
 
-import '../css/variables.css';
-import '../css/globals.css';
+import '../css/variables.css'
+import '../css/globals.css'
 
-export default function App({ Component, props }) {
-  const router = useRouter();
+export default function App ({ Component, props }) {
+  const router = useRouter()
 
-  const [fsMod, setFsMod] = useState(1);
-  const [dark, setDark] = useState(false);
+  const [fsMod, setFsMod] = useState(1)
+  const [dark, setDark] = useState(false)
 
   const updateDimensions = () => {
-    const height = window.innerHeight;
+    const height = window.innerHeight
 
     if (height < 760) {
-      const k = (height >= 400 ? (height - 400) / 400 : 0) * 0.5 + 0.5;
-      setFsMod(k);
+      const k = (height >= 400 ? (height - 400) / 400 : 0) * 0.5 + 0.5
+      setFsMod(k)
     } else if (height > 960) {
-      const k = ((height - 960) / 960) * 1.5 + 1;
-      setFsMod(k);
+      const k = ((height - 960) / 960) * 1.5 + 1
+      setFsMod(k)
     } else {
-      setFsMod(1);
+      setFsMod(1)
     }
-  };
+  }
 
   useEffect(() => {
-    window.addEventListener('resize', updateDimensions);
-    updateDimensions();
+    window.addEventListener('resize', updateDimensions)
+    updateDimensions()
 
     return () => {
-      window.removeEventListener('resize', updateDimensions);
-    };
-  }, []);
+      window.removeEventListener('resize', updateDimensions)
+    }
+  }, [])
 
   useEffect(() => {
-    document.documentElement.style.setProperty('--fs_mod', fsMod);
-  }, [fsMod]);
+    document.documentElement.style.setProperty('--fs_mod', fsMod)
+  }, [fsMod])
 
   useEffect(() => {
     if (router.pathname === '/') {
-      setDark(true);
+      setDark(true)
     }
-  }, [router.pathname]);
+  }, [router.pathname])
 
   return (
     <>
@@ -57,16 +57,16 @@ export default function App({ Component, props }) {
 
       <Header dark={dark} />
 
-      <Component {...props} />
+      <Component { ...props } />
     </>
-  );
+  )
 }
 
 App.defaultProps = {
-  props: undefined,
-};
+  props: undefined
+}
 
 App.propTypes = {
   Component: PropTypes.func.isRequired,
-  props: PropTypes.objectOf(PropTypes.any),
-};
+  props: PropTypes.objectOf(PropTypes.any)
+}

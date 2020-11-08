@@ -1,23 +1,23 @@
-import React from 'react';
+import React from 'react'
 
-import { Factory } from '../../components';
+import { Factory } from '../../components'
 import {
   Intro,
   Img,
   OldestPlant,
   Reconstruction,
-  BuildingTanks,
+  BuildingTanks
   // Rubinchik,
   // Reworking,
   // Women,
   // Ammunition,
   // ShellsForKatyush,
   // AfterWar
-} from './chapters';
+} from './chapters'
 
-import styles from './index.module.css';
+import styles from './index.module.css'
 
-export default function Sormovo() {
+export default function Sormovo () {
   return (
     <Factory>
       <div className={styles.root}>
@@ -51,5 +51,5 @@ export default function Sormovo() {
         <AfterWar /> */}
       </div>
     </Factory>
-  );
+  )
 }
