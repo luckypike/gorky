@@ -1,0 +1,20 @@
+name: Node CI environment
+
+on: push
+
+jobs:
+  app:
+    name: ESlint
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+
+      - name: Run ESLint
+        run: yarn lint

@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
-import lax from "lax.js";
+import React, { useEffect, useRef } from 'react';
+import lax from 'lax.js';
 import Lax from '../components/Lax';
 
-import styles from "./index.module.css";
+import styles from './index.module.css';
 
 export default function Home() {
   const overlayRef = useRef();
@@ -10,37 +10,35 @@ export default function Home() {
   const introRef = useRef();
 
   useEffect(() => {
-    lax.addDriver('scrollY', function () {
-      return window.scrollY
-    })
+    lax.addDriver('scrollY', () => window.scrollY);
 
     lax.addElement(overlayRef.current, {
       scrollY: {
         opacity: [
           [0, 'screenHeight / 5'],
-          [0, 0.6]
-        ]
-      }
-    })
+          [0, 0.6],
+        ],
+      },
+    });
 
     lax.addElement(factoriesRef.current, {
       scrollY: {
         opacity: [
           [0, 'screenHeight / 5'],
-          [0, 1]
-        ]
-      }
-    })
+          [0, 1],
+        ],
+      },
+    });
 
     lax.addElement(introRef.current, {
       scrollY: {
         opacity: [
           [0, 'screenHeight / 5'],
-          [1, 0]
-        ]
-      }
-    })
-  }, [])
+          [1, 0],
+        ],
+      },
+    });
+  }, []);
 
   return (
     <Lax>
