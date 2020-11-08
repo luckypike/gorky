@@ -2,10 +2,6 @@
   position: relative;
   padding-top: 50vh;
 
-  @media (--s) {
-    /* margin-left: 64px; */
-  }
-
   & span {
     background: red;
     color: white;
@@ -19,12 +15,12 @@
   width: 100%;
   left: 0;
   top: 0;
-  background: #000 url("../assets/index/images/Star.jpg") no-repeat center;
+  background: #000 url(../assets/index/images/Star.jpg) no-repeat center;
   background-size: cover;
   z-index: -1;
 
   @media (--s) {
-    background-image: url("../assets/index/images/StarX.jpg");
+    background-image: url(../assets/index/images/StarX.jpg);
   }
 }
 
@@ -68,7 +64,6 @@
 .under {
   font-size: calc(var(--yr) * 5);
   line-height: calc(var(--yr) * 6);
-
   letter-spacing: 0.22em;
   text-transform: uppercase;
   margin-top: var(--yr);
@@ -99,7 +94,6 @@
 }
 
 .factories {
-  /* background-color: green; */
   min-height: 200vh;
   position: relative;
   z-index: 1;
@@ -114,7 +108,7 @@
 .placeholder {
   height: 300vw;
   opacity: 0.5;
-  background: linear-gradient(180deg, rgba(25,134,26,1) 0%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(180deg, rgba(25, 134, 26, 1) 0%, rgba(0, 212, 255, 1) 100%);
 }
 
 .factory {
