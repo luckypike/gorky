@@ -2,8 +2,13 @@
   composes: bt from '../Fonts.module.css';
 }
 
+.title {
+  composes: h2 from '../Fonts.module.css';
+}
+
 .root {
-  width: 50vw;
+  /* padding: 0 var(--xr); */
+
   @media (--l) {
     padding-left: 30%;
   }

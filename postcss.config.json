@@ -3,15 +3,11 @@
     [
       "postcss-preset-env",
       {
-        "autoprefixer": {
-          "flexbox": "no-2009"
-        },
-        "stage": 3,
+        "autoprefixer": true,
         "importFrom": "./css/variables.css",
         "features": {
           "custom-media-queries": true,
-          "nesting-rules": true,
-          "color-mod-function": true
+          "nesting-rules": true
         }
       }
     ]

@@ -8,12 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "lax.js": "https://github.com/alexfoxy/lax.js#version-2",
-    "next": "9.5.5",
+    "next": "10.0.1",
     "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "scrollbooster": "^3.0.2"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.12.3"
   }
 }

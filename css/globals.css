@@ -31,7 +31,20 @@ body {
   }
 }
 
-h1 {
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin: 0 0 calc(var(--yr) * var(--s4));
+  }
+}
+
+/* h1 {
   font-family: var(--ff_serif);
   font-weight: normal;
   text-transform: uppercase;
@@ -71,4 +84,4 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
-}
+} */

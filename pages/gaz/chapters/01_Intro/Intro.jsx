@@ -1,13 +1,12 @@
 import React from 'react'
 
 import styles from './Intro.module.css'
-import fonts from '../../../../components/Fonts.module.css'
 
 export default function Intro () {
   return (
     <div className={styles.root}>
       <div>
-        <h1 className={fonts.h1}>
+        <h1 className={styles.title}>
           Государственный автомобильный завод имени В. М. Молотова
         </h1>
 
