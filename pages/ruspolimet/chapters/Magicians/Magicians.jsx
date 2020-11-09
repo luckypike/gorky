@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
   CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./Magicians.module.css";
+import styles from './Magicians.module.css'
 
 const Magicians = () => {
   return (
@@ -54,7 +52,7 @@ const Magicians = () => {
       <Speech
         title="«В цехе было очень много дыма и чада»"
         author={{
-          name: "Ветеран КМЗ И. К. Костров",
+          name: 'Ветеран КМЗ И. К. Костров'
         }}
       >
         «Работали 10–12 часов в сутки, а вот хлеба при этом давали 600 г. В
@@ -66,7 +64,7 @@ const Magicians = () => {
         только холодной водой. Туалеты были только на улице».
       </Speech>
     </div>
-  );
-};
+  )
+}
 
-export default Magicians;
+export default Magicians

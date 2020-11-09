@@ -1,8 +1,8 @@
-import React, { useRef, useEffect, } from "react";
-import PropTypes from "prop-types";
+import React, { useRef } from 'react'
+import PropTypes from 'prop-types'
 
 const MainImage = ({ image, caption }) => {
-  const ImgRef = useRef();
+  const ImgRef = useRef()
   return (
     <div>
       <figure
@@ -12,12 +12,12 @@ const MainImage = ({ image, caption }) => {
         {caption && <figcaption>{caption}</figcaption>}
       </figure>
     </div>
-  );
+  )
 }
 
 MainImage.propTypes = {
   image: PropTypes.object,
-  caption: PropTypes.string,
-};
+  caption: PropTypes.string
+}
 
-export default MainImage;
+export default MainImage

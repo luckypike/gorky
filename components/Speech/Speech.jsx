@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import styles from "./Speech.module.css";
+import styles from './Speech.module.css'
 
 const Speech = ({ title, author, children }) => {
   return (
@@ -27,8 +27,8 @@ const Speech = ({ title, author, children }) => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
 Speech.propTypes = {
   title: PropTypes.string,
@@ -36,8 +36,8 @@ Speech.propTypes = {
   author: PropTypes.shape({
     image: PropTypes.string,
     name: PropTypes.string,
-    desc: PropTypes.string,
-  }),
-};
+    desc: PropTypes.string
+  })
+}
 
-export default Speech;
+export default Speech

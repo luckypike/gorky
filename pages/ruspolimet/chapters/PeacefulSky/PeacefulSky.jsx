@@ -1,14 +1,11 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
-  CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  CommonText
+} from '../../../../components'
 
-import styles from "./PeacefulSky.module.css";
+import styles from './PeacefulSky.module.css'
 
 const PeacefulSky = () => {
   return (
@@ -20,18 +17,18 @@ const PeacefulSky = () => {
       </MainText>
       {/* <MainImage image={main}/> */}
       <CommonText>
-        В начале 1950-х годов завод начал изготавливать чугунные и стальные
+        В начале 1950-х годов завод начал изготавливать чугунные и стальные
         детали для сельхозтехники. Мартен после войны подвергся масштабной
         реконструкции: его оснастили новым оборудованием, освоив скоростные и
         тяжеловесные плавки. В 1944 году КМЗ выпустил 115,6 тыс. т стали и 122
-        тыс. т стального проката, а в 1955-м — 229 тыс. т и до 261,1 тыс. т
+        тыс. т стального проката, а в 1955-м — 229 тыс. т и до 261,1 тыс. т
         соответственно. В те же годы предприятие начало осваивать производство
         колец для реактивных двигателей из новых авиационных материалов, которое
         является основным для завода и сегодня.
       </CommonText>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default PeacefulSky;
+export default PeacefulSky

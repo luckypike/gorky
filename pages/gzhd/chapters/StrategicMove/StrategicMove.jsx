@@ -1,14 +1,11 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
-  CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  CommonText
+} from '../../../../components'
 
-import styles from "./StrategicMove.module.css";
+import styles from './StrategicMove.module.css'
 
 const StrategicMove = () => {
   return (
@@ -21,7 +18,7 @@ const StrategicMove = () => {
       <div>
         <CommonText>
           Открытие линии Москва — Нижний Новгород совпало с расцветом
-          Нижегородской ярмарки — стратегически важного торжища Российской
+          Нижегородской ярмарки — стратегически важного торжища Российской
           империи. Проект строительства железной дороги был утвержден в 1857
           году, линия проходила через Москву, Покров, Владимир, Ковров, Вязники,
           Гороховец и Нижний Новгород. К возведению дороги привлекались
@@ -43,7 +40,7 @@ const StrategicMove = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default StrategicMove;
+export default StrategicMove

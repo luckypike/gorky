@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import { Factory } from "../../components";
+import { Factory } from '../../components'
 import {
   Intro,
   Img,
@@ -9,10 +9,10 @@ import {
   SecondHome,
   MachinesAndPeople,
   Сreativity,
-  AfterWar,
-} from "./chapters";
+  AfterWar
+} from './chapters'
 
-import styles from "./index.module.css";
+import styles from './index.module.css'
 
 const Etna = () => {
   return (
@@ -49,10 +49,10 @@ const Etna = () => {
         <div className={styles.after}>
           <AfterWar />
         </div>
-        
+
       </div>
     </Factory>
-  );
-};
+  )
+}
 
-export default Etna;
+export default Etna

@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   CommonImage,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./Ammunition.module.css";
+import styles from './Ammunition.module.css'
 
 const Ammunition = () => {
   return (
@@ -57,7 +57,7 @@ const Ammunition = () => {
         <Speech
           title="«Станок — наше оружие»"
           author={{
-            name: "Ветеран завода «Красное Сормово» Е. Хабалова",
+            name: 'Ветеран завода «Красное Сормово» Е. Хабалова'
           }}
         >
           «Работали под девизами: „Станок — наше оружие“, „Работать за себя и за
@@ -95,7 +95,7 @@ const Ammunition = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Ammunition;
+export default Ammunition

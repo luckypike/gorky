@@ -1,16 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
-  MainImage,
   MainText,
   CommonText,
   CommonImage,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./AfterWar.module.css";
+import styles from './AfterWar.module.css'
 
 const AfterWar = () => {
   return (
@@ -59,7 +58,7 @@ const AfterWar = () => {
           title="«Честно трудился все годы войны»"
           author={{
             name:
-              "Мастер-орденоносец фасонолитейного цеха «Красного Сормова» И. Баженов",
+              'Мастер-орденоносец фасонолитейного цеха «Красного Сормова» И. Баженов'
           }}
         >
           «В первые дни Великой Отечественной войны я в числе 120 сормовичей
@@ -68,13 +67,13 @@ const AfterWar = () => {
           мы свое слово сдержали, так же, как и вы, сдержали свое слово,
           поклявшись разбить врага. Я честно трудился все годы войны, несмотря
           на преклонный возраст. Десятки моих учеников, воспитанных в годы
-          войны, работают квалифицированными формовщиками и бригадирами. Я и мои
+          войны, работают квалифицированными формовщиками и бригадирами. Я и мои
           воспитанники дали фронту много продукции сверх плана... Начался период
           мирного развития. Сормовичи не ослабят и теперь темпов своей работы».
         </Speech>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AfterWar;
+export default AfterWar

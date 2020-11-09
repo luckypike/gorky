@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   CommonImage,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./ShellsForKatyush.module.css";
+import styles from './ShellsForKatyush.module.css'
 
 const ShellsForKatyush = () => {
   return (
@@ -56,7 +56,7 @@ const ShellsForKatyush = () => {
             М-20 поступили на вооружение в 1942 году. Они были единственными
             фугасными реактивными снарядами калибра 132 мм. Историк А. Широкорад
             пишет, что вес взрывчатого вещества в боевой части М-20 был увеличен
-            до 18,4 кг, благодаря чему снаряды успешно использовались для
+            до 18,4кг, благодаря чему снаряды успешно использовались для
             разрушения полевых укреплений противника: «К недостаткам снаряда
             относились недостаточная дальность стрельбы (до 5,05 км) и то, что
             из-за больших размеров снаряды М-20 можно было запускать только с
@@ -69,7 +69,7 @@ const ShellsForKatyush = () => {
         <Speech
           title="«Мы тоже громили врага»"
           author={{
-            name: "Ветеран завода «Красное Сормово» Г. Чернов",
+            name: 'Ветеран завода «Красное Сормово» Г. Чернов'
           }}
         >
           «Не все знают, что кроме „Катюш“ были еще и „Ванюши“. Это особый вид
@@ -86,7 +86,7 @@ const ShellsForKatyush = () => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ShellsForKatyush;
+export default ShellsForKatyush

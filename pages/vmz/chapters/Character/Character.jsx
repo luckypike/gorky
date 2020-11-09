@@ -1,14 +1,11 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
-  CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  CommonText
+} from '../../../../components'
 
-import styles from "./Character.module.css";
+import styles from './Character.module.css'
 
 const Character = () => {
   return (
@@ -34,7 +31,7 @@ const Character = () => {
       </CommonText>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default Character;
+export default Character

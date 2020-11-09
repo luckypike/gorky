@@ -1,14 +1,11 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
-  CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  CommonText
+} from '../../../../components'
 
-import styles from "./NewFrames.module.css";
+import styles from './NewFrames.module.css'
 
 const NewFrames = () => {
   return (
@@ -21,7 +18,7 @@ const NewFrames = () => {
       {/* <MainImage image={main}/> */}
       <div>
         <CommonText>
-          К ноябрю 1941 года 55% всех работающих на ГЖД составляли женщины: они
+          К ноябрю 1941 года 55% всех работающих на ГЖД составляли женщины: они
           работали путеобходчиками, вагонными слесарями, кочегарами,
           машинистами, занимались смазкой и снабжением водой поездов. В 1942
           году свыше 3 тыс. женщин овладели считавшимися ранее мужскими
@@ -50,7 +47,7 @@ const NewFrames = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default NewFrames;
+export default NewFrames

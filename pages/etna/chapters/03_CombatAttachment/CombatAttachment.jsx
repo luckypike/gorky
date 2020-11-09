@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   CommonImage,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./CombatAttachment.module.css";
+import styles from './CombatAttachment.module.css'
 
 const CombatAttachment = () => {
   return (
@@ -17,7 +17,7 @@ const CombatAttachment = () => {
       <div className={styles.page}>
         <MainText title="Боевое крепление">
           Завод по производству крепежных изделий «Этна» был построен в 1898
-          году в Риге В. М. Гольденбергом и П. И. Мартини.
+          году в Риге В.М. Гольденбергом и П. И. Мартини.
         </MainText>
 
         <CommonImage>
@@ -28,11 +28,11 @@ const CombatAttachment = () => {
       </div>
 
       <div className={styles.page}>
-        <p>
+        <CommonText>
           <p>
             В 1915 году, во время Первой мировой войны, предприятие эвакуировали
             в Нижний Новгород, где год спустя его выкупил торговый дом
-            «А. Б. Фрадкин и сын». После национализации в 1922 году в честь
+            «А.Б. Фрадкин и сын». После национализации в 1922 году в честь
             пятилетия советской власти завод был переименован в «Красную Этну».
             В 1933 году на предприятии началось производство нормалей для только
             что построенного Горьковского автозавода. Несколько лет завод
@@ -51,7 +51,7 @@ const CombatAttachment = () => {
             Завод «Красная Этна» был крупнейшим производителем крепежных
             элементов и поставлял их автопрому всей страны
           </p>
-        </p>
+        </CommonText>
       </div>
 
       <div className={classNames(styles.page, styles.fpi)}>
@@ -66,7 +66,7 @@ const CombatAttachment = () => {
         <Speech
           title="«Орден Ленина — заслуга всех работников»"
           author={{
-            name: "Ветеран завода, директор музея «Красной Этны» Г. С. Тилунас",
+            name: 'Ветеран завода, директор музея «Красной Этны» Г. С. Тилунас'
           }}
         >
           «Весь завод работал на оборону, начиная с горячепрокатного цеха. Здесь
@@ -82,7 +82,7 @@ const CombatAttachment = () => {
         </Speech>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CombatAttachment;
+export default CombatAttachment

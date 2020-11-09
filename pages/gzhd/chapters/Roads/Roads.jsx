@@ -1,14 +1,11 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
-  CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  CommonText
+} from '../../../../components'
 
-import styles from "./Roads.module.css";
+import styles from './Roads.module.css'
 
 const Roads = () => {
   return (
@@ -28,7 +25,7 @@ const Roads = () => {
           сутки для транспортировки снаряженных им мин, авиабомб и других
           боеприпасов. С 1941-го по 1945 год по ГЖД было перевезено около 110
           тыс. автомашин всех типов, свыше 100 тыс. пушек и другого
-          артиллерийского вооружения, более 38 тыс. танков, самоходных установок
+          артиллерийского вооружения, более 38 тыс. танков, самоходных установок
           и бронемашин.
         </CommonText>
         <CommonText>
@@ -43,7 +40,7 @@ const Roads = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default Roads;
+export default Roads

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import { Factory } from "../../components";
+import { Factory } from '../../components'
 import {
   StrategicMove,
   Military,
@@ -10,10 +10,10 @@ import {
   Fortresses,
   Feats,
   ExceptBread,
-  Roads,
-} from "./chapters";
+  Roads
+} from './chapters'
 
-import styles from "./index.module.css";
+import styles from './index.module.css'
 
 const Vmz = () => {
   return (
@@ -30,7 +30,7 @@ const Vmz = () => {
         <Roads />
       </div>
     </Factory>
-  );
-};
+  )
+}
 
-export default Vmz;
+export default Vmz

@@ -1,14 +1,11 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
-  CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  CommonText
+} from '../../../../components'
 
-import styles from "./Heritage.module.css";
+import styles from './Heritage.module.css'
 
 const Heritage = () => {
   return (
@@ -43,7 +40,7 @@ const Heritage = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default Heritage;
+export default Heritage

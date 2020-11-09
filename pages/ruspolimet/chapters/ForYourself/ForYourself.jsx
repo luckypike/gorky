@@ -1,14 +1,11 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
-  CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  CommonText
+} from '../../../../components'
 
-import styles from "./ForYourself.module.css";
+import styles from './ForYourself.module.css'
 
 const ForYourself = () => {
   return (
@@ -42,7 +39,7 @@ const ForYourself = () => {
           Предприятию было необходимо модернизировать оборудование и менять
           технологию производства. Директор завода Иван Федорович Скиба ввел
           особый режим работы и организовал специальный технический отдел — СТО.
-          Этот отдел проработал всего шесть месяцев — за короткий срок его
+          Этот отдел проработал всего шесть месяцев — за короткий срок его
           сотрудники разработали новые технологические процессы производства,
           определились с их технической оснасткой и организовали выпуск новой
           продукции для фронта. После того, как все разработки были внедрены в
@@ -52,7 +49,7 @@ const ForYourself = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default ForYourself;
+export default ForYourself

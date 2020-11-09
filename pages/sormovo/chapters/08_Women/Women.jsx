@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   CommonImage,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./Women.module.css";
+import styles from './Women.module.css'
 
 const Women = () => {
   return (
@@ -36,7 +36,7 @@ const Women = () => {
             «Мы, старики, не должны сидеть дома. В грозный и ответственный
             момент у нас еще хватит сил по-боевому работать для своей Родины»,—
             обратился к коллегам ветеран труда И. М. Олимпиев. В первый же год
-            на завод вернулись более тысячи ветеранов. К станкам вставали и
+            на завод вернулись более тысячи ветеранов. К станкам вставали и
             женщины, бывшие прежде домохозяйками, и подростки. Они работали
             крановщицами, пультовщицами, токарями, малярами, формовщицами,
             осваивали и другие профессии. Чтобы работать быстрее и перевыполнять
@@ -55,7 +55,7 @@ const Women = () => {
         <Speech
           title="«Пришла на завод в 16 лет»"
           author={{
-            name: "Ветеран завода «Красное Сормово» Л. Базина",
+            name: 'Ветеран завода «Красное Сормово» Л. Базина'
           }}
         >
           «О начале войны я узнала, когда Левитан объявил по радио, что на нас
@@ -112,7 +112,7 @@ const Women = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Women;
+export default Women

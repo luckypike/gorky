@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
   CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./Defense.module.css";
+import styles from './Defense.module.css'
 
 const Defense = () => {
   return (
@@ -19,7 +17,7 @@ const Defense = () => {
       {/* <MainImage image={main}/> */}
       <div>
         <CommonText>
-          К сентябрю 1942 года они внесли во Всесоюзный фонд обороны 2,89 млн
+          К сентябрю 1942 года они внесли во Всесоюзный фонд обороны 2,89 млн
           рублей. Деньги сдавали на строительство эскадрильи самолетов «Валерий
           Чкалов», «Зоя Космодемьянская», «Горьковский комсомолец». На деньги
           работников завода была построена танковая колонна из десяти танков
@@ -30,7 +28,7 @@ const Defense = () => {
         <Speech
           title="«Особой гордостью выксунцев была танковая колонна„Выксунский металлург“»"
           author={{
-            name: "Сталевар ВМЗ в годы войны В. А. Веретенов",
+            name: 'Сталевар ВМЗ в годы войны В. А. Веретенов'
           }}
         >
           «Тысячи рублей были собраны в помощь освобожденным от гитлеровцев
@@ -47,7 +45,7 @@ const Defense = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default Defense;
+export default Defense

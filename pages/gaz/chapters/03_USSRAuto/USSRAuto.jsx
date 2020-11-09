@@ -4,10 +4,8 @@ import classNames from 'classnames'
 import {
   MainImage,
   MainText,
-  CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  CommonText
+} from '../../../../components'
 
 // import LastImages from '../Components/LastImages'
 
@@ -24,7 +22,7 @@ export default function USSRAuto () {
       <div className={classNames(styles.page, styles.page1)}>
         <MainText title="Гигант советского автопрома">
           <p>
-            История автомобильного завода берет начало в 1929 году, когда Ford Motor Company и 
+            История автомобильного завода берет начало в 1929 году, когда Ford Motor Company и
             СССР подписали соглашение о взаимодействии в организации массового производства машин. В годы депрессии в
             США контракт с СССР был выгодным предложением для американской компании.
           </p>
@@ -44,12 +42,12 @@ export default function USSRAuto () {
       </div>
 
       <div className={classNames(styles.page, styles.page3)}>
-        <CommonText> 
+        <CommonText>
           <p>
             В 1929 году началась работа над первыми проектами — легковыми машинами ГАЗ-А и грузовиками ГАЗ-АА, прототипами
             которых были Ford-A и Ford-AA Согласно договору с Ford Motor Company, ГАЗ обязался закупить у американской
             компании 72 тыс. комплектов деталей для сборки машин. На Горьковском автозаводе планировали самостоятельно
-            изготовлять примерно до 60% наименований узлов и деталей длясборки машин, а остальные компоненты закупать на стороне.          
+            изготовлять примерно до 60% наименований узлов и деталей длясборки машин, а остальные компоненты закупать на стороне.
           </p>
 
           <p>

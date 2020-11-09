@@ -1,16 +1,16 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   CommonImage,
   Speech,
-  GunsOfWar,
-} from "../../../../components";
+  GunsOfWar
+} from '../../../../components'
 
-import styles from "./GunsForBattle.module.css";
+import styles from './GunsForBattle.module.css'
 
 const GunsForBattle = () => {
   return (
@@ -22,7 +22,7 @@ const GunsForBattle = () => {
           продукции для фронта: 50-мм и 82-мм мин, взрывателей к 76-мм снарядам
           и других элементов боеприпасов для авиации, артиллерии и морских
           торпед, запальных трубок Норденфельда. Также в цехах предприятия
-          собирали 50-мм минометы и пистолеты-пулеметы Шпагина (ППШ). 
+          собирали 50-мм минометы и пистолеты-пулеметы Шпагина (ППШ).
         </MainText>
       </div>
 
@@ -62,7 +62,7 @@ const GunsForBattle = () => {
           title="«Работали с задором»"
           author={{
             name:
-              "Ветеран труда, в годы войны мастер цеха холодного проката ленты Е. А. Бакаев",
+              'Ветеран труда, в годы войны мастер цеха холодного проката ленты Е. А. Бакаев'
           }}
         >
           «Работали, не давая себе ни минуты отдыха. Часто смена длилась 13–14
@@ -112,7 +112,7 @@ const GunsForBattle = () => {
             опорной плите. РМ-41 образца 1941 года стал основным ротным
             минометом советских войск: в годы войны было выпущено более 130 тыс.
             50-мм минометов. Масса РМ-41 в боевом положении — около 10 кг.
-            Скорострельность — 30 выстрелов в минуту. Дальность стрельбы —
+            Скорострельность — 30 выстрелов в минуту. Дальность стрельбы —
             60–800 м в зависимости от угла наклона. Боеприпасы — осколочные
             стальные шестиперые мины весом 922 г и осколочные чугунные
             четырехперые мины весом 908 г. Снят с вооружения в 1943 году. Бойцы
@@ -133,7 +133,7 @@ const GunsForBattle = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default GunsForBattle;
+export default GunsForBattle

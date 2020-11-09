@@ -1,5 +1,4 @@
-import React, { useRef, useEffect, useContext} from 'react'
-import lax from 'lax.js'
+import React, { useRef } from 'react'
 
 import styles from './Img.module.css'
 

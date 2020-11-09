@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import styles from "./WarTechnique.module.css";
+import styles from './WarTechnique.module.css'
 
 const WarTechnique = ({ title, children }) => {
   return (
@@ -14,12 +14,12 @@ const WarTechnique = ({ title, children }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 WarTechnique.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.node,
-};
+  children: PropTypes.node
+}
 
-export default WarTechnique;
+export default WarTechnique

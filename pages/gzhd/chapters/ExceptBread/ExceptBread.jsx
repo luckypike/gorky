@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
   CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./ExceptBread.module.css";
+import styles from './ExceptBread.module.css'
 
 const ExceptBread = () => {
   return (
@@ -31,7 +29,7 @@ const ExceptBread = () => {
           title="«Стоял запах крови и дыма»"
           author={{
             name:
-              "Телеграфистка-бодистка 1-го разряда в годы войны Т. Канагина",
+              'Телеграфистка-бодистка 1-го разряда в годы войны Т. Канагина'
           }}
         >
           «Зарплата моя была 500 рублей: ее хватало на одну буханку хлеба на
@@ -47,7 +45,7 @@ const ExceptBread = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default ExceptBread;
+export default ExceptBread

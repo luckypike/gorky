@@ -1,26 +1,23 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
-  CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  CommonText
+} from '../../../../components'
 
-import styles from "./LastMorning.module.css";
+import styles from './LastMorning.module.css'
 
 const LastMorning = () => {
   return (
     <div className={styles.root}>
       <MainText title="Последнее мирное утро">
         Начало войны застало многих сотрудников КМЗ на строительстве трассы
-        Муром — Кулебаки — Арзамас.
+        Муром — Кулебаки — Арзамас.
       </MainText>
       {/* <MainImage image={main}/> */}
       <div>
         <CommonText>
-          Ветеран труда КМЗ А. Я. Рабинович (работал мастером инструментального
+          Ветеран труда КМЗ А.Я. Рабинович (работал мастером инструментального
           цеха, начальником механического и термического цехов, с 1961-го по
           1979 гг. — директор КМЗ) вспоминает, что начало этого дня было теплым
           и солнечным: «Руководство области форсировало строительство дороги. Мы
@@ -41,7 +38,7 @@ const LastMorning = () => {
           только хомуты и другая конская сбруя».
         </CommonText>
         <CommonText>
-          Электрик Кулебакского металлургического завода Н. И. Сочнев играл в
+          Электрик Кулебакского металлургического завода Н.И. Сочнев играл в
           молодежном оркестре Кулебак, который подбадривал строителей дороги. Он
           вспоминает, что 22 июня играл возле села Шилокша в 13 км от Кулебак.
           «Вдруг смотрим, из города несется машина, из нее чуть ли не на ходу
@@ -53,7 +50,7 @@ const LastMorning = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default LastMorning;
+export default LastMorning

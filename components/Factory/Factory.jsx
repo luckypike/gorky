@@ -1,76 +1,74 @@
-import React, { useEffect, useState, useRef } from "react";
-import ScrollBooster from "scrollbooster";
-import PropTypes from "prop-types";
+import React, { useEffect, useState, useRef } from 'react'
+import ScrollBooster from 'scrollbooster'
+import PropTypes from 'prop-types'
 import lax from 'lax.js'
 
 import styles from './Factory.module.css'
 
 const Factory = ({ children }) => {
-  const [scroller, setScroller] = useState(false);
-  const xRef = useRef(0);
+  const [scroller, setScroller] = useState(false)
+  const xRef = useRef(0)
 
-  const rootRef = useRef();
-  const contentRef = useRef();
-  const SBRef = useRef();
+  const rootRef = useRef()
+  const contentRef = useRef()
+  const SBRef = useRef()
 
   const updateDimensions = () => {
     setScroller(
       window
         .getComputedStyle(contentRef.current)
-        .getPropertyValue("display") === "flex"
-    );
-  };
+        .getPropertyValue('display') === 'flex'
+    )
+  }
 
   useEffect(() => {
-    window.addEventListener("resize", updateDimensions);
-    updateDimensions();
+    window.addEventListener('resize', updateDimensions)
+    updateDimensions()
 
-    lax.addDriver("scrollX", function () {
-      return xRef.current;
-    });
+    lax.addDriver('scrollX', function () {
+      return xRef.current
+    })
 
     return () => {
-      window.removeEventListener("resize", updateDimensions);
-    };
-  }, []);
+      window.removeEventListener('resize', updateDimensions)
+    }
+  }, [])
 
   useEffect(() => {
     if (scroller && !SBRef.current) {
       SBRef.current = new ScrollBooster({
         viewport: rootRef.current,
         content: contentRef.current,
-        direction: "horizontal",
-        preventDefaultOnEmulateScroll: "horizontal",
+        direction: 'horizontal',
+        preventDefaultOnEmulateScroll: 'horizontal',
         dragDirectionTolerance: 0,
         emulateScroll: true,
-        scrollMode: "native",
+        scrollMode: 'native',
         onUpdate: (state) => {
-          xRef.current = state.position.x;
+          xRef.current = state.position.x
         },
         onWheel: (state, event) => {
-          let offsetX = 0;
-          if (event.deltaY >= 0 && event.deltaX >= 0)
-            offsetX = Math.max(event.deltaY, event.deltaX);
-          if (event.deltaY <= 0 && event.deltaX <= 0)
-            offsetX = Math.min(event.deltaY, event.deltaX);
-          SBRef.current.scrollOffset.x = -offsetX / 1.5;
-          SBRef.current.scrollOffset.y = -event.deltaY / 1.5;
-        },
-      });
+          let offsetX = 0
+          if (event.deltaY >= 0 && event.deltaX >= 0) { offsetX = Math.max(event.deltaY, event.deltaX) }
+          if (event.deltaY <= 0 && event.deltaX <= 0) { offsetX = Math.min(event.deltaY, event.deltaX) }
+          SBRef.current.scrollOffset.x = -offsetX / 1.5
+          SBRef.current.scrollOffset.y = -event.deltaY / 1.5
+        }
+      })
     }
 
     if (!scroller && SBRef.current) {
-      SBRef.current.destroy();
-      SBRef.current = null;
+      SBRef.current.destroy()
+      SBRef.current = null
     }
 
     return () => {
       if (SBRef.current) {
-        SBRef.current.destroy();
-        SBRef.current = null;
+        SBRef.current.destroy()
+        SBRef.current = null
       }
-    };
-  }, [scroller]);
+    }
+  }, [scroller])
 
   return (
     <div ref={rootRef} className={styles.root}>
@@ -78,11 +76,11 @@ const Factory = ({ children }) => {
         {children}
       </div>
     </div>
-  );
-};
+  )
+}
 
 Factory.propTypes = {
-  children: PropTypes.node,
-};
+  children: PropTypes.node
+}
 
-export default Factory;
+export default Factory

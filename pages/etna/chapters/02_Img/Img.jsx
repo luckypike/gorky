@@ -1,10 +1,10 @@
-import React, { useRef } from "react";
-import Image from "next/image";
+import React, { useRef } from 'react'
+import Image from 'next/image'
 
-import styles from "./Img.module.css";
+import styles from './Img.module.css'
 
 const Img = () => {
-  const ImgRef = useRef();
+  const ImgRef = useRef()
 
   return (
     <figure className={styles.root}>
@@ -17,7 +17,7 @@ const Img = () => {
         />
       </div>
     </figure>
-  );
-};
+  )
+}
 
-export default Img;
+export default Img

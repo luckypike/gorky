@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
   CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./PatienceAndWork.module.css";
+import styles from './PatienceAndWork.module.css'
 
 const PatienceAndWork = () => {
   return (
@@ -35,7 +33,7 @@ const PatienceAndWork = () => {
         <Speech
           title="«Сутки не выходили из цеха»"
           author={{
-            name: "Начальник смены цеха завода № 177 в годы войны И. М. Клюкин",
+            name: 'Начальник смены цеха завода № 177 в годы войны И. М. Клюкин'
           }}
         >
           «...Меня срочно вызвали на оперативку к директору завода. Там обычно
@@ -46,13 +44,13 @@ const PatienceAndWork = () => {
           термической обработки. Если завтра к этому времени все восемь
           неотгруженных по этой причине корпусов не будут готовы к отгрузке, к
           вечеру ты будешь в эшелоне на станции Навашино для отправки на фронт“.
-          Сутки не выходили из цеха, с помощью руководителей смежных цехов
+          Сутки не выходили из цеха, с помощью руководителей смежных цехов
           задачу решили. К установленному директором завода сроку корпуса готовы
           были к отгрузке».
         </Speech>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PatienceAndWork;
+export default PatienceAndWork

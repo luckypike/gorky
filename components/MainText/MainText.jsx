@@ -22,4 +22,4 @@ MainText.propTypes = {
   children: PropTypes.node
 }
 
-export default MainText;
+export default MainText

@@ -1,14 +1,11 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
-  CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  CommonText
+} from '../../../../components'
 
-import styles from "./PeacefulYears.module.css";
+import styles from './PeacefulYears.module.css'
 
 const PeacefulYears = () => {
   return (
@@ -22,7 +19,7 @@ const PeacefulYears = () => {
         проката, сколько до войны, а в 1948-м вернулось к довоенным объемам
         производства стали. В 1970–1980 годы завод фактически получил второе
         рождение: были построены почти все действующие сегодня цехи основного
-        производства. В 1973 году введен в эксплуатацию крупнейший в Европе
+        производства. В 1973 году введен в эксплуатацию крупнейший в Европе
         колесопрокатный цех. Чтобы обеспечить его специальной колесной сталью,
         был реконструирован мартеновский цех. В 1986 году на ВМЗ ввели в строй
         первый в стране цех по производству электросварных обсадных труб.
@@ -31,7 +28,7 @@ const PeacefulYears = () => {
       </CommonText>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default PeacefulYears;
+export default PeacefulYears

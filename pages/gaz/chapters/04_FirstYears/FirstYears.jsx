@@ -4,19 +4,10 @@ import classNames from 'classnames'
 import {
   MainImage,
   MainText,
-  CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
-
-// import LastImages from '../Components/LastImages'
+  CommonText
+} from '../../../../components'
 
 import styles from './FirstYears.module.css'
-
-// import MainImg from './Images/03_MainImage.jpg'
-// import FordImg from './Images/03_USSRAuto/ford.jpg'
-// import Img1 from './Images/03_USSRAuto/1.jpg'
-// import Img2 from './Images/03_USSRAuto/2.jpg'
 
 export default function FirstYears () {
   return (
@@ -51,11 +42,11 @@ export default function FirstYears () {
       </div>
 
       <div className={classNames(styles.page, styles.page3)}>
-        <CommonText> 
+        <CommonText>
           <p>
             Еще около 1,5 тыс. женщин-домохозяек пришли трудиться на ГАЗ в первый же месяц войны. Они осваивали сложные работы
             в кузнице, литейном цехе, стояли у станков. Полностью заменили рабочих в колесном, кузовном цехах и в цехе запасных
-            частей заключенные исправительно-трудовой колонии № 3.          
+            частей заключенные исправительно-трудовой колонии № 3.
           </p>
 
           <p>
@@ -95,7 +86,7 @@ export default function FirstYears () {
             цепей «Гаяндт» и собрал 221 автомобиль, полученный по ленд-лизу (программа, по которой США поставляли своим
             союзникам во время Второй мировой войны вооружение, боеприпасы, технику, сырье). Завод был единственным
             производителем мотоциклетных колясок и за год выпустил 5,3 тыс. шт. В 1941 году ГАЗ получил первую высокую
-            награду — орден Ленина. 
+            награду — орден Ленина.
           </p>
         </CommonText>
       </div>

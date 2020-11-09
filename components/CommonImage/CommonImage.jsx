@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import styles from './CommonImage.module.css';
+import styles from './CommonImage.module.css'
 
 const CommonText = ({ children }) => {
-  return <div className={styles.root}>{children}</div>;
-};
+  return <div className={styles.root}>{children}</div>
+}
 
 CommonText.propTypes = {
-  children: PropTypes.node,
-};
+  children: PropTypes.node
+}
 
-export default CommonText;
+export default CommonText

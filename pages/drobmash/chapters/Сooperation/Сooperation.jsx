@@ -1,24 +1,22 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
   CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./Сooperation.module.css";
+import styles from './Сooperation.module.css'
 
 const Сooperation = () => {
   return (
     <div className={styles.root}>
       <MainText title="Кооперация под дулом">
-        Постановлением областного ГКО № 1 от 1 июля 1941 года об организации
+        Постановлением областного ГКО № 1 от 1 июля 1941 года об организации
         производства Т-34 на заводе «Красное Сормово» Выксунский завод ДРО
         вместе с другими заводами Горьковской области был включен в программу
         немедленного освоения и производства новых средних танков, начав
-        изготовление погонов для башни (место крепления башни танка к корпусу).
+        изготовление погонов для башни (место крепления башни танка к корпусу).
       </MainText>
       {/* <MainImage image={main}/> */}
       <div>
@@ -33,7 +31,7 @@ const Сooperation = () => {
         <Speech
           title="«Вынул пистолет, положил его на стол, прикрыл листом бумаги»"
           author={{
-            name: "Начальник ПДО завода № 177 в годы войны А. С. Чаулин",
+            name: 'Начальник ПДО завода № 177 в годы войны А. С. Чаулин'
           }}
         >
           «Заместитель наркома танковой промышленности собрал всех руководителей
@@ -52,7 +50,7 @@ const Сooperation = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default Сooperation;
+export default Сooperation

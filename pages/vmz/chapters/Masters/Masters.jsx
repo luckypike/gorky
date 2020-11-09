@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react'
 
 import {
-  MainImage,
   MainText,
   CommonText,
-  Gallery,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./Masters.module.css";
+import styles from './Masters.module.css'
 
 const Masters = () => {
   return (
@@ -34,11 +32,11 @@ const Masters = () => {
         <Speech
           title="«Надо враз ломать годами складывавшуюся технологию»"
           author={{
-            name: "Сталевар ВМЗ в годы войны В. А. Веретенов",
+            name: 'Сталевар ВМЗ в годы войны В. А. Веретенов'
           }}
         >
           «Уже первая плавка броневой стали, которую провела бригада С. И.
-          Соколова, была скоростной, сварили ее за 7 часов 45 минут при плановом
+          Соколова, была скоростной, сварили ее за 7 часов 45 минут при плановом
           времени 12 часов 27 минут. …Помню, подходят как-то ко мне секретарь
           партбюро Павел Дмитриевич Жулида с начальником смены Андреем
           Ивановичем Соколовым: „Решили мы, Василий Андреевич, испытать печь на
@@ -53,7 +51,7 @@ const Masters = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default Masters;
+export default Masters

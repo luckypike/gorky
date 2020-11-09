@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import { Factory } from "../../components";
+import { Factory } from '../../components'
 import {
   Mechanicians,
   WithoutThought,
@@ -8,10 +8,10 @@ import {
   ArmoredCar,
   Сooperation,
   OnWheels,
-  PatienceAndWork,
-} from "./chapters";
+  PatienceAndWork
+} from './chapters'
 
-import styles from "./index.module.css";
+import styles from './index.module.css'
 
 const Drobmash = () => {
   return (
@@ -26,7 +26,7 @@ const Drobmash = () => {
         <PatienceAndWork />
       </div>
     </Factory>
-  );
-};
+  )
+}
 
-export default Drobmash;
+export default Drobmash

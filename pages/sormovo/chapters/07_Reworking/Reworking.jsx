@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   CommonImage,
-  Speech,
-} from "../../../../components";
+  Speech
+} from '../../../../components'
 
-import styles from "./Reworking.module.css";
+import styles from './Reworking.module.css'
 
 const Reworking = () => {
   return (
@@ -21,7 +21,7 @@ const Reworking = () => {
           были мощнее, и оказалось, что Т-34 тяжело бороться с ними. Танку
           потребовалась более мощная пушка. Модернизацией по указу
           Государственного комитета обороны занялись конструкторы завода
-          «Красное Сормово» совместно со специалистами завода № 183.
+          «Красное Сормово» совместно со специалистами завода №183.
         </MainText>
       </div>
 
@@ -42,7 +42,7 @@ const Reworking = () => {
             поединках с «Тиграми и «Пантерами» — подвижности и маневренности.
             Позже Т-34-85 был при­знан лучшим танком того времени и стал одним
             из символов Второй мировой войны. Всего за годы войны «Красное
-            Сормово» дало фронту более 12 тыс. танков. Еще около 2 тыс. боевых
+            Сормово» дало фронту более 12 тыс. танков. Еще около 2тыс. боевых
             машин предприятие отремонтировало.
           </p>
 
@@ -59,7 +59,7 @@ const Reworking = () => {
           title="«Образцовое выполнение задания»"
           author={{
             name:
-              "Народный комиссар танковой промышленности в 1941–1942 гг. В. А. Малышев",
+              'Народный комиссар танковой промышленности в 1941–1942 гг. В. А. Малышев'
           }}
         >
           «Прошу передать мои горячие пожелания дальнейших успехов в работе
@@ -77,7 +77,7 @@ const Reworking = () => {
       </div>
 
     </div>
-  );
-};
+  )
+}
 
-export default Reworking;
+export default Reworking

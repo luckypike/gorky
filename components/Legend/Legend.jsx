@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import styles from "./Legend.module.css";
+import styles from './Legend.module.css'
 
 const Legend = ({ title, children }) => {
   return (
@@ -12,12 +12,12 @@ const Legend = ({ title, children }) => {
         <div className={styles.desc}>{children}</div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 Legend.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.node,
-};
+  children: PropTypes.node
+}
 
-export default Legend;
+export default Legend
