@@ -1,3 +1,23 @@
+.logo {
+  height: 47px;
+  width: 115px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  mask-image: url("../../assets/header/images/logo-sm.svg");
+  mask-size: cover;
+  background-color: var(--red_color);
+
+  @media (--s) {
+    mask-image: url("../../assets/header/images/logo-lg.svg");
+    mask-size: cover;
+    width: 64px;
+    height: 74px;
+    bottom: 0;
+    top: auto;
+  }
+}
+
 .root {
   background: var(--wht_color);
   border-bottom: 1px solid var(--sp_color);
@@ -82,25 +102,5 @@
 
   @media (--m) {
     width: calc(calc(2 / 3) * 100%);
-  }
-}
-
-.logo {
-  height: 47px;
-  width: 115px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  mask-image: url("../../assets/header/images/logo-sm.svg");
-  mask-size: cover;
-  background-color: var(--red_color);
-
-  @media (--s) {
-    mask-image: url("../../assets/header/images/logo-lg.svg");
-    mask-size: cover;
-    width: 64px;
-    height: 74px;
-    bottom: 0;
-    top: auto;
   }
 }

@@ -12,6 +12,7 @@
 
   &.main {
     padding-top: calc(1014 / 841 * 100%);
+
     /* width: 100%; */
   }
 

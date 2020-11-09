@@ -7,6 +7,7 @@
 
 .mainImg {
   padding-top: calc(2 / 3 * 100%);
+
   /* composes: ari from '../../Images.module.css'; */
 }
 
@@ -56,6 +57,7 @@
 
 .image {
   padding-top: calc(2 / 3 * 100%);
+
   /* composes: ari from '../../Images.module.css'; */
 }
 

@@ -34,9 +34,12 @@
 }
 
 .vrezka {
+  composes: bt;
   font-size: calc(var(--yr) * 4);
   line-height: calc(var(--yr) * 6);
   font-family: var(--ff_sans_header);
+  color: var(--hl_color);
+  margin: 0 0 calc(var(--yr) * var(--s4));
 
   @media (--s) {
     font-size: calc(var(--yr) * 8);
@@ -120,11 +123,3 @@
     margin-bottom: 0;
   }
 }
-
-.vrezka {
-  color: var(--hl_color);
-  font-family: var(--ff_sans_header);
-  composes: bt;
-  margin: 0 0 calc(var(--yr) * var(--s4));
-}
-
