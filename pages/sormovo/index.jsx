@@ -6,13 +6,13 @@ import {
   Img,
   OldestPlant,
   Reconstruction,
-  BuildingTanks
-  // Rubinchik,
-  // Reworking,
-  // Women,
-  // Ammunition,
-  // ShellsForKatyush,
-  // AfterWar
+  BuildingTanks,
+  Rubinchik,
+  Reworking,
+  Women,
+  Ammunition,
+  ShellsForKatyush,
+  AfterWar
 } from './chapters'
 
 import styles from './index.module.css'
@@ -41,14 +41,30 @@ export default function Sormovo () {
           <BuildingTanks />
         </div>
 
-        {/*
-        <BuildingTanks />
-        <Rubinchik />
-        <Reworking />
-        <Women />
-        <Ammunition />
-        <ShellsForKatyush />
-        <AfterWar /> */}
+        <div className={styles.rubinchik}>
+          <Rubinchik />
+        </div>
+
+        <div className={styles.reworking}>
+          <Reworking />
+        </div>
+
+        <div className={styles.women}>
+          <Women />
+        </div>
+
+        <div className={styles.ammunition}>
+          <Ammunition />
+        </div>
+
+        <div className={styles.shells}>
+          <ShellsForKatyush />
+        </div>
+
+        <div className={styles.after}>
+          <AfterWar />
+        </div>
+
       </div>
     </Factory>
   )
