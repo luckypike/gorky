@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "lax.js": "https://github.com/alexfoxy/lax.js#version-2",
+    "lax.js": "^2.0.1",
     "next": "10.0.1",
     "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",

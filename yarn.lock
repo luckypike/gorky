@@ -365,7 +365,7 @@
     "@babel/helper-create-class-features-plugin" "^7.10.4"
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-proposal-class-properties@^7.10.4", "@babel/plugin-proposal-class-properties@^7.12.1":
+"@babel/plugin-proposal-class-properties@^7.10.4":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.12.1.tgz#a082ff541f2a29a4821065b8add9346c0c16e5de"
   integrity sha512-cKp3dlQsFsEs5CWKnN7BnSHOd0EOW8EKpEjkoz1pO2E5KzIDNV9Ros1b0CnmbVgAGXJubOYVBOGCT1OmJwOI7w==
@@ -4265,12 +4265,10 @@ language-tags@^1.0.5:
   dependencies:
     language-subtag-registry "~0.3.2"
 
-"lax.js@https://github.com/alexfoxy/lax.js#version-2":
-  version "2.0.0"
-  resolved "https://github.com/alexfoxy/lax.js#779024618562b786596cbc9e39270418ec090d21"
-  dependencies:
-    "@babel/plugin-proposal-class-properties" "^7.12.1"
-    uglify-js "^3.9.4"
+lax.js@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/lax.js/-/lax.js-2.0.1.tgz#8a0454c2bad4c711770f247ecb4f42c37a621bcd"
+  integrity sha512-P+8NW5/6uuOvAoktDA6qOLoPDX82JLo1i5RAZ39rgoxH2P9imQ0znc1E28lYEcetlc+PuSgOpmQDD3xg83Z+bA==
 
 leven@^3.1.0:
   version "3.1.0"
@@ -7214,11 +7212,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-uglify-js@^3.9.4:
-  version "3.11.5"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.11.5.tgz#d6788bc83cf35ff18ea78a65763e480803409bc6"
-  integrity sha512-btvv/baMqe7HxP7zJSF7Uc16h1mSfuuSplT0/qdjxseesDU+yYzH33eHBH+eMdeRXwujXspaCTooWHQVVBh09w==
 
 unherit@^1.0.4:
   version "1.1.3"
