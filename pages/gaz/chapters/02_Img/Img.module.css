@@ -1,4 +1,6 @@
 .root {
+  position: relative;
+
   @media (--l) {
     overflow: hidden;
     height: 100vh;
@@ -6,16 +8,19 @@
   }
 }
 
-.img1 {
-  padding-top: calc(1800 / 2800 * 100%);
+.img {
+  padding-top: calc(1027 / 2028 * 100%);
   height: 100%;
-  composes: ari from '../../../../components/Images.module.css';
+  composes: ari from "../../../../components/Images.module.css";
 
   @media (--l) {
+    /* height: 100vh; */
     padding-top: 0;
 
+    /* position: absolute; */
+
     & img {
-      width: auto;
+      /* width: auto; */
     }
   }
 }

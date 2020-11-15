@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 import styles from './Burger.module.css'
 
-const Burger  = ({ dark, activeNav }) => {
+const Burger = ({ dark, activeNav }) => {
   return (
     <svg viewBox="0 0 48 48" fill="none" className={classNames(styles.root, { [styles.dark]: dark, [styles.active]: activeNav })}>
       <rect x="10" y="14" width="28" height="3" />
@@ -18,7 +18,7 @@ const Burger  = ({ dark, activeNav }) => {
 
 Burger.propTypes = {
   dark: PropTypes.bool,
-  activeNav: PropTypes.bool,
-};
+  activeNav: PropTypes.bool
+}
 
-export default Burger;
+export default Burger

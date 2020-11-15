@@ -1,0 +1,61 @@
+.root {
+  display: grid;
+
+  @media (--l) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.img {
+  height: 100%;
+  composes: ari from '../../../../components/Images.module.css';
+  margin-top: calc(var(--yr) * var(--s4));
+
+  &.main {
+    padding-top: calc(1434 / 1419 * 100%);
+  }
+
+  &._1 {
+    padding-top: calc(1027 / 2027 * 100%);
+  }
+
+  &._2 {
+    padding-top: calc(537 / 1014 * 100%);
+  }
+
+  &._3 {
+    padding-top: calc(537 / 1013 * 100%);
+  }
+}
+
+.page {
+  padding: 0 var(--xr);
+  margin-bottom: calc(var(--yr) * var(--s4));
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (--s) {
+    padding: 0 calc(1 / 11 * 100%);
+  }
+
+  @media (--l) {
+    padding: calc(10vh * var(--fs_mod)) calc(2 / 11 * 100%) 0 calc(1 / 11 * 100%);
+    height: 100vh;
+    margin-bottom: 0;
+  }
+}
+
+.fpi {
+  @media (--l) {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 0 calc(1 / 11 * 100%);
+  }
+}
+
+.vrezka {
+  composes: vrezka from '../../../../components/Fonts.module.css';
+}

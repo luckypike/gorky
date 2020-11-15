@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
@@ -8,8 +8,8 @@ import Nav from './Nav'
 import styles from './Header.module.css'
 
 const Header = ({ dark }) => {
-  const [activeNav, setActiveNav] = useState(false);
-  
+  const [activeNav, setActiveNav] = useState(false)
+
   useEffect(() => {
     window.addEventListener('keydown', onEscapeDown)
 
@@ -26,7 +26,7 @@ const Header = ({ dark }) => {
 
   return (
     <>
-      <header className={classNames(styles.root,  { [styles.dark]: dark, [styles.active]: activeNav })}>
+      <header className={classNames(styles.root, { [styles.dark]: dark, [styles.active]: activeNav })}>
         <div className={classNames(styles.burger, { [styles.active]: activeNav })} onClick={() => setActiveNav(!activeNav)}>
           <Burger dark={dark} activeNav={activeNav} />
         </div>
@@ -47,4 +47,4 @@ Header.propTypes = {
   dark: PropTypes.bool
 }
 
-export default Header;
+export default Header

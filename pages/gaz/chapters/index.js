@@ -1,4 +1,7 @@
-export { default as Intro } from "./01_Intro/Intro";
-export { default as Img1 } from "./02_Img/Img";
-export { default as USSRAuto } from "./03_USSRAuto/USSRAuto";
-export { default as FirstYears } from "./04_FirstYears/FirstYears";
+export { default as Intro } from './01_Intro/Intro'
+export { default as Img1 } from './02_Img/Img'
+export { default as USSRAuto } from './03_USSRAuto/USSRAuto'
+export { default as FirstYears } from './04_FirstYears/FirstYears'
+export { default as Conveyor } from './05_Conveyor/Conveyor'
+export { default as Passability } from './06_Passability/Passability'
+export { default as Loskutov } from './07_Loskutov/Loskutov'

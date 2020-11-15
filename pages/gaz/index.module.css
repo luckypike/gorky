@@ -18,7 +18,7 @@
   }
 }
 
-.img1 {
+.img {
   margin-bottom: calc(var(--yr) * var(--s5));
 
   @media (--l) {
@@ -31,11 +31,38 @@
 
   @media (--l) {
     margin-bottom: 0;
-    min-width: 250vw;
+    min-width: 200vw;
   }
 }
 
 .firstYears {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 250vw;
+  }
+}
+
+.conveyor {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 300vw;
+  }
+}
+
+.passability {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 200vw;
+  }
+}
+
+.loskutov {
   margin-bottom: calc(var(--yr) * var(--s5));
 
   @media (--l) {

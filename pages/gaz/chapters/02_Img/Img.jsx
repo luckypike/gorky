@@ -1,4 +1,6 @@
 import React, { useRef } from 'react'
+import Image from 'next/image'
+// import lax from 'lax.js'
 
 import styles from './Img.module.css'
 
@@ -9,8 +11,8 @@ export default function Img () {
 
   return (
     <figure className={styles.root}>
-      <div className={styles.img1} ref={ImgRef}>
-        {/* <img src={Img1} /> */}
+      <div className={styles.img}>
+        <Image src="/images/gaz/img.jpg" alt="QQ" layout="fill" ref={ImgRef} />
       </div>
     </figure>
   )
