@@ -13,7 +13,9 @@ import {
   FirstBombing,
   OneAndHalf,
   Defense,
-  CityUnderAttack
+  CityUnderAttack,
+  IsALive,
+  Victory
 } from './chapters'
 
 import styles from './index.module.css'
@@ -68,6 +70,14 @@ const Gaz = () => {
 
         <div className={styles.cityUnderAttack}>
           <CityUnderAttack />
+        </div>
+
+        <div className={styles.isALive}>
+          <IsALive />
+        </div>
+
+        <div className={styles.victory}>
+          <Victory />
         </div>
       </div>
     </Factory>
