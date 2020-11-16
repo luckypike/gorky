@@ -8,7 +8,12 @@ import {
   FirstYears,
   Conveyor,
   Passability,
-  Loskutov
+  Loskutov,
+  Lipgart,
+  FirstBombing,
+  OneAndHalf,
+  Defense,
+  CityUnderAttack
 } from './chapters'
 
 import styles from './index.module.css'
@@ -43,6 +48,26 @@ const Gaz = () => {
 
         <div className={styles.loskutov}>
           <Loskutov />
+        </div>
+
+        <div className={styles.lipgart}>
+          <Lipgart />
+        </div>
+
+        <div className={styles.firstBombing}>
+          <FirstBombing />
+        </div>
+
+        <div className={styles.oneAndHalf}>
+          <OneAndHalf />
+        </div>
+
+        <div className={styles.defense}>
+          <Defense />
+        </div>
+
+        <div className={styles.cityUnderAttack}>
+          <CityUnderAttack />
         </div>
       </div>
     </Factory>

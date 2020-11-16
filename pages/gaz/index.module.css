@@ -70,3 +70,48 @@
     min-width: 250vw;
   }
 }
+
+.lipgart {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 250vw;
+  }
+}
+
+.firstBombing {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 400vw;
+  }
+}
+
+.oneAndHalf {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 350vw;
+  }
+}
+
+.defense {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 400vw;
+  }
+}
+
+.cityUnderAttack {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 500vw;
+  }
+}
