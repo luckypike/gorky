@@ -1,4 +1,91 @@
 .root {
-  display: flex;
-  flex-shrink: 0;
+  position: relative;
+
+  @media (--l) {
+    display: flex;
+    min-height: 100%;
+  }
+}
+
+.intro {
+  position: relative;
+  margin-bottom: calc(var(--yr) * var(--s5));
+  padding-top: calc(var(--yr) * var(--s6));
+
+  @media (--l) {
+    margin-bottom: 0;
+    padding-top: 0;
+    min-width: 50vw;
+  }
+}
+
+.img {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+  }
+}
+
+.mechanicians {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 100vw;
+  }
+}
+
+.without {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 100vw;
+  }
+}
+
+.locust {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 350vw;
+  }
+}
+
+.armoredCar {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 200vw;
+  }
+}
+
+.cooperation {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 200vw;
+  }
+}
+
+.onWheels {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 250vw;
+  }
+}
+
+.patience {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 150vw;
+  }
 }
