@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./ForYourself.module.css";
+import styles from './ForYourself.module.css'
 
 const ForYourself = () => {
   return (
@@ -101,7 +101,7 @@ const ForYourself = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ForYourself;
+export default ForYourself

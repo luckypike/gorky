@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   Speech,
-  CommonImage,
-} from "../../../../components";
+  CommonImage
+} from '../../../../components'
 
-import styles from "./SpecialOrder.module.css";
+import styles from './SpecialOrder.module.css'
 
 const SpecialOrder = () => {
   return (
@@ -75,7 +75,7 @@ const SpecialOrder = () => {
           <Speech
             title="«Спали урывками тут же»"
             author={{
-              name: "Электрик КМЗ в годы войны Н. И. Сочнев",
+              name: 'Электрик КМЗ в годы войны Н. И. Сочнев'
             }}
           >
             «Однажды вышел из строя стан-750, на котором катали балку носа для
@@ -94,7 +94,7 @@ const SpecialOrder = () => {
           <Speech
             title="«Завод превратился в целый комбинат»"
             author={{
-              name: "Главный энергетик завода в годы войны И. С. Желтов",
+              name: 'Главный энергетик завода в годы войны И. С. Желтов'
             }}
           >
             «Для резкого увеличения заготовки дров были проложены дополнительные
@@ -110,7 +110,7 @@ const SpecialOrder = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SpecialOrder;
+export default SpecialOrder

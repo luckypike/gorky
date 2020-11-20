@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import { Factory } from "../../components";
+import { Factory } from '../../components'
 import {
   Intro,
   Img,
@@ -10,10 +10,10 @@ import {
   Magicians,
   SpecialOrder,
   TankConstruction,
-  PeacefulSky,
-} from "./chapters";
+  PeacefulSky
+} from './chapters'
 
-import styles from "./index.module.css";
+import styles from './index.module.css'
 
 const Ruspolimet = () => {
   return (
@@ -56,7 +56,7 @@ const Ruspolimet = () => {
         </div>
       </div>
     </Factory>
-  );
-};
+  )
+}
 
-export default Ruspolimet;
+export default Ruspolimet

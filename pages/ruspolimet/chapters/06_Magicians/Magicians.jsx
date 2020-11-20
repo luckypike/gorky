@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   Speech,
-  CommonImage,
-} from "../../../../components";
+  CommonImage
+} from '../../../../components'
 
-import styles from "./Magicians.module.css";
+import styles from './Magicians.module.css'
 
 const Magicians = () => {
   return (
@@ -77,7 +77,7 @@ const Magicians = () => {
             <Speech
               title="«В цехе было очень много дыма и чада»"
               author={{
-                name: "Ветеран КМЗ И. К. Костров",
+                name: 'Ветеран КМЗ И. К. Костров'
               }}
             >
               «Работали 10–12 часов в сутки, а вот хлеба при этом давали 600 г.
@@ -93,7 +93,7 @@ const Magicians = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Magicians;
+export default Magicians

@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./LastMorning.module.css";
+import styles from './LastMorning.module.css'
 
 const LastMorning = () => {
   return (
@@ -84,7 +84,7 @@ const LastMorning = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LastMorning;
+export default LastMorning

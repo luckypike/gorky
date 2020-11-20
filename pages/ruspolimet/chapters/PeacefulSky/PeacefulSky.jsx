@@ -1,11 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./PeacefulSky.module.css";
-import { symbol } from "prop-types";
+import styles from './PeacefulSky.module.css'
 
 const PeacefulSky = () => {
   return (
@@ -65,7 +64,7 @@ const PeacefulSky = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PeacefulSky;
+export default PeacefulSky

@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./TankConstruction.module.css";
+import styles from './TankConstruction.module.css'
 
 const TankConstruction = () => {
   return (
@@ -75,7 +75,7 @@ const TankConstruction = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TankConstruction;
+export default TankConstruction
