@@ -27,7 +27,7 @@ const Сooperation = () => {
         </MainText>
       </div>
 
-      <div className={styles.page}>
+      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/drobmash/7/2.jpg" layout="fill" />

@@ -1,4 +1,91 @@
 .root {
-  display: flex;
-  flex-shrink: 0;
+  position: relative;
+
+  @media (--l) {
+    display: flex;
+    min-height: 100%;
+  }
+}
+
+.intro {
+  position: relative;
+  margin-bottom: calc(var(--yr) * var(--s5));
+  padding-top: calc(var(--yr) * var(--s6));
+
+  @media (--l) {
+    margin-bottom: 0;
+    padding-top: 0;
+    min-width: 50vw;
+  }
+}
+
+.img {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+  }
+}
+
+.heritage {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 150vw;
+  }
+}
+
+.lastMorning {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 250vw;
+  }
+}
+
+.forYourself {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 250vw;
+  }
+}
+
+.magicians {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 200vw;
+  }
+}
+
+.specialOrder {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 250vw;
+  }
+}
+
+.tankConstruction {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 200vw;
+  }
+}
+
+.peacefulSky {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 250vw;
+  }
 }
