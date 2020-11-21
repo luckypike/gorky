@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   Speech,
-  CommonImage,
-} from "../../../../components";
+  CommonImage
+} from '../../../../components'
 
-import styles from "./Mobilization.module.css";
+import styles from './Mobilization.module.css'
 
 const Mobilization = () => {
   return (
@@ -79,7 +79,7 @@ const Mobilization = () => {
           <Speech
             title="«Победный булат»"
             author={{
-              name: "Сталевар ВМЗ в годы войны В. А. Веретенов",
+              name: 'Сталевар ВМЗ в годы войны В. А. Веретенов'
             }}
           >
             «Возвращаясь домой, нагоняю в проходной старейшего сталевара, всеми
@@ -91,7 +91,7 @@ const Mobilization = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Mobilization;
+export default Mobilization

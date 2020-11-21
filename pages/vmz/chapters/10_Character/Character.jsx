@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./Character.module.css";
+import styles from './Character.module.css'
 
 const Character = () => {
   return (
@@ -49,7 +49,7 @@ const Character = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Character;
+export default Character

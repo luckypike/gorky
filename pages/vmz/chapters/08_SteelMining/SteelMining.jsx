@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./SteelMining.module.css";
+import styles from './SteelMining.module.css'
 
 const SteelMining = () => {
   return (
@@ -109,7 +109,7 @@ const SteelMining = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SteelMining;
+export default SteelMining

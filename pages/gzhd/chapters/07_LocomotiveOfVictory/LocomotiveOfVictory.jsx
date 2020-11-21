@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   Speech,
-  CommonImage,
-} from "../../../../components";
+  CommonImage
+} from '../../../../components'
 
-import styles from "./LocomotiveOfVictory.module.css";
+import styles from './LocomotiveOfVictory.module.css'
 
 const LocomotiveOfVictory = () => {
   return (
@@ -61,7 +61,7 @@ const LocomotiveOfVictory = () => {
           <Speech
             title="«Страшное было оружие»"
             author={{
-              name: "Машинист «Козьмы Минина» в годы войны И. Удодов",
+              name: 'Машинист «Козьмы Минина» в годы войны И. Удодов'
             }}
           >
             «Двигались мы так: паровоз всегда не в начале, а в середине поезда,
@@ -82,7 +82,7 @@ const LocomotiveOfVictory = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LocomotiveOfVictory;
+export default LocomotiveOfVictory

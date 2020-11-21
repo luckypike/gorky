@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./PeacefulYears.module.css";
+import styles from './PeacefulYears.module.css'
 
 const PeacefulYears = () => {
   return (
@@ -45,7 +45,7 @@ const PeacefulYears = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PeacefulYears;
+export default PeacefulYears

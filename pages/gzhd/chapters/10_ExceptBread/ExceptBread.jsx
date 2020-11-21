@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   Speech,
-  CommonImage,
-} from "../../../../components";
+  CommonImage
+} from '../../../../components'
 
-import styles from "./ExceptBread.module.css";
+import styles from './ExceptBread.module.css'
 
 const ExceptBread = () => {
   return (
@@ -56,7 +56,7 @@ const ExceptBread = () => {
             title="«Стоял запах крови и дыма»"
             author={{
               name:
-                "Телеграфистка-бодистка 1-го разряда в годы войны Т. Канагина",
+                'Телеграфистка-бодистка 1-го разряда в годы войны Т. Канагина'
             }}
           >
             «Зарплата моя была 500 рублей: ее хватало на одну буханку хлеба на
@@ -72,7 +72,7 @@ const ExceptBread = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ExceptBread;
+export default ExceptBread

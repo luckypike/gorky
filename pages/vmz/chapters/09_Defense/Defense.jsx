@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   Speech,
-  CommonImage,
-} from "../../../../components";
+  CommonImage
+} from '../../../../components'
 
-import styles from "./Defense.module.css";
+import styles from './Defense.module.css'
 
 const Defense = () => {
   return (
@@ -66,7 +66,7 @@ const Defense = () => {
           <Speech
             title="«Особой гордостью выксунцев была танковая колонна„Выксунский металлург“»"
             author={{
-              name: "Сталевар ВМЗ в годы войны В. А. Веретенов",
+              name: 'Сталевар ВМЗ в годы войны В. А. Веретенов'
             }}
           >
             «Тысячи рублей были собраны в помощь освобожденным от гитлеровцев
@@ -85,7 +85,7 @@ const Defense = () => {
 
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default Defense;
+export default Defense

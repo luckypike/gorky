@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./CombatConditions.module.css";
+import styles from './CombatConditions.module.css'
 
 const CombatConditions = () => {
   return (
@@ -83,7 +83,7 @@ const CombatConditions = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default CombatConditions;
+export default CombatConditions

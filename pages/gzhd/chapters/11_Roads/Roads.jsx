@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./Roads.module.css";
+import styles from './Roads.module.css'
 
 const Roads = () => {
   return (
@@ -63,7 +63,7 @@ const Roads = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Roads;
+export default Roads

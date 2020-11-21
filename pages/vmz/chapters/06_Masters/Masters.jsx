@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   Speech,
-  CommonImage,
-} from "../../../../components";
+  CommonImage
+} from '../../../../components'
 
-import styles from "./Masters.module.css";
+import styles from './Masters.module.css'
 
 const Masters = () => {
   return (
@@ -73,7 +73,7 @@ const Masters = () => {
           <Speech
             title="«Надо враз ломать годами складывавшуюся технологию»"
             author={{
-              name: "Сталевар ВМЗ в годы войны В. А. Веретенов",
+              name: 'Сталевар ВМЗ в годы войны В. А. Веретенов'
             }}
           >
             «Уже первая плавка броневой стали, которую провела бригада С. И.
@@ -93,7 +93,7 @@ const Masters = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default Masters;
+export default Masters

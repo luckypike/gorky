@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./NewFrames.module.css";
+import styles from './NewFrames.module.css'
 
 const NewFrames = () => {
   return (
@@ -62,7 +62,7 @@ const NewFrames = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default NewFrames;
+export default NewFrames

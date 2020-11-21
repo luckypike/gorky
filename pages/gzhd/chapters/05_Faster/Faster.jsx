@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   Legend,
-  CommonImage,
-} from "../../../../components";
+  CommonImage
+} from '../../../../components'
 
-import styles from "./Faster.module.css";
+import styles from './Faster.module.css'
 
 const Faster = () => {
   return (
@@ -136,7 +136,7 @@ const Faster = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Faster;
+export default Faster

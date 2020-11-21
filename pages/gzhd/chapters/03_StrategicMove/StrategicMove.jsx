@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./StrategicMove.module.css";
+import styles from './StrategicMove.module.css'
 
 const StrategicMove = () => {
   return (
@@ -64,7 +64,7 @@ const StrategicMove = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default StrategicMove;
+export default StrategicMove

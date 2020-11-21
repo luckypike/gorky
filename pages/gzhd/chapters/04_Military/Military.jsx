@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./Military.module.css";
+import styles from './Military.module.css'
 
 const Military = () => {
   return (
@@ -112,7 +112,7 @@ const Military = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Military;
+export default Military

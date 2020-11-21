@@ -1,16 +1,16 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   Speech,
   WarTechnique,
-  CommonImage,
-} from "../../../../components";
+  CommonImage
+} from '../../../../components'
 
-import styles from "./Fortresses.module.css";
+import styles from './Fortresses.module.css'
 
 const Fortresses = () => {
   return (
@@ -58,7 +58,7 @@ const Fortresses = () => {
             title="«У них нет противника»"
             author={{
               name:
-                "Начальник Главного автобронетанкового управления Красной Армии в годы войны Я. Федоренко",
+                'Начальник Главного автобронетанкового управления Красной Армии в годы войны Я. Федоренко'
             }}
           >
             «Такие бронепоезда в нашей стране еще не строились. Нет их и у
@@ -124,7 +124,7 @@ const Fortresses = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Fortresses;
+export default Fortresses

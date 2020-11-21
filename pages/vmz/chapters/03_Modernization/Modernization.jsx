@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from "../../../../components";
+import { MainText, CommonText, CommonImage } from '../../../../components'
 
-import styles from "./Modernization.module.css";
+import styles from './Modernization.module.css'
 
 const Modernization = () => {
   return (
@@ -82,7 +82,7 @@ const Modernization = () => {
       </div>
       {/* <Gallery image={main}/> */}
     </div>
-  );
-};
+  )
+}
 
-export default Modernization;
+export default Modernization

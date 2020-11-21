@@ -37,7 +37,8 @@
   }
 
   @media (--l) {
-    padding: calc(10vh * var(--fs_mod)) calc(2 / 11 * 100%) 0
+    padding:
+      calc(10vh * var(--fs_mod)) calc(2 / 11 * 100%) 0
       calc(1 / 11 * 100%);
     height: 100vh;
     margin-bottom: 0;

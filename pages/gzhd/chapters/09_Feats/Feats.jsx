@@ -1,15 +1,15 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainText,
   CommonText,
   Speech,
-  CommonImage,
-} from "../../../../components";
+  CommonImage
+} from '../../../../components'
 
-import styles from "./Feats.module.css";
+import styles from './Feats.module.css'
 
 const Feats = () => {
   return (
@@ -76,12 +76,12 @@ const Feats = () => {
             Союза войной. Отопление паровозов перевели на дрова. За поездку
             приходилось перекидывать в топку паровоза по 100–120 куб. м сырых
             тяжелых дров.
-          </p>  
+          </p>
           <Speech
             title="«Надевали лямки, как в старину бурлаки»"
             author={{
               name:
-                "Работница станции Каменный Овраг в годы войны И. Молчанова",
+                'Работница станции Каменный Овраг в годы войны И. Молчанова'
             }}
           >
             «Два кубометра дров выработки в день в тайге — это не пустяки. Ведь
@@ -97,7 +97,7 @@ const Feats = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Feats;
+export default Feats
