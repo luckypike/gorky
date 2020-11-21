@@ -1,4 +1,109 @@
 .root {
-  display: flex;
-  flex-shrink: 0;
+  position: relative;
+
+  @media (--l) {
+    display: flex;
+    min-height: 100%;
+  }
+}
+
+.intro {
+  position: relative;
+  margin-bottom: calc(var(--yr) * var(--s5));
+  padding-top: calc(var(--yr) * var(--s6));
+
+  @media (--l) {
+    margin-bottom: 0;
+    padding-top: 0;
+    min-width: 50vw;
+  }
+}
+
+.img {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+  }
+}
+
+.strategicMove {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 200vw;
+  }
+}
+
+.military {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 250vw;
+  }
+}
+
+.faster {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 300vw;
+  }
+}
+
+.newFrames {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 150vw;
+  }
+}
+
+.locomotiveOfVictory {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 200vw;
+  }
+}
+
+.fortresses {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 250vw;
+  }
+}
+
+.feats {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 200vw;
+  }
+}
+
+.exceptBread {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 200vw;
+  }
+}
+
+.roads {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
+  @media (--l) {
+    margin-bottom: 0;
+    min-width: 150vw;
+  }
 }

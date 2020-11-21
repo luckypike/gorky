@@ -1,0 +1,64 @@
+.root {
+  padding: 0 var(--xr);
+
+  @media (--s) {
+    padding: 0 calc(1 / 11 * 100%);
+  }
+
+  @media (--l) {
+    padding: calc(10vh * var(--fs_mod) + calc(var(--yr) * var(--s5))) calc(1 / 11 * 100%) 0 calc(2 / 11 * 100%);
+  }
+}
+
+.title {
+  composes: h1 from '../../../../components/Fonts.module.css';
+}
+
+.desc {
+  margin-top: calc(var(--yr) * var(--s2) * -1);
+  color: #6a6a6a;
+}
+
+.items {
+  margin-top: calc(var(--yr) * var(--s4));
+  display: grid;
+  grid-row-gap: calc(var(--yr) * var(--s4));
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: calc(var(--xr));
+
+  @media (--s) {
+    grid-column-gap: calc(var(--xr) * 2);
+  }
+}
+
+.item {
+  font-family: var(--ff_sans_header);
+}
+
+.digit {
+  font-family: var(--ff_sans_header);
+  font-weight: normal;
+  font-size: calc(var(--yr) * 14);
+  line-height: calc(var(--yr) * 14);
+  color: var(--hl_color);
+
+  @media (--s) {
+    font-size: calc(var(--yr) * 18);
+    line-height: calc(var(--yr) * 18);
+  }
+
+  @media (--l) {
+    font-size: calc(var(--yr) * 18 * var(--fs_mod));
+    line-height: calc(var(--yr) * 18 * var(--fs_mod));
+  }
+}
+
+.rd {
+  margin: calc(var(--yr) * var(--s2)) 0 calc(var(--yr) * var(--s1));
+  text-transform: uppercase;
+  color: var(--hl_color);
+}
+
+.what {
+  font-weight: 300;
+}
