@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
+import { useStore } from '../../stores/StoreContext'
 import { Factory } from '../../components'
+
 import {
   Intro,
   Img1,
@@ -21,6 +23,12 @@ import {
 import styles from './index.module.css'
 
 const Gaz = () => {
+  const store = useStore()
+
+  useEffect(() => {
+    store.setDark(false)
+  }, [store])
+
   return (
     <Factory>
       <div className={styles.root}>

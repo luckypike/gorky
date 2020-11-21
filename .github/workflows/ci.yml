@@ -17,7 +17,7 @@ jobs:
         run: yarn
 
       - name: Run ESLint
-        run: yarn lint
+        run: yarn lint:js
 
   stylelint:
     name: Stylelint
@@ -33,4 +33,4 @@ jobs:
         run: yarn
 
       - name: Run Stylelint
-        run: yarn stylelint
+        run: yarn lint:css

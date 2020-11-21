@@ -4,15 +4,17 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import Header from '../components/Header/Header'
+import { StoreContext } from '../stores/StoreContext'
+import AppStore from '../stores/AppStore'
 
 import '../css/variables.css'
 import '../css/globals.css'
 
 export default function App ({ Component, props }) {
   const router = useRouter()
+  const store = new AppStore()
 
   const [fsMod, setFsMod] = useState(1)
-  const [dark, setDark] = useState(false)
 
   const updateDimensions = () => {
     const height = window.innerHeight
@@ -43,22 +45,22 @@ export default function App ({ Component, props }) {
 
   useEffect(() => {
     if (router.pathname === '/') {
-      setDark(true)
+      store.setDark(true)
     }
   }, [router.pathname])
 
   return (
-    <>
+    <StoreContext.Provider value={store}>
       <Head>
         <title>Горький символ победы</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Oswald:wght@300;400&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
 
-      <Header dark={dark} />
+      <Header />
 
       <Component { ...props } />
-    </>
+    </StoreContext.Provider>
   )
 }
 
