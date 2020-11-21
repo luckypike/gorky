@@ -91,6 +91,7 @@
   width: 100%;
   height: 100%;
   background: #000;
+  backdrop-filter: blur(10px);
 }
 
 .factories {
@@ -103,12 +104,6 @@
   @media (--s) {
     margin-left: 64px;
   }
-}
-
-.placeholder {
-  height: 300vw;
-  opacity: 0.5;
-  background: linear-gradient(180deg, rgba(25, 134, 26, 1) 0%, rgba(0, 212, 255, 1) 100%);
 }
 
 .factory {
