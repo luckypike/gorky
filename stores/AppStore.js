@@ -1,9 +1,10 @@
 import { makeAutoObservable } from 'mobx'
 
 class AppStore {
-  constructor (title) {
+  dark = true
+
+  constructor () {
     makeAutoObservable(this)
-    this.dark = true
   }
 
   toggleDark () {
