@@ -11,7 +11,7 @@ import {
   SpecialOrder,
   TankConstruction,
   PeacefulSky
-} from './chapters'
+} from '../../components/Factories/Ruspolimet/Chapters'
 
 import styles from './index.module.css'
 

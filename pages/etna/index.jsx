@@ -10,7 +10,7 @@ import {
   MachinesAndPeople,
   Сreativity,
   AfterWar
-} from './chapters'
+} from '../../components/Factories/Etna/Chapters'
 
 import styles from './index.module.css'
 

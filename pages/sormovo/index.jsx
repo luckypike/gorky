@@ -13,7 +13,7 @@ import {
   Ammunition,
   ShellsForKatyush,
   AfterWar
-} from './chapters'
+} from '../../components/Factories/Sormovo/Chapters'
 
 import styles from './index.module.css'
 
