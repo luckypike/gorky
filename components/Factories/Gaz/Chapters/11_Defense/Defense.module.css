@@ -8,7 +8,7 @@
 
 .img {
   height: 100%;
-  composes: ari from "../../../../components/Images.module.css";
+  composes: ari from "../../../../Images.module.css";
   margin-top: calc(var(--yr) * var(--s4));
 
   &.main {
@@ -71,5 +71,5 @@
 }
 
 .vrezka {
-  composes: vrezka from "../../../../components/Fonts.module.css";
+  composes: vrezka from "../../../../Fonts.module.css";
 }

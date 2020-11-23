@@ -8,7 +8,7 @@
 
 .img {
   height: 100%;
-  composes: ari from '../../Images.module.css';
+  composes: ari from '../../../../Images.module.css';
   margin-top: calc(var(--yr) * var(--s4));
 
   &.main {

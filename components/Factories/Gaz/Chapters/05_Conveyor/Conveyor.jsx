@@ -2,12 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  CommonText,
-  CommonImage,
-  Speech
-} from '../../../../components'
+import { MainText, CommonText, CommonImage, Speech } from '../../../../'
 
 import styles from './Conveyor.module.css'
 

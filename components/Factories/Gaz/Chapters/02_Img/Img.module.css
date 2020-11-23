@@ -11,7 +11,7 @@
 .img {
   padding-top: calc(1027 / 2028 * 100%);
   height: 100%;
-  composes: ari from "../../Images.module.css";
+  composes: ari from "../../../../Images.module.css";
 
   @media (--l) {
     /* height: 100vh; */

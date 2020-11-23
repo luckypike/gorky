@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../components'
+import { MainText, CommonText, CommonImage } from '../../../../'
 
 import styles from './OneAndHalf.module.css'
 
