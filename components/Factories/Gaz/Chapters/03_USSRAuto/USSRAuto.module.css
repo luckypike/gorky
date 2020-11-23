@@ -2,29 +2,25 @@
   display: grid;
 
   @media (--l) {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .img {
   height: 100%;
-  composes: ari from '../../../../components/Images.module.css';
+  composes: ari from '../../Images.module.css';
   margin-top: calc(var(--yr) * var(--s4));
 
   &.main {
-    padding-top: calc(1376 / 1013 * 100%);
+    padding-top: calc(1318 / 942 * 100%);
   }
 
   &._1 {
-    padding-top: calc(1470 / 2027 * 100%);
+    padding-top: calc(734 / 1014 * 100%);
   }
 
   &._2 {
-    padding-top: calc(1063 / 2028 * 100%);
-  }
-
-  &._3 {
-    padding-top: calc(1960 / 1420 * 100%);
+    padding-top: calc(733 / 1014 * 100%);
   }
 }
 
@@ -54,8 +50,4 @@
     align-items: center;
     padding: 0 calc(1 / 11 * 100%);
   }
-}
-
-.vrezka {
-  composes: vrezka from '../../../../components/Fonts.module.css';
 }

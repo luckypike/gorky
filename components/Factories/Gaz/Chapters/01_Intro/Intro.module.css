@@ -11,7 +11,7 @@
 }
 
 .title {
-  composes: h1 from '../../../../components/Fonts.module.css';
+  composes: h1 from '../../Fonts.module.css';
 }
 
 .desc {

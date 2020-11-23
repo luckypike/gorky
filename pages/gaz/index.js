@@ -18,7 +18,7 @@ import {
   CityUnderAttack,
   IsALive,
   Victory
-} from './chapters'
+} from '../../components/Factories/Gaz/Chapters'
 
 import styles from './index.module.css'
 
