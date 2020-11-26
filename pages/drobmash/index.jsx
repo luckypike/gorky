@@ -11,7 +11,7 @@ import {
   Сooperation,
   OnWheels,
   PatienceAndWork
-} from './chapters'
+} from '../../components/Factories/Drobmash/Chapters'
 
 import styles from './index.module.css'
 

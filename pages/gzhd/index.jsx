@@ -13,7 +13,7 @@ import {
   Feats,
   ExceptBread,
   Roads
-} from './chapters'
+} from '../../components/Factories/Gzhd/Chapters'
 
 import styles from './index.module.css'
 

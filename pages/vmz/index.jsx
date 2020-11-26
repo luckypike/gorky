@@ -13,7 +13,7 @@ import {
   Defense,
   Character,
   PeacefulYears
-} from './chapters'
+} from '../../components/Factories/Vmz/Chapters'
 
 import styles from './index.module.css'
 
