@@ -8,9 +8,9 @@
 }
 
 .title {
-  color: var(--hl_color);
+  color: rgb(var(--hl_color));
 }
 
 .desc {
-  background-color: var(--grey_color);
+  background-color: rgb(var(--grey_color));
 }

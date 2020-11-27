@@ -19,7 +19,7 @@
   }
 
   & input {
-    color: var(--wht_color);
+    color: rgb(var(--wht_color));
     font-size: calc(var(--yr) * 6);
     line-height: calc(var(--yr) * 7);
     border: none;
@@ -34,7 +34,7 @@
     }
 
     &::placeholder {
-      color: color-mod(var(--wht_color) a(0.3));
+      color: rgba(var(--wht_color), 0.3);
       opacity: 1;
     }
 
@@ -60,16 +60,19 @@
 }
 
 .item {
-  color: var(--wht_color);
+  color: rgb(var(--wht_color));
   composes: h2 from '../Fonts.module.css';
   position: relative;
   cursor: pointer;
   text-transform: none;
   margin-top: calc(var(--yr) * calc(var(--s3) * 2));
+  padding-bottom: calc(var(--yr) * 6);
+  border-bottom: 1px solid rgba(var(--wht_color), 0.2);
   transition: color 0.3s;
 
   &:hover {
-    color: #141414;
+    border-bottom: 1px solid rgba(var(--wht_color));
+    padding-left: calc(var(--yr) * 6);
   }
 }
 

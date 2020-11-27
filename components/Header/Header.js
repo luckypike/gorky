@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import classNames from 'classnames'
 import { observer } from 'mobx-react-lite'
+import Link from 'next/link'
 
 import { useStore } from '../../stores/StoreContext'
 import Burger from './Burger'
@@ -33,7 +34,15 @@ const Header = observer(() => {
           <Burger activeNav={activeNav} />
         </div>
 
-        <div className={styles.logo} />
+        <div className={styles.text}>
+          <Link href="/">
+            ГОРЬКИЙ. СИМВОЛ ПОБЕДЫ
+          </Link>
+        </div>
+
+        <div className={styles.place_logo}>
+          <div className={styles.logo} />
+        </div>
       </header>
 
       <div className={classNames(styles.nav, { [styles.active]: activeNav })}>

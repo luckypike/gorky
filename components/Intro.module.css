@@ -40,7 +40,7 @@
   font-weight: normal;
   font-size: calc(var(--yr) * 14);
   line-height: calc(var(--yr) * 14);
-  color: var(--hl_color);
+  color: rgb(var(--hl_color));
 
   @media (--s) {
     font-size: calc(var(--yr) * 18);
@@ -56,7 +56,7 @@
 .rd {
   margin: calc(var(--yr) * var(--s2)) 0 calc(var(--yr) * var(--s1));
   text-transform: uppercase;
-  color: var(--hl_color);
+  color: rgb(var(--hl_color));
 }
 
 .what {

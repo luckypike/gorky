@@ -13,7 +13,7 @@
 }
 
 .intro {
-  color: var(--hl_color);
+  color: rgb(var(--hl_color));
   font-family: var(--ff_sans_narrow);
   composes: mt from '../Fonts.module.css';
   text-transform: uppercase;
@@ -43,6 +43,6 @@
   font-family: var(--ff_sans_narrow);
 
   & span {
-    color: var(--gr_text_color);
+    color: rgb(var(--gr_text_color));
   }
 }

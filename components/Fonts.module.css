@@ -38,7 +38,7 @@
   font-size: calc(var(--yr) * 4);
   line-height: calc(var(--yr) * 6);
   font-family: var(--ff_sans_header);
-  color: var(--hl_color);
+  color: rgb(var(--hl_color));
   margin: 0 0 calc(var(--yr) * var(--s4));
 
   @media (--s) {
@@ -92,12 +92,12 @@
   line-height: calc(var(--yr) * 7);
 
   @media (--s) {
-    font-size: calc(var(--yr) * 10);
+    font-size: calc(var(--yr) * 9);
     line-height: calc(var(--yr) * 11);
   }
 
   @media (--l) {
-    font-size: calc(var(--yr) * 10 * var(--fs_mod));
+    font-size: calc(var(--yr) * 9 * var(--fs_mod));
     line-height: calc(var(--yr) * 11 * var(--fs_mod));
   }
 }

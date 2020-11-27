@@ -1,10 +1,10 @@
 :root {
-  --red_color: #dc4128;
-  --sp_color: #c7ced2;
-  --grey_color: #ebebeb;
-  --gr_text_color: #6a6a6a;
-  --hl_color: #d63517;
-  --wht_color: #fff;
+  --red_color: 220, 65, 40;
+  --sp_color: 199, 206, 210;
+  --grey_color: 235, 235, 235;
+  --gr_text_color: 106, 106, 106;
+  --hl_color: 214, 53, 23;
+  --wht_color: 255, 255, 255;
   --ff_serif: 'EB Garamond', serif;
   --ff_sans_main: 'PT Sans', sans-serif;
   --ff_sans_narrow: 'PT Sans Narrow', sans-serif;
