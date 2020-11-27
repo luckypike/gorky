@@ -36,7 +36,7 @@ const Header = observer(() => {
 
         <div className={styles.text}>
           <Link href="/">
-            ГОРЬКИЙ. СИМВОЛ ПОБЕДЫ
+            Горький. Символ победы
           </Link>
         </div>
 
