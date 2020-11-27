@@ -143,7 +143,7 @@
     overflow-y: scroll;
   }
 
-  @media (--m) {
+  /* @media (--m) {
     width: calc(calc(2 / 3) * 100%);
-  }
+  } */
 }

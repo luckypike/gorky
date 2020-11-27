@@ -2,11 +2,11 @@
   padding: calc(var(--yr) * var(--s6)) calc(var(--xr) * 2);
 
   @media (--s) {
-    padding: 0 calc(var(--yr) * calc(var(--s6) * 2.75));
+    padding: 0 calc(var(--yr) * calc(var(--s6) * 2));
   }
 
   @media (--l) {
-    padding: 0 calc(var(--yr) * calc(var(--s6) * 2.75));
+    padding: 0 calc(var(--yr) * calc(var(--s6) * 4));
   }
 }
 
