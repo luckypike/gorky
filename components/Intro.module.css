@@ -1,4 +1,7 @@
 .root {
+  --duration: 1000ms;
+  --delay: 150ms;
+  --t-func: cubic-bezier(0.16, 0.77, 0.14, 1.01);
   padding: 0 var(--xr);
 
   @media (--s) {
@@ -6,17 +9,66 @@
   }
 
   @media (--l) {
-    padding: calc(10vh * var(--fs_mod) + calc(var(--yr) * var(--s5))) calc(1 / 11 * 100%) 0 calc(2 / 11 * 100%);
+    padding: calc(10vh * var(--fs_mod) + calc(var(--yr) * var(--s5)))
+      calc(1 / 11 * 100%) 0 calc(2 / 11 * 100%);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    /* opacity: 0; */
+    transform: translateY(10vh);
+  }
+  to {
+    /* opacity: 1; */
+    transform: translateY(0);
+  }
+}
+
+@keyframes h0 {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
   }
 }
 
 .title {
-  composes: h1 from './Fonts.module.css';
+  composes: h1 from "./Fonts.module.css";
+  animation: fadeInUp var(--duration) var(--t-func) both;
+  position: relative;
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(var(--wht_color), 1);
+    animation: h0 var(--duration) var(--t-func) both;
+  }
 }
 
 .desc {
   margin-top: calc(var(--yr) * var(--s2) * -1);
   color: #6a6a6a;
+  animation: fadeInUp var(--duration) var(--t-func) var(--delay) both;
+  position: relative;
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(var(--wht_color), 1);
+    animation: h0 var(--duration) var(--t-func) var(--delay) both;
+  }
 }
 
 .items {
@@ -33,6 +85,52 @@
 
 .item {
   font-family: var(--ff_sans_header);
+  animation: fadeInUp var(--duration) var(--t-func) calc(var(--delay) * 2) both;
+  position: relative;
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(var(--wht_color), 1);
+    animation: h0 var(--duration) var(--t-func) calc(var(--delay) * 2) both;
+  }
+
+  &:nth-child(2) {
+    animation-delay: calc(var(--delay) * 3);
+
+    &:after {
+      animation-delay: calc(var(--delay) * 3);
+    }
+  }
+
+  &:nth-child(3) {
+    animation-delay: calc(var(--delay) * 4);
+
+    &:after {
+      animation-delay: calc(var(--delay) * 4);
+    }
+  }
+
+  &:nth-child(4) {
+    animation-delay: calc(var(--delay) * 5);
+
+    &:after {
+      animation-delay: calc(var(--delay) * 5);
+    }
+  }
+
+  &:nth-child(5) {
+    animation-delay: calc(var(--delay) * 6);
+
+    &:after {
+      animation-delay: calc(var(--delay) * 6);
+    }
+  }
 }
 
 .digit {

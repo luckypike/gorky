@@ -140,11 +140,11 @@
   transform: translateX(-100%);
   visibility: hidden;
   transition-property: transform;
-  transition: 1000ms cubic-bezier(0.16, 0.77, 0.14, 1.01);
+  transition: 600ms cubic-bezier(0.16, 0.77, 0.14, 1.01);
 
   & li {
-    --delay: 200ms;
-    --delay-step: 75ms;
+    --delay: 150ms;
+    --delay-step: 50ms;
     opacity: 0;
     transition: 700ms cubic-bezier(0.16, 0.77, 0.14, 1.01) var(--delay);
     transform: translateX(-50%);
