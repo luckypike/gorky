@@ -10,7 +10,7 @@ Nav.propTypes = {
 
 export default function Nav ({ setActive }) {
   return (
-    <div className={styles.root}>
+    <nav className={styles.root}>
       <ul className={styles.menu}>
         <Item
           to="/gaz"
@@ -61,7 +61,7 @@ export default function Nav ({ setActive }) {
           setActive={setActive}
         />
       </ul>
-    </div>
+    </nav>
   )
 }
 

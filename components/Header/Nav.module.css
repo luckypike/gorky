@@ -61,23 +61,39 @@
 
 .item {
   color: rgb(var(--wht_color));
-  composes: h2 from '../Fonts.module.css';
+  composes: h2 from "../Fonts.module.css";
   position: relative;
   cursor: pointer;
   text-transform: none;
   margin-top: calc(var(--yr) * calc(var(--s3) * 2));
   padding-bottom: calc(var(--yr) * 6);
   border-bottom: 1px solid rgba(var(--wht_color), 0.2);
-  transition: color 0.3s;
+  transition: 0.3s ease-out;
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(var(--wht_color));
+    height: 1px;
+    width: 0px;
+    transition: 0.3s ease-out;
+  }
 
   &:hover {
-    border-bottom: 1px solid rgba(var(--wht_color));
-    padding-left: calc(var(--yr) * 6);
+    /* border-bottom-color: var(--wht_color); */
+    padding-left: calc(var(--yr) * 3);
+
+    &:after {
+      width: 100%;
+    }
   }
 }
 
 .desc {
-  composes: bt from '../Fonts.module.css';
+  composes: bt from "../Fonts.module.css";
   color: #57150a;
   margin-top: calc(var(--yr) * var(--s2));
 }
