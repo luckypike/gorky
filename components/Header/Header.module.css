@@ -29,7 +29,7 @@
     background: none;
     border-bottom: 1px solid rgba(var(--wht_color), 0.3);
 
-    & .text {
+    & .name {
       color: rgb(var(--wht_color));
     }
   }
