@@ -72,14 +72,6 @@ const FirstBombing = () => {
         </CommonImage>
       </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/gaz/9/4.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
       <div className={styles.page}>
         <CommonText>
           <p>
@@ -110,6 +102,14 @@ const FirstBombing = () => {
             несколько попали в ТЭЦ, но не взорвались».
           </Speech>
         </CommonText>
+      </div>
+
+      <div className={classNames(styles.page, styles.fpi)}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/gaz/9/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>

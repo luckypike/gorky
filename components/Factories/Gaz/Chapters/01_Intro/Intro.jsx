@@ -5,6 +5,7 @@ import styles from '../../../../Intro.module.css'
 export default function Intro () {
   return (
     <div className={styles.root}>
+      <div className={styles.page}>
       <div>
         <h1 className={styles.title}>
           Государственный автомобильный завод имени В. М. Молотова
@@ -71,6 +72,7 @@ export default function Intro () {
             произведенных в СССР за годы войны
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

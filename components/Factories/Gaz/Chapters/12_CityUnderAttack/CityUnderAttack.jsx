@@ -55,6 +55,12 @@ const CityUnderAttack = () => {
             сдавались, делали все, что в их силах, боролись за каждый станок, за
             каждое здание».
           </Speech>
+
+          <p>
+            Погибли 254 жителя района, в том числе передовики и руководители
+            ГАЗа, и 28 бойцов противовоздушной обороны. Более 500 человек были
+            ранены.
+          </p>
         </CommonText>
       </div>
 
@@ -69,12 +75,6 @@ const CityUnderAttack = () => {
       <div className={styles.page}>
         <CommonText>
           <p>
-            Погибли 254 жителя района, в том числе передовики и руководители
-            ГАЗа, и 28 бойцов противовоздушной обороны. Более 500 человек были
-            ранены.
-          </p>
-
-          <p>
             Ущерб от бомбежек был оценен в 191 млн руб. После авиаударов ГКО
             издал распоряжение о начале расследования недостатков
             противовоздушной обороны Горького. 6 июня уволили командующего
@@ -82,17 +82,6 @@ const CityUnderAttack = () => {
             отстранили директора ГАЗа А.М. Лившица. Руководителем завода вновь
             стал И.К. Лоскутов.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/gaz/12/7.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Автозаводский район защищал ­784-й зенитно-артиллерийский полк. Его
             расчеты — пять дивизионов, состоявших из 15 батарей, — защищали
@@ -101,23 +90,23 @@ const CityUnderAttack = () => {
             Попутно на позиции подвозились дополнительные запасы боеприпасов», —
             пишет историк М. Зефиров.
           </p>
+        </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/12/7.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+      </div>
+
+      <div className={styles.page}>
+        <CommonText>
           <p>
             16 июня был издан приказ ГКО о мерах быстрейшего восстановления
             Горьковского автозавода. Помощь должны были оказать все предприятия,
             в том числе «Красное Сормово», «Двигатель Революции», «Красная
             Этна», авиазавод имени Орджоникидзе.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._3)}>
-              <Image src="/images/gaz/12/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Они передавали заводу необходимые материалы, строительное
             оборудование, помогали ремонтировать станки, железнодорожные пути и
@@ -128,6 +117,17 @@ const CityUnderAttack = () => {
             руб. Еще 2 млн руб. направили на компенсации семьям погибших и
             пострадавшим от авиаударов работникам ГАЗа.
           </p>
+        </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._7)}>
+            <Image src="/images/gaz/12/6.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+      </div>
+
+      <div className={styles.page}>
+        <CommonText>
           <p>
             Строительство разрешили вести без смет и подготовок проекта. Е. И.
             Подрепный и Е.П. Титков в книге «Нижегородский арсенал Великой
@@ -137,17 +137,6 @@ const CityUnderAttack = () => {
             часов. В необходимых случаях оставались ночевать прямо на стройке,
             чтобы с рассветом приняться за выполнение срочного задания».
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._4)}>
-              <Image src="/images/gaz/12/4.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Для поднятия боевого духа на территорию ГАЗа переехала выездная
             редакция газеты «Правда». Кроме выпусков газеты редакция
@@ -157,6 +146,17 @@ const CityUnderAttack = () => {
             рабочие бросали трудовые вызовы своим товарищам. Тех, кто уклонялся
             от работы, ругали и высмеивали в стихах и карикатурах.
           </p>
+        </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._4)}>
+            <Image src="/images/gaz/12/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+      </div>
+
+      <div className={styles.page}>
+        <CommonText>
           <p>
             После летних бомбардировок ГАЗ приостановил выпуск бронемашин БА-64
             из-за сильного разрушения цехов и главного конвейера. ГКО обязал
@@ -165,13 +165,22 @@ const CityUnderAttack = () => {
             восстановить предприятие удалось за 120 дней — 28 октября был подан
             рапорт о завершении ремонтных работ.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._5)}>
-              <Image src="/images/gaz/12/5.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
+          <p>
+            Несмотря на тяжелое положение и значительное разрушение цехов, ГАЗ
+            смог выполнить годовой план досрочно — 17 декабря 1943 года. За год
+            сотрудники завода девять раз получали переходящее Красное знамя ГКО.
+            В 1944 году за восстановление автозавода и образцовое снабжение
+            фронта военной продукцией ГАЗ был удостоен второй правительственной
+            награды — ордена Трудового Красного Знамени. А в 1945 году заводу
+            вручили орден Отечественной войны первой степени.
+          </p>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._5)}>
+            <Image src="/images/gaz/12/5.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={classNames(styles.page, styles.fpi)}>
@@ -182,24 +191,12 @@ const CityUnderAttack = () => {
         </CommonImage>
       </div>
 
-      <div className={styles.page}>
-        <CommonText>
-          <p>
-            Несмотря на тяжелое положение и значительное разрушение цехов, ГАЗ
-            смог выполнить годовой план досрочно — 17 декабря 1943 года. За год
-            сотрудники завода девять раз получали переходящее Красное знамя ГКО.
-            В 1944 году за восстановление автозавода и образцовое снабжение
-            фронта военной продукцией ГАЗ был удостоен второй правительственной
-            награды — ордена Трудового Красного Знамени. А в 1945 году заводу
-            вручили орден Отечественной войны первой степени.
-          </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._7)}>
-              <Image src="/images/gaz/12/6.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
+      <div className={classNames(styles.page, styles.fpi)}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/gaz/12/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

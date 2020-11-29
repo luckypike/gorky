@@ -72,13 +72,13 @@ const Conveyor = () => {
             танков в день». Предприятие, получившее приказ верховного
             главнокомандующего, перешло на круглосуточную работу.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/gaz/5/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/5/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -97,13 +97,13 @@ const Conveyor = () => {
             года конструктор Николай Астров получил Сталинскую премию за
             создание легких танков Т-40 и Т-60.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/gaz/5/4.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/5/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -119,13 +119,13 @@ const Conveyor = () => {
             длительности несколько необычным способом: сам привел танк Т-60
             своим ходом из Москвы и сразу явился к столу главного конструктора».
           </Speech>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._3)}>
-              <Image src="/images/gaz/5/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/gaz/5/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

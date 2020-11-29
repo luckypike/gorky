@@ -52,13 +52,13 @@ const Defense = () => {
             ходовая часть с уширенной гусеницей была введена только с 1 октября
             1942 года».
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/gaz/11/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/11/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={classNames(styles.page, styles.fpi)}>
@@ -83,12 +83,19 @@ const Defense = () => {
             лучшую проходимость».
           </p>
 
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._3)}>
-              <Image src="/images/gaz/11/5.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
+          <p>
+            Окончательно Красная Армия решила отказаться от Т-70 после Курской
+            битвы в 1943 году. На базе Т-70 с конца 1942 года уже выпускали
+            самоходную установку СУ-76. Ее спроектировали на заводе № 38 в
+            Кирове.
+          </p>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/gaz/11/5.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={classNames(styles.page, styles.fpi)}>
@@ -102,10 +109,7 @@ const Defense = () => {
       <div className={styles.page}>
         <CommonText>
           <p>
-            Окончательно Красная Армия решила отказаться от Т-70 после Курской
-            битвы в 1943 году. На базе Т-70 с конца 1942 года уже выпускали
-            самоходную установку СУ-76. Ее спроектировали на заводе № 38 в
-            Кирове. Первые модификации были неудачными, виновным в этом признали
+            Первые модификации были неудачными, виновным в этом признали
             конструктора кировского предприятия Семена Гинзбурга. В 1943 году
             его сняли с должности и отправили на фронт. Выпуск СУ-76 прекратили.
           </p>
@@ -114,13 +118,13 @@ const Defense = () => {
             народный комиссар танковой промышленности объявил конкурс на лучший
             проект САУ.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._5)}>
-              <Image src="/images/gaz/11/6.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._5)}>
+            <Image src="/images/gaz/11/6.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -141,13 +145,13 @@ const Defense = () => {
             также продолжилась сборка машин по ленд-лизу — за год на заводе их
             собрали более 12,6 тыс.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._6)}>
-              <Image src="/images/gaz/11/7.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._6)}>
+            <Image src="/images/gaz/11/7.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

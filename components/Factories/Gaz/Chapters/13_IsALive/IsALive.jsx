@@ -50,13 +50,13 @@ const IsALive = () => {
             Фонд обороны часть своих зарплат. Руководящий состав отписывал свои
             автомобили для нужд Красной Армии.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/gaz/13/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/13/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -83,29 +83,26 @@ const IsALive = () => {
             района. В библиотеках проводили выставки, посетителям читали лекции.
             А в 1944 году при заводе был открыт Дом пионеров.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/gaz/13/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._4)}>
+            <Image src="/images/gaz/13/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
-        <CommonText>
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._3)}>
-              <Image src="/images/gaz/13/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._4)}>
-              <Image src="/images/gaz/13/4.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/13/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/gaz/13/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

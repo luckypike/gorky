@@ -1,10 +1,7 @@
 import React, { useRef } from 'react'
 import Image from 'next/image'
-// import lax from 'lax.js'
 
 import styles from './Img.module.css'
-
-// import Img1 from '../../images/Img1.jpg'
 
 export default function Img () {
   const ImgRef = useRef()

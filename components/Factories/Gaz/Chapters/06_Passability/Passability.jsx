@@ -52,13 +52,13 @@ const Passability = () => {
             сменил модернизированный ГАЗ-67Б, отличавшийся доработанной ходовой
             частью и усовершенствованной системой зажигания.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/gaz/6/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/6/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -83,13 +83,13 @@ const Passability = () => {
             Лоскутова, который прежде занимал эту должность, отправили в
             Наркомат электростанций СССР.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/gaz/6/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/6/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

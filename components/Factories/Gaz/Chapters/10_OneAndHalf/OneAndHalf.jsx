@@ -39,33 +39,23 @@ const OneAndHalf = () => {
             ГАЗ-ММ курсировал по «дороге жизни», доставляя продукты в блокадный
             Ленинград.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/gaz/10/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
-      </div>
 
-      <div className={styles.page}>
-        <CommonText>
-          <p>
-            Историки А. А. Гордин, Е. И. Подрепный в своей книге «Производство
-            танков Т-60 на Горьковском автозаводе в 1941–1942 годах» отмечают:
-            «В конце 1941 года ГАЗ оказался перегруженным выпуском непрофильной
-            продукции, а на первый квартал 1942 года заводу не были выделены
-            фонды по всем решающим материалам (то есть их не планировалось и
-            поставлять) для производства основной, автомобильной, продукции. И
-            это при том, что план выпуска был утвержден рекордным по объему».
-          </p>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/10/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
 
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/gaz/10/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
+        <p>
+          Историки А. А. Гордин, Е. И. Подрепный в своей книге «Производство
+          танков Т-60 на Горьковском автозаводе в 1941–1942 годах» отмечают: «В
+          конце 1941 года ГАЗ оказался перегруженным выпуском непрофильной
+          продукции, а на первый квартал 1942 года заводу не были выделены фонды
+          по всем решающим материалам (то есть их не планировалось и поставлять)
+          для производства основной, автомобильной, продукции. И это при том,
+          что план выпуска был утвержден рекордным по объему».
+        </p>
       </div>
 
       <div className={styles.page}>
@@ -80,13 +70,13 @@ const OneAndHalf = () => {
             года под угрозой срыва оказалось задание по выпуску грузовых
             автомобилей.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._3)}>
-              <Image src="/images/gaz/10/4.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/10/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -100,13 +90,13 @@ const OneAndHalf = () => {
             металлургического завода им. Кагановича, Выксунского
             металлургического завода, «Красной Этны» и других.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._4)}>
-              <Image src="/images/gaz/10/5.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._4)}>
+            <Image src="/images/gaz/10/5.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -132,6 +122,12 @@ const OneAndHalf = () => {
             «Полуторки» курсировали по «дороге жизни» и доставляли продукты в
             блокадный Ленинград
           </p>
+
+          <CommonImage>
+            <figure className={classNames(styles.img, styles._3)}>
+              <Image src="/images/gaz/10/4.jpg" layout="fill" />
+            </figure>
+          </CommonImage>
         </CommonText>
       </div>
     </div>
