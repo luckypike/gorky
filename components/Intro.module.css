@@ -2,6 +2,7 @@
   --duration: 1000ms;
   --delay: 150ms;
   --t-func: cubic-bezier(0.16, 0.77, 0.14, 1.01);
+
   padding: 0 var(--xr);
 
   @media (--s) {
@@ -9,7 +10,8 @@
   }
 
   @media (--l) {
-    padding: calc(10vh * var(--fs_mod) + calc(var(--yr) * var(--s5)))
+    padding:
+      calc(10vh * var(--fs_mod) + calc(var(--yr) * var(--s5)))
       calc(1 / 11 * 100%) 0 calc(2 / 11 * 100%);
   }
 }
@@ -19,6 +21,7 @@
     /* opacity: 0; */
     transform: translateY(10vh);
   }
+
   to {
     /* opacity: 1; */
     transform: translateY(0);
@@ -29,6 +32,7 @@
   from {
     height: 100%;
   }
+
   to {
     height: 0;
   }
@@ -39,7 +43,7 @@
   animation: fadeInUp var(--duration) var(--t-func) both;
   position: relative;
 
-  &:after {
+  &::after {
     display: block;
     content: "";
     position: absolute;
@@ -58,7 +62,7 @@
   animation: fadeInUp var(--duration) var(--t-func) var(--delay) both;
   position: relative;
 
-  &:after {
+  &::after {
     display: block;
     content: "";
     position: absolute;
@@ -88,7 +92,7 @@
   animation: fadeInUp var(--duration) var(--t-func) calc(var(--delay) * 2) both;
   position: relative;
 
-  &:after {
+  &::after {
     display: block;
     content: "";
     position: absolute;
@@ -103,7 +107,7 @@
   &:nth-child(2) {
     animation-delay: calc(var(--delay) * 3);
 
-    &:after {
+    &::after {
       animation-delay: calc(var(--delay) * 3);
     }
   }
@@ -111,7 +115,7 @@
   &:nth-child(3) {
     animation-delay: calc(var(--delay) * 4);
 
-    &:after {
+    &::after {
       animation-delay: calc(var(--delay) * 4);
     }
   }
@@ -119,7 +123,7 @@
   &:nth-child(4) {
     animation-delay: calc(var(--delay) * 5);
 
-    &:after {
+    &::after {
       animation-delay: calc(var(--delay) * 5);
     }
   }
@@ -127,7 +131,7 @@
   &:nth-child(5) {
     animation-delay: calc(var(--delay) * 6);
 
-    &:after {
+    &::after {
       animation-delay: calc(var(--delay) * 6);
     }
   }
