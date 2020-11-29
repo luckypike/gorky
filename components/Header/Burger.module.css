@@ -1,35 +1,3 @@
-/* .root {
-  & rect {
-    fill: #141414;
-    transform-origin: center center;
-  }
-}
-
-.dark {
-  & rect {
-    fill: #fff;
-  }
-}
-
-.close {
-  transform: rotate(45deg);
-  display: none;
-}
-
-.close:last-child {
-  transform: rotate(-45deg);
-}
-
-.active {
-  & .close {
-    display: block;
-  }
-
-  & :not(.close) {
-    display: none;
-  }
-} */
-
 .root {
   overflow: hidden;
   width: calc(var(--yr) * 12);
@@ -47,6 +15,7 @@
     & > span:nth-child(1) {
       transform: translateY(-2px);
     }
+
     & > span:nth-child(3) {
       transform: translateY(2px);
     }
@@ -71,6 +40,7 @@
 
   &.active > span {
     background-color: #fff;
+
     &:nth-child(2) {
       opacity: 0;
       visibility: hidden;
