@@ -29,50 +29,27 @@ export default function Sormovo () {
   return (
     <Factory>
       <div className={styles.root}>
-        <div className={styles.intro}>
-          <Intro />
-        </div>
+        <Intro />
 
-        <div className={styles.img}>
-          <Img />
-        </div>
+        <Img />
 
-        <div className={styles.oldest}>
-          <OldestPlant />
-        </div>
+        <OldestPlant />
 
-        <div className={styles.reconstruction}>
-          <Reconstruction />
-        </div>
+        <Reconstruction />
 
-        <div className={styles.building}>
-          <BuildingTanks />
-        </div>
+        <BuildingTanks />
 
-        <div className={styles.rubinchik}>
-          <Rubinchik />
-        </div>
+        <Rubinchik />
 
-        <div className={styles.reworking}>
-          <Reworking />
-        </div>
+        <Reworking />
 
-        <div className={styles.women}>
-          <Women />
-        </div>
+        <Women />
 
-        <div className={styles.ammunition}>
-          <Ammunition />
-        </div>
+        <Ammunition />
 
-        <div className={styles.shells}>
-          <ShellsForKatyush />
-        </div>
+        <ShellsForKatyush />
 
-        <div className={styles.after}>
-          <AfterWar />
-        </div>
-
+        <AfterWar />
       </div>
     </Factory>
   )

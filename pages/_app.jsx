@@ -53,7 +53,7 @@ export default function App ({ Component, props }) {
       <Head>
         <title>Горький символ победы</title>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Oswald:wght@300;400&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Oswald:wght@300;400&display=swap" rel="stylesheet" />
       </Head>
 
       <Header />

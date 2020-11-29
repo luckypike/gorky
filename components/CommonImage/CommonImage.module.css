@@ -1,3 +1,7 @@
 .root {
-  /* padding: 0 var(--xr); */
+  margin-bottom: calc(var(--yr) * var(--s4));
+
+  /* &:last-child {
+    margin-bottom: 0;
+  } */
 }

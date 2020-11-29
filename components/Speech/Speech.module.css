@@ -14,7 +14,6 @@
 
 .intro {
   color: rgb(var(--hl_color));
-  font-family: var(--ff_sans_narrow);
   composes: mt from '../Fonts.module.css';
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -22,7 +21,6 @@
 
 .text {
   margin-top: calc(var(--yr) * var(--s2));
-  font-family: var(--ff_serif);
   composes: bt from '../Fonts.module.css';
 }
 
@@ -40,7 +38,6 @@
 
 .who {
   composes: at from '../Fonts.module.css';
-  font-family: var(--ff_sans_narrow);
 
   & span {
     color: rgb(var(--gr_text_color));

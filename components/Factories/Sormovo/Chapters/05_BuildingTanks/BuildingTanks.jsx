@@ -27,6 +27,12 @@ const BuildingTanks = () => {
       </div>
 
       <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sormovo/5/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             С сентября по декабрь 1941 года завод передал фронту 173 танка.
@@ -36,12 +42,6 @@ const BuildingTanks = () => {
             стало выпускать траки — звенья гусеничной ленты, тем самым освободив
             от этой нагрузки Горьковский автозавод.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/sormovo/5/4.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
       </div>
 

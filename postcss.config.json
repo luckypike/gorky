@@ -4,7 +4,7 @@
       "postcss-preset-env",
       {
         "autoprefixer": true,
-        "importFrom": "./css/variables.css",
+        "importFrom": "./css/custom-media.css",
         "features": {
           "custom-media-queries": true,
           "nesting-rules": true

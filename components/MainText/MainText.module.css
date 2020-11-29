@@ -7,9 +7,14 @@
 }
 
 .root {
-  /* padding: 0 var(--xr); */
+  padding: 0 var(--xr);
+  margin-bottom: calc(var(--yr) * var(--s4));
+
+  @media (--s) {
+    padding: 0;
+  }
 
   @media (--l) {
-    padding-left: 30%;
+    margin-bottom: 0;
   }
 }
