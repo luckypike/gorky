@@ -2,7 +2,7 @@
   overflow: hidden;
 
   @media (--s) {
-    margin-left: 64px;
+    margin-left: 60px;
   }
 }
 
