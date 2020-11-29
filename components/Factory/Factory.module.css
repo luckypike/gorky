@@ -15,3 +15,18 @@
     display: flex;
   }
 }
+
+.page {
+  @media (--s) {
+    padding: 0 calc(1 / 8 * 100%);
+  }
+
+  @media (--l) {
+    display: grid;
+    align-items: start;
+    grid-auto-rows: min-content;
+    padding: 70px 0 0;
+    min-width: calc(5 / 13 * (100vw - 60px));
+    margin-left: calc(1 / 13 * (100vw - 60px));
+  }
+}

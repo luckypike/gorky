@@ -13,4 +13,8 @@
   @media (--s) {
     padding: 0;
   }
+
+  @media (--l) {
+    margin-bottom: 0;
+  }
 }

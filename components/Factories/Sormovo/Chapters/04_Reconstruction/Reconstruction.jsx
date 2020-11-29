@@ -9,13 +9,6 @@ import styles from './Reconstruction.module.css'
 const Reconstruction = () => {
   return (
     <div className={styles.root}>
-      <div className={styles.page}>
-        <MainText title="Перестройка производства">
-          Первое постановление Государственного комитета обороны СССР от 1 июля
-          1941 года обязывало «Красное Сормово» наладить выпуск танков Т-34.
-        </MainText>
-      </div>
-
       <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
@@ -25,25 +18,27 @@ const Reconstruction = () => {
       </div>
 
       <div className={styles.page}>
-        <CommonText>
-          <p>
-            Сначала из-за нехватки дизельных моторов В-2 в танки устанавливали
-            адаптированную версию авиационного мотора М-17, производство
-            которого с началом войны наладили на Горьковском автозаводе. Детали
-            для танков выпускали и другие нижегородские предприятия — «Красная
-            Этна», ГАЗ, ЗАТИ, «Двигатель Революции», «Гудок Октября»,
-            Горьковский завод фрезерных станков и другие.
-          </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/sormovo/4/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
+        <MainText title="Перестройка производства">
+          Первое постановление Государственного комитета обороны СССР от 1 июля
+          1941 года обязывало «Красное Сормово» наладить выпуск танков Т-34.
+          Сначала из-за нехватки дизельных моторов В-2 в танки устанавливали
+          адаптированную версию авиационного мотора М-17, производство
+          которого с началом войны наладили на Горьковском автозаводе. Детали
+          для танков выпускали и другие нижегородские предприятия — «Красная
+          Этна», ГАЗ, ЗАТИ, «Двигатель Революции», «Гудок Октября»,
+          Горьковский завод фрезерных станков и другие.
+        </MainText>
       </div>
 
-      <div className={styles.page}>
+      <div className={classNames(styles.page, styles.fpi)}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/sormovo/4/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+      </div>
+
+      <div className={classNames(styles.page, styles.fpi)}>
         <CommonText>
           <p>
             Танк Т-34 разработали конструкторы танкового отдела харьковского
@@ -55,6 +50,25 @@ const Reconstruction = () => {
             обучение. Специалистов завода № 183 командировали на «Красное
             Сормово», чтобы помочь наладить производство.
           </p>
+        </CommonText>
+      </div>
+
+      <div className={classNames(styles.page, styles.fpi)}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/sormovo/4/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+      </div>
+
+      <div className={styles.page}>
+          <CommonImage>
+            <figure className={classNames(styles.img, styles._1)}>
+              <Image src="/images/sormovo/4/1.jpg" layout="fill" />
+            </figure>
+          </CommonImage>
+
+        <CommonText>
           <p>
             Переориентация судостроительного завода на танкостроение шла сложно.
             Нужно было варить и катать сталь марки, которую раньше завод не
@@ -69,14 +83,6 @@ const Reconstruction = () => {
             около 600 станков
           </p>
         </CommonText>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/sormovo/4/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -100,14 +106,6 @@ const Reconstruction = () => {
             помощь пришла вовремя и сыграла большую роль в битве за Москву».
           </Speech>
         </CommonText>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/sormovo/4/4.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
       </div>
     </div>
   )

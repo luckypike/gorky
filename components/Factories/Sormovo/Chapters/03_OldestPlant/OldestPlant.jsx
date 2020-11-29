@@ -15,26 +15,21 @@ const OldestPlant = () => {
             «Красное Сормово» — одно из старейших предприятий не только в Нижнем
             Новгороде, но и в России: завод основан в 1849 году. Почти половина
             российских речных пароходов строилась именно здесь.
-          </p>
-        </MainText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sormovo/3/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
             На заводе запустили первую в России мартеновскую печь в 1870 году,
             сормовскую сталь отмечали высокими наградами, предприятие активно
             развивалось. Первые военные заказы сормовский завод получил в годы
             Крымской войны: это были суда для Каспийской флотилии и чугунные
             ядра для обороны Севастополя.
           </p>
-        </CommonText>
+        </MainText>
+      </div>
+
+      <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sormovo/3/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
 
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
@@ -59,7 +54,12 @@ const OldestPlant = () => {
             судостроение почти прекратилось. В 1918 году завод
             национализировали.
           </p>
+        </CommonText>
 
+      </div>
+
+      <div className={styles.page}>
+        <CommonText>
           <p className={styles.vrezka}>
             В 1939 году за заслуги в судостроении и машиностроении завод
             «Красное Сормово» был удостоен ордена Трудового Красного Знамени
