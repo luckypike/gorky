@@ -76,12 +76,15 @@ function Item ({ to, title, desc, setActive }) {
   return (
     <li className={styles.li}>
       <Link className={styles.a} href={to} onClick={() => setActive(false)}>
-        <div className={styles.item}>
-          {title}
+        <a className={styles.item}>
+          <div className={styles.title}>
+            {title}
+          </div>
+
           <div className={styles.desc}>
             {desc}
           </div>
-        </div>
+        </a>
       </Link>
     </li>
   )

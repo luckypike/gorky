@@ -2,7 +2,7 @@
   overflow: hidden;
   width: calc(var(--yr) * 12);
   height: calc(var(--yr) * 12);
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;

@@ -19,27 +19,26 @@
 }
 
 .bt {
-  font-size: calc(var(--yr) * 4);
-  line-height: calc(var(--yr) * 6);
+  font-size: calc(var(--yr) * 5.5);
+  line-height: calc(var(--yr) * 7);
 
   @media (--s) {
-    font-size: calc(var(--yr) * 6);
-    line-height: calc(var(--yr) * 7);
+    font-size: calc(var(--yr) * 6.5);
+    line-height: calc(var(--yr) * 8);
   }
 
   @media (--l) {
-    font-size: calc(var(--yr) * 6 * var(--fs_mod));
-    line-height: calc(var(--yr) * 7 * var(--fs_mod));
+    font-size: calc(var(--yr) * 6.5 * var(--fs_mod));
+    line-height: calc(var(--yr) * 8 * var(--fs_mod));
   }
 }
 
 .vrezka {
+  font-family: var(--ff_sans);
   composes: bt;
-  font-size: calc(var(--yr) * 4);
+  font-size: calc(var(--yr) * 5.5);
   line-height: calc(var(--yr) * 6);
-  font-family: var(--ff_sans_header);
   color: rgb(var(--hl_color));
-  margin: 0 0 calc(var(--yr) * var(--s4));
 
   @media (--s) {
     font-size: calc(var(--yr) * 8);
@@ -67,7 +66,7 @@
   }
 }
 
-.h1sans {
+/* .h1sans {
   font-family: var(--ff_sans_header);
   font-weight: normal;
   font-size: calc(var(--yr) * 10);
@@ -82,10 +81,10 @@
     font-size: calc(var(--yr) * 15 * var(--fs_mod));
     line-height: calc(var(--yr) * 16 * var(--fs_mod));
   }
-}
+} */
 
 .h2 {
-  font-family: var(--ff_sans_header);
+  font-family: var(--ff_sans);
   font-weight: normal;
   margin: 0 0 calc(var(--yr) * var(--s3));
   font-size: calc(var(--yr) * 6);
@@ -103,7 +102,7 @@
 }
 
 .h3 {
-  font-family: var(--ff_sans_header);
+  font-family: var(--ff_sans);
   font-weight: normal;
   margin: 0 0 calc(var(--yr) * var(--s2));
   font-size: calc(var(--yr) * 4.5);

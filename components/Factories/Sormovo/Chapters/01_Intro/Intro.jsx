@@ -26,7 +26,9 @@ export default function Intro () {
           </div>
 
           <div className={styles.what}>
-            поставил завод фронту за годы войны
+            поставил завод фронту
+            <br />
+            за годы войны
           </div>
         </div>
 

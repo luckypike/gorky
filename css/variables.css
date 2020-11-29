@@ -6,9 +6,7 @@
   --hl_color: 214, 53, 23;
   --wht_color: 255, 255, 255;
   --ff_serif: 'EB Garamond', serif;
-  --ff_sans_main: 'PT Sans', sans-serif;
-  --ff_sans_narrow: 'PT Sans Narrow', sans-serif;
-  --ff_sans_header: 'Oswald', sans-serif;
+  --ff_sans: 'Oswald', sans-serif;
   --yr: 0.25rem;
   --xr: 1rem;
 
@@ -32,8 +30,3 @@
     --s6: 16;
   }
 }
-
-@custom-media --s (min-width: 720px);
-@custom-media --m (min-width: 960px);
-@custom-media --l (min-width: 1280px);
-@custom-media --xl (min-width: 1600px);

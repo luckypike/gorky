@@ -88,9 +88,21 @@
 }
 
 .item {
-  font-family: var(--ff_sans_header);
+  font-family: var(--ff_sans);
   animation: fadeInUp var(--duration) var(--t-func) calc(var(--delay) * 2) both;
   position: relative;
+  font-size: calc(var(--yr) * 3.5);
+  line-height: calc(var(--yr) * 5);
+
+  @media (--s) {
+    font-size: calc(var(--yr) * 4);
+    line-height: calc(var(--yr) * 6);
+  }
+
+  @media (--l) {
+    font-size: calc(var(--yr) * 4 * var(--fs_mod));
+    line-height: calc(var(--yr) * 6 * var(--fs_mod));
+  }
 
   &::after {
     display: block;
@@ -138,8 +150,7 @@
 }
 
 .digit {
-  font-family: var(--ff_sans_header);
-  font-weight: normal;
+  font-weight: 400;
   font-size: calc(var(--yr) * 14);
   line-height: calc(var(--yr) * 14);
   color: rgb(var(--hl_color));

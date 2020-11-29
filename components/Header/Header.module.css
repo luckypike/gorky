@@ -1,4 +1,7 @@
 .name {
+  font-family: var(--ff_sans);
+  font-size: calc(var(--yr) * 3.5);
+  line-height: calc(var(--yr) * 6);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6,7 +9,6 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   white-space: nowrap;
-  font-family: var(--ff_sans_header);
 
   @media (--s) {
     writing-mode: vertical-lr;
