@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import { observer } from 'mobx-react-lite'
 import Link from 'next/link'
 
-import { useStore } from '../../stores/StoreContext'
+import useStore from '../../stores/useStore'
 import Burger from './Burger'
 import Nav from './Nav'
 
@@ -11,7 +11,7 @@ import styles from './Header.module.css'
 
 const Header = observer(() => {
   const [activeNav, setActiveNav] = useState(false)
-  const store = useStore()
+  const appStore = useStore()
 
   useEffect(() => {
     window.addEventListener('keydown', onEscapeDown)
@@ -29,19 +29,15 @@ const Header = observer(() => {
 
   return (
     <>
-      <header className={classNames(styles.root, { [styles.dark]: store.dark, [styles.active]: activeNav })}>
+      <header className={classNames(styles.root, { [styles.dark]: appStore.dark, [styles.active]: activeNav })}>
         <div className={classNames(styles.burger, { [styles.active]: activeNav })} onClick={() => setActiveNav(!activeNav)}>
           <Burger activeNav={activeNav} />
         </div>
 
-        <div className={styles.text}>
+        <div className={styles.name}>
           <Link href="/">
-            Горький. Символ победы
+            Горький символ победы
           </Link>
-        </div>
-
-        <div className={styles.place_logo}>
-          <div className={styles.logo} />
         </div>
       </header>
 

@@ -4,15 +4,14 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import Header from '../components/Header/Header'
-import { StoreContext } from '../stores/StoreContext'
-import AppStore from '../stores/AppStore'
+import useStore from '../stores/useStore'
 
 import '../css/variables.css'
 import '../css/globals.css'
 
 export default function App ({ Component, props }) {
   const router = useRouter()
-  const store = new AppStore()
+  const appStore = useStore()
 
   const [fsMod, setFsMod] = useState(1)
 
@@ -45,12 +44,12 @@ export default function App ({ Component, props }) {
 
   useEffect(() => {
     if (router.pathname === '/') {
-      store.setDark(true)
+      appStore.setDark(true)
     }
   }, [router.pathname])
 
   return (
-    <StoreContext.Provider value={store}>
+    <>
       <Head>
         <title>Горький символ победы</title>
         <link rel="icon" href="/favicon.ico" />
@@ -60,7 +59,7 @@ export default function App ({ Component, props }) {
       <Header />
 
       <Component { ...props } />
-    </StoreContext.Provider>
+    </>
   )
 }
 
