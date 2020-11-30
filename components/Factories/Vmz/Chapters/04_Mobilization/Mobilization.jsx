@@ -39,13 +39,12 @@ const Mobilization = () => {
             повесткой. В первые дни войны — в июне-июле — мобилизовали не только
             людей, а и немногочисленный заводской транспорт, радиоприемники.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/vmz/4/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/vmz/4/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -61,12 +60,12 @@ const Mobilization = () => {
             выпускники металлургического техникума, средних школ, молодежь с
             завода.
           </p>
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/vmz/4/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/vmz/4/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>

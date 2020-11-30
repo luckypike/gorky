@@ -46,13 +46,13 @@ const Modernization = () => {
             броневых сталей. Их выпуск с того времени был налажен на ВМЗ, а с
             1938 года заказов на броневые стали поступало все больше.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/vmz/3/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/vmz/3/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -72,15 +72,14 @@ const Modernization = () => {
             грабли. В 1940 году металлургический завод произвел стали — 197,2
             тыс. т, проката — 104,0 тыс. т, труб — 77,1 тыс. т.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/vmz/3/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/vmz/3/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
-      {/* <Gallery image={main}/> */}
     </div>
   )
 }

@@ -12,13 +12,21 @@ const Defense = () => {
       <div className={styles.page}>
         <MainText title="Фонд обороны">
           <p>В победу выксунцы вкладывались не только трудом, но и деньгами.</p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/vmz/9/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </MainText>
+      </div>
+
+      <div className={classNames(styles.page, styles.fpi)}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/vmz/9/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/vmz/9/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -33,27 +41,17 @@ const Defense = () => {
             Муромец», которые были задействованы в боях от окраин Тулы до Одера.
           </p>
 
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/vmz/9/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p className={styles.vrezka}>
             Работники ВМЗ собрали деньги и построили колонну из десяти танков
             «Выксунский металлург», которая участвовала в битве под Курском
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/vmz/9/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/vmz/9/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -77,8 +75,6 @@ const Defense = () => {
           </Speech>
         </CommonText>
       </div>
-
-      {/* <Gallery image={main}/> */}
     </div>
   )
 }

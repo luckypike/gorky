@@ -42,13 +42,13 @@ const Armor = () => {
             График работы диктовала фронтовая обстановка, поэтому выксунцам
             пришлось за кратчайшее время выполнить оборонный заказ.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/vmz/5/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/vmz/5/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>

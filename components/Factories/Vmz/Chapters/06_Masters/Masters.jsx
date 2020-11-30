@@ -40,27 +40,17 @@ const Masters = () => {
             сталеваров варить броню по-новому.
           </p>
 
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/vmz/6/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p className={styles.vrezka}>
             В результате напряженной работы план выпуска спецсталей за второе
             полугодие 1941 года завод выполнил на 418,4%, труб — на 623,3%.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/vmz/6/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/vmz/6/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>

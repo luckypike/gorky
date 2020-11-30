@@ -92,6 +92,11 @@ const OneAndHalf = () => {
           </p>
         </CommonText>
 
+        <p className={styles.vrezka}>
+          «Полуторки» курсировали по «дороге жизни» и доставляли продукты в
+          блокадный Ленинград
+        </p>
+
         <CommonImage>
           <figure className={classNames(styles.img, styles._4)}>
             <Image src="/images/gaz/10/5.jpg" layout="fill" />
@@ -116,11 +121,6 @@ const OneAndHalf = () => {
             переправлялись на автомобильные заводы, в первую очередь в Горький.
             В 1942 году сборка на Горьковском автозаводе достигла почти 1000
             импортных автомобилей в месяц».
-          </p>
-
-          <p className={styles.vrezka}>
-            «Полуторки» курсировали по «дороге жизни» и доставляли продукты в
-            блокадный Ленинград
           </p>
 
           <CommonImage>

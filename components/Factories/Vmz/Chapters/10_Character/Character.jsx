@@ -40,13 +40,13 @@ const Character = () => {
             фронт, другие оставались работать в больницах и госпиталях. На
             территории Выксы находилось 12 эвакуированных госпиталей.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/vmz/10/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/vmz/10/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

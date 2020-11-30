@@ -41,16 +41,6 @@ const CombatConditions = () => {
             вместо 46 дней провели за 43.
           </p>
 
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/vmz/7/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Модернизацию трубного цеха проводили в 1943 году, чтобы подготовить
             оборудование для производства труб диаметром 200–250 мм с толщиной
@@ -58,30 +48,33 @@ const CombatConditions = () => {
             установок «Катюша» и «Андрюша».
           </p>
 
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/vmz/7/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             В годы войны оборонные заказы выполняли почти все цехи.
             Вилопрокатный изготавливал саперные лопатки, кроватный — кровати для
             госпиталей и корпуса осветительных ракет для аэродромов.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._3)}>
-              <Image src="/images/vmz/7/4.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/vmz/7/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
-      {/* <Gallery image={main}/> */}
+
+      <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/vmz/7/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/vmz/7/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+      </div>
     </div>
   )
 }
