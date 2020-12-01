@@ -17,9 +17,11 @@ const SecondHome = () => {
     <div className={styles.root}>
       <div className={styles.page}>
         <MainText title="Второй дом для мотопрома">
-          С июля по сентябрь 1941 года завод «Красная Этна» принял
-          эвакуированные из Ленинграда и Харькова мотоциклетные заводы.
-          В Горьком им предписывалось наладить выпуск мотоциклов М-72.
+          <p>
+            С июля по сентябрь 1941 года завод «Красная Этна» принял
+            эвакуированные из Ленинграда и Харькова мотоциклетные заводы. В
+            Горьком им предписывалось наладить выпуск мотоциклов М-72.
+          </p>
         </MainText>
       </div>
 
@@ -46,13 +48,13 @@ const SecondHome = () => {
             поставлять мотопрому карданные валы и колеса) была нарушена, не
             хватало необходимого оборудования.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/etna/5/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/etna/5/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -72,22 +74,22 @@ const SecondHome = () => {
             рождением советского мотопрома: после войны модернизированные версии
             М-72 серийно выпускались вплоть до 1980-х годов.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/etna/5/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/etna/5/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
         <GunsOfWar title="Мотоцикл М-72">
           <p>
             Прототипом М-72 был германский мотоцикл BMW R-71 образца 1938 года
-            («М» в названии является местом начала производства — Москва, а
-            «72» — следующим поколением за прототипом). По одной из версий,
-            модели для копирования были анонимно закуплены в Швеции, по другой —
+            («М» в названии является местом начала производства — Москва, а «72»
+            — следующим поколением за прототипом). По одной из версий, модели
+            для копирования были анонимно закуплены в Швеции, по другой —
             советским конструкторам помогли спецслужбы: якобы из пяти
             отправленных для горных испытаний в Швейцарию BMW обратно вернулись
             лишь три.

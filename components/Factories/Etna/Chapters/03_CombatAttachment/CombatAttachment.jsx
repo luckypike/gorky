@@ -11,15 +11,11 @@ const CombatAttachment = () => {
     <div className={styles.root}>
       <div className={styles.page}>
         <MainText title="Боевое крепление">
-          Завод по производству крепежных изделий «Этна» был построен в 1898
-          году в Риге В.М. Гольденбергом и П. И. Мартини.
+          <p>
+            Завод по производству крепежных изделий «Этна» был построен в 1898
+            году в Риге В.М. Гольденбергом и П. И. Мартини.
+          </p>
         </MainText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/etna/3/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -34,6 +30,17 @@ const CombatAttachment = () => {
             Этна» был филиалом ГАЗа, а в 1938 году ему вернули самостоятельность
             — предприятие начало выпускать продукцию для всего автопрома страны.
           </p>
+        </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/etna/3/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+      </div>
+
+      <div className={styles.page}>
+        <CommonText>
           <p>
             К началу Великой Отечественной войны завод «Красная Этна» производил
             крепежные изделия, пружины и проволоку, обеспечивая лентой холодного
@@ -46,9 +53,7 @@ const CombatAttachment = () => {
             элементов и поставлял их автопрому всей страны
           </p>
         </CommonText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/etna/3/1.jpg" layout="fill" />

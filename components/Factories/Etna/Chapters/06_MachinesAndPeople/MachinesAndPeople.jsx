@@ -2,12 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  CommonText,
-  CommonImage,
-  Speech
-} from '../../../../'
+import { MainText, CommonText, CommonImage, Speech } from '../../../../'
 
 import styles from './MachinesAndPeople.module.css'
 
@@ -16,19 +11,19 @@ const MachinesAndPeople = () => {
     <div className={styles.root}>
       <div className={styles.page}>
         <MainText title="Станки и люди">
-          Кроме предприятий мотопрома завод «Красная Этна» также принял в своих
-          цехах завод им. Ф. Энгельса по производству сельхозтехники из
-          Запорожья и шурупное производство завода им. III Интернационала из
-          белорусского города Речица.
-        </MainText>
-      </div>
+          <p>
+            Кроме предприятий мотопрома завод «Красная Этна» также принял в
+            своих цехах завод им. Ф. Энгельса по производству сельхозтехники из
+            Запорожья и шурупное производство завода им. III Интернационала из
+            белорусского города Речица.
+          </p>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/etna/6/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
+          <CommonImage>
+            <figure className={classNames(styles.img, styles.main)}>
+              <Image src="/images/etna/6/1.jpg" layout="fill" />
+            </figure>
+          </CommonImage>
+        </MainText>
       </div>
 
       <div className={styles.page}>

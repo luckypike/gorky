@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
+import useStore from '../../stores/useStore'
 import { Factory } from '../../components'
 import {
   Intro,
@@ -15,41 +16,30 @@ import {
 import styles from './index.module.css'
 
 const Etna = () => {
+  const appStore = useStore()
+
+  useEffect(() => {
+    appStore.setDark(false)
+  }, [appStore])
+
   return (
     <Factory>
       <div className={styles.root}>
-        <div className={styles.intro}>
-          <Intro />
-        </div>
+        <Intro />
 
-        <div className={styles.img}>
-          <Img />
-        </div>
+        <Img />
 
-        <div className={styles.combat}>
-          <CombatAttachment />
-        </div>
+        <CombatAttachment />
 
-        <div className={styles.guns}>
-          <GunsForBattle />
-        </div>
+        <GunsForBattle />
 
-        <div className={styles.second}>
-          <SecondHome />
-        </div>
+        <SecondHome />
 
-        <div className={styles.machines}>
-          <MachinesAndPeople />
-        </div>
+        <MachinesAndPeople />
 
-        <div className={styles.creativity}>
-          <Сreativity />
-        </div>
+        <Сreativity />
 
-        <div className={styles.after}>
-          <AfterWar />
-        </div>
-
+        <AfterWar />
       </div>
     </Factory>
   )

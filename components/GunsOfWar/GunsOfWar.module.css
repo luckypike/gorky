@@ -12,5 +12,11 @@
 }
 
 .desc {
+  composes: bt from "../Fonts.module.css";
   background-color: rgb(var(--grey_color));
+
+  @media (--l) {
+    font-size: calc(var(--yr) * 6.5);
+    line-height: calc(var(--yr) * 8);
+  }
 }
