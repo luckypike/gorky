@@ -2,12 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  CommonText,
-  Speech,
-  CommonImage
-} from '../../../../'
+import { MainText, CommonText, Speech, CommonImage } from '../../../../'
 
 import styles from './SpecialOrder.module.css'
 
@@ -47,15 +42,15 @@ const SpecialOrder = () => {
             тем, как сначала к стану подали нагретый до полубелого состояния
             слиток весом 400 кг.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/ruspolimet/7/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/ruspolimet/7/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
-      {/* <Gallery image={main}/> */}
+
       <div className={styles.page}>
         <CommonText>
           <p>

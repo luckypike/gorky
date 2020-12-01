@@ -75,13 +75,13 @@ const LastMorning = () => {
             помню, тот закрутил головой, как от зубной боли, и несколько раз
             повторил „Мать его в дребодан!..“».
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/ruspolimet/4/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/ruspolimet/4/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

@@ -39,13 +39,13 @@ const PeacefulSky = () => {
             производство колец для реактивных двигателей из новых авиационных
             материалов, которое является основным для завода и сегодня.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/ruspolimet/9/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/ruspolimet/9/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={classNames(styles.page, styles.fpi)}>
@@ -54,12 +54,10 @@ const PeacefulSky = () => {
             <Image src="/images/ruspolimet/9/3.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/ruspolimet/9/4.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/ruspolimet/9/2.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>

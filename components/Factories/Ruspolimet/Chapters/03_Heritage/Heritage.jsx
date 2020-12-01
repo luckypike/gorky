@@ -49,13 +49,13 @@ const Heritage = () => {
             листопрокатный и сортопрокатный цехи, смонтировали новый
             слиткоразрезной пролет в бандажепрокатном цехе.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/ruspolimet/3/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/ruspolimet/3/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
       {/* <Gallery image={main}/> */}
     </div>

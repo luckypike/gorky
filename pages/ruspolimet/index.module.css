@@ -7,7 +7,7 @@
   }
 }
 
-.intro {
+/* .intro {
   position: relative;
   margin-bottom: calc(var(--yr) * var(--s5));
   padding-top: calc(var(--yr) * var(--s6));
@@ -88,4 +88,4 @@
     margin-bottom: 0;
     min-width: 250vw;
   }
-}
+} */

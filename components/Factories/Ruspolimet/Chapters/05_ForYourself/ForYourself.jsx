@@ -54,23 +54,17 @@ const ForYourself = () => {
             (носовая часть корпуса, состоящая из передней балки, трех броневых
             листов, крышки люка водителя и броневого колпака пулемета.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/ruspolimet/5/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Изготавливал погоны под танковые башни (место крепления башни к
             корпусу) и защитные спинки сидений для летчиков. Конструкцию балки
             Т-34, повысившую прочность лобовой части корпуса, предложили
             усовершенствовать именно конструкторы КМЗ.
           </p>
+        </CommonText>
+      </div>
+
+      <div className={styles.page}>
+        <CommonText>
           <p>
             По данным Горьковского комитета обороны, трудоемкость
             производственных процессов на КМЗ по сравнению с 1940 годом выросла
@@ -84,13 +78,13 @@ const ForYourself = () => {
             были внедрены в производство, сотрудники вернулись к исполнению
             своих обязанностей в цехах.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._3)}>
-              <Image src="/images/ruspolimet/5/4.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/ruspolimet/5/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={classNames(styles.page, styles.fpi)}>
