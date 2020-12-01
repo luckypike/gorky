@@ -38,13 +38,13 @@ const Locust = () => {
             выксунского смежника Горьковскому автозаводу стоило ожидать не ранее
             1 сентября.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/drobmash/5/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/drobmash/5/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>

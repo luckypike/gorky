@@ -1,26 +1,9 @@
 .root {
-  display: grid;
-
   @media (--l) {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
   }
 }
 
 .page {
-  padding: 0 var(--xr);
-  margin-bottom: calc(var(--yr) * var(--s4));
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  @media (--s) {
-    padding: 0 calc(1 / 11 * 100%);
-  }
-
-  @media (--l) {
-    padding: calc(10vh * var(--fs_mod)) calc(2 / 11 * 100%) 0 calc(1 / 11 * 100%);
-    height: 100vh;
-    margin-bottom: 0;
-  }
+  composes: page from '../../../../Factory/Factory.module.css';
 }

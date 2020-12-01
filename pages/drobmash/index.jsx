@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
+import useStore from '../../stores/useStore'
 import { Factory } from '../../components'
 import {
   Intro,
@@ -16,44 +17,32 @@ import {
 import styles from './index.module.css'
 
 const Drobmash = () => {
+  const appStore = useStore()
+
+  useEffect(() => {
+    appStore.setDark(false)
+  }, [appStore])
+
   return (
     <Factory>
       <div className={styles.root}>
-        <div className={styles.intro}>
-          <Intro />
-        </div>
+        <Intro />
 
-        <div className={styles.img}>
-          <Img />
-        </div>
+        <Img />
 
-        <div className={styles.mechanicians}>
-          <Mechanicians />
-        </div>
+        <Mechanicians />
 
-        <div className={styles.without}>
-          <WithoutThought />
-        </div>
+        <WithoutThought />
 
-        <div className={styles.locust}>
-          <Locust />
-        </div>
+        <Locust />
 
-        <div className={styles.armoredCar}>
-          <ArmoredCar />
-        </div>
+        <ArmoredCar />
 
-        <div className={styles.cooperation}>
-          <Сooperation />
-        </div>
+        <Сooperation />
 
-        <div className={styles.onWheels}>
-          <OnWheels />
-        </div>
+        <OnWheels />
 
-        <div className={styles.patience}>
-          <PatienceAndWork />
-        </div>
+        <PatienceAndWork />
       </div>
     </Factory>
   )

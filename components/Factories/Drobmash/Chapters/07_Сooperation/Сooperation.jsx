@@ -40,13 +40,13 @@ const Сooperation = () => {
             погонами завода ДРО. Параллельно на заводе выпускались комплектующие
             к моторам М-17.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/drobmash/7/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/drobmash/7/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>

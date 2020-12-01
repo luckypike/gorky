@@ -35,12 +35,12 @@ const PatienceAndWork = () => {
             тысяч восьмисот работников завода награждены орденами и медалями за
             вклад в победу.
           </p>
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/drobmash/9/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/drobmash/9/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>

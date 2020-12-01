@@ -38,16 +38,16 @@ const WithoutThought = () => {
             кузнечно­прессового цеха.
           </p>
 
+          <p className={styles.vrezka}>
+            С началом войны на заводе был введен непрерывный сменный график
+            работы по 12 часов с перерывом на час
+          </p>
+
           <CommonImage>
             <figure className={classNames(styles.img, styles._1)}>
               <Image src="/images/drobmash/4/1.jpg" layout="fill" />
             </figure>
           </CommonImage>
-
-          <p className={styles.vrezka}>
-            С началом войны на заводе был введен непрерывный сменный график
-            работы по 12 часов с перерывом на час
-          </p>
         </CommonText>
       </div>
       {/* <Gallery image={main}/> */}

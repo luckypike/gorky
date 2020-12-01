@@ -42,13 +42,13 @@ const ArmoredCar = () => {
             («Форд-А Ижорский»), в котором в качестве базы было использовано
             шасси Ford. Выксунский завод ДРО выпустил 697 таких машин.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/drobmash/6/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/drobmash/6/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
       <div className={styles.page}>
         <CommonText>
@@ -62,13 +62,13 @@ const ArmoredCar = () => {
             ГАЗ-21), 22 (на шасси ГАЗ-АААА) и 23 (на шасси ГАЗ-22). В феврале
             1938 года армией был принят на вооружение вариант БА-21.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/drobmash/6/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/drobmash/6/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

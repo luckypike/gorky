@@ -44,13 +44,13 @@ const OnWheels = () => {
             БА-64 на Горьковском ордена Ленина автомобильном заводе имени
             Молотова Наркомсредмаша».
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/drobmash/8/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/drobmash/8/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>
