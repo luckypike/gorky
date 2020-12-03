@@ -60,6 +60,13 @@ export default function Nav ({ setActive }) {
           desc="Филиал АО «Российские железные дороги»"
           setActive={setActive}
         />
+
+        <Item
+          to="/sokol"
+          title="Горьковский авиастроительный завод № 21 имени С. Орджоникидзе"
+          desc="Филиал АО «Российские железные дороги»"
+          setActive={setActive}
+        />
       </ul>
     </nav>
   )
@@ -77,13 +84,9 @@ function Item ({ to, title, desc, setActive }) {
     <li className={styles.li}>
       <Link className={styles.a} href={to} onClick={() => setActive(false)}>
         <a className={styles.item}>
-          <div className={styles.title}>
-            {title}
-          </div>
+          <div className={styles.title}>{title}</div>
 
-          <div className={styles.desc}>
-            {desc}
-          </div>
+          <div className={styles.desc}>{desc}</div>
         </a>
       </Link>
     </li>
