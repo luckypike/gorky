@@ -17,56 +17,34 @@ import {
 
 import styles from './index.module.css'
 
-const Vmz = () => {
+const Gzhd = () => {
   return (
     <Factory>
       <div className={styles.root}>
-        <div className={styles.intro}>
-          <Intro />
-        </div>
+        <Intro />
 
-        <div className={styles.img}>
-          <Img />
-        </div>
+        <Img />
 
-        <div className={styles.strategicMove}>
-          <StrategicMove />
-        </div>
+        <StrategicMove />
 
-        <div className={styles.military}>
-          <Military />
-        </div>
+        <Military />
 
-        <div className={styles.faster}>
-          <Faster />
-        </div>
+        <Faster />
 
-        <div className={styles.newFrames}>
-          <NewFrames />
-        </div>
+        <NewFrames />
 
-        <div className={styles.locomotiveOfVictory}>
-          <LocomotiveOfVictory />
-        </div>
+        <LocomotiveOfVictory />
 
-        <div className={styles.fortresses}>
-          <Fortresses />
-        </div>
+        <Fortresses />
 
-        <div className={styles.feats}>
-          <Feats />
-        </div>
+        <Feats />
 
-        <div className={styles.exceptBread}>
-          <ExceptBread />
-        </div>
+        <ExceptBread />
 
-        <div className={styles.roads}>
-          <Roads />
-        </div>
+        <Roads />
       </div>
     </Factory>
   )
 }
 
-export default Vmz
+export default Gzhd

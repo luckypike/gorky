@@ -42,13 +42,13 @@ const LocomotiveOfVictory = () => {
             огневых ударов по обороне противника. «Илья Муромец» в 1944 году
             выиг рал поединок с немецким бронепоездом.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/gzhd/7/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gzhd/7/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>

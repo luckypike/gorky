@@ -65,13 +65,13 @@ const Fortresses = () => {
             противника. Ничего общего, кроме железнодорожного хода, не имеют они
             с существующей бронепоездной техникой»
           </Speech>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/gzhd/8/5.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gzhd/8/5.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>

@@ -20,14 +20,6 @@ const StrategicMove = () => {
         </MainText>
       </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/gzhd/3/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-      {/* <MainImage image={main}/> */}
       <div className={styles.page}>
         <CommonText>
           <p>
@@ -42,6 +34,17 @@ const StrategicMove = () => {
             по новой железной дороге было приурочено к ежегодному открытию
             Нижегородской ярмарки.
           </p>
+        </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/gzhd/3/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+      </div>
+
+      <div className={styles.page}>
+        <CommonText>
           <p>
             В январе 1894 года Московско-Нижегородская железная дорога вместе с
             Муромской вошла в состав Московско-Курской железной дороги, где
@@ -54,9 +57,6 @@ const StrategicMove = () => {
             1 августа 1862 года
           </p>
         </CommonText>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gzhd/3/2.jpg" layout="fill" />

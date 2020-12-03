@@ -36,13 +36,13 @@ const ExceptBread = () => {
             проявляли небывалую стойкость: оставались до последнего на местах,
             делая свою работу.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/gzhd/10/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gzhd/10/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
 
       <div className={styles.page}>

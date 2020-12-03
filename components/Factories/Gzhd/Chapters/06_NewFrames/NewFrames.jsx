@@ -23,15 +23,13 @@ const NewFrames = () => {
         </MainText>
       </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
+      <div className={styles.page}>
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gzhd/6/2.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p>
             Сельские девушки 16–17 лет добровольно шли кочегарами на паровозы.
@@ -44,6 +42,13 @@ const NewFrames = () => {
             „Уверенно иди в бой, знай, что я тоже сумею достойно послужить
             Родине. Буду во­зить поезда так же по-стахановски, как и ты“.
             Подруги и сестры! В такие дни оставаться вне общего дела нельзя.
+          </p>
+        </CommonText>
+      </div>
+
+      <div className={styles.page}>
+        <CommonText>
+          <p>
             Оружие победы над наглым и вероломным врагом куется в труде. Идите
             на смену нашим товарищам, ушедшим на фронт. Становитесь к станку,
             рулю, регулятору! Будьте кузнецами, формовщиками, машинистами и
@@ -53,14 +58,14 @@ const NewFrames = () => {
             вагонов. Для них было оборудовано под жилье восемь вагонов и два
             барака, рядом с которыми работали пошивочная и сапожная мастерские.
           </p>
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/gzhd/6/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gzhd/6/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
-      {/* <Gallery image={main}/> */}
     </div>
   )
 }
