@@ -88,6 +88,13 @@ export default function Nav ({ setActive }) {
           desc="АО «Гидроагрегат»"
           setActive={setActive}
         />
+
+        <Item
+          to="/adcbsz"
+          title="Горьковский механизированный стеклозавод имени М. Горького"
+          desc="ОАО «Эй Джи Си Борский стекольный завод»"
+          setActive={setActive}
+        />
       </ul>
     </nav>
   )
