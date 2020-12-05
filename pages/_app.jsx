@@ -3,7 +3,7 @@ import Head from 'next/head'
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
-import Header from '../components/Header/Header'
+// import Header from '../components/Header/Header'
 import useStore from '../stores/useStore'
 
 import '../css/globals.css'
