@@ -67,6 +67,13 @@ export default function Nav ({ setActive }) {
           desc="Филиал АО «Российские железные дороги»"
           setActive={setActive}
         />
+
+        <Item
+          to="/gidromash"
+          title="Завод № 119 имени Г. М. Маленкова"
+          desc="НПАО «Гидромаш»"
+          setActive={setActive}
+        />
       </ul>
     </nav>
   )
