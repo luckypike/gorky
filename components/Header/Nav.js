@@ -81,6 +81,13 @@ export default function Nav ({ setActive }) {
           desc="АО ПКО «Теплообменник»"
           setActive={setActive}
         />
+
+        <Item
+          to="/gidroagregat"
+          title="Павловский завод № 467"
+          desc="АО «Гидроагрегат»"
+          setActive={setActive}
+        />
       </ul>
     </nav>
   )
