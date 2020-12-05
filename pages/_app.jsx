@@ -3,10 +3,9 @@ import Head from 'next/head'
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
-import Header from '../components/Header/Header'
+// import Header from '../components/Header/Header'
 import useStore from '../stores/useStore'
 
-import '../css/variables.css'
 import '../css/globals.css'
 
 export default function App ({ Component, props }) {
@@ -53,10 +52,10 @@ export default function App ({ Component, props }) {
       <Head>
         <title>Горький символ победы</title>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Oswald:wght@300;400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&amp;display=swap" rel="stylesheet" />
       </Head>
 
-      <Header />
+      {/* <Header /> */}
 
       <Component { ...props } />
     </>

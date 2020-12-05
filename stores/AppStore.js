@@ -2,6 +2,7 @@ import { makeAutoObservable } from 'mobx'
 
 class AppStore {
   dark = true
+  lax = false
 
   constructor () {
     makeAutoObservable(this)
@@ -12,8 +13,15 @@ class AppStore {
   }
 
   setDark (value) {
-    console.log(value)
     this.dark = value
+  }
+
+  setLaxInit () {
+    this.lax = true
+  }
+
+  get laxInit () {
+    return this.lax
   }
 }
 
