@@ -91,6 +91,13 @@ export default function Nav ({ setActive }) {
 
         <Item
           to="/adcbsz"
+          title="Дзержинский Завод № 148 «Рулон»"
+          desc="ОАО «Дзержинское оргстекло»"
+          setActive={setActive}
+        />
+
+        <Item
+          to="/dzorg"
           title="Горьковский механизированный стеклозавод имени М. Горького"
           desc="ОАО «Эй Джи Си Борский стекольный завод»"
           setActive={setActive}
