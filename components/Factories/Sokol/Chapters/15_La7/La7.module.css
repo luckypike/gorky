@@ -1,0 +1,53 @@
+.root {
+  @media (--l) {
+    display: flex;
+  }
+}
+
+.img {
+  composes: ari from "../../../../Images.module.css";
+
+  &.main {
+    padding-top: calc(1318 / 2028 * 100%);
+  }
+
+  &._1 {
+    padding-top: calc(1961 / 1362 * 100%);
+  }
+
+  &._2 {
+    padding-top: calc(1961 / 1425 * 100%);
+  }
+
+  &._3 {
+    padding-top: calc(720 / 1429 * 100%);
+  }
+
+  &._4 {
+    padding-top: calc(654 / 1014 * 100%);
+  }
+
+  &._5 {
+    padding-top: calc(654 / 1014 * 100%);
+  }
+
+  &._6 {
+    padding-top: calc(655 / 1013 * 100%);
+  }
+
+  &._7 {
+    padding-top: calc(1085 / 2028 * 100%);
+  }
+}
+
+.fpi {
+  align-items: center;
+}
+
+.page {
+  composes: page from "../../../../Factory/Factory.module.css";
+}
+
+.vrezka {
+  composes: vrezka from "../../../../Fonts.module.css";
+}

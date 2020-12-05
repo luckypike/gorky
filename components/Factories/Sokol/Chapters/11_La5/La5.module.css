@@ -1,0 +1,37 @@
+.root {
+  @media (--l) {
+    display: flex;
+  }
+}
+
+.img {
+  composes: ari from "../../../../Images.module.css";
+
+  &.main {
+    padding-top: calc(1493 / 2027 * 100%);
+  }
+
+  &._1 {
+    padding-top: calc(664 / 1069 * 100%);
+  }
+
+  &._2 {
+    padding-top: calc(852 / 1013 * 100%);
+  }
+
+  &._3 {
+    padding-top: calc(830 / 1014 * 100%);
+  }
+}
+
+.fpi {
+  align-items: center;
+}
+
+.page {
+  composes: page from "../../../../Factory/Factory.module.css";
+}
+
+.vrezka {
+  composes: vrezka from "../../../../Fonts.module.css";
+}

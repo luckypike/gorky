@@ -11,7 +11,14 @@ import {
   FightForSeries,
   Lavochkin,
   Lagg3,
-  Powerful
+  Powerful,
+  Front,
+  La5,
+  RecordFlow,
+  Agadzhanov,
+  FriendlyGuys,
+  La7,
+  AfterWar
 } from '../../components/Factories/Sokol/Chapters'
 
 import styles from './index.module.css'
@@ -43,6 +50,20 @@ const Sokol = () => {
           <Lagg3 />
 
           <Powerful />
+
+          <Front />
+
+          <La5 />
+
+          <RecordFlow />
+
+          <Agadzhanov />
+
+          <FriendlyGuys />
+
+          <La7 />
+
+          <AfterWar />
       </div>
     </Factory>
   )
