@@ -74,6 +74,13 @@ export default function Nav ({ setActive }) {
           desc="НПАО «Гидромаш»"
           setActive={setActive}
         />
+
+        <Item
+          to="/teploobmennik"
+          title="Государственный Завод № 469 имени М. М. Громова"
+          desc="АО ПКО «Теплообменник»"
+          setActive={setActive}
+        />
       </ul>
     </nav>
   )
