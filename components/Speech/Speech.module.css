@@ -1,27 +1,26 @@
 .root {
-  /* width: 50vw; */
-  &:not(:last-child) {
-    margin-bottom: calc(var(--yr) * var(--s5));
+  padding: 0 var(--xr);
+  margin-bottom: calc(var(--yr) * var(--s4));
+
+  @media (--s) {
+    padding: 0;
   }
-
-  padding: 1rem 2rem;
-}
-
-.content {
-  border-left: 1px solid var(--hl_color);
-  padding-left: calc(var(--xr) * 1.5);
 }
 
 .intro {
+  font-family: var(--ff_sans);
+}
+
+.title {
+  margin: calc(var(--yr) * var(--s2)) 0 0;
+  font-family: var(--ff_sans);
   color: rgb(var(--hl_color));
-  composes: mt from '../Fonts.module.css';
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  composes: h2 from '../Fonts.module.css';
 }
 
 .text {
   margin-top: calc(var(--yr) * var(--s2));
-  composes: bt from '../Fonts.module.css';
+  font-style: italic;
 }
 
 .author {

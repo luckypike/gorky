@@ -2,7 +2,7 @@
   overflow: hidden;
 
   @media (--s) {
-    margin-left: 60px;
+    /* margin-left: 60px; */
   }
 }
 
@@ -25,8 +25,12 @@
     display: grid;
     align-items: start;
     grid-auto-rows: min-content;
-    padding: 70px 0 0;
+    padding: 100px 0 0;
     min-width: calc(5 / 13 * (100vw - 60px));
     margin-left: calc(1 / 13 * (100vw - 60px));
+
+    &:last-child {
+      margin-right: calc(1 / 13 * (100vw - 60px));
+    }
   }
 }

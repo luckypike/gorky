@@ -55,6 +55,12 @@ const USSRAuto = () => {
       </div>
 
       <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/3/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Согласно мобилизационному плану СССР, после начала Второй мировой
@@ -68,12 +74,6 @@ const USSRAuto = () => {
             основном участниками аэроклубов. В начале 40-х годов автозавод
             выпускал небольшими партиями речные катера и аэросани.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/gaz/3/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
       </div>
     </div>
