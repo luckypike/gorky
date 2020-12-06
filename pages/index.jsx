@@ -114,143 +114,218 @@ export default function Home () {
 
       <div className={styles.content} ref={contentRef}>
         <div className={styles.factories} ref={factoriesRef}>
-          <div className={styles.items}>
-            <div className={styles.g}>
-              <Item
-                href="/gaz"
-                title="Государственный автомобильный завод имени В. М .Молотова"
-                desc="ПАО ГАЗ, ООО «Автомобильный завод ГАЗ»"
-                img={styles.i54}
-              />
 
-              <Item
-                href="/sormovo"
-                title="Завод № 112 «Красное Сормово»"
-                desc="ПАО «Завод “Красное Сормово”»"
-                // img={styles.i11}
-              />
-            </div>
+          {laxInit && (
+            <>
+              <div className={styles.items}>
+                <div className={styles.section}>
+                  <div className={styles.ss}>
+                    Боевые машины
+                  </div>
+                </div>
 
-            <div className={styles.g}>
-              <Item
-                href="/drobmash"
-                title="Выксунский машиностроительный завод дробильно-размольного оборудования"
-                desc="ЗАО «Дробмаш» и АО «Завод корпусов»"
-                // img={styles.i11}
-              />
+                <div className={styles.g}>
+                  <Item
+                    href="/gaz"
+                    id="gaz"
+                    title="Государственный автомобильный завод имени В. М .Молотова"
+                    desc="ПАО ГАЗ, ООО «Автомобильный завод ГАЗ»"
+                    img={styles.i54}
+                    tIn={'elWidth / 5 * -1'}
+                    tOut={'elWidth / 8'}
+                    scroller={scroller}
 
-              <Item
-                href="/gaz"
-                title="Государственный автомобильный завод имени В. М. Молотова"
-                desc="ПАО ГАЗ, ООО «Автомобильный завод ГАЗ»"
-                img={styles.i54}
-              />
-            </div>
+                  />
 
-            <div className={styles.g}>
-              <Item
-                href="/sormovo"
-                title="Завод № 112 «Красное Сормово»"
-                desc="ПАО «Завод “Красное Сормово”»"
-              />
+                  <Item
+                    href="/sormovo"
+                    id="sormovo"
+                    title="Завод № 112 «Красное Сормово»"
+                    desc="ПАО «Завод “Красное Сормово”»"
+                    tIn={'elWidth / 8'}
+                    tOut={'elWidth / 8 * -1'}
+                    scroller={scroller}
+                    img={styles.i32}
+                  />
+                </div>
 
-              <Item
-                href="/drobmash"
-                title="Выксунский машиностроительный завод дробильно-размольного оборудования"
-                desc="ЗАО «Дробмаш» и АО «Завод корпусов»"
-              />
-            </div>
+                <div className={styles.g}>
+                  <Item
+                    href="/etna"
+                    id="etna"
+                    title="ГОРЬКОВСКИЙ ЗАВОД «КРАСНАЯ ЭТНА»"
+                    desc="АО «Завод „Красная Этна“»"
+                    tIn={'elWidth / 3 * -1'}
+                    tOut={'elWidth / 5'}
+                    scroller={scroller}
+                  />
 
-            <div className={styles.g}>
-              <Item
-                href="/gaz"
-                title="Государственный автомобильный завод имени В. М. Молотова"
-                desc="ПАО ГАЗ, ООО «Автомобильный завод ГАЗ»"
-              />
+                  <Item
+                    href="/drobmash"
+                    title="ВЫКСУНСКИЙ ЗАВОД ДРОБИЛЬНО-РАЗМОЛЬНОГО ОБОРУДОВАНИЯ"
+                    desc="ЗАО «Дробмаш», АО «Завод корпусов»"
+                    img={styles.i54}
+                    tIn={'elWidth / 12'}
+                    tOut={'elWidth / 10 * -1'}
+                    scroller={scroller}
+                  />
+                </div>
 
-              <Item
-                href="/sormovo"
-                title="Завод № 112 «Красное Сормово»"
-                desc="ПАО «Завод “Красное Сормово”»"
-              />
-            </div>
+                <div className={styles.g}>
+                  <Item
+                    href="/ruspolimet"
+                    title="КУЛЕБАКСКИЙ МЕТАЛЛУРГИЧЕСКИЙ ЗАВОД"
+                    desc="ПАО «Русполимет»"
+                    img={styles.i54}
+                    tIn={'elWidth / 5'}
+                    tOut={'elWidth / 5'}
+                    scroller={scroller}
+                  />
 
-            <div className={styles.g}>
-              <Item
-                href="/drobmash"
-                title="Выксунский машиностроительный завод дробильно-размольного оборудования"
-                desc="ЗАО «Дробмаш» и АО «Завод корпусов»"
-              />
-            </div>
-          </div>
+                  <Item
+                    href="/drobmash"
+                    title="ВЫКСУНСКИЙ МЕТАЛЛУРГИЧЕСКИЙ ЗАВОД"
+                    desc="АО «Выксунский металлургический завод»"
+                    tIn={'elWidth / 12'}
+                    tOut={'elWidth / 10 * -1'}
+                    scroller={scroller}
+                  />
+                </div>
 
-          <div className={styles.items}>
-            <div className={styles.g}>
-              <Item
-                href="/sormovo"
-                title="Завод № 112 «Красное Сормово»"
-                desc="ПАО «Завод “Красное Сормово”»"
-              />
+                <div className={styles.g}>
+                  <Item
+                    href="/gzhd"
+                    title="ГОРЬКОВСКАЯ ЖЕЛЕЗНАЯ ДОРОГА"
+                    desc="Горьковская железная дорога — филиал ОАО РЖД"
+                    tIn={'elWidth / 5'}
+                    tOut={'elWidth / 10'}
+                    scroller={scroller}
+                  />
+                </div>
+              </div>
 
-              <Item
-                href="/drobmash"
-                title="Выксунский машиностроительный завод дробильно-размольного оборудования"
-                desc="ЗАО «Дробмаш» и АО «Завод корпусов»"
-              />
-            </div>
+              <div className={styles.items}>
+                <div className={styles.section}>
+                  <div className={styles.ss}>
+                    Аваистроение
+                  </div>
+                </div>
 
-            <div className={styles.g}>
-              <Item
-                href="/gaz"
-                title="Государственный автомобильный завод имени В. М. Молотова"
-                desc="ПАО ГАЗ, ООО «Автомобильный завод ГАЗ»"
-              />
+                <div className={styles.g}>
+                  <Item
+                    href="/sokol"
+                    title="ГОРЬКОВСКИЙ АВИА-
+                    СТРОИТЕЛЬНЫЙ ЗАВОД No 21
+                    ИМЕНИ С. ОРДЖОНИКИДЗЕ"
+                    desc="Нижегородский авиастроительный завод «Сокол» — филиал АО «РСК „МиГ“»"
+                    tIn={0}
+                    tOut={0}
+                    scroller={scroller}
+                  />
 
-              <Item
-                href="/sormovo"
-                title="Завод № 112 «Красное Сормово»"
-                desc="ПАО «Завод “Красное Сормово”»"
-              />
-            </div>
-          </div>
+                  <Item
+                    href="/gidromash"
+                    title="ЗАВОД No 119
+                    ИМЕНИ Г. М. МАЛЕНКОВА"
+                    desc="НПАО «Гидромаш»"
+                    tIn={0}
+                    tOut={0}
+                    scroller={scroller}
+                  />
+                </div>
+
+                <div className={styles.g}>
+                  <Item
+                    href="/"
+                    title="ГОСУДАРСТВЕННЫЙ
+                    ЗАВОД No 469
+                    ИМЕНИ М. М. ГРОМОВА"
+                    desc="АО ПКО «Теплообменник»"
+                    tIn={0}
+                    tOut={0}
+                    scroller={scroller}
+                  />
+
+                  <Item
+                    href="/"
+                    title="ПАВЛОВСКИЙ ЗАВОД No 467"
+                    desc="АО «Гидроагрегат»"
+                    tIn={0}
+                    tOut={0}
+                    scroller={scroller}
+                  />
+                </div>
+
+                <div className={styles.g}>
+                  <Item
+                    href="/"
+                    title="ГОРЬКОВСКИЙ МЕХАНИЗИРОВАННЫЙ СТЕКЛОЗАВОД
+                    ИМЕНИ М. ГОРЬКОГО"
+                    desc="ОАО «Эй Джи Си Борский стекольный завод»"
+                    tIn={0}
+                    tOut={0}
+                    scroller={scroller}
+                  />
+
+                  <Item
+                    href="/"
+                    title="ДЗЕРЖИНСКИЙ
+                    ЗАВОД No 148 «РУЛОН»"
+                    desc="ОАО «Дзержинское оргстекло»"
+                    tIn={0}
+                    tOut={0}
+                    scroller={scroller}
+                  />
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </div>
-
-      {/* <div className={styles.items}>
-        <Item
-          href="/gaz"
-          title="Государственный автомобильный завод имени В. М. Молотова"
-          desc="ПАО ГАЗ, ООО «Автомобильный завод ГАЗ»"
-        />
-
-        <Item
-          href="/sormovo"
-          title="Завод № 112 «Красное Сормово»"
-          desc="ПАО «Завод “Красное Сормово”»"
-        />
-
-        <Item
-          href="/drobmash"
-          title="Выксунский машиностроительный завод дробильно-размольного оборудования"
-          desc="ЗАО «Дробмаш» и АО «Завод корпусов»"
-        />
-      </div> */}
     </div>
   )
 }
 
 Item.propTypes = {
+  id: PropTypes.string,
   href: PropTypes.string,
   title: PropTypes.string,
   desc: PropTypes.string,
-  img: PropTypes.string
+  img: PropTypes.string,
+  scroller: PropTypes.bool,
+  tIn: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number
+  ]),
+  tOut: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number
+  ])
 }
 
-function Item ({ href, title, desc, img }) {
+function Item ({ href, title, id, desc, img, tIn, tOut, scroller }) {
+  const roottRef = useRef()
+
+  useEffect(() => {
+    if (scroller) {
+      lax.addElement(roottRef.current, {
+        scrollX: {
+          translateX: [
+            ['elInX', 'elOutX'],
+            [tIn, tOut],
+            {
+              inertia: 10
+            }
+          ]
+        }
+      })
+    }
+  }, [])
+
   return (
-    <Link href={href} >
-      <a className={styles.item}>
-        <div className={cn(styles.image, img)} />
+    <Link href={href}>
+      <a className={cn([styles.item, styles[id]])} ref={roottRef}>
+        <div className={cn(styles.image, img, styles[id])} />
 
         <div className={styles.dt}>
           <div className={styles.title}>

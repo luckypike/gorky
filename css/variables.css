@@ -5,7 +5,9 @@
   --gr_text_color: 106, 106, 106;
   --hl_color: 214, 53, 23;
   --wht_color: 255, 255, 255;
-  --ff_serif: 'EB Garamond', serif;
+
+  /* --ff_serif: 'EB Garamond', serif; */
+  --ff_serif: 'PT Serif', serif;
   --ff_sans: 'Po Beda', sans-serif;
   --yr: 0.25rem;
   --xr: 1rem;
