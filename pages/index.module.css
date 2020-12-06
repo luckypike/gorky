@@ -109,7 +109,7 @@
     grid-template-columns: 1fr 1fr;
 
     &.sormovo {
-      grid-template-columns: 60% auto;
+      /* grid-template-columns: 60% auto; */
     }
   }
 }

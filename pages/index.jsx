@@ -155,8 +155,8 @@ export default function Home () {
                     id="etna"
                     title="ГОРЬКОВСКИЙ ЗАВОД «КРАСНАЯ ЭТНА»"
                     desc="АО «Завод „Красная Этна“»"
-                    tIn={'elWidth / 3 * -1'}
-                    tOut={'elWidth / 5'}
+                    tIn={'elWidth / 4 * -1'}
+                    tOut={'elWidth / 6'}
                     scroller={scroller}
                   />
 
@@ -179,7 +179,7 @@ export default function Home () {
                     title="КУЛЕБАКСКИЙ МЕТАЛЛУРГИЧЕСКИЙ ЗАВОД"
                     desc="ПАО «Русполимет»"
                     img={styles.i54}
-                    tIn={'elWidth / 5'}
+                    tIn={'elWidth / 5 * -1'}
                     tOut={'elWidth / 5'}
                     scroller={scroller}
                   />
@@ -187,7 +187,6 @@ export default function Home () {
                   <Item
                     href="/vmz"
                     id="vmz"
-                    img={styles.i32}
                     title="ВЫКСУНСКИЙ МЕТАЛЛУРГИЧЕСКИЙ ЗАВОД"
                     desc="АО «Выксунский металлургический завод»"
                     tIn={'elWidth / 12'}
@@ -203,8 +202,8 @@ export default function Home () {
                     img={styles.i54}
                     title="ГОРЬКОВСКАЯ ЖЕЛЕЗНАЯ ДОРОГА"
                     desc="Горьковская железная дорога — филиал ОАО РЖД"
-                    tIn={'elWidth / 5'}
-                    tOut={'elWidth / 10'}
+                    tIn={'elWidth / 5 * -1'}
+                    tOut={'elWidth / 5'}
                     scroller={scroller}
                   />
                 </div>
@@ -226,8 +225,8 @@ export default function Home () {
                     СТРОИТЕЛЬНЫЙ ЗАВОД No 21
                     ИМЕНИ С. ОРДЖОНИКИДЗЕ"
                     desc="Нижегородский авиастроительный завод «Сокол» — филиал АО «РСК „МиГ“»"
-                    tIn={0}
-                    tOut={0}
+                    tIn={'elWidth / 5 * -1'}
+                    tOut={'elWidth / 8'}
                     scroller={scroller}
                   />
 
@@ -248,23 +247,24 @@ export default function Home () {
                   <Item
                     href="/teploobmennik"
                     id="teploobmennik"
-                    img={styles.i54}
+                    img={styles.i32}
                     title="ГОСУДАРСТВЕННЫЙ
                     ЗАВОД No 469
                     ИМЕНИ М. М. ГРОМОВА"
                     desc="АО ПКО «Теплообменник»"
-                    tIn={0}
-                    tOut={0}
+                    tIn={'elWidth / 5 * -1'}
+                    tOut={'elWidth / 4'}
                     scroller={scroller}
                   />
 
                   <Item
                     href="/gidroagregat"
                     id="gidroagregat"
-                    img={styles.i32}
+                    img={styles.i54}
                     title="ПАВЛОВСКИЙ ЗАВОД No 467"
                     desc="АО «Гидроагрегат»"
                     tIn={0}
+
                     tOut={0}
                     scroller={scroller}
                   />
@@ -274,12 +274,11 @@ export default function Home () {
                   <Item
                     href="/adcbsz"
                     id="adcbsz"
-                    img={styles.i54}
                     title="ГОРЬКОВСКИЙ МЕХАНИЗИРОВАННЫЙ СТЕКЛОЗАВОД
                     ИМЕНИ М. ГОРЬКОГО"
                     desc="ОАО «Эй Джи Си Борский стекольный завод»"
-                    tIn={0}
-                    tOut={0}
+                    tIn={'elWidth / 6 * -1'}
+                    tOut={'elWidth / 3'}
                     scroller={scroller}
                   />
 
