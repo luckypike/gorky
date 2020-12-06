@@ -162,6 +162,7 @@ export default function Home () {
 
                   <Item
                     href="/drobmash"
+                    id="drobmash"
                     title="ВЫКСУНСКИЙ ЗАВОД ДРОБИЛЬНО-РАЗМОЛЬНОГО ОБОРУДОВАНИЯ"
                     desc="ЗАО «Дробмаш», АО «Завод корпусов»"
                     img={styles.i54}
@@ -174,6 +175,7 @@ export default function Home () {
                 <div className={styles.g}>
                   <Item
                     href="/ruspolimet"
+                    id="ruspolimet"
                     title="КУЛЕБАКСКИЙ МЕТАЛЛУРГИЧЕСКИЙ ЗАВОД"
                     desc="ПАО «Русполимет»"
                     img={styles.i54}
@@ -183,7 +185,9 @@ export default function Home () {
                   />
 
                   <Item
-                    href="/drobmash"
+                    href="/vmz"
+                    id="vmz"
+                    img={styles.i32}
                     title="ВЫКСУНСКИЙ МЕТАЛЛУРГИЧЕСКИЙ ЗАВОД"
                     desc="АО «Выксунский металлургический завод»"
                     tIn={'elWidth / 12'}
@@ -195,6 +199,8 @@ export default function Home () {
                 <div className={styles.g}>
                   <Item
                     href="/gzhd"
+                    id="gzhd"
+                    img={styles.i54}
                     title="ГОРЬКОВСКАЯ ЖЕЛЕЗНАЯ ДОРОГА"
                     desc="Горьковская железная дорога — филиал ОАО РЖД"
                     tIn={'elWidth / 5'}
@@ -214,6 +220,8 @@ export default function Home () {
                 <div className={styles.g}>
                   <Item
                     href="/sokol"
+                    id="sokol"
+                    img={styles.i54}
                     title="ГОРЬКОВСКИЙ АВИА-
                     СТРОИТЕЛЬНЫЙ ЗАВОД No 21
                     ИМЕНИ С. ОРДЖОНИКИДЗЕ"
@@ -225,6 +233,8 @@ export default function Home () {
 
                   <Item
                     href="/gidromash"
+                    id="gidromash"
+                    img={styles.i32}
                     title="ЗАВОД No 119
                     ИМЕНИ Г. М. МАЛЕНКОВА"
                     desc="НПАО «Гидромаш»"
@@ -236,7 +246,9 @@ export default function Home () {
 
                 <div className={styles.g}>
                   <Item
-                    href="/"
+                    href="/teploobmennik"
+                    id="teploobmennik"
+                    img={styles.i54}
                     title="ГОСУДАРСТВЕННЫЙ
                     ЗАВОД No 469
                     ИМЕНИ М. М. ГРОМОВА"
@@ -247,7 +259,9 @@ export default function Home () {
                   />
 
                   <Item
-                    href="/"
+                    href="/gidroagregat"
+                    id="gidroagregat"
+                    img={styles.i32}
                     title="ПАВЛОВСКИЙ ЗАВОД No 467"
                     desc="АО «Гидроагрегат»"
                     tIn={0}
@@ -258,7 +272,9 @@ export default function Home () {
 
                 <div className={styles.g}>
                   <Item
-                    href="/"
+                    href="/adcbsz"
+                    id="adcbsz"
+                    img={styles.i54}
                     title="ГОРЬКОВСКИЙ МЕХАНИЗИРОВАННЫЙ СТЕКЛОЗАВОД
                     ИМЕНИ М. ГОРЬКОГО"
                     desc="ОАО «Эй Джи Си Борский стекольный завод»"
@@ -268,7 +284,9 @@ export default function Home () {
                   />
 
                   <Item
-                    href="/"
+                    href="/dzorg"
+                    id="dzorg"
+                    img={styles.i32}
                     title="ДЗЕРЖИНСКИЙ
                     ЗАВОД No 148 «РУЛОН»"
                     desc="ОАО «Дзержинское оргстекло»"

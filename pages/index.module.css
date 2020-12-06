@@ -126,6 +126,8 @@
   position: relative;
   padding-top: calc(2 / 3 * 100%);
 
+  /* Боевые машины */
+
   &.gaz {
     background-image: url(../assets/index/images/factories/gaz.jpg);
   }
@@ -136,6 +138,48 @@
 
   &.etna {
     background-image: url(../assets/index/images/factories/etna.jpg);
+  }
+
+  &.ruspolimet {
+    background-image: url(../assets/index/images/factories/ruspolimet.jpg);
+  }
+
+  &.drobmash {
+    background-image: url(../assets/index/images/factories/drobmash.jpg);
+  }
+
+  &.gzhd {
+    background-image: url(../assets/index/images/factories/gzhd.jpg);
+  }
+
+  &.vmz {
+    background-image: url(../assets/index/images/factories/vmz.jpg);
+  }
+
+  /* Авиа */
+
+  &.sokol {
+    background-image: url(../assets/index/images/factories/sokol.jpg);
+  }
+
+  &.gidroagregat {
+    background-image: url(../assets/index/images/factories/gidroagregat.jpg);
+  }
+
+  &.gidromash {
+    background-image: url(../assets/index/images/factories/gidromash.jpg);
+  }
+
+  &.adcbsz {
+    background-image: url(../assets/index/images/factories/adcbsz.jpg);
+  }
+
+  &.dzorg {
+    background-image: url(../assets/index/images/factories/dzorg.jpg);
+  }
+
+  &.teploobmennik {
+    background-image: url(../assets/index/images/factories/teploobmennik.jpg);
   }
 
   @media (--s) {
