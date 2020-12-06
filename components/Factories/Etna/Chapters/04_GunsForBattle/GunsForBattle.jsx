@@ -27,9 +27,7 @@ const GunsForBattle = () => {
             (ППШ).
           </p>
         </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/etna/4/1.jpg" layout="fill" />

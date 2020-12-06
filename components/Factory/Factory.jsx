@@ -43,7 +43,7 @@ const Factory = ({ children }) => {
         preventDefaultOnEmulateScroll: 'horizontal',
         dragDirectionTolerance: 0,
         emulateScroll: true,
-        scrollMode: 'native',
+        scrollMode: 'transform',
         onUpdate: (state) => {
           xRef.current = state.position.x
         },

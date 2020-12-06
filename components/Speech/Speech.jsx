@@ -9,7 +9,7 @@ const Speech = ({ title, author, children }) => {
       <div className={styles.content}>
         <div className={styles.intro}>Прямая речь</div>
 
-        {title && <h3>{title}</h3>}
+        {title && <h3 className={styles.title}>{title}</h3>}
 
         {children && <div className={styles.text}>{children}</div>}
         {author && (
