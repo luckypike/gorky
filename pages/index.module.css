@@ -38,6 +38,7 @@
   backdrop-filter: blur(10px);
 
   @media (--s) {
+    overflow: hidden;
     display: flex;
   }
 }
