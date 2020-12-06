@@ -11,20 +11,18 @@ const Speech = ({ title, author, children }) => {
 
         {title && <h3 className={styles.title}>{title}</h3>}
 
-        {children && <div className={styles.text}>{children}</div>}
-        {author && (
-          <figure className={styles.author}>
-            {author.image && (
-              <img src={author.image} className={styles.image} alt="image" />
-            )}
-
-            <div className={styles.who}>
-              {author.name}
+        <div className={styles.text}>
+          {author && author.name && (
+            <>
+              <strong>
+                {author.name}
+              </strong>
               <br />
-              <span>{author.desc}</span>
-            </div>
-          </figure>
-        )}
+            </>
+          )}
+
+          {children}
+        </div>
       </div>
     </div>
   )

@@ -28,5 +28,9 @@
     padding: 100px 0 0;
     min-width: calc(5 / 13 * (100vw - 60px));
     margin-left: calc(1 / 13 * (100vw - 60px));
+
+    &:last-child {
+      margin-right: calc(1 / 13 * (100vw - 60px));
+    }
   }
 }

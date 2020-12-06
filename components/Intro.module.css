@@ -86,7 +86,7 @@
 }
 
 .items {
-  margin-top: calc(var(--yr) * var(--s4));
+  margin-top: calc(var(--yr) * var(--s6));
   display: grid;
   grid-row-gap: calc(var(--yr) * var(--s4));
   grid-template-columns: 1fr 1fr;
@@ -177,11 +177,33 @@
 }
 
 .rd {
-  margin: calc(var(--yr) * var(--s2)) 0 calc(var(--yr) * var(--s1));
-  text-transform: uppercase;
+  margin: calc(var(--yr) * var(--s2)) 0 0;
   color: rgb(var(--hl_color));
+  font-size: calc(var(--yr) * 4);
+  line-height: calc(var(--yr) * 5);
+
+  @media (--s) {
+    font-size: calc(var(--yr) * 5);
+    line-height: calc(var(--yr) * 6);
+  }
+
+  @media (--l) {
+    font-size: calc(var(--yr) * 5 * var(--fs_mod));
+    line-height: calc(var(--yr) * 6 * var(--fs_mod));
+  }
 }
 
 .what {
-  font-weight: 300;
+  font-size: calc(var(--yr) * 4);
+  line-height: calc(var(--yr) * 5);
+
+  @media (--s) {
+    font-size: calc(var(--yr) * 5);
+    line-height: calc(var(--yr) * 6);
+  }
+
+  @media (--l) {
+    font-size: calc(var(--yr) * 5 * var(--fs_mod));
+    line-height: calc(var(--yr) * 6 * var(--fs_mod));
+  }
 }

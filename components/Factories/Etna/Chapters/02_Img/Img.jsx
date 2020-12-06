@@ -1,19 +1,19 @@
-import React, { useRef } from 'react'
-import Image from 'next/image'
+import React from 'react'
+
+import {
+  MainImage
+} from '../../../../'
 
 import styles from './Img.module.css'
 
 const Img = () => {
-  const ImgRef = useRef()
-
   return (
     <figure className={styles.root}>
       <div className={styles.img}>
-        <Image
-          src="/images/etna/img.jpg"
+        <MainImage
+          image="/images/etna/img.jpg"
           alt="QQ"
-          layout="fill"
-          ref={ImgRef}
+          // layout="fill"
         />
       </div>
     </figure>

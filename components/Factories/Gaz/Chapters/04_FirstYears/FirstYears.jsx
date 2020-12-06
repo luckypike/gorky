@@ -43,6 +43,15 @@ const FirstYears = () => {
             колесном, кузовном цехах и в цехе запасных частей заключенные
             исправительно-трудовой колонии № 3.
           </p>
+        </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/4/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        <CommonText>
           <p>
             Работы, как и на других предприятиях, было много. Созданный 30 июня
             1941 года Государственный комитет обороны СССР своим первым решением
@@ -52,12 +61,6 @@ const FirstYears = () => {
             завод № 466, который располагался на территории ГАЗа.
           </p>
         </CommonText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/gaz/4/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
       </div>
 
       <div className={styles.page}>
@@ -69,7 +72,15 @@ const FirstYears = () => {
             самостоятельного завода № 466, который относился к Министерству
             авиационной промышленности СССР.
           </p>
+        </CommonText>
 
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/4/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        <CommonText>
           <p>
             За первый год кроме танков ГАЗ выпустил 68,4 тыс. грузовых
             автомобилей и автобусов, 3 тыс. легковых машин, 2,6 тыс. минометов,
@@ -84,12 +95,6 @@ const FirstYears = () => {
             высокую награду — орден Ленина.
           </p>
         </CommonText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/gaz/4/4.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
       </div>
 
       <div className={classNames(styles.page, styles.fpi)}>
