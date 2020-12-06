@@ -45,13 +45,6 @@ const Passability = () => {
             ГАЗ-64 серийно выпускался до апреля 1943 года. Всего было
             произведено 672 автомобиля.
           </p>
-
-          <p>
-            С конца 1943 года завод начал выпускать усовершенствованную версию
-            полноприводного ГАЗ-64 — ГАЗ-67 с расширенной колеей. Позже его
-            сменил модернизированный ГАЗ-67Б, отличавшийся доработанной ходовой
-            частью и усовершенствованной системой зажигания.
-          </p>
         </CommonText>
 
         <CommonImage>
@@ -59,6 +52,15 @@ const Passability = () => {
             <Image src="/images/gaz/6/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
+
+        <CommonText>
+          <p>
+            С конца 1943 года завод начал выпускать усовершенствованную версию
+            полноприводного ГАЗ-64 — ГАЗ-67 с расширенной колеей. Позже его
+            сменил модернизированный ГАЗ-67Б, отличавшийся доработанной ходовой
+            частью и усовершенствованной системой зажигания.
+          </p>
+        </CommonText>
       </div>
 
       <div className={styles.page}>
@@ -77,6 +79,12 @@ const Passability = () => {
             денежные премии.
           </p>
 
+          <CommonImage>
+            <figure className={classNames(styles.img, styles._2)}>
+              <Image src="/images/gaz/6/2.jpg" layout="fill" />
+            </figure>
+          </CommonImage>
+
           <p>
             Осенью на Горьковском автозаводе сменилось руководство — директором
             предприятия назначили главного инженера А. М. Лившица. И. К.
@@ -84,12 +92,6 @@ const Passability = () => {
             Наркомат электростанций СССР.
           </p>
         </CommonText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/gaz/6/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
       </div>
     </div>
   )

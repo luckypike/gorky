@@ -22,6 +22,7 @@
   }
 
   @media (--l) {
+    position: relative;
     display: grid;
     align-items: start;
     grid-auto-rows: min-content;

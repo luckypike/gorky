@@ -6,12 +6,14 @@ import styles from './MainText.module.css'
 const MainText = ({ title, children }) => {
   return (
     <div className={styles.root}>
-      <h2 className={styles.title}>
-        {title}
-      </h2>
+      <div className={styles.container}>
+        <h2 className={styles.title}>
+          {title}
+        </h2>
 
-      <div className={styles.text}>
-        {children}
+        <div className={styles.text}>
+          {children}
+        </div>
       </div>
     </div>
   )

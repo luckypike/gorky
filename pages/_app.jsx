@@ -16,12 +16,13 @@ export default function App ({ Component, props }) {
 
   const updateDimensions = () => {
     const height = window.innerHeight
+    const kk = 880
 
     if (height < 760) {
       const k = (height >= 400 ? (height - 400) / 400 : 0) * 0.5 + 0.5
       setFsMod(k)
-    } else if (height > 960) {
-      const k = ((height - 960) / 960) * 1.1 + 1
+    } else if (height > kk) {
+      const k = ((height - kk) / kk) * 1.1 + 1
       setFsMod(k)
     } else {
       setFsMod(1)

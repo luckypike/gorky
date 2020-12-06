@@ -1,9 +1,29 @@
 .text {
   composes: bt from '../Fonts.module.css';
+
+  @media (--s) {
+    font-size: calc(var(--yr) * 7.5);
+    line-height: calc(var(--yr) * 9);
+  }
+
+  @media (--l) {
+    font-size: calc(var(--yr) * 7.5 * var(--fs_mod));
+    line-height: calc(var(--yr) * 9 * var(--fs_mod));
+  }
 }
 
 .title {
   composes: h2 from '../Fonts.module.css';
+
+  @media (--s) {
+    font-size: calc(var(--yr) * 13);
+    line-height: calc(var(--yr) * 15);
+  }
+
+  @media (--l) {
+    font-size: calc(var(--yr) * 13 * var(--fs_mod));
+    line-height: calc(var(--yr) * 15 * var(--fs_mod));
+  }
 }
 
 .root {
@@ -15,6 +35,10 @@
   }
 
   @media (--l) {
-    /* margin-bottom: 0; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
   }
 }

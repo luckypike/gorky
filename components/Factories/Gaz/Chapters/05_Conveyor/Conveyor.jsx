@@ -58,6 +58,12 @@ const Conveyor = () => {
       </div>
 
       <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/5/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             После 16 октября 1941 года, когда эвакуировавшийся завод № 37
@@ -73,12 +79,6 @@ const Conveyor = () => {
             главнокомандующего, перешло на круглосуточную работу.
           </p>
         </CommonText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/gaz/5/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
       </div>
 
       <div className={styles.page}>

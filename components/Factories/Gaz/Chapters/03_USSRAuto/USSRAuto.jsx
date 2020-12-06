@@ -10,7 +10,7 @@ const USSRAuto = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <MainText title="Гигант советского автопрома ">
+        <MainText title="Гигант советского автопрома">
           <p>
             История автомобильного завода берет начало в 1929 году, когда Ford
             Motor Company и СССР подписали соглашение о взаимодействии в
