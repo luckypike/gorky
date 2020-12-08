@@ -11,22 +11,12 @@ const Women = () => {
     <div className={styles.root}>
       <div className={styles.page}>
         <MainText title="Женщины встали к станкам">
-          Всеобщая мобилизация значительно повлияла на кадровый состав завода.
-          Молодые мужчины ушли на фронт, их место заняли ветераны труда, которые
-          успели уйти на заслуженный покой.
-        </MainText>
-      </div>
+          <p>
+            Всеобщая мобилизация значительно повлияла на кадровый состав завода.
+            Молодые мужчины ушли на фронт, их место заняли ветераны труда, которые
+            успели уйти на заслуженный покой.
+          </p>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sormovo/8/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-      {/* <MainImage image={main}/> */}
-      <div className={styles.page}>
-        <CommonText>
           <p>
             «Мы, старики, не должны сидеть дома. В грозный и ответственный
             момент у нас еще хватит сил по-боевому работать для своей Родины»,—
@@ -39,14 +29,16 @@ const Women = () => {
             работы. На заводе развернулось движение рационализаторов и
             изобретателей.
           </p>
-          <p className={styles.vrezka}>
-            В первый же год на завод вернулись более тысячи ветеранов. К станкам
-            вставали и женщины, бывшие прежде домохозяйками, и подростки
-          </p>
-        </CommonText>
+        </MainText>
       </div>
 
       <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sormovo/8/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <Speech
           title="«Пришла на завод в 16 лет»"
           author={{
