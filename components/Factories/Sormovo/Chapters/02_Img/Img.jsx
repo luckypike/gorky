@@ -1,16 +1,22 @@
-import React, { useRef } from 'react'
-import Image from 'next/image'
+import React from 'react'
+
+import {
+  MainImage
+} from '../../../../'
 
 import styles from './Img.module.css'
 
-export default function Img () {
-  const ImgRef = useRef()
-
+const Img = () => {
   return (
     <figure className={styles.root}>
       <div className={styles.img}>
-        <Image src="/images/sormovo/Img.jpg" alt="QQ" layout="fill" ref={ImgRef} />
+        <MainImage
+          image="/images/sormovo/Img.jpg"
+          alt="QQ"
+        />
       </div>
     </figure>
   )
 }
+
+export default Img

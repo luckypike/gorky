@@ -83,15 +83,14 @@ const Rubinchik = () => {
           Был очень человечным — так говорили о нем все. Действовал не приказом,
           а убеждением».
         </Speech>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/sormovo/6/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>
+
     </div>
   )
 }
