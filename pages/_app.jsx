@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 // import Header from '../components/Header/Header'
+import Loader from '../components/Loader/Loader'
 import useStore from '../stores/useStore'
 
 import '../css/globals.css'
@@ -48,6 +49,26 @@ export default function App ({ Component, props }) {
     }
   }, [router.pathname])
 
+  useEffect(() => {
+    router.events.on('routeChangeStart', handleRouteChangeStart)
+    router.events.on('routeChangeComplete', handleRouteChangeEnd)
+
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChangeStart)
+      router.events.off('routeChangeComplete', handleRouteChangeEnd)
+    }
+  }, [])
+
+  const handleRouteChangeStart = (url) => {
+    appStore.setLoaderEnd(false)
+    appStore.setLoaderStart(true)
+  }
+
+  const handleRouteChangeEnd = (url) => {
+    appStore.setLoaderStart(false)
+    appStore.setLoaderEnd(true)
+  }
+
   return (
     <>
       <Head>
@@ -58,6 +79,7 @@ export default function App ({ Component, props }) {
 
       {/* <Header /> */}
 
+      <Loader />
       <Component { ...props } />
     </>
   )
