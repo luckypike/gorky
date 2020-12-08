@@ -1,4 +1,5 @@
 import React from 'react'
+import cn from 'classnames'
 
 import styles from '../../../../Intro.module.css'
 
@@ -13,7 +14,7 @@ const Intro = () => {
         </div>
 
         <div className={styles.items}>
-          <div className={styles.item}>
+          <div className={cn(styles.item, styles.s)}>
             <div className={styles.digit}>ЧЕТЫРЕ ЗАВОДА</div>
 
             <div className={styles.what}>
@@ -24,7 +25,7 @@ const Intro = () => {
         </div>
 
         <div className={styles.items}>
-          <div className={styles.item}>
+          <div className={cn(styles.item, styles.s)}>
             <div className={styles.digit}>ЕДИНСТВЕННЫЙ ПРОИЗВОДИТЕЛЬ</div>
 
             <div className={styles.what}>

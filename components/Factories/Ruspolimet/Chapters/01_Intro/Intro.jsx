@@ -1,4 +1,5 @@
 import React from 'react'
+import cn from 'classnames'
 
 import styles from '../../../../Intro.module.css'
 
@@ -13,8 +14,8 @@ const Intro = () => {
         </div>
 
         <div className={styles.items}>
-          <div className={styles.item}>
-            <div className={styles.digit}>крупнейший смежник </div>
+          <div className={cn(styles.item, styles.s)}>
+            <div className={styles.digit}>крупнейший смежник</div>
 
             <div className={styles.what}>
               «Красного Сормова» и Горьковского автозавода в 1941–1945 годах
@@ -23,7 +24,7 @@ const Intro = () => {
         </div>
 
         <div className={styles.items}>
-          <div className={styles.item}>
+        <div className={cn(styles.item, styles.s)}>
             <div className={styles.digit}>прочная лобовая броня Т-34</div>
 
             <div className={styles.what}>
