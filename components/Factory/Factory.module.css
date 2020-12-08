@@ -35,3 +35,31 @@
     }
   }
 }
+
+.back {
+  position: absolute;
+  top: calc(var(--yr) * 10);
+  left: var(--xr);
+  right: var(--xr);
+  display: flex;
+  z-index: 99;
+
+  & svg {
+    display: block;
+    margin-right: calc(var(--xr) * 2);
+  }
+}
+
+.backText {
+  font-family: var(--ff_sans);
+  font-size: calc(var(--yr) * 5);
+  line-height: calc(var(--yr) * 5);
+  white-space: nowrap;
+  display: block;
+  transform: translateY(0.075em);
+}
+
+.rd {
+  /* display: block; */
+  color: rgb(var(--hl_color));
+}

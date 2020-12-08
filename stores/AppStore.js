@@ -3,6 +3,8 @@ import { makeAutoObservable } from 'mobx'
 class AppStore {
   dark = true
   lax = false
+  loaderStart = false
+  loaderEnd = false
 
   constructor () {
     makeAutoObservable(this)
@@ -18,6 +20,14 @@ class AppStore {
 
   setLaxInit () {
     this.lax = true
+  }
+
+  setLoaderStart = (value) => {
+    this.loaderStart = value
+  }
+
+  setLoaderEnd = (value) => {
+    this.loaderEnd = value
   }
 
   get laxInit () {

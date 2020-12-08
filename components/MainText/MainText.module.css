@@ -2,13 +2,13 @@
   composes: bt from '../Fonts.module.css';
 
   @media (--s) {
-    font-size: calc(var(--yr) * 7.5);
-    line-height: calc(var(--yr) * 9);
+    font-size: calc(var(--yr) * 6);
+    line-height: calc(var(--yr) * 8);
   }
 
   @media (--l) {
-    font-size: calc(var(--yr) * 7.5 * var(--fs_mod));
-    line-height: calc(var(--yr) * 9 * var(--fs_mod));
+    font-size: calc(var(--yr) * 6 * var(--fs_mod));
+    line-height: calc(var(--yr) * 8 * var(--fs_mod));
   }
 }
 
