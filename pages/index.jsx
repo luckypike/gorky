@@ -37,12 +37,12 @@ export default function Home () {
       </div>
 
       <div className={styles.factories}>
-        <div className={styles.items}>
-          <div className={styles.section}>
-            <div className={styles.ss}>Боевые машины</div>
+        <div className={styles.section}>
+          <div className={styles.ss}>
+            <span>Боевые машины</span>
           </div>
 
-          <div className={styles.g}>
+          <div className={styles.items}>
             <Item
               href="/gaz"
               id="gaz"
@@ -62,9 +62,7 @@ export default function Home () {
               tOut={'elWidth / 8 * -1'}
               img={styles.i32}
             />
-          </div>
 
-          <div className={styles.g}>
             <Item
               href="/etna"
               id="etna"
@@ -83,9 +81,7 @@ export default function Home () {
               tIn={'elWidth / 12'}
               tOut={'elWidth / 10 * -1'}
             />
-          </div>
 
-          <div className={styles.g}>
             <Item
               href="/ruspolimet"
               id="ruspolimet"
@@ -104,9 +100,7 @@ export default function Home () {
               tIn={'elWidth / 12'}
               tOut={'elWidth / 10 * -1'}
             />
-          </div>
 
-          <div className={styles.g}>
             <Item
               href="/gzhd"
               id="gzhd"
@@ -119,12 +113,14 @@ export default function Home () {
           </div>
         </div>
 
-        <div className={styles.items}>
-          <div className={styles.section}>
-            <div className={styles.ss}>Авиастроение</div>
+        <div className={styles.section}>
+          <div className={styles.ss}>
+            <span>
+              Авиастроение
+            </span>
           </div>
 
-          <div className={styles.g}>
+          <div className={styles.items}>
             <Item
               href="/sokol"
               id="sokol"
@@ -147,9 +143,7 @@ export default function Home () {
               tIn={0}
               tOut={0}
             />
-          </div>
 
-          <div className={styles.g}>
             <Item
               href="/teploobmennik"
               id="teploobmennik"
@@ -171,9 +165,7 @@ export default function Home () {
               tIn={0}
               tOut={0}
             />
-          </div>
 
-          <div className={styles.g}>
             <Item
               href="/adcbsz"
               id="adcbsz"
@@ -197,22 +189,24 @@ export default function Home () {
           </div>
         </div>
 
-        <div className={styles.items}>
-          <div className={styles.section}>
-            <div className={styles.ss}>Артиллерия</div>
+        <div className={styles.section}>
+          <div className={styles.ss}>
+            <span>
+              Артиллерия
+            </span>
           </div>
 
-          <Item
-            href="/nmz"
-            id="nmz"
-            img={styles.i32}
-            title="Горьковский машино­строительный Завод № 92 имени И. В. Сталина"
-            desc="АО «Нижегородский машиностроительный завод»"
-            tIn={'elWidth / 5 * -1'}
-            tOut={'elWidth / 8'}
-          />
+          <div className={styles.items}>
+            <Item
+              href="/nmz"
+              id="nmz"
+              img={styles.i32}
+              title="Горьковский машино­строительный Завод № 92 имени И. В. Сталина"
+              desc="АО «Нижегородский машиностроительный завод»"
+              tIn={'elWidth / 5 * -1'}
+              tOut={'elWidth / 8'}
+            />
 
-          <div className={styles.g}>
             <Item
               href="/rumo"
               id="rumo"
