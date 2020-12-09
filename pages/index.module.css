@@ -1,9 +1,5 @@
-.root {
-  background: #ddd;
-  position: relative;
-}
-
 .intro {
+  background: #ddd;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -15,6 +11,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .text {
@@ -45,6 +42,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-family: var(--ff_sans);
+  text-transform: uppercase;
   font-size: calc(var(--yr) * 15);
   line-height: calc(var(--yr) * 15);
   text-align: center;
@@ -61,70 +59,13 @@
   }
 }
 
-.g {
-  @media (--s) {
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-}
-
-.item {
-  overflow: hidden;
-  display: block;
-  margin-bottom: calc(var(--yr) * var(--s5) * 2);
-
-  & a {
-    display: block;
-    user-select: none;
-  }
-
-  @media (--s) {
-    width: calc(7 / 13 * 100vw);
-    margin-bottom: 0;
-    height: 35vh;
-    align-items: center;
-
-    &:nth-child(2n) {
-      margin-top: auto;
-      padding-right: calc(1 / 7 * 100%);
-
-      /* align-items: start; */
-
-      /* background: red; */
-    }
-
-    &:nth-child(2n + 1) {
-      margin-bottom: auto;
-      padding-left: calc(1 / 7 * 100%);
-
-      /* align-items: end; */
-
-      /* background: blue; */
-    }
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    &.sormovo {
-      /* grid-template-columns: 60% auto; */
-    }
-  }
-}
-
-.dt {
-  @media (--s) {
-    padding: calc(var(--yr) * 5) calc(var(--xr) * 2);
-  }
-}
-
 .image {
   background-color: #555;
   background-position: center;
   background-size: cover;
   position: relative;
   padding-top: calc(2 / 3 * 100%);
+  margin-bottom: calc(var(--yr) * var(--s3));
 
   /* Боевые машины */
 
@@ -192,7 +133,7 @@
     background-image: url(../assets/index/images/factories/rumo.jpg);
   }
 
-  @media (--s) {
+  /* @media (--s) {
     padding-top: calc(1 / 1 * 100%);
 
     &.i54 {
@@ -202,55 +143,89 @@
     &.i32 {
       padding-top: calc(2 / 3 * 100%);
     }
-  }
+  } */
 }
 
 .title {
-  margin-top: calc(var(--yr) * var(--s3));
+  margin-bottom: calc(var(--yr) * var(--s1));
   font-family: var(--ff_sans);
-  font-size: calc(var(--yr) * 5);
-  line-height: calc(var(--yr) * 6);
   color: rgb(var(--hl_color));
+  text-transform: uppercase;
 }
 
-.desc {
-  margin-top: calc(var(--yr) * var(--s2));
-  font-weight: bold;
-  font-size: calc(var(--yr) * 5);
-  line-height: calc(var(--yr) * 6);
-
-  /* composes: bt from '../components/Fonts.module.css'; */
+.factories {
+  padding-top: calc(var(--yr) * 10);
 }
 
-.section {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  overflow: hidden;
-  background: #fff;
-  padding: calc(var(--yr) * var(--s3)) 0;
+.items {
+  padding: calc(var(--yr) * 10) var(--xr);
+  display: grid;
+  grid-gap: 8vh calc(1 / 13 * 100%);
+
+  & a {
+    display: block;
+  }
 
   @media (--s) {
-    padding: 0;
-    position: absolute;
-    left: 0;
-    right: auto;
-    top: 50%;
-    margin-top: calc(var(--yr) * 15 * -1);
+    padding: calc(var(--yr) * 10) calc(1 / 13 * 100%);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (--l) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
+.section {
+  position: relative;
+}
+
 .ss {
-  color: rgb(var(--hl_color));
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.6);
   font-family: var(--ff_sans);
-  font-size: calc(var(--yr) * 10);
-  line-height: calc(var(--yr) * 10);
+  text-transform: uppercase;
+  color: rgb(var(--hl_color));
+  font-size: calc(var(--yr) * 8);
+  line-height: calc(var(--yr) * 8);
   text-align: center;
+  padding: calc(var(--yr) * 4);
+  display: flex;
+  backdrop-filter: blur(6px);
+
+  & span {
+    /* background: rgba(255, 255, 255, 0.6); */
+    display: block;
+    margin: auto;
+  }
 
   @media (--s) {
-    font-size: calc(var(--yr) * 30);
-    line-height: calc(var(--yr) * 30);
+    font-size: calc(var(--yr) * 20);
+    line-height: calc(var(--yr) * 20);
+    padding: calc(var(--yr) * 8) calc(1 / 13 * 100%);
+  }
+
+  @media (--l) {
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 2px solid rgb(var(--hl_color));
+      position: absolute;
+      top: 50%;
+      right: calc(1 / 13 * 100%);
+      left: calc(10 / 13 * 100%);
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      border-bottom: 2px solid rgb(var(--hl_color));
+      position: absolute;
+      top: 50%;
+      left: calc(1 / 13 * 100%);
+      right: calc(10 / 13 * 100%);
+    }
   }
 }
