@@ -4,7 +4,14 @@ import useStore from '../../stores/useStore'
 import { Factory } from '../../components'
 import {
   Intro,
-  Img
+  Img,
+  Oldest,
+  Rebuild,
+  Part,
+  Wave,
+  Masking,
+  Сalls,
+  ReturnToPlace
 } from '../../components/Factories/Rumo/Chapters'
 
 import styles from './index.module.css'
@@ -22,6 +29,20 @@ const Rumo = () => {
         <Intro />
 
         <Img />
+
+        <Oldest />
+
+        <Rebuild />
+
+        <Part />
+
+        <Wave />
+
+        <Masking />
+
+        <Сalls />
+
+        <ReturnToPlace />
       </div>
     </Factory>
   )

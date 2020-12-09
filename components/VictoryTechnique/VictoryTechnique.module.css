@@ -1,0 +1,8 @@
+.content {
+  padding: 1rem 2rem;
+  background-color: rgb(var(--grey_color));
+}
+
+.title {
+  color: rgb(var(--hl_color));
+}

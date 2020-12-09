@@ -313,9 +313,8 @@ export default function Home () {
                     href="/rumo"
                     id="rumo"
                     img={styles.i54}
-                    title="ДЗЕРЖИНСКИЙ
-                    ЗАВОД No 148 «РУЛОН»"
-                    desc="ОАО «Дзержинское оргстекло»"
+                    title="ГОРЬКОВСКИЙ ЗАВОД № 718 «ДВИГАТЕЛЬ РЕВОЛЮЦИИ»"
+                    desc="ОАО РУМО"
                     tIn={0}
                     tOut={0}
                     scroller={scroller}
