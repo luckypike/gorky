@@ -2,13 +2,21 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainImage, MainText, CommonImages, CommonText } from '../../../../'
 
 import styles from './USSRAuto.module.css'
 
 const USSRAuto = () => {
   return (
     <div className={styles.root}>
+      <div className={styles.page}>
+        <MainImage>
+          <figure className={classNames(styles.img, styles.intro)}>
+            <Image src="/images/gaz/img.jpg" layout="fill" />
+          </figure>
+        </MainImage>
+      </div>
+
       <div className={styles.page}>
         <MainText title="Гигант советского автопрома">
           <p>
@@ -20,17 +28,17 @@ const USSRAuto = () => {
             и Ford-AA.
           </p>
         </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/gaz/3/2.jpg" layout="fill" />
+        <CommonImages>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/3/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
 
-      <div className={styles.page}>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/3/3.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
+
         <CommonText>
           <p>
             Согласно договору с Ford Motor Company, ГАЗ обязался
@@ -45,23 +53,7 @@ const USSRAuto = () => {
             договор с Ford Motor Company был расторгнут. В тот же год с
             конвейера завода сошел стотысячный автомобиль ГАЗ-А.
           </p>
-        </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/gaz/3/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/gaz/3/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonText>
           <p>
             Согласно мобилизационному плану СССР, после начала Второй мировой
             войны в 1939 году ГАЗ должен был освоить производство продукции

@@ -1,11 +1,9 @@
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .img {
   composes: ari from '../../../../Images.module.css';
+
+  &.intro {
+    padding-top: calc(1027 / 2028 * 100%);
+  }
 
   &.main {
     padding-top: calc(1318 / 942 * 100%);
@@ -22,8 +20,4 @@
 
 .page {
   composes: page from '../../../../Factory/Factory.module.css';
-}
-
-.fpi {
-  align-self: center;
 }

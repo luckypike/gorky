@@ -1,14 +1,42 @@
 .root {
-  background: gray;
+  background: #ddd;
   position: relative;
 }
 
 .intro {
-  position: fixed;
-  background: url(../assets/index/images/Star.jpg) no-repeat center;
-  background-size: cover;
+  position: relative;
   height: 100vh;
   width: 100%;
+}
+
+.bg,
+.star,
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  z-index: 3;
+}
+
+.bgin {
+  background: url(../assets/index/images/Bg.jpg) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  left: -5%;
+  right: -5%;
+  top: -5%;
+  bottom: -5%;
+}
+
+.star {
+  background: url(../assets/index/images/Star.png) no-repeat center 40%;
+  z-index: 2;
+  background-size: 50vh;
 }
 
 .name {
@@ -30,35 +58,6 @@
     font-size: calc(var(--yr) * 25);
     line-height: calc(var(--yr) * 25);
     white-space: nowrap;
-  }
-}
-
-.content {
-  background: rgba(255, 255, 255);
-  backdrop-filter: blur(10px);
-
-  @media (--s) {
-    overflow: hidden;
-    display: flex;
-  }
-}
-
-.factories {
-  position: relative;
-  padding: 50vh var(--xr) calc(var(--yr) * var(--s4) * 2);
-
-  @media (--s) {
-    flex-shrink: 0;
-    padding: 0 0 0 50vw;
-    display: flex;
-  }
-}
-
-.items {
-  position: relative;
-
-  @media (--s) {
-    display: flex;
   }
 }
 

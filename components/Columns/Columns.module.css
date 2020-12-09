@@ -1,0 +1,16 @@
+.root {
+  display: grid;
+  margin-bottom: var(--sb);
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4vw;
+
+  @media (--s) {
+    padding: 0 calc(1 / 13 * 100%);
+    font-size: 1.8vw;
+    line-height: 3vw;
+
+    &.content {
+      padding: 0 calc(2 / 13 * 100%);
+    }
+  }
+}

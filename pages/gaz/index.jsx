@@ -1,11 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
-import useStore from '../../stores/useStore'
 import { Factory } from '../../components'
 
 import {
   Intro,
-  Img1,
   USSRAuto,
   FirstYears,
   Conveyor,
@@ -20,46 +18,34 @@ import {
   Victory
 } from '../../components/Factories/Gaz/Chapters'
 
-import styles from './index.module.css'
-
 const Gaz = () => {
-  const appStore = useStore()
-
-  useEffect(() => {
-    appStore.setDark(false)
-  }, [appStore])
-
   return (
     <Factory>
-      <div className={styles.root}>
-          <Intro />
+      <Intro />
 
-          <Img1 />
+      <USSRAuto />
 
-          <USSRAuto />
+      <FirstYears />
 
-          <FirstYears />
+      <Conveyor />
 
-          <Conveyor />
+      <Passability />
 
-          <Passability />
+      <Loskutov />
 
-          <Loskutov />
+      <Lipgart />
 
-          <Lipgart />
+      <FirstBombing />
 
-          <FirstBombing />
+      <OneAndHalf />
 
-          <OneAndHalf />
+      <Defense />
 
-          <Defense />
+      <CityUnderAttack />
 
-          <CityUnderAttack />
+      <IsALive />
 
-          <IsALive />
-
-          <Victory />
-      </div>
+      <Victory />
     </Factory>
   )
 }

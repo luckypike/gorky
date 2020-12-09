@@ -88,13 +88,8 @@
   line-height: calc(var(--yr) * 7);
 
   @media (--s) {
-    font-size: calc(var(--yr) * 9);
-    line-height: calc(var(--yr) * 11);
-  }
-
-  @media (--l) {
-    font-size: calc(var(--yr) * 9 * var(--fs_mod));
-    line-height: calc(var(--yr) * 11 * var(--fs_mod));
+    font-size: 3.6vw;
+    line-height: 5vw;
   }
 }
 

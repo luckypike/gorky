@@ -52,14 +52,12 @@ const IsALive = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gaz/13/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p>
             Рабочие собирали деньги на строительство двух истребителей, которые
@@ -85,14 +83,11 @@ const IsALive = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
+        {/* <CommonImage>
           <figure className={classNames(styles.img, styles._4)}>
             <Image src="/images/gaz/13/4.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
-
-      <div className={styles.page}>
         <CommonImage>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/gaz/13/3.jpg" layout="fill" />
@@ -102,7 +97,7 @@ const IsALive = () => {
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/gaz/13/2.jpg" layout="fill" />
           </figure>
-        </CommonImage>
+        </CommonImage> */}
       </div>
     </div>
   )

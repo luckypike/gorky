@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, Columns } from '../../../../'
 
 import styles from './FirstYears.module.css'
 
@@ -24,17 +24,13 @@ const FirstYears = () => {
             предприятие специалистов мобилизовали с других заводов.
           </p>
         </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/gaz/4/3.jpg" layout="fill" />
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/4/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p>
             Еще около 1,5 тыс. женщин-домохозяек пришли трудиться на ГАЗ в
@@ -43,16 +39,8 @@ const FirstYears = () => {
             колесном, кузовном цехах и в цехе запасных частей заключенные
             исправительно-трудовой колонии № 3.
           </p>
-        </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/gaz/4/4.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonText>
-          <p>
+           <p>
             Работы, как и на других предприятиях, было много. Созданный 30 июня
             1941 года Государственный комитет обороны СССР своим первым решением
             от 1 июля обязал ГАЗ к 1 октября освоить выпуск авиамоторов М-17. Их
@@ -60,11 +48,7 @@ const FirstYears = () => {
             Т-34, которые делали на «Красном Сормове». Сначала моторы выпускал
             завод № 466, который располагался на территории ГАЗа.
           </p>
-        </CommonText>
-      </div>
 
-      <div className={styles.page}>
-        <CommonText>
           <p>
             В июле 1941 года его ликвидировали и преобразовали в цех авиамоторов
             ГАЗа, но ненадолго. Выпустив в первый год войны 150 моторов М-17 и
@@ -75,34 +59,37 @@ const FirstYears = () => {
         </CommonText>
 
         <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/gaz/4/1.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/4/4.jpg" layout="fill" />
           </figure>
         </CommonImage>
 
-        <CommonText>
-          <p>
-            За первый год кроме танков ГАЗ выпустил 68,4 тыс. грузовых
-            автомобилей и автобусов, 3 тыс. легковых машин, 2,6 тыс. минометов,
-            150 шт. походных кухонь, около 1,5 тыс. снарядов 45 мм и 57 мм, 4,7
-            тыс. мин, 4 тыс. авиавзрывателей, 8,5 тыс. звеньев для авиапушек
-            ШВАК (Шпитального-Владимирова авиационная крупнокалиберная), 13,6
-            тыс. комплектов цепей «Гаяндт» и собрал 221 автомобиль, полученный
-            по ленд-лизу (программа, по которой США поставляли своим союзникам
-            во время Второй мировой войны вооружение, боеприпасы, технику,
-            сырье). Завод был единственным производителем мотоциклетных колясок
-            и за год выпустил 5,3 тыс. шт. В 1941 году ГАЗ получил первую
-            высокую награду — орден Ленина.
-          </p>
-        </CommonText>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/gaz/4/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
+        <Columns
+          left={
+            <div>
+            <p>
+                За первый год кроме танков ГАЗ выпустил 68,4 тыс. грузовых
+                автомобилей и автобусов, 3 тыс. легковых машин, 2,6 тыс. минометов,
+                150 шт. походных кухонь, около 1,5 тыс. снарядов 45 мм и 57 мм, 4,7
+                тыс. мин, 4 тыс. авиавзрывателей, 8,5 тыс. звеньев для авиапушек
+                ШВАК (Шпитального-Владимирова авиационная крупнокалиберная), 13,6
+                тыс. комплектов цепей «Гаяндт» и собрал 221 автомобиль, полученный
+                по ленд-лизу (программа, по которой США поставляли своим союзникам
+                во время Второй мировой войны вооружение, боеприпасы, технику,
+                сырье). Завод был единственным производителем мотоциклетных колясок
+                и за год выпустил 5,3 тыс. шт. В 1941 году ГАЗ получил первую
+                высокую награду — орден Ленина.
+              </p>
+            </div>
+          }
+          right={
+            <div>
+              <figure className={classNames(styles.img, styles._3)}>
+                <Image src="/images/gaz/4/2.jpg" layout="fill" />
+              </figure>
+            </div>
+          }
+        />
       </div>
     </div>
   )

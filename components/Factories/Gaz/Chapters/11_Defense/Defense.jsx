@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, CommonImages } from '../../../../'
 
 import styles from './Defense.module.css'
 
@@ -20,18 +20,19 @@ const Defense = () => {
             Свердловске и № 38 в Кирове. ГАЗ выпустил почти в пять раз больше
             таких танков, чем оба других завода.
           </p>
-        </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
+        </MainText>
+
+        <CommonImages middle>
+         <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gaz/11/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
 
-      <div className={styles.page}>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/11/2.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
+
         <CommonText>
           <p>
             Эффективность танков Т-70 вызывала сомнения. В конце 1941 года была
@@ -55,16 +56,8 @@ const Defense = () => {
         </CommonText>
 
         <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/gaz/11/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/gaz/11/2.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles._6)}>
+            <Image src="/images/gaz/11/7.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>
@@ -88,31 +81,11 @@ const Defense = () => {
             битвы в 1943 году. На базе Т-70 с конца 1942 года уже выпускали
             самоходную установку СУ-76. Ее спроектировали на заводе № 38 в
             Кирове.
-          </p>
-        </CommonText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/gaz/11/5.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._4)}>
-            <Image src="/images/gaz/11/4.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
             Первые модификации были неудачными, виновным в этом признали
             конструктора кировского предприятия Семена Гинзбурга. В 1943 году
             его сняли с должности и отправили на фронт. Выпуск СУ-76 прекратили.
           </p>
+
           <p>
             Однако необходимость фронта в самоходных установках была острой, и
             народный комиссар танковой промышленности объявил конкурс на лучший
@@ -121,13 +94,11 @@ const Defense = () => {
         </CommonText>
 
         <CommonImage>
-          <figure className={classNames(styles.img, styles._5)}>
-            <Image src="/images/gaz/11/6.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/11/3.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p>
             Участие в разработке нового проекта приняли коллектив кировского
@@ -147,11 +118,25 @@ const Defense = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._6)}>
-            <Image src="/images/gaz/11/7.jpg" layout="fill" />
+        {/* <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/gaz/11/5.jpg" layout="fill" />
           </figure>
         </CommonImage>
+      </div>
+
+      <div className={classNames(styles.page, styles.fpi)}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._4)}>
+            <Image src="/images/gaz/11/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage> */}
+
+        {/* <CommonImage>
+          <figure className={classNames(styles.img, styles._5)}>
+            <Image src="/images/gaz/11/6.jpg" layout="fill" />
+          </figure>
+        </CommonImage> */}
       </div>
     </div>
   )
