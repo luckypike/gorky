@@ -94,8 +94,12 @@ export default function Home () {
         onWheel: (state, event) => {
           let offsetX = 0
 
-          if (event.deltaY >= 0 && event.deltaX >= 0) { offsetX = Math.max(event.deltaY, event.deltaX) }
-          if (event.deltaY <= 0 && event.deltaX <= 0) { offsetX = Math.min(event.deltaY, event.deltaX) }
+          if (event.deltaY >= 0 && event.deltaX >= 0) {
+            offsetX = Math.max(event.deltaY, event.deltaX)
+          }
+          if (event.deltaY <= 0 && event.deltaX <= 0) {
+            offsetX = Math.min(event.deltaY, event.deltaX)
+          }
 
           SBRef.current.scrollOffset.x = -offsetX / 1.5
           SBRef.current.scrollOffset.y = -event.deltaY / 1.5
@@ -114,14 +118,11 @@ export default function Home () {
 
       <div className={styles.content} ref={contentRef}>
         <div className={styles.factories} ref={factoriesRef}>
-
           {laxInit && (
             <>
               <div className={styles.items}>
                 <div className={styles.section}>
-                  <div className={styles.ss}>
-                    Боевые машины
-                  </div>
+                  <div className={styles.ss}>Боевые машины</div>
                 </div>
 
                 <div className={styles.g}>
@@ -134,7 +135,6 @@ export default function Home () {
                     tIn={'elWidth / 5 * -1'}
                     tOut={'elWidth / 8'}
                     scroller={scroller}
-
                   />
 
                   <Item
@@ -211,9 +211,7 @@ export default function Home () {
 
               <div className={styles.items}>
                 <div className={styles.section}>
-                  <div className={styles.ss}>
-                    Аваистроение
-                  </div>
+                  <div className={styles.ss}>Авиастроение</div>
                 </div>
 
                 <div className={styles.g}>
@@ -264,7 +262,6 @@ export default function Home () {
                     title="ПАВЛОВСКИЙ ЗАВОД No 467"
                     desc="АО «Гидроагрегат»"
                     tIn={0}
-
                     tOut={0}
                     scroller={scroller}
                   />
@@ -295,6 +292,36 @@ export default function Home () {
                   />
                 </div>
               </div>
+              <div className={styles.items}>
+                <div className={styles.section}>
+                  <div className={styles.ss}>Артиллерия</div>
+                </div>
+
+                <Item
+                  href="/nmz"
+                  id="nmz"
+                  img={styles.i32}
+                  title="Горьковский машино­строительный Завод № 92 имени И. В. Сталина"
+                  desc="АО «Нижегородский машиностроительный завод»"
+                  tIn={'elWidth / 5 * -1'}
+                  tOut={'elWidth / 8'}
+                  scroller={scroller}
+                />
+
+                <div className={styles.g}>
+                  <Item
+                    href="/rumo"
+                    id="rumo"
+                    img={styles.i54}
+                    title="ДЗЕРЖИНСКИЙ
+                    ЗАВОД No 148 «РУЛОН»"
+                    desc="ОАО «Дзержинское оргстекло»"
+                    tIn={0}
+                    tOut={0}
+                    scroller={scroller}
+                  />
+                </div>
+              </div>
             </>
           )}
         </div>
@@ -310,14 +337,8 @@ Item.propTypes = {
   desc: PropTypes.string,
   img: PropTypes.string,
   scroller: PropTypes.bool,
-  tIn: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number
-  ]),
-  tOut: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number
-  ])
+  tIn: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  tOut: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 function Item ({ href, title, id, desc, img, tIn, tOut, scroller }) {
@@ -345,13 +366,9 @@ function Item ({ href, title, id, desc, img, tIn, tOut, scroller }) {
         <div className={cn(styles.image, img, styles[id])} />
 
         <div className={styles.dt}>
-          <div className={styles.title}>
-            {title}
-          </div>
+          <div className={styles.title}>{title}</div>
 
-          <div className={styles.desc}>
-            {desc}
-          </div>
+          <div className={styles.desc}>{desc}</div>
         </div>
       </a>
     </Link>

@@ -183,6 +183,16 @@
     background-image: url(../assets/index/images/factories/teploobmennik.jpg);
   }
 
+  /* Артиллерия */
+
+  &.nmz {
+    background-image: url(../assets/index/images/factories/nmz.jpg);
+  }
+
+  &.rumo {
+    background-image: url(../assets/index/images/factories/rumo.jpg);
+  }
+
   @media (--s) {
     padding-top: calc(1 / 1 * 100%);
 

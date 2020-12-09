@@ -1,0 +1,25 @@
+.root {
+  @media (--l) {
+    display: flex;
+  }
+}
+
+.img {
+  composes: ari from '../../../../Images.module.css';
+
+  &.main {
+    padding-top: calc(1260 / 2027 * 100%);
+  }
+}
+
+.fpi {
+  align-items: center;
+}
+
+.page {
+  composes: page from '../../../../Factory/Factory.module.css';
+}
+
+.vrezka {
+  composes: vrezka from '../../../../Fonts.module.css';
+}

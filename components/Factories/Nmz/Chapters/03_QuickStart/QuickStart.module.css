@@ -1,0 +1,9 @@
+.root {
+  @media (--l) {
+    display: flex;
+  }
+}
+
+.page {
+  composes: page from '../../../../Factory/Factory.module.css';
+}
