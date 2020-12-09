@@ -1,25 +1,14 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import styles from './MainImage.module.css'
 
-const MainImage = ({ image, caption }) => {
-  const ImgRef = useRef()
-  return (
-    <div className={styles.root}>
-      <figure
-        style={{ backgroundImage: `url(${image})` }}
-        ref={ImgRef}
-      >
-        {/* <img src={image} alt="img" /> */}
-        {caption && <figcaption>{caption}</figcaption>}
-      </figure>
-    </div>
-  )
+const MainImage = ({ children, caption }) => {
+  return <div className={styles.root}>{children}</div>
 }
 
 MainImage.propTypes = {
-  image: PropTypes.string,
+  children: PropTypes.node,
   caption: PropTypes.string
 }
 

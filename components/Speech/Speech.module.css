@@ -1,9 +1,11 @@
 .root {
   padding: 0 var(--xr);
-  margin-bottom: calc(var(--yr) * var(--s4));
+  margin-bottom: 12vh;
 
   @media (--s) {
-    padding: 0;
+    padding: 0 calc(2 / 13 * 100%);
+    font-size: 1.8vw;
+    line-height: 3vw;
   }
 }
 

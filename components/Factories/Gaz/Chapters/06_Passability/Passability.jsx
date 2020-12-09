@@ -16,21 +16,6 @@ const Passability = () => {
             экспериментальном цехе ГАЗа в феврале 1941 года. Разработка ГАЗ-64
             шла под руководством ведущего конструктора В.А. Грачева в рекордно
             короткие сроки — с 3 февраля по 25 марта.
-          </p>
-        </MainText>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/gaz/6/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
             В апреле 1941 года машина проходила испытания на полигоне в Кубинке,
             которые выявили ряд недостатков опытного автомобиля. После их
             устранения ГАЗ-64 приняли на вооружение. В августе 1941 года вышла
@@ -40,50 +25,48 @@ const Passability = () => {
             ряд его цехов заняли выпуском реактивных мин и иной военной
             продукции.
           </p>
+        </MainText>
 
+        {/* <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/gaz/6/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage> */}
+
+        <CommonText>
           <p>
             ГАЗ-64 серийно выпускался до апреля 1943 года. Всего было
             произведено 672 автомобиля.
           </p>
-        </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/gaz/6/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonText>
           <p>
             С конца 1943 года завод начал выпускать усовершенствованную версию
             полноприводного ГАЗ-64 — ГАЗ-67 с расширенной колеей. Позже его
             сменил модернизированный ГАЗ-67Б, отличавшийся доработанной ходовой
             частью и усовершенствованной системой зажигания.
           </p>
-        </CommonText>
-      </div>
 
-      <div className={styles.page}>
-        <CommonText>
           <p>
             ГАЗ-67Б широко использовался как штабной и разведывательный
             автомобиль, перевозчик пехоты и раненых, а также как легкий
             артиллерийский тягач. Всего за годы войны было выпущено 6068
             автомобилей ГАЗ-67 и ГАЗ-67Б.
           </p>
+        </CommonText>
 
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/6/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        <CommonText>
           <p>
             В августе 1942 года ГАЗ впервые получил переходящее Красное знамя
             Государственного комитета обороны. Его вручали предприятию за
             успешную работу коллектива. Сотрудникам-ударникам полагались
             денежные премии.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/gaz/6/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
 
           <p>
             Осенью на Горьковском автозаводе сменилось руководство — директором
@@ -92,6 +75,12 @@ const Passability = () => {
             Наркомат электростанций СССР.
           </p>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/6/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

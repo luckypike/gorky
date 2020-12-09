@@ -1,9 +1,3 @@
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .img {
   composes: ari from "../../../../Images.module.css";
 
@@ -22,8 +16,4 @@
 
 .page {
   composes: page from "../../../../Factory/Factory.module.css";
-}
-
-.fpi {
-  align-items: center;
 }
