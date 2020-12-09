@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage, Speech, Columns } from '../../../../'
+import { MainText, CommonText, Speech, Columns } from '../../../../'
 
 import styles from './Lipgart.module.css'
 
@@ -70,7 +70,7 @@ const Lipgart = () => {
             title="«Смотрел вперед дальше всех»"
             author={{
               name:
-                'Начальник лаборатории испытаний легковых автомобилей ГАЗа в годы войны М. С. Мокее:'
+                'Начальник лаборатории испытаний легковых автомобилей ГАЗа в годы войны М. С. Мокеев:'
             }}
           >
             «Липгарт всегда знал все лучше других и чуть ли не раньше всех: он

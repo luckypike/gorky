@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, Columns } from '../../../../'
 
 import styles from './OneAndHalf.module.css'
 
@@ -19,46 +19,45 @@ const OneAndHalf = () => {
             называемые «полуторками» за их грузоподъемность — 1,5 т.
           </p>
         </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/gaz/10/1.jpg" layout="fill" />
+        <Columns
+          right ={
+            <div>
+              <figure className={classNames(styles.img, styles.main)}>
+                <Image src="/images/gaz/10/1.jpg" layout="fill" />
+              </figure>
+            </div>
+          }
+          left={
+            <div>
+              <p>
+                Конструкция военных ГАЗ-ММ упростилась: двери заменили брезентовыми
+                полотнищами, крылья делали из кровельного железа, тормозов на
+                передних колесах не было, а фара была только одна — левая .
+                «Полуторки» были необходимы фронту для военных перевозок. Именно
+                ГАЗ-ММ курсировал по «дороге жизни», доставляя продукты в блокадный
+                Ленинград.
+              </p>
+
+              <p>
+                Историки А. А. Гордин, Е. И. Подрепный в своей книге «Производство
+                танков Т-60 на Горьковском автозаводе в 1941–1942 годах» отмечают: «В
+                конце 1941 года ГАЗ оказался перегруженным выпуском непрофильной
+                продукции, а на первый квартал 1942 года заводу не были выделены фонды
+                по всем решающим материалам (то есть их не планировалось и поставлять)
+                для производства основной, автомобильной, продукции. И это при том,
+                что план выпуска был утвержден рекордным по объему».
+              </p>
+            </div>
+          }
+        />
+
+        {/* <CommonImage content>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/10/2.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
+        </CommonImage> */}
 
-      <div className={styles.page}>
-        <CommonText>
-          <p>
-            Конструкция военных ГАЗ-ММ упростилась: двери заменили брезентовыми
-            полотнищами, крылья делали из кровельного железа, тормозов на
-            передних колесах не было, а фара была только одна — левая .
-            «Полуторки» были необходимы фронту для военных перевозок. Именно
-            ГАЗ-ММ курсировал по «дороге жизни», доставляя продукты в блокадный
-            Ленинград.
-          </p>
-        </CommonText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/gaz/10/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <p>
-          Историки А. А. Гордин, Е. И. Подрепный в своей книге «Производство
-          танков Т-60 на Горьковском автозаводе в 1941–1942 годах» отмечают: «В
-          конце 1941 года ГАЗ оказался перегруженным выпуском непрофильной
-          продукции, а на первый квартал 1942 года заводу не были выделены фонды
-          по всем решающим материалам (то есть их не планировалось и поставлять)
-          для производства основной, автомобильной, продукции. И это при том,
-          что план выпуска был утвержден рекордным по объему».
-        </p>
-      </div>
-
-      <div className={styles.page}>
         <CommonText>
           <p>
             Производство ГАЗ-ММ зависело от заводов-смежников. С началом войны
@@ -70,17 +69,12 @@ const OneAndHalf = () => {
             года под угрозой срыва оказалось задание по выпуску грузовых
             автомобилей.
           </p>
-        </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/gaz/10/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
+          <p className={styles.vrezka}>
+            «Полуторки» курсировали по «дороге жизни» и доставляли продукты в
+            блокадный Ленинград
+          </p>
 
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Тогда И. К. Лоскутов направил в ГКО письмо, в котором предложил
             программу помощи предприятию. Руководство завода просило разрешить
@@ -92,19 +86,18 @@ const OneAndHalf = () => {
           </p>
         </CommonText>
 
-        <p className={styles.vrezka}>
-          «Полуторки» курсировали по «дороге жизни» и доставляли продукты в
-          блокадный Ленинград
-        </p>
+        {/* <CommonImage >
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gaz/10/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage> */}
 
-        <CommonImage>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles._4)}>
             <Image src="/images/gaz/10/5.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p>
             С ноября 1941 года СССР присоединился к американской программе
@@ -122,13 +115,13 @@ const OneAndHalf = () => {
             В 1942 году сборка на Горьковском автозаводе достигла почти 1000
             импортных автомобилей в месяц».
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._3)}>
-              <Image src="/images/gaz/10/4.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/gaz/10/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )
