@@ -23,14 +23,14 @@ const Lipgart = () => {
         </MainText>
 
         <Columns
-          right ={
+          left ={
             <div>
               <figure className={classNames(styles.img, styles.main)}>
                 <Image src="/images/gaz/8/1.jpg" layout="fill" />
               </figure>
             </div>
           }
-          left={
+          right={
             <div>
               <p>
                 От личного кабинета на ГАЗе Андрей Липгарт отказался. Он расположил

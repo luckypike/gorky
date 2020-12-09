@@ -8,9 +8,11 @@
     padding: 0 calc(1 / 13 * 100%);
     font-size: 1.8vw;
     line-height: 3vw;
+  }
 
-    &.content {
-      padding: 0 calc(2 / 13 * 100%);
-    }
+  @media (--l) {
+    padding: 0 calc(2 / 13 * 100%);
+    font-size: 1.3vw;
+    line-height: 2.4vw;
   }
 }

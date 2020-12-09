@@ -7,6 +7,12 @@
     font-size: 1.8vw;
     line-height: 3vw;
   }
+
+  @media (--l) {
+    padding: 0 calc(3 / 13 * 100%);
+    font-size: 1.3vw;
+    line-height: 2.4vw;
+  }
 }
 
 .intro {

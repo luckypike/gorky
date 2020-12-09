@@ -1,14 +1,9 @@
-.back {
-  position: absolute;
-  top: calc(var(--yr) * 10);
-  left: var(--xr);
-  right: var(--xr);
+.header {
+  padding: calc(var(--yr) * 2) 0;
   display: flex;
-  z-index: 99;
 
-  & svg {
-    display: block;
-    margin-right: calc(var(--xr) * 2);
+  @media (--s) {
+    margin-top: 32px;
   }
 }
 
@@ -29,4 +24,49 @@
 .page {
   /* max-width: 1600px; */
   margin: 0 auto;
+}
+
+.name {
+  font-family: var(--ff_sans);
+  text-transform: uppercase;
+  line-height: calc(var(--yr) * 10);
+  margin: auto;
+}
+
+.back {
+  position: fixed;
+  left: 8px;
+  top: 8px;
+  width: 40px;
+  height: 40px;
+  z-index: 99;
+
+  & svg {
+    display: block;
+  }
+
+  @media (--s) {
+    margin-left: -8px;
+    top: 40px;
+    left: calc(1 / 13 * 100%);
+  }
+}
+
+.menu {
+  position: fixed;
+  right: 6px;
+  top: 8px;
+  width: 40px;
+  height: 40px;
+  z-index: 99;
+
+  & svg {
+    display: block;
+  }
+
+  @media (--s) {
+    top: 40px;
+    margin-right: -10px;
+    right: calc(1 / 13 * 100%);
+  }
 }
