@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 import styles from './index.module.css'
 
-export default function Home() {
+export default function Home () {
   // const appStore = useStore()
 
   const introRef = useRef()
@@ -263,10 +263,10 @@ Item.propTypes = {
   img: PropTypes.string,
   scroller: PropTypes.bool,
   tIn: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  tOut: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  tOut: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
-function Item({ href, title, id, desc, img }) {
+function Item ({ href, title, id, desc, img }) {
   return (
     <Link href={href}>
       <a className={cn([styles.item, styles[id]])}>
