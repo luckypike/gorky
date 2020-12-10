@@ -1,0 +1,13 @@
+.root {
+  @media (--l) {
+    display: flex;
+  }
+}
+
+.page {
+  composes: page from '../../../../Factory/Factory.module.css';
+}
+
+.vrezka {
+  composes: vrezka from '../../../../Fonts.module.css';
+}

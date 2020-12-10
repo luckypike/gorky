@@ -1,0 +1,8 @@
+export { default as Intro } from './01_Intro/Intro'
+export { default as Img } from './02_Img/Img'
+export { default as DayBefore } from './03_DayBefore/DayBefore'
+export { default as FirstFight } from './04_FirstFight/FirstFight'
+export { default as Submarines } from './05_Submarines/Submarines'
+export { default as Baby } from './06_Baby/Baby'
+export { default as Stalinici } from './07_Stalinici/Stalinici'
+export { default as Extends } from './08_Extends/Extends'

@@ -321,6 +321,38 @@ export default function Home () {
                   />
                 </div>
               </div>
+              <div className={styles.items}>
+                <div className={styles.section}>
+                  <div className={styles.ss}>Боеприпасы</div>
+                </div>
+
+                <Item
+                  href="/sverdlov"
+                  id="sverdlov"
+                  img={styles.i32}
+                  title="ДЗЕРЖИНСКИЙ ЗАВОД № 80 ИМЕНИ Я. М. СВЕРДЛОВА"
+                  desc="ФКП «Завод имени Я. М. Свердлова»"
+                  tIn={'elWidth / 5 * -1'}
+                  tOut={'elWidth / 8'}
+                  scroller={scroller}
+                />
+              </div>
+              <div className={styles.items}>
+                <div className={styles.section}>
+                  <div className={styles.ss}>Судостроение</div>
+                </div>
+
+                <Item
+                  href="/sormovo_sudo"
+                  id="sormovo_sudo"
+                  img={styles.i32}
+                  title="Горьковский Завод № 112 «Красное Сормово»"
+                  desc="ПАО «Завод „Красное Сормово“»"
+                  tIn={'elWidth / 5 * -1'}
+                  tOut={'elWidth / 8'}
+                  scroller={scroller}
+                />
+              </div>
             </>
           )}
         </div>
