@@ -1,7 +1,15 @@
 .root {
-  margin-bottom: calc(var(--yr) * var(--s4));
+  margin-bottom: var(--sb);
 
-  /* &:last-child {
-    margin-bottom: 0;
-  } */
+  @media (--s) {
+    &.content {
+      padding: 0 calc(2 / 13 * 100%);
+    }
+  }
+
+  @media (--s) {
+    &.content {
+      padding: 0 calc(3 / 13 * 100%);
+    }
+  }
 }

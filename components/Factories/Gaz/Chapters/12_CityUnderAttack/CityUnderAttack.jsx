@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage, Speech } from '../../../../'
+import { MainText, CommonText, CommonImage, Speech, CommonImages } from '../../../../'
 
 import styles from './CityUnderAttack.module.css'
 
@@ -18,62 +18,56 @@ const CityUnderAttack = () => {
             налетах участвовало 655 самолетов врага. Из 2,2 тыс. сброшенных бомб
             более 1,5 тыс. поразили объекты автозавода.
           </p>
-        </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/gaz/12/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Разрушенными оказались более 50 зданий и сооружений, в том числе
             цехи шасси, колесный, монтажный, главный конвейер, кузовной корпус,
             прессовый, кузнечный, литейный, паровозное депо и другие сооружения.
             Стратегический завод был практически разрушен.
           </p>
+        </MainText>
 
-          <p className={styles.vrezka}>
-            Разрушенными оказались более 50 зданий и сооружений.
-          </p>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/gaz/12/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
 
-          <Speech
-            title="«Люди не сдавались»"
-            author={{
-              name: 'Директор ГАЗа в годы войны И. К. Лоскутов:'
-            }}
-          >
-            «Пустые оконные пролеты, горелый кирпич, покореженные
-            металлоконструкции. Но жизнь на автогиганте не замерла. То, что
-            фашисты крушили ночью, люди восстанавливали днем. Ночные
-            бомбардировки, пожары выматывали, уносили десятки жизней. А люди не
-            сдавались, делали все, что в их силах, боролись за каждый станок, за
-            каждое здание».
-          </Speech>
+        <Speech
+          title="«Люди не сдавались»"
+          author={{
+            name: 'Директор ГАЗа в годы войны И. К. Лоскутов:'
+          }}
+        >
+          «Пустые оконные пролеты, горелый кирпич, покореженные
+          металлоконструкции. Но жизнь на автогиганте не замерла. То, что
+          фашисты крушили ночью, люди восстанавливали днем. Ночные
+          бомбардировки, пожары выматывали, уносили десятки жизней. А люди не
+          сдавались, делали все, что в их силах, боролись за каждый станок, за
+          каждое здание».
+        </Speech>
+      </div>
 
+      {/* <CommonImage>
+        <figure className={classNames(styles.img, styles._1)}>
+          <Image src="/images/gaz/12/8.jpg" layout="fill" />
+        </figure>
+      </CommonImage> */}
+
+      <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/gaz/12/7.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        <CommonText>
           <p>
             Погибли 254 жителя района, в том числе передовики и руководители
             ГАЗа, и 28 бойцов противовоздушной обороны. Более 500 человек были
             ранены.
           </p>
-        </CommonText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/gaz/12/8.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Ущерб от бомбежек был оценен в 191 млн руб. После авиаударов ГКО
             издал распоряжение о начале расследования недостатков
@@ -90,23 +84,24 @@ const CityUnderAttack = () => {
             Попутно на позиции подвозились дополнительные запасы боеприпасов», —
             пишет историк М. Зефиров.
           </p>
-        </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/gaz/12/7.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             16 июня был издан приказ ГКО о мерах быстрейшего восстановления
             Горьковского автозавода. Помощь должны были оказать все предприятия,
             в том числе «Красное Сормово», «Двигатель Революции», «Красная
             Этна», авиазавод имени Орджоникидзе.
           </p>
+        </CommonText>
+
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/gaz/12/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+      </div>
+
+      <div className={styles.page}>
+        <CommonText>
           <p>
             Они передавали заводу необходимые материалы, строительное
             оборудование, помогали ремонтировать станки, железнодорожные пути и
@@ -117,17 +112,7 @@ const CityUnderAttack = () => {
             руб. Еще 2 млн руб. направили на компенсации семьям погибших и
             пострадавшим от авиаударов работникам ГАЗа.
           </p>
-        </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._7)}>
-            <Image src="/images/gaz/12/6.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Строительство разрешили вести без смет и подготовок проекта. Е. И.
             Подрепный и Е.П. Титков в книге «Нижегородский арсенал Великой
@@ -148,14 +133,16 @@ const CityUnderAttack = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._4)}>
-            <Image src="/images/gaz/12/4.jpg" layout="fill" />
+        <CommonImages>
+          <figure className={classNames(styles.img, styles._5)}>
+            <Image src="/images/gaz/12/5.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
 
-      <div className={styles.page}>
+          <figure className={classNames(styles.img, styles._7)}>
+            <Image src="/images/gaz/12/6.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
+
         <CommonText>
           <p>
             После летних бомбардировок ГАЗ приостановил выпуск бронемашин БА-64
@@ -177,27 +164,17 @@ const CityUnderAttack = () => {
         </CommonText>
 
         <CommonImage>
-          <figure className={classNames(styles.img, styles._5)}>
-            <Image src="/images/gaz/12/5.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles._4)}>
+            <Image src="/images/gaz/12/4.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._6)}>
-            <Image src="/images/gaz/12/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/gaz/12/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
+      {/* <CommonImage>
+        <figure className={classNames(styles.img, styles._6)}>
+          <Image src="/images/gaz/12/1.jpg" layout="fill" />
+        </figure>
+      </CommonImage> */}
     </div>
   )
 }

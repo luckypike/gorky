@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, CommonImages } from '../../../../'
 
 import styles from './Victory.module.css'
 
@@ -47,26 +47,15 @@ const Victory = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
+        <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gaz/14/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
 
-      <div className={styles.page}>
-        <CommonImage>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/gaz/14/3.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-        <CommonText>
-          <p className={styles.vrezka}>
-            Сейчас ГАЗ выпускает легкие и среднетоннажные коммерческие
-            автомобили, занимая более 50% российского рынка. Продукция ГАЗа
-            поставляется в 40 стран мира
-          </p>
-        </CommonText>
+        </CommonImages>
       </div>
     </div>
   )

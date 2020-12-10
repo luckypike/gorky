@@ -3,27 +3,24 @@
   --delay: 150ms;
   --t-func: cubic-bezier(0.16, 0.77, 0.14, 1.01);
 
-  padding: 0 var(--xr);
   margin: calc(var(--yr) * var(--s5) * 2) 0;
 
-  @media (--s) {
+  /* @media (--s) {
     padding: 0;
     margin: 0 0 calc(var(--yr) * var(--s5) * 2);
-  }
+  } */
+}
 
-  @media (--l) {
-    display: flex;
-    margin: 0;
+.header {
+  padding: 0 var(--xr);
+
+  @media (--s) {
+    padding: 0 calc(2 / 13 * 100%);
   }
 }
 
 .page {
   composes: page from './Factory/Factory.module.css';
-
-  @media (--l) {
-    align-self: center;
-    padding-top: 0;
-  }
 }
 
 @keyframes fadeInUp {
@@ -94,6 +91,7 @@
 
   @media (--s) {
     grid-column-gap: calc(var(--xr) * 2);
+    padding: 0 calc(2 / 13 * 100%);
   }
 }
 
