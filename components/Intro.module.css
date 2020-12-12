@@ -17,6 +17,10 @@
   @media (--s) {
     padding: 0 calc(2 / 13 * 100%);
   }
+
+  @media (--l) {
+    padding: 0 calc(3 / 13 * 100%);
+  }
 }
 
 .page {
@@ -85,6 +89,7 @@
 .items {
   margin-top: calc(var(--yr) * var(--s6));
   display: grid;
+  padding: 0 var(--xr);
   grid-row-gap: calc(var(--yr) * var(--s4));
   grid-template-columns: 1fr 1fr;
   grid-column-gap: calc(var(--xr));
@@ -92,6 +97,10 @@
   @media (--s) {
     grid-column-gap: calc(var(--xr) * 2);
     padding: 0 calc(2 / 13 * 100%);
+  }
+
+  @media (--l) {
+    padding: 0 calc(3 / 13 * 100%);
   }
 }
 
@@ -181,8 +190,9 @@
 .rd {
   margin: calc(var(--yr) * var(--s2)) 0 0;
   color: rgb(var(--hl_color));
+  text-transform: uppercase;
   font-size: calc(var(--yr) * 4);
-  line-height: calc(var(--yr) * 5);
+  line-height: calc(var(--yr) * 6);
 
   @media (--s) {
     font-size: calc(var(--yr) * 5);
@@ -197,7 +207,7 @@
 
 .what {
   font-size: calc(var(--yr) * 4);
-  line-height: calc(var(--yr) * 5);
+  line-height: calc(var(--yr) * 6);
 
   @media (--s) {
     font-size: calc(var(--yr) * 5);

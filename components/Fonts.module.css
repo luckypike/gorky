@@ -56,8 +56,13 @@
   line-height: calc(var(--yr) * 7);
 
   @media (--s) {
-    font-size: calc(var(--yr) * 12);
-    line-height: calc(var(--yr) * 14);
+    font-size: calc(var(--yr) * 10);
+    line-height: calc(var(--yr) * 12);
+  }
+
+  @media (--l) {
+    font-size: calc(var(--yr) * 10 * var(--fs_mod));
+    line-height: calc(var(--yr) * 12 * var(--fs_mod));
   }
 }
 
