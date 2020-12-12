@@ -1,22 +1,20 @@
 .root {
   padding: 0 var(--xr);
-  margin-bottom: 12vh;
+  margin-bottom: var(--sb);
 
   @media (--s) {
     padding: 0 calc(2 / 13 * 100%);
-    font-size: 1.8vw;
-    line-height: 3vw;
   }
 
   @media (--l) {
     padding: 0 calc(3 / 13 * 100%);
-    font-size: 1.3vw;
-    line-height: 2.4vw;
   }
 }
 
-.intro {
+.label {
   font-family: var(--ff_sans);
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .title {
@@ -29,6 +27,16 @@
 .text {
   margin-top: calc(var(--yr) * var(--s2));
   font-style: italic;
+
+  @media (--s) {
+    font-size: 1.8vw;
+    line-height: 3vw;
+  }
+
+  @media (--l) {
+    font-size: 1.3vw;
+    line-height: 2.4vw;
+  }
 }
 
 .author {
