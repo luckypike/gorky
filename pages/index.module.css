@@ -151,6 +151,10 @@
     background-image: url(../assets/index/images/factories/nitel.jpg);
   }
 
+  &.petrovsky {
+    background-image: url(../assets/index/images/factories/petrovsky.jpg);
+  }
+
   /* @media (--s) {
     padding-top: calc(1 / 1 * 100%);
 

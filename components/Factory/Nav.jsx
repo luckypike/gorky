@@ -125,7 +125,7 @@ const Nav = observer(() => {
 
         <ul className={s.factories}>
           <li>
-            <Link href="#">
+            <Link href="/nmz">
               <a>
               Нижегородский машиностроительный завод
               </a>
@@ -133,7 +133,7 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/rumo">
               <a>
               РУМО
               </a>
@@ -165,7 +165,7 @@ const Nav = observer(() => {
 
         <ul className={s.factories}>
           <li>
-            <Link href="#">
+            <Link href="/sverdlov">
               <a>
               Завод имени Я. М. Свердлова
               </a>
@@ -213,7 +213,7 @@ const Nav = observer(() => {
 
         <ul className={s.factories}>
           <li>
-            <Link href="#">
+            <Link href="/sormovo_sudo">
               <a>
               Завод «Красное Сормово»
               </a>
@@ -269,7 +269,7 @@ const Nav = observer(() => {
 
         <ul className={s.factories}>
           <li>
-            <Link href="#">
+            <Link href="/nitel">
               <a>
               Нижегородский телевизионный завод имени В. И. Ленина
               </a>
@@ -285,7 +285,7 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/petrovsky">
               <a>
               Завод имени Г. И. Петровского
               </a>
