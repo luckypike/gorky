@@ -6,11 +6,13 @@ import styles from './GunsOfWar.module.css'
 const GunsOfWar = ({ title, img, children }) => {
   return (
     <div className={styles.root}>
-      <div className={styles.gun}>
-        {img && <img className={styles.img} src={img} alt="img" />}
-        <h2 className={styles.title}>{title}</h2>
-      </div>
+      <div className={styles.label}>Техника победы</div>
+      <div className={styles.title}>{title}</div>
       <div className={styles.desc}>{children}</div>
+
+      {/* <div className={styles.gun}>
+        {img && <img className={styles.img} src={img} alt="img" />}
+      </div> */}
     </div>
   )
 }

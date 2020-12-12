@@ -1,6 +1,6 @@
 .root {
   padding: 0 var(--xr);
-  margin-bottom: 12vh;
+  margin-bottom: var(--sb);
 
   @media (--s) {
     padding: 0 calc(2 / 13 * 100%);

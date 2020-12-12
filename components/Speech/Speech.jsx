@@ -7,7 +7,7 @@ const Speech = ({ title, author, children }) => {
   return (
     <div className={styles.root}>
       <div className={styles.content}>
-        <div className={styles.intro}>Прямая речь</div>
+        <div className={styles.label}>Прямая речь</div>
 
         {title && <h3 className={styles.title}>{title}</h3>}
 

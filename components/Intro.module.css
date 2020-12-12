@@ -172,8 +172,8 @@
 
 .digit {
   font-weight: 400;
-  font-size: calc(var(--yr) * 14);
-  line-height: calc(var(--yr) * 14);
+  font-size: calc(var(--yr) * 12);
+  line-height: calc(var(--yr) * 12);
   color: rgb(var(--hl_color));
 
   @media (--s) {
@@ -188,37 +188,15 @@
 }
 
 .rd {
+  composes: bt from './Fonts.module.css';
   margin: calc(var(--yr) * var(--s2)) 0 0;
   color: rgb(var(--hl_color));
   text-transform: uppercase;
-  font-size: calc(var(--yr) * 4);
-  line-height: calc(var(--yr) * 6);
-
-  @media (--s) {
-    font-size: calc(var(--yr) * 5);
-    line-height: calc(var(--yr) * 6);
-  }
-
-  @media (--l) {
-    font-size: calc(var(--yr) * 5 * var(--fs_mod));
-    line-height: calc(var(--yr) * 6 * var(--fs_mod));
-  }
 }
 
 .what {
   margin: calc(var(--yr) * var(--s1)) 0 0;
-  font-size: calc(var(--yr) * 4);
-  line-height: calc(var(--yr) * 6);
+  text-transform: uppercase;
   font-weight: 300;
   max-width: 600px;
-
-  @media (--s) {
-    font-size: calc(var(--yr) * 5);
-    line-height: calc(var(--yr) * 6);
-  }
-
-  @media (--l) {
-    font-size: calc(var(--yr) * 5 * var(--fs_mod));
-    line-height: calc(var(--yr) * 6 * var(--fs_mod));
-  }
 }
