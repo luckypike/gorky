@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage, Speech } from '../../../../'
+import { MainText, CommonText, CommonImage, Speech, CommonImages } from '../../../../'
 
 import styles from './Reworking.module.css'
 
@@ -18,14 +18,22 @@ const Reworking = () => {
           Государственного комитета обороны занялись конструкторы завода
           «Красное Сормово» совместно со специалистами завода №183.
         </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/sormovo/7/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sormovo/7/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
+
+          <figure className={classNames(styles.img, styles._1)}>
+              <Image src="/images/sormovo/7/2.jpg" layout="fill" />
+            </figure>
+        </CommonImages>
       </div>
 
       <div className={styles.page}>
@@ -40,16 +48,8 @@ const Reworking = () => {
             Сормово» дало фронту более 12 тыс. танков. Еще около 2тыс. боевых
             машин предприятие отремонтировало.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/sormovo/7/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
-      </div>
 
-      <div className={styles.page}>
         <Speech
           title="«Образцовое выполнение задания»"
           author={{
@@ -63,12 +63,6 @@ const Reworking = () => {
           усовершенствованию конструкции и улучшению боевых качеств танков
           Т-34».
         </Speech>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/sormovo/7/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
       </div>
     </div>
   )

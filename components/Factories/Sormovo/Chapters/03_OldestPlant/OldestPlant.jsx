@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, MainImage } from '../../../../'
 
 import styles from './OldestPlant.module.css'
 
@@ -10,6 +10,12 @@ const OldestPlant = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <MainImage>
+          <figure className={classNames(styles.img, styles.intro)}>
+            <Image src="/images/sormovo/img.jpg" layout="fill" />
+          </figure>
+        </MainImage>
+
         <MainText title="Старейший завод">
           <p>
             «Красное Сормово» — одно из старейших предприятий не только в Нижнем
@@ -22,23 +28,13 @@ const OldestPlant = () => {
             ядра для обороны Севастополя.
           </p>
         </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sormovo/3/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
 
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/sormovo/3/2.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p>
             В начале ХХ века сормовичи спускали на воду канонерские лодки для
@@ -54,12 +50,15 @@ const OldestPlant = () => {
             судостроение почти прекратилось. В 1918 году завод
             национализировали.
           </p>
+        </CommonText>
 
-          <p className={styles.vrezka}>
-            В 1939 году за заслуги в судостроении и машиностроении завод
-            «Красное Сормово» был удостоен ордена Трудового Красного Знамени
-          </p>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sormovo/3/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
 
+        <CommonText>
           <p>
             В гражданскую войну завод стал одевать поезда в броню. В 1920 году
             «Красное Сормово» выпустило первый советский танк «Борец за свободу
@@ -71,8 +70,12 @@ const OldestPlant = () => {
             типа паровозов, четыре типа дизелей, 18 паровых машин, четыре типа
             вагонов. Осваивалось производство машин, станков и оборудования.
           </p>
-        </CommonText>
 
+          <p className={styles.vrezka}>
+            В 1939 году за заслуги в судостроении и машиностроении завод
+            «Красное Сормово» был удостоен ордена Трудового Красного Знамени
+          </p>
+        </CommonText>
       </div>
     </div>
   )

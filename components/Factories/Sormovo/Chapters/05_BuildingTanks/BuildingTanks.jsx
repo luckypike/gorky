@@ -10,39 +10,30 @@ const BuildingTanks = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sormovo/5/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <MainText title="Судостроители строят танки">
           Первые танки сормовичи поставили на фронт в октябре 1941 года. Перед
           отправкой каждый танк проходил огневые и ходовые испытания — пробеги
           по 30 и 50 км. Испытателем танков работал и шестнадцатилетний сын
           директора завода Ефима Рубинчика — Александр Рубинчик.
         </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sormovo/5/2.jpg" layout="fill" />
+        {/* <CommonImage content>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/sormovo/5/3.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
+        </CommonImage> */}
 
-      <div className={styles.page}>
-        <CommonImage>
+        {/* <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/sormovo/5/4.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-
-        <CommonText>
-          <p>
-            С сентября по декабрь 1941 года завод передал фронту 173 танка.
-            Чтобы снизить зависимость от заводов-смежников, которые поставляли
-            комплектующие для Т-34, «Красное Сормово» самостоятельно стало
-            изготавливать некоторые детали. В том числе в 1942 году предприятие
-            стало выпускать траки — звенья гусеничной ленты, тем самым освободив
-            от этой нагрузки Горьковский автозавод.
-          </p>
-        </CommonText>
+        </CommonImage> */}
       </div>
 
       <div className={styles.page}>
@@ -87,6 +78,15 @@ const BuildingTanks = () => {
       <div className={styles.page}>
         <CommonText>
           <p>
+            С сентября по декабрь 1941 года завод передал фронту 173 танка.
+            Чтобы снизить зависимость от заводов-смежников, которые поставляли
+            комплектующие для Т-34, «Красное Сормово» самостоятельно стало
+            изготавливать некоторые детали. В том числе в 1942 году предприятие
+            стало выпускать траки — звенья гусеничной ленты, тем самым освободив
+            от этой нагрузки Горьковский автозавод.
+          </p>
+
+          <p>
             В 1942 году война пришла в Сталинград, и местный завод больше не мог
             выпускать танки. План производства Т-34 перераспределили между
             другими предприятиями Советского Союза, и сормовский завод № 112
@@ -112,11 +112,7 @@ const BuildingTanks = () => {
       </div>
 
       <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/sormovo/5/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
+
       </div>
     </div>
   )

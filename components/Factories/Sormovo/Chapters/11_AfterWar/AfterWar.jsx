@@ -16,17 +16,13 @@ const AfterWar = () => {
           увеличить количество выпускаемых судов. Однако с танкостроением завод
           простился не сразу.
         </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sormovo/11/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p>
             В послевоенные годы на сормовском заводе учредили экспериментальное

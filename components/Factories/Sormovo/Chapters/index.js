@@ -1,5 +1,4 @@
 export { default as Intro } from './01_Intro/Intro'
-export { default as Img } from './02_Img/Img'
 export { default as OldestPlant } from './03_OldestPlant/OldestPlant'
 export { default as Reconstruction } from './04_Reconstruction/Reconstruction'
 export { default as BuildingTanks } from './05_BuildingTanks/BuildingTanks'

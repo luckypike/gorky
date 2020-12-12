@@ -3,6 +3,7 @@
   margin-bottom: var(--sb);
   grid-template-columns: 1fr 1fr;
   grid-gap: 4vw;
+  align-items: start;
 
   @media (--s) {
     padding: 0 calc(1 / 13 * 100%);

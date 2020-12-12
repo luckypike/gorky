@@ -1,17 +1,8 @@
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .img {
-  /* height: 100%; */
   composes: ari from "../../../../Images.module.css";
 
   &.main {
     padding-top: calc(1014 / 841 * 100%);
-
-    /* width: 100%; */
   }
 
   &._1 {
@@ -29,10 +20,6 @@
 
 .page {
   composes: page from '../../../../Factory/Factory.module.css';
-}
-
-.fpi {
-  align-self: center;
 }
 
 .vrezka {

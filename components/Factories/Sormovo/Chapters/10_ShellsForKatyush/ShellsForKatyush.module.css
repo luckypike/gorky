@@ -1,7 +1,6 @@
 .img {
   height: 100%;
   composes: ari from "../../../../Images.module.css";
-  margin-top: calc(var(--yr) * var(--s4));
 
   &.main {
     padding-top: calc(595 / 943 * 100%);
@@ -12,18 +11,8 @@
   }
 }
 
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .page {
   composes: page from '../../../../Factory/Factory.module.css';
-}
-
-.fpi {
-  align-self: center;
 }
 
 .vrezka {

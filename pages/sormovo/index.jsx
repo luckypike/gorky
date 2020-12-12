@@ -4,7 +4,6 @@ import { Factory } from '../../components'
 
 import {
   Intro,
-  Img,
   OldestPlant,
   Reconstruction,
   BuildingTanks,
@@ -16,34 +15,28 @@ import {
   AfterWar
 } from '../../components/Factories/Sormovo/Chapters'
 
-import styles from './index.module.css'
-
 export default function Sormovo () {
   return (
     <Factory>
-      <div className={styles.root}>
-        <Intro />
+      <Intro />
 
-        <Img />
+      <OldestPlant />
 
-        <OldestPlant />
+      <Reconstruction />
 
-        <Reconstruction />
+      <BuildingTanks />
 
-        <BuildingTanks />
+      <Rubinchik />
 
-        <Rubinchik />
+      <Reworking />
 
-        <Reworking />
+      <Women />
 
-        <Women />
+      <Ammunition />
 
-        <Ammunition />
+      <ShellsForKatyush />
 
-        <ShellsForKatyush />
-
-        <AfterWar />
-      </div>
+      <AfterWar />
     </Factory>
   )
 }

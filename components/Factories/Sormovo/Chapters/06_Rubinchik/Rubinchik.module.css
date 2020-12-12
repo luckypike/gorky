@@ -1,4 +1,3 @@
-
 .img {
   height: 100%;
   composes: ari from "../../../../Images.module.css";
@@ -12,18 +11,8 @@
   }
 }
 
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .page {
   composes: page from '../../../../Factory/Factory.module.css';
-}
-
-.fpi {
-  align-self: center;
 }
 
 .vrezka {
