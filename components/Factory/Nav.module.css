@@ -1,0 +1,47 @@
+.root {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+  padding: calc(var(--yr) * 20) var(--xr);
+  z-index: 2;
+  display: grid;
+  grid-gap: calc(var(--yr) * var(--s5));
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0s 0.3s;
+
+  @media (--s) {
+    grid-template-columns: 1fr 1fr;
+    padding: calc(var(--yr) * 30) calc(1 / 13 * 100%);
+  }
+
+  @media (--m) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+}
+
+.factories {
+  padding: 0;
+  margin: calc(var(--yr) * 4) 0 0;
+  list-style: none;
+
+  & li {
+    &:not(:last-child) {
+      margin-bottom: calc(var(--yr) * var(--s2));
+    }
+  }
+}
+
+.section {
+  font-weight: bold;
+  color: rgb(var(--hl_color));
+  composes: bt from '../Fonts.module.css';
+}

@@ -31,6 +31,9 @@
   text-transform: uppercase;
   line-height: calc(var(--yr) * 10);
   margin: auto;
+
+  /* z-index: 3;
+  position: relative; */
 }
 
 .back {
@@ -59,6 +62,8 @@
   width: 40px;
   height: 40px;
   z-index: 99;
+  user-select: none;
+  cursor: pointer;
 
   & svg {
     display: block;
@@ -68,5 +73,25 @@
     top: 40px;
     margin-right: -10px;
     right: calc(1 / 13 * 100%);
+  }
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0s 0.3s;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s;
   }
 }
