@@ -133,6 +133,10 @@
     background-image: url(../assets/index/images/factories/rumo.jpg);
   }
 
+  &.paz {
+    background-image: url(../assets/index/images/factories/paz.jpg);
+  }
+
   /* Боеприпасы */
 
   &.sverdlov {

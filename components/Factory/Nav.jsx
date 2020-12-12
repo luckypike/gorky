@@ -141,7 +141,7 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/paz">
               <a>
               Павловский автобусный завод
               </a>
