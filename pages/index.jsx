@@ -212,6 +212,22 @@ export default function Home () {
             />
           </div>
         </div>
+
+        <div className={styles.section}>
+          <div className={styles.ss}>
+            <span>Приборостроение</span>
+          </div>
+
+          <div className={styles.items}>
+            <Item
+              href="/nitel"
+              id="nitel"
+              img={styles.i32}
+              title="Горьковский Завод № 197 имени В. И. Ленина"
+              desc="ПАО «Нижегородский телевизионный завод имени В. И. Ленина»"
+            />
+          </div>
+        </div>
       </div>
     </div>
   )

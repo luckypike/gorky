@@ -133,6 +133,24 @@
     background-image: url(../assets/index/images/factories/rumo.jpg);
   }
 
+  /* Боеприпасы */
+
+  &.sverdlov {
+    background-image: url(../assets/index/images/factories/sverdlov.jpg);
+  }
+
+  /* Судостроение */
+
+  &.sormovo_sudo {
+    background-image: url(../assets/index/images/factories/sormovo_sudo.jpg);
+  }
+
+  /* Приборостроение */
+
+  &.nitel {
+    background-image: url(../assets/index/images/factories/nitel.jpg);
+  }
+
   /* @media (--s) {
     padding-top: calc(1 / 1 * 100%);
 
