@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
-import useStore from '../../stores/useStore'
 import { Factory } from '../../components'
 import {
   Intro,
@@ -19,12 +18,6 @@ import {
 } from '../../components/Factories/Nitel/Chapters'
 
 const Nitel = () => {
-  const appStore = useStore()
-
-  useEffect(() => {
-    appStore.setDark(false)
-  }, [appStore])
-
   return (
     <Factory>
       <Intro />

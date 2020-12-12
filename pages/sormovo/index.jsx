@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
-import useStore from '../../stores/useStore'
 import { Factory } from '../../components'
 
 import {
@@ -20,12 +19,6 @@ import {
 import styles from './index.module.css'
 
 export default function Sormovo () {
-  const appStore = useStore()
-
-  useEffect(() => {
-    appStore.setDark(false)
-  }, [appStore])
-
   return (
     <Factory>
       <div className={styles.root}>

@@ -46,12 +46,6 @@ export default function App ({ Component, props }) {
   }, [fsMod])
 
   useEffect(() => {
-    if (router.pathname === '/') {
-      appStore.setDark(true)
-    }
-  }, [router.pathname])
-
-  useEffect(() => {
     router.events.on('routeChangeStart', handleRouteChangeStart)
     router.events.on('routeChangeComplete', handleRouteChangeEnd)
 
