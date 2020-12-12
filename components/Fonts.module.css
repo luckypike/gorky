@@ -19,10 +19,8 @@
 }
 
 .bt {
-  @media (--s) {
-    font-size: calc(var(--yr) * 5);
-    line-height: calc(var(--yr) * 7);
-  }
+  font-size: calc(var(--yr) * 5);
+  line-height: calc(var(--yr) * 7);
 
   @media (--l) {
     font-size: calc(var(--yr) * 5 * var(--fs_mod));

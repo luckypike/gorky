@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
 import Parallax from 'parallax-js'
@@ -25,15 +25,15 @@ export default function Home () {
   return (
     <div className={styles.root}>
       <div ref={introRef} className={styles.intro}>
-        <div className={styles.text} data-depth="0.06">
+        <div className={styles.text}>
           <div className={styles.name}>
             <span>Горький</span> символ победы
           </div>
         </div>
-        <div className={styles.bg} data-depth="0.03">
+        <div className={styles.bg} data-depth="0.04">
           <div className={styles.bgin} />
         </div>
-        <div className={styles.star} data-depth="0.025" />
+        <div className={styles.star} data-depth="0.02" />
       </div>
 
       <div className={styles.factories}>
@@ -48,9 +48,7 @@ export default function Home () {
               id="gaz"
               title="Государственный автомобильный завод имени В. М. Молотова"
               desc="ПАО ГАЗ, ООО «Автомобильный завод ГАЗ»"
-              img={styles.i54}
-              tIn={'elWidth / 5 * -1'}
-              tOut={'elWidth / 8'}
+              delay={300}
             />
 
             <Item
@@ -58,9 +56,7 @@ export default function Home () {
               id="sormovo"
               title="Завод № 112 «Красное Сормово»"
               desc="ПАО «Завод “Красное Сормово”»"
-              tIn={'elWidth / 8'}
-              tOut={'elWidth / 8 * -1'}
-              img={styles.i32}
+              delay={300}
             />
 
             <Item
@@ -68,8 +64,6 @@ export default function Home () {
               id="etna"
               title="ГОРЬКОВСКИЙ ЗАВОД «КРАСНАЯ ЭТНА»"
               desc="АО «Завод „Красная Этна“»"
-              tIn={'elWidth / 4 * -1'}
-              tOut={'elWidth / 6'}
             />
 
             <Item
@@ -77,9 +71,6 @@ export default function Home () {
               id="drobmash"
               title="ВЫКСУНСКИЙ ЗАВОД ДРОБИЛЬНО-РАЗМОЛЬНОГО ОБОРУДОВАНИЯ"
               desc="ЗАО «Дробмаш», АО «Завод корпусов»"
-              img={styles.i54}
-              tIn={'elWidth / 12'}
-              tOut={'elWidth / 10 * -1'}
             />
 
             <Item
@@ -87,9 +78,6 @@ export default function Home () {
               id="ruspolimet"
               title="КУЛЕБАКСКИЙ МЕТАЛЛУРГИЧЕСКИЙ ЗАВОД"
               desc="ПАО «Русполимет»"
-              img={styles.i54}
-              tIn={'elWidth / 5 * -1'}
-              tOut={'elWidth / 5'}
             />
 
             <Item
@@ -97,8 +85,6 @@ export default function Home () {
               id="vmz"
               title="ВЫКСУНСКИЙ МЕТАЛЛУРГИЧЕСКИЙ ЗАВОД"
               desc="АО «Выксунский металлургический завод»"
-              tIn={'elWidth / 12'}
-              tOut={'elWidth / 10 * -1'}
             />
 
             <Item
@@ -107,8 +93,6 @@ export default function Home () {
               img={styles.i54}
               title="ГОРЬКОВСКАЯ ЖЕЛЕЗНАЯ ДОРОГА"
               desc="Горьковская железная дорога — филиал ОАО РЖД"
-              tIn={'elWidth / 5 * -1'}
-              tOut={'elWidth / 5'}
             />
           </div>
         </div>
@@ -122,24 +106,18 @@ export default function Home () {
             <Item
               href="/sokol"
               id="sokol"
-              img={styles.i54}
               title="ГОРЬКОВСКИЙ АВИА-
               СТРОИТЕЛЬНЫЙ ЗАВОД No 21
               ИМЕНИ С. ОРДЖОНИКИДЗЕ"
               desc="Нижегородский авиастроительный завод «Сокол» — филиал АО «РСК „МиГ“»"
-              tIn={'elWidth / 5 * -1'}
-              tOut={'elWidth / 8'}
             />
 
             <Item
               href="/gidromash"
               id="gidromash"
-              img={styles.i32}
               title="ЗАВОД No 119
               ИМЕНИ Г. М. МАЛЕНКОВА"
               desc="НПАО «Гидромаш»"
-              tIn={0}
-              tOut={0}
             />
 
             <Item
@@ -150,8 +128,6 @@ export default function Home () {
               ЗАВОД No 469
               ИМЕНИ М. М. ГРОМОВА"
               desc="АО ПКО «Теплообменник»"
-              tIn={'elWidth / 5 * -1'}
-              tOut={'elWidth / 4'}
             />
 
             <Item
@@ -160,8 +136,6 @@ export default function Home () {
               img={styles.i54}
               title="ПАВЛОВСКИЙ ЗАВОД No 467"
               desc="АО «Гидроагрегат»"
-              tIn={0}
-              tOut={0}
             />
 
             <Item
@@ -170,8 +144,6 @@ export default function Home () {
               title="ГОРЬКОВСКИЙ МЕХАНИЗИРОВАННЫЙ СТЕКЛОЗАВОД
               ИМЕНИ М. ГОРЬКОГО"
               desc="ОАО «Эй Джи Си Борский стекольный завод»"
-              tIn={'elWidth / 6 * -1'}
-              tOut={'elWidth / 3'}
             />
 
             <Item
@@ -181,8 +153,6 @@ export default function Home () {
               title="ДЗЕРЖИНСКИЙ
               ЗАВОД No 148 «РУЛОН»"
               desc="ОАО «Дзержинское оргстекло»"
-              tIn={0}
-              tOut={0}
             />
           </div>
         </div>
@@ -199,8 +169,6 @@ export default function Home () {
               img={styles.i32}
               title="Горьковский машино­строительный Завод № 92 имени И. В. Сталина"
               desc="АО «Нижегородский машиностроительный завод»"
-              tIn={'elWidth / 5 * -1'}
-              tOut={'elWidth / 8'}
             />
 
             <Item
@@ -209,8 +177,6 @@ export default function Home () {
               img={styles.i54}
               title="ГОРЬКОВСКИЙ ЗАВОД № 718 «ДВИГАТЕЛЬ РЕВОЛЮЦИИ»"
               desc="ОАО РУМО"
-              tIn={0}
-              tOut={0}
             />
           </div>
         </div>
@@ -227,8 +193,6 @@ export default function Home () {
               img={styles.i32}
               title="ДЗЕРЖИНСКИЙ ЗАВОД № 80 ИМЕНИ Я. М. СВЕРДЛОВА"
               desc="ФКП «Завод имени Я. М. Свердлова»"
-              tIn={'elWidth / 5 * -1'}
-              tOut={'elWidth / 8'}
             />
           </div>
         </div>
@@ -245,8 +209,6 @@ export default function Home () {
               img={styles.i32}
               title="Горьковский Завод № 112 «Красное Сормово»"
               desc="ПАО «Завод „Красное Сормово“»"
-              tIn={'elWidth / 5 * -1'}
-              tOut={'elWidth / 8'}
             />
           </div>
         </div>
@@ -267,13 +229,21 @@ Item.propTypes = {
 }
 
 function Item ({ href, title, id, desc, img }) {
+  const [delay, setDelay] = useState(0)
+  const [duration, setDuration] = useState(500)
+
+  useEffect(() => {
+    setDelay((Math.round((Math.random() * 500 + 200) / 50) * 50).toString())
+    setDuration((Math.round((Math.random() * 500 + 750) / 50) * 50).toString())
+  }, [])
+
   return (
     <Link href={href}>
-      <a className={cn([styles.item, styles[id]])}>
+      <a className={cn([styles.item, styles[id]])} data-aos="fade-up" data-aos-delay={delay} data-aos-duration={duration}>
         <div className={cn(styles.image, img, styles[id])} />
 
         <div className={styles.dt}>
-          <div className={styles.title}>{title}</div>
+          <div className={styles.title}>{title} {delay}</div>
 
           <div className={styles.desc}>{desc}</div>
         </div>

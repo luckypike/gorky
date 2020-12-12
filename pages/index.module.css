@@ -153,12 +153,16 @@
   text-transform: uppercase;
 }
 
+.desc {
+  composes: bt from '../components/Fonts.module.css';
+}
+
 .factories {
   padding-top: calc(var(--yr) * 10);
 }
 
 .items {
-  padding: calc(var(--yr) * 10) var(--xr);
+  padding: 0 0 calc(var(--yr) * 10);
   display: grid;
   grid-gap: 8vh calc(1 / 13 * 100%);
 
@@ -191,23 +195,18 @@
   font-size: calc(var(--yr) * 8);
   line-height: calc(var(--yr) * 8);
   text-align: center;
-  padding: calc(var(--yr) * 4);
+  padding: calc(var(--yr) * 6);
   display: flex;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
 
   & span {
-    /* background: rgba(255, 255, 255, 0.6); */
     display: block;
     margin: auto;
   }
 
   @media (--s) {
-    font-size: calc(var(--yr) * 20);
-    line-height: calc(var(--yr) * 20);
-    padding: calc(var(--yr) * 8) calc(1 / 13 * 100%);
-  }
+    padding: calc(var(--yr) * 6) calc(1 / 13 * 100%);
 
-  @media (--l) {
     &::after {
       content: '';
       display: block;
@@ -228,4 +227,20 @@
       right: calc(10 / 13 * 100%);
     }
   }
+
+  @media (--m) {
+    &::after {
+      right: calc(1 / 13 * 100%);
+      left: calc(9 / 13 * 100%);
+    }
+
+    &::before {
+      left: calc(1 / 13 * 100%);
+      right: calc(9 / 13 * 100%);
+    }
+  }
+}
+
+.dt {
+  padding: 0 calc(var(--xr) * 1);
 }

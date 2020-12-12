@@ -2,12 +2,14 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import AOS from 'aos'
 
 // import Header from '../components/Header/Header'
 import Loader from '../components/Loader/Loader'
 import useStore from '../stores/useStore'
 
 import '../css/globals.css'
+import 'aos/dist/aos.css'
 
 export default function App ({ Component, props }) {
   const router = useRouter()
@@ -68,6 +70,10 @@ export default function App ({ Component, props }) {
     appStore.setLoaderStart(false)
     appStore.setLoaderEnd(true)
   }
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
 
   return (
     <>
