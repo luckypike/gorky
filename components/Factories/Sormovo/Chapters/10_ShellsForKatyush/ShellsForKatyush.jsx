@@ -16,22 +16,12 @@ const ShellsForKatyush = () => {
           сборке реактивных снарядов М-20 и М-13 для «Катюш».
         </MainText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sormovo/10/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/sormovo/10/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p>
             Историк Павел Пустырев пишет, что в цехах, выделенных для
@@ -44,6 +34,12 @@ const ShellsForKatyush = () => {
             все работы, в том числе и электросварку, не опасаясь демаскировки в
             ночное время».
           </p>
+
+          <p className={styles.vrezka}>
+            На «Красном Сормове» собрали 1,5 млн снарядов для «Катюш» и еще
+            столько же других боеприпасов
+          </p>
+
           <p>
             За годы войны на «Красном Сормове» собрали 1,5 млн снарядов для
             «Катюш» и еще столько же других боеприпасов. В отличие от снарядов
@@ -58,9 +54,13 @@ const ShellsForKatyush = () => {
             верхних направляющих боевых машин, что вдвое уменьшало вес залпа».
           </p>
         </CommonText>
-      </div>
 
-      <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sormovo/10/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <Speech
           title="«Мы тоже громили врага»"
           author={{
@@ -74,11 +74,6 @@ const ShellsForKatyush = () => {
           ящики. Причем „Ванюши“ летели к цели вместе с деревянной „тарой“.
           Значит, наши ящики тоже громили врага!».
         </Speech>
-
-        <p className={styles.vrezka}>
-          На «Красном Сормове» собрали 1,5 млн снарядов для «Катюш» и еще
-          столько же других боеприпасов
-        </p>
       </div>
     </div>
   )

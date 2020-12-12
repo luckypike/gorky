@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage, Speech } from '../../../../'
+import { MainText, CommonImage, Speech } from '../../../../'
 
 import styles from './Women.module.css'
 
@@ -10,6 +10,12 @@ const Women = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sormovo/8/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <MainText title="Женщины встали к станкам">
           <p>
             Всеобщая мобилизация значительно повлияла на кадровый состав завода.
@@ -29,15 +35,25 @@ const Women = () => {
             работы. На заводе развернулось движение рационализаторов и
             изобретателей.
           </p>
-        </MainText>
-      </div>
 
-      <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sormovo/8/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
+          <p className={styles.vrezka}>
+            За годы войны коллектив завода «Красное Сормово» 33 раза получал
+            переходящее Красное знамя Государственного комитета обороны
+          </p>
+
+          <p>
+            Чтобы работать быстрее и перевыполнять задания, сормовичи старались
+            усовершенствовать технологии и методы работы. На заводе развернулось
+            движение рационализаторов и изобретателей. Рабочие соревновались в
+            увеличении темпов производства. Состязания устраивали как между
+            отдельными мастерами, так и между целыми цехами. Результаты
+            подводили во Дворце культуры. Победителям вручали переходящее
+            Красное знамя и денежные премии. Всего за годы вой­ны коллектив
+            «Красного Сормова» 33 раза получал переходящее Красное знамя
+            Государственного комитета обороны. Оно передано заводу на вечное
+            хранение.
+          </p>
+        </MainText>
 
         <Speech
           title="«Пришла на завод в 16 лет»"
@@ -54,50 +70,24 @@ const Women = () => {
           присвоили разряд. Когда принимала снаряды, ставила к верстаку
           подставку. Продукцию военпреду сдавала с первого предъявления».
         </Speech>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/sormovo/8/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/sormovo/8/4.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
-            Чтобы работать быстрее и перевыполнять задания, сормовичи старались
-            усовершенствовать технологии и методы работы. На заводе развернулось
-            движение рационализаторов и изобретателей. Рабочие соревновались в
-            увеличении темпов производства. Состязания устраивали как между
-            отдельными мастерами, так и между целыми цехами. Результаты
-            подводили во Дворце культуры. Победителям вручали переходящее
-            Красное знамя и денежные премии. Всего за годы вой­ны коллектив
-            «Красного Сормова» 33 раза получал переходящее Красное знамя
-            Государственного комитета обороны. Оно передано заводу на вечное
-            хранение.
-          </p>
-          <p className={styles.vrezka}>
-            За годы войны коллектив завода «Красное Сормово» 33 раза получал
-            переходящее Красное знамя Государственного комитета обороны
-          </p>
-        </CommonText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonImage>
+        <div className={styles.images}>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/sormovo/8/3.jpg" layout="fill" />
           </figure>
-        </CommonImage>
+
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/sormovo/8/4.jpg" layout="fill" />
+          </figure>
+        </div>
       </div>
+
+        {/* <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sormovo/8/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage> */}
+
     </div>
   )
 }

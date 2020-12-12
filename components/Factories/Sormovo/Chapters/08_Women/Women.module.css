@@ -1,7 +1,5 @@
 .img {
-  height: 100%;
   composes: ari from "../../../../Images.module.css";
-  margin-top: calc(var(--yr) * var(--s4));
 
   &.main {
     padding-top: calc(1296 / 2027 * 100%);
@@ -20,20 +18,18 @@
   }
 }
 
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .page {
   composes: page from '../../../../Factory/Factory.module.css';
 }
 
-.fpi {
-  align-self: center;
-}
-
 .vrezka {
   composes: vrezka from '../../../../Fonts.module.css';
+}
+
+.images {
+  margin-bottom: var(--sb);
+  display: grid;
+  grid-template-columns: 39% 61%;
+  align-items: start;
+  grid-gap: 4vw;
 }
