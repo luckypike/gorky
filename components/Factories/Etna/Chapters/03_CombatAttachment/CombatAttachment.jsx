@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage, Speech } from '../../../../'
+import { MainText, CommonText, CommonImage, Speech, MainImage } from '../../../../'
 
 import styles from './CombatAttachment.module.css'
 
@@ -10,6 +10,12 @@ const CombatAttachment = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <MainImage>
+          <figure className={classNames(styles.img, styles.intro)}>
+            <Image src="/images/etna/img.jpg" layout="fill" />
+          </figure>
+        </MainImage>
+
         <MainText title="Боевое крепление">
           <p>
             Завод по производству крепежных изделий «Этна» был построен в 1898
@@ -22,9 +28,13 @@ const CombatAttachment = () => {
             построенного Горьковского автозавода.
           </p>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/etna/3/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Несколько лет завод «Красная
@@ -46,14 +56,6 @@ const CombatAttachment = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/etna/3/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
         <Speech
           title="«Орден Ленина — заслуга всех работников»"
           author={{
@@ -71,6 +73,12 @@ const CombatAttachment = () => {
           пулеметных лент. Так что орден Ленина, полученный заводом в 1944 году,
           — бесспорная заслуга всех без исключения работников „Красной Этны“».
         </Speech>
+
+        {/* <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/etna/3/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage> */}
       </div>
     </div>
   )

@@ -206,8 +206,11 @@
 }
 
 .what {
+  margin: calc(var(--yr) * var(--s1)) 0 0;
   font-size: calc(var(--yr) * 4);
   line-height: calc(var(--yr) * 6);
+  font-weight: 300;
+  max-width: 600px;
 
   @media (--s) {
     font-size: calc(var(--yr) * 5);

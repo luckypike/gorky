@@ -7,8 +7,10 @@ const Intro = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <div>
-          <h1 className={styles.title}>ГОРЬКОВСКИЙ ЗАВОД «КРАСНАЯ ЭТНА»</h1>
+        <div className={styles.header}>
+          <h1 className={styles.title}>
+            {'ГОРЬКОВСКИЙ ЗАВОД «КРАСНАЯ ЭТНА»'}
+          </h1>
 
           <p className={styles.desc}>АО «Завод „Красная Этна“»</p>
         </div>
