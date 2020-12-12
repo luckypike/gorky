@@ -1,7 +1,7 @@
 import { makeAutoObservable } from 'mobx'
 
 class AppStore {
-  nav = true
+  nav = false
   loaderStart = false
   loaderEnd = false
 
