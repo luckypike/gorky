@@ -5,6 +5,7 @@ import Image from 'next/image'
 import {
   MainText,
   CommonText,
+  Columns,
   CommonImage,
   Speech,
   GunsOfWar
@@ -23,41 +24,37 @@ const SecondHome = () => {
             Горьком им предписывалось наладить выпуск мотоциклов М-72.
           </p>
         </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/etna/5/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
+        <Columns
+          left={(
+            <figure className={classNames(styles.img, styles.main)}>
+              <Image src="/images/etna/5/2.jpg" layout="fill" />
+            </figure>
+          )}
 
-      <div className={styles.page}>
-        <CommonText>
-          <p>
-            Серийное производство этих более мощных по сравнению с
-            выпускавшимися мотоциклами Л-8, Иж-9, Ам-600, планировалось начать в
-            1941 году. По планам руководства Наркомата (НКСМ) до конца года
-            предприятия должны были выпустить 32 тыс. М-72. Но мотозаводы не
-            успели освоить технологию и до вой­ны изготовили лишь несколько
-            сотен мотоциклов. Поэтому в Горьком и Ирбите, куда эвакуировали
-            головной по выпуску М-72 Московский мотоциклетный завод, все
-            пришлось начинать с нуля: только сложившаяся производственная
-            кооперация десятка заводов (Горьковский автозавод должен был
-            поставлять мотопрому карданные валы и колеса) была нарушена, не
-            хватало необходимого оборудования.
-          </p>
-        </CommonText>
+          right={(
+            <p>
+              Серийное производство этих более мощных по сравнению с
+              выпускавшимися мотоциклами Л-8, Иж-9, Ам-600, планировалось начать в
+              1941 году. По планам руководства Наркомата (НКСМ) до конца года
+              предприятия должны были выпустить 32 тыс. М-72. Но мотозаводы не
+              успели освоить технологию и до вой­ны изготовили лишь несколько
+              сотен мотоциклов. Поэтому в Горьком и Ирбите, куда эвакуировали
+              головной по выпуску М-72 Московский мотоциклетный завод, все
+              пришлось начинать с нуля: только сложившаяся производственная
+              кооперация десятка заводов (Горьковский автозавод должен был
+              поставлять мотопрому карданные валы и колеса) была нарушена, не
+              хватало необходимого оборудования.
+            </p>
+          )}
+        />
 
         <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/etna/5/1.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/etna/5/3.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p>
             Эвакуированные мотоциклетные заводы разместили в корпусе рядом с
@@ -76,9 +73,9 @@ const SecondHome = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/etna/5/3.jpg" layout="fill" />
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/etna/5/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>
@@ -106,9 +103,7 @@ const SecondHome = () => {
             войска.
           </p>
         </GunsOfWar>
-      </div>
 
-      <div className={styles.page}>
         <Speech
           title="«Спешно и бережно разгружались вагоны»"
           author={{
@@ -124,9 +119,7 @@ const SecondHome = () => {
           завода „Красная Этна“. Наша хозяйка имела две комнаты, она
           доброжелательно потеснилась, и в одну из них поселилась наша семья…».
         </Speech>
-      </div>
 
-      <div className={styles.page}>
         <Speech
           title="«Кровное дело всего красноэтновского коллектива»"
           author={{

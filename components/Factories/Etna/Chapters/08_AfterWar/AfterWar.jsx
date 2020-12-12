@@ -20,8 +20,13 @@ const AfterWar = () => {
             комплектующих к ней.
           </p>
         </MainText>
-      </div>
-      <div className={styles.page}>
+
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/etna/8/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             К настоящему времени на «Красной Этне» освоен полный
@@ -30,11 +35,6 @@ const AfterWar = () => {
             собственные инструментальное и станкостроительное производства, две
             исследовательские лаборатории.
           </p>
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/etna/8/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
       </div>
     </div>
