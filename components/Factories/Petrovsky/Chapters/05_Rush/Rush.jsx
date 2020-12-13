@@ -25,9 +25,7 @@ const Rush = () => {
             площадей.
           </p>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/petrovsky/6/3.jpg" layout="fill" />

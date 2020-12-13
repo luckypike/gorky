@@ -2,11 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  Columns,
-  Speech
-} from '../../../../'
+import { MainText, Speech, CommonImages } from '../../../../'
 
 import styles from './FatalDate.module.css'
 
@@ -28,22 +24,14 @@ const FatalDate = () => {
           </p>
         </MainText>
 
-        <Columns
-          left={
-            <div>
-              <figure className={classNames(styles.img, styles.main)}>
-                <Image src="/images/nitel/8/1.jpg" layout="fill" />
-              </figure>
-            </div>
-          }
-          right={
-            <div>
-              <figure className={classNames(styles.img, styles._1)}>
-                <Image src="/images/nitel/8/2.jpg" layout="fill" />
-              </figure>
-            </div>
-          }
-        />
+        <CommonImages>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/nitel/8/1.jpg" layout="fill" />
+          </figure>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/nitel/8/2.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
 
         <Speech
           title="«Товарищи, не волнуйтесь, тревога скоро кончится»"

@@ -2,7 +2,13 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, Columns, CommonText, Speech } from '../../../../'
+import {
+  MainText,
+  Columns,
+  CommonText,
+  Speech,
+  CommonImage
+} from '../../../../'
 
 import styles from './Benefit.module.css'
 
@@ -38,9 +44,6 @@ const Benefit = () => {
                 продукции — лобовой коробки пушек ЗИС-3 и люльки танковой пушки
                 Ф-34.
               </p>
-              <figure className={classNames(styles.img, styles._1)}>
-                <Image src="/images/zfs/4/2.jpg" layout="fill" />
-              </figure>
             </div>
           }
           right={
@@ -51,6 +54,12 @@ const Benefit = () => {
             </div>
           }
         />
+
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/zfs/4/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
 
         <CommonText>
           <p className={styles.vrezka}>

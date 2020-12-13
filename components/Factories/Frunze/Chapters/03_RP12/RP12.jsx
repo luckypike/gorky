@@ -2,7 +2,13 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, Columns, CommonText, CommonImage } from '../../../../'
+import {
+  MainText,
+  Columns,
+  CommonText,
+  CommonImage,
+  CommonImages
+} from '../../../../'
 
 import styles from './RP12.module.css'
 
@@ -49,35 +55,29 @@ const RP12 = () => {
           </figure>
         </CommonImage>
 
-        <Columns
-          left={
-            <div>
-              <figure className={classNames(styles.img, styles._2)}>
-                <Image src="/images/frunze/4/1.jpg" layout="fill" />
-              </figure>
-            </div>
-          }
-          right={
-            <div>
-              <p>
-                Доработка передатчика типа ДОТ «Дрофа» и антенной системы
-                привела к созданию самой популярной радиостанции в Красной Армии
-                типа 12-РП. Позже радиостанция 12-РП была усовершенствована. С
-                новой антенной типа ДД и усилительной лампой типа 2П9М она
-                обеспечивала коммуникацию на расстоянии около 30 км, что
-                гарантировало надежную связь с партизанскими отрядами. Готовая
-                продукция тут же отправлялась на фронт. Требования заказчика к
-                качеству радиостанций были очень высокими. Модернизация
-                радиостанции 12-РП продолжалась в течение всей войны. С 1941-го
-                по 1945 гг. завод им. М. В. Фрунзе изготовил около 30 тыс. таких
-                радиостанций.
-              </p>
-              <figure className={classNames(styles.img, styles._3)}>
-                <Image src="/images/frunze/4/3.jpg" layout="fill" />
-              </figure>
-            </div>
-          }
-        />
+        <CommonText>
+          <p>
+            Доработка передатчика типа ДОТ «Дрофа» и антенной системы привела к
+            созданию самой популярной радиостанции в Красной Армии типа 12-РП.
+            Позже радиостанция 12-РП была усовершенствована. С новой антенной
+            типа ДД и усилительной лампой типа 2П9М она обеспечивала
+            коммуникацию на расстоянии около 30 км, что гарантировало надежную
+            связь с партизанскими отрядами. Готовая продукция тут же
+            отправлялась на фронт. Требования заказчика к качеству радиостанций
+            были очень высокими. Модернизация радиостанции 12-РП продолжалась в
+            течение всей войны. С 1941-го по 1945 гг. завод им. М. В. Фрунзе
+            изготовил около 30 тыс. таких радиостанций.
+          </p>
+        </CommonText>
+
+        <CommonImages>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/frunze/4/1.jpg" layout="fill" />
+          </figure>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/frunze/4/3.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
 
         <CommonText>
           <p className={styles.vrezka}>

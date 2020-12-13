@@ -6,7 +6,7 @@ import {
   MainText,
   Speech,
   CommonText,
-  Columns
+  CommonImages
 } from '../../../../'
 
 import styles from './Trajectory.module.css'
@@ -23,25 +23,15 @@ const Trajectory = () => {
             самонаводящейся акустической торпеды «С.А.Т».
           </p>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
-        <Columns
-          left={
-            <div>
-              <figure className={classNames(styles.img, styles.main)}>
-                <Image src="/images/petrovsky/7/1.jpg" layout="fill" />
-              </figure>
-            </div>
-          }
-          right={
-            <div>
-              <figure className={classNames(styles.img, styles._1)}>
-                <Image src="/images/petrovsky/7/2.jpg" layout="fill" />
-              </figure>
-            </div>
-          }
-        />
+        <CommonImages>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/petrovsky/7/1.jpg" layout="fill" />
+          </figure>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/petrovsky/7/2.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
 
         <CommonText>
           <p>

@@ -22,9 +22,7 @@ const Victory = () => {
             которое было оставлено ему на вечное хранение.
           </p>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
         <Columns
           left={
             <div>

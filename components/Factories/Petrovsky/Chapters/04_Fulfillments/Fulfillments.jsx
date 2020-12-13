@@ -22,9 +22,7 @@ const Fulfillments = () => {
             — всего лишь за месяц.
           </p>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
         <Columns
           left={
             <div>

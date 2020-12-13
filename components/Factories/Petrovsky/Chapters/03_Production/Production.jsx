@@ -24,9 +24,7 @@ const Production = () => {
             Военно-морского флота.
           </p>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/petrovsky/4/1.jpg" layout="fill" />

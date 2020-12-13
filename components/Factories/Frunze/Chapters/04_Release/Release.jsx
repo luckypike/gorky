@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, Columns, CommonText } from '../../../../'
+import { MainText, Columns, CommonText, CommonImage } from '../../../../'
 
 import styles from './Release.module.css'
 
@@ -31,9 +31,6 @@ const Release = () => {
           }
           right={
             <div>
-              <figure className={classNames(styles.img, styles._1)}>
-                <Image src="/images/frunze/5/2.jpg" layout="fill" />
-              </figure>
               <p>
                 В 1941 году на завод было эвакуировано производство
                 предохранителей завода «Электросигнал» из Воронежа. В июне 1942
@@ -47,6 +44,12 @@ const Release = () => {
             </div>
           }
         />
+
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/frunze/5/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
 
         <CommonText>
           <p>

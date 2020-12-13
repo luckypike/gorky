@@ -25,9 +25,7 @@ const Competitions = () => {
             приходилось на женщин.
           </p>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/petrovsky/8/1.jpg" layout="fill" />
