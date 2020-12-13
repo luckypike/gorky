@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, Columns, CommonImage } from "../../../../";
+import { MainText, Columns, CommonImage } from '../../../../'
 
-import styles from "./Contribution.module.css";
+import styles from './Contribution.module.css'
 
 const Contribution = () => {
   return (
@@ -47,7 +47,7 @@ const Contribution = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contribution;
+export default Contribution

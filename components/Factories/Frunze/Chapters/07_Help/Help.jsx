@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, Columns } from "../../../../";
+import { MainText, Columns } from '../../../../'
 
-import styles from "./Help.module.css";
+import styles from './Help.module.css'
 
 const Help = () => {
   return (
@@ -42,7 +42,7 @@ const Help = () => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Help;
+export default Help

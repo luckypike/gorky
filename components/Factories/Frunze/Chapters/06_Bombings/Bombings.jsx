@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, Columns, CommonImage } from "../../../../";
+import { MainText, Columns, CommonImage } from '../../../../'
 
-import styles from "./Bombings.module.css";
+import styles from './Bombings.module.css'
 
 const Bombings = () => {
   return (
@@ -47,7 +47,7 @@ const Bombings = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Bombings;
+export default Bombings

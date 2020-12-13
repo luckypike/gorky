@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, Columns, CommonImage } from "../../../../";
+import { MainText, Columns, CommonImage } from '../../../../'
 
-import styles from "./Ears.module.css";
+import styles from './Ears.module.css'
 
 const Ears = () => {
   return (
@@ -60,7 +60,7 @@ const Ears = () => {
         </CommonImage>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Ears;
+export default Ears

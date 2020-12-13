@@ -1,16 +1,16 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
 import {
   MainImage,
   MainText,
   Columns,
   CommonText,
-  CommonImage,
-} from "../../../../";
+  CommonImage
+} from '../../../../'
 
-import styles from "./First.module.css";
+import styles from './First.module.css'
 
 const First = () => {
   return (
@@ -89,7 +89,7 @@ const First = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default First;
+export default First

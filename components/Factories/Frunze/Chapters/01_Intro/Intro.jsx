@@ -1,7 +1,7 @@
-import React from "react";
-import cn from "classnames";
+import React from 'react'
+import cn from 'classnames'
 
-import styles from "../../../../Intro.module.css";
+import styles from '../../../../Intro.module.css'
 
 const Intro = () => {
   return (
@@ -53,7 +53,7 @@ const Intro = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro

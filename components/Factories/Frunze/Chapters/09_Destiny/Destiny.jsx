@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, Columns, CommonImage } from "../../../../";
+import { MainText, Columns } from '../../../../'
 
-import styles from "./Destiny.module.css";
+import styles from './Destiny.module.css'
 
 const Destiny = () => {
   return (
@@ -45,7 +45,7 @@ const Destiny = () => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Destiny;
+export default Destiny

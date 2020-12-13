@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, Columns, CommonText, CommonImage } from "../../../../";
+import { MainText, Columns, CommonText, CommonImage } from '../../../../'
 
-import styles from "./RP12.module.css";
+import styles from './RP12.module.css'
 
 const RP12 = () => {
   return (
@@ -87,7 +87,7 @@ const RP12 = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RP12;
+export default RP12

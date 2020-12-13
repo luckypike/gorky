@@ -1,10 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import Image from "next/image";
+import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, Columns, CommonText, CommonImage } from "../../../../";
+import { MainText, Columns, CommonText } from '../../../../'
 
-import styles from "./Release.module.css";
+import styles from './Release.module.css'
 
 const Release = () => {
   return (
@@ -78,7 +78,7 @@ const Release = () => {
         </CommonText>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Release;
+export default Release
