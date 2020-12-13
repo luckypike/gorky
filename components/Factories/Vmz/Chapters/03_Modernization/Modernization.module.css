@@ -1,31 +1,25 @@
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .img {
   composes: ari from "../../../../Images.module.css";
 
-  &.main {
-    padding-top: calc(771 / 1014 * 100%);
-  }
-
-  &._1 {
+  &.intro {
     padding-top: calc(1296 / 2027 * 100%);
   }
 
-  &._2 {
+  &._3 {
     padding-top: calc(1529 / 2027 * 100%);
+  }
+
+  &._1 {
+    padding-top: calc(733 / 1014 * 100%);
+  }
+
+  &._2 {
+    padding-top: calc(1466 / 2028 * 100%);
   }
 }
 
 .page {
   composes: page from "../../../../Factory/Factory.module.css";
-}
-
-.fpi {
-  align-items: center;
 }
 
 .vrezka {

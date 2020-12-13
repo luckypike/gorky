@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, CommonImages } from '../../../../'
 
 import styles from './SteelMining.module.css'
 
@@ -15,27 +15,6 @@ const SteelMining = () => {
             Выксунский металлургический завод, как и многие другие предприятия в
             военные годы, испытывал дефицит сырья — не хватало чугуна, руды,
             ферросплавов, огнеупоров.
-          </p>
-        </MainText>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/vmz/8/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/vmz/8/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
             Кроме того, из-за отсутствия чугуна мартеновцы плавили сталь
             карбюраторным способом: необходимый для плавки углерод вводили
             коксом и даже каменным углем, который содержит вредные для металла
@@ -54,10 +33,14 @@ const SteelMining = () => {
             металлургической промышленности Ивану Тевосяну, который в 1942 году
             часто жил на Урале, контролируя работу заводов.
           </p>
-        </CommonText>
-      </div>
+        </MainText>
 
-      <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/vmz/8/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Автор книги «25 рассказов из истории ОАО ВМЗ» пишут: «Посланец Выксы
@@ -71,17 +54,7 @@ const SteelMining = () => {
             рабочие сначала использовали окалину и сварочный шлак прокатных
             цехов, а затем организовали небольшой рудник и вели добычу.
           </p>
-        </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/vmz/8/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Случались перебои в электроэнергии, поставках мазута. По данным
             Горьковского комитета обороны, в январе 1943 года печи
@@ -100,11 +73,15 @@ const SteelMining = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
+        <CommonImages>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/vmz/8/4.jpg" layout="fill" />
           </figure>
-        </CommonImage>
+
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/vmz/8/2.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
       </div>
     </div>
   )
