@@ -175,6 +175,7 @@
   font-size: calc(var(--yr) * 12);
   line-height: calc(var(--yr) * 12);
   color: rgb(var(--hl_color));
+  text-transform: uppercase;
 
   @media (--s) {
     font-size: calc(var(--yr) * 18);

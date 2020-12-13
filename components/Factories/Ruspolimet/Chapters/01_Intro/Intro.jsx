@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <div>
+        <div className={styles.header}>
           <h1 className={styles.title}>Кулебакский металлургический завод</h1>
 
           <p className={styles.desc}>ПАО «Русполимет»</p>

@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonImage, CommonImages } from '../../../../'
 
 import styles from './PeacefulSky.module.css'
 
@@ -15,21 +15,6 @@ const PeacefulSky = () => {
             После 1945 года производство военной продукции на заводе свернули. В
             1946 году металлурги КМЗ первыми в СССР начали выпуск цельнолитых
             якорных цепей для морского флота.
-          </p>
-        </MainText>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/ruspolimet/9/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
             В начале 1950-х годов завод начал изготавливать чугунные и стальные
             детали для сельхозтехники. Мартен после войны подвергся масштабной
             реконструкции: его оснастили новым оборудованием, освоив скоростные
@@ -39,27 +24,23 @@ const PeacefulSky = () => {
             производство колец для реактивных двигателей из новых авиационных
             материалов, которое является основным для завода и сегодня.
           </p>
-        </CommonText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/ruspolimet/9/4.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/ruspolimet/9/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
+        </MainText>
 
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/ruspolimet/9/2.jpg" layout="fill" />
           </figure>
         </CommonImage>
+
+        <CommonImages>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/ruspolimet/9/1.jpg" layout="fill" />
+          </figure>
+
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/ruspolimet/9/4.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
       </div>
     </div>
   )

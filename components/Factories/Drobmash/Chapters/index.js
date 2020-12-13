@@ -1,5 +1,4 @@
 export { default as Intro } from './01_Intro/Intro'
-export { default as Img } from './02_Img/Img'
 export { default as Mechanicians } from './03_Mechanicians/Mechanicians'
 export { default as WithoutThought } from './04_WithoutThought/WithoutThought'
 export { default as Locust } from './05_Locust/Locust'
