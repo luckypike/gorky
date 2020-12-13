@@ -58,6 +58,7 @@ export default function App ({ Component, props }) {
   const handleRouteChangeStart = (url) => {
     appStore.setLoaderEnd(false)
     appStore.setLoaderStart(true)
+    appStore.setNav(false)
   }
 
   const handleRouteChangeEnd = (url) => {
