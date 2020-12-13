@@ -22,6 +22,7 @@
   font-family: var(--ff_sans);
   color: rgb(var(--hl_color));
   composes: h2 from '../Fonts.module.css';
+  text-transform: uppercase;
 }
 
 .text {

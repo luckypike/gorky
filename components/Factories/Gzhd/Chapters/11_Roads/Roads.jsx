@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonImages } from '../../../../'
 
 import styles from './Roads.module.css'
 
@@ -18,16 +18,6 @@ const Roads = () => {
             офицеров Красной Армии.
           </p>
 
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/gzhd/11/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             В целом 80% объема грузовой работы железных дорог области
             производилось на подъездных путях промышленных предприятий. Только
@@ -47,20 +37,17 @@ const Roads = () => {
             самых высокотехнологичных железных дорог в стране. Ежегодно по ней
             перевозят более 90 млн пассажиров и 44 млрд т грузов.
           </p>
+        </MainText>
 
-          <p className={styles.vrezka}>
-            В 1941–1945 гг. ГЖД перевезла 110 тыс. автомашин, 100 тыс.
-            артустановок, более 38 тыс. боевых машин
-          </p>
-        </CommonText>
-      </div>
+        <CommonImages>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/gzhd/11/2.jpg" layout="fill" />
+          </figure>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gzhd/11/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
+        </CommonImages>
       </div>
     </div>
   )
