@@ -6,7 +6,7 @@ export default function Intro () {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <div>
+        <div className={styles.header}>
           <h1 className={styles.title}>Павловский завод № 467</h1>
 
           <p className={styles.desc}>АО «Гидроагрегат»</p>
