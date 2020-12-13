@@ -153,6 +153,10 @@
     background-image: url(../assets/index/images/factories/sormovo_sudo.jpg);
   }
 
+  &.termal {
+    background-image: url(../assets/index/images/factories/termal.jpg);
+  }
+
   /* Приборостроение */
 
   &.nitel {

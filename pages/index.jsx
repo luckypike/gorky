@@ -226,6 +226,14 @@ export default function Home () {
               title="Горьковский Завод № 112 «Красное Сормово»"
               desc="ПАО «Завод „Красное Сормово“»"
             />
+
+            <Item
+              href="/termal"
+              id="termal"
+              img={styles.i32}
+              title="Завод № 645 имени В. И. Ульянова"
+              desc="ЗАО «Концерн „Термаль“»"
+            />
           </div>
         </div>
 

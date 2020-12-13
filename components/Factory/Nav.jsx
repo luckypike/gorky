@@ -245,7 +245,7 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/termal">
               <a>
               Концерн «Термаль»
               </a>
