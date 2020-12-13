@@ -1,5 +1,4 @@
 export { default as Intro } from './01_Intro/Intro'
-export { default as Img } from './02_Img/Img'
 export { default as Reliable } from './03_Reliable/Reliable'
 export { default as Rata } from './04_Rata/Rata'
 export { default as JuneHeroes } from './05_JuneHeroes/JuneHeroes'
