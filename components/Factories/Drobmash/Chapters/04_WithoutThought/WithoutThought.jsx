@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import classNames from 'classnames'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImages } from '../../../../'
 
 import styles from './WithoutThought.module.css'
 
@@ -16,17 +16,24 @@ const WithoutThought = () => {
             остановился. Завод перешел в ведение Наркомата танковой
             промышленности, и предприятие получило адрес «Почтовый ящик №177».
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/drobmash/4/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
+        <CommonImages>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/drobmash/4/2.jpg" layout="fill" />
+          </figure>
+
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/drobmash/4/1.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
+
         <CommonText>
+          <p className={styles.vrezka}>
+            С началом войны на заводе был введен непрерывный сменный график
+            работы по 12 часов с перерывом на час
+          </p>
+
           <p>
             В связи с полным переходом завода на работу для нужд оборонной
             промышленности был введен непрерывный сменный график по 12 часов с
@@ -37,20 +44,8 @@ const WithoutThought = () => {
             цех, площадь огнерезного участка увеличилась вдвое, выросли мощности
             кузнечно­прессового цеха.
           </p>
-
-          <p className={styles.vrezka}>
-            С началом войны на заводе был введен непрерывный сменный график
-            работы по 12 часов с перерывом на час
-          </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/drobmash/4/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
       </div>
-      {/* <Gallery image={main}/> */}
     </div>
   )
 }
