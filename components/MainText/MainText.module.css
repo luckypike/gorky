@@ -2,6 +2,10 @@
   padding: 0 var(--xr);
   margin-bottom: var(--sb);
 
+  &.void {
+    margin-bottom: var(--sbb);
+  }
+
   @media (--s) {
     padding: 0 calc(2 / 13 * 100%);
     font-size: 1.8vw;
