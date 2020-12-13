@@ -159,6 +159,10 @@
     background-image: url(../assets/index/images/factories/nitel.jpg);
   }
 
+  &.frunze {
+    background-image: url(../assets/index/images/factories/frunze.jpg);
+  }
+
   &.petrovsky {
     background-image: url(../assets/index/images/factories/petrovsky.jpg);
   }

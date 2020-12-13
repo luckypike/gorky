@@ -244,6 +244,14 @@ export default function Home () {
             />
 
             <Item
+              href="/frunze"
+              id="frunze"
+              img={styles.i32}
+              title="Горьковский Завод № 326 имени М. В. Фрунзе"
+              desc="ПАО «Нижегородское НПО имени М. В. Фрунзе»"
+            />
+
+            <Item
               href="/petrovsky"
               id="petrovsky"
               img={styles.i32}
