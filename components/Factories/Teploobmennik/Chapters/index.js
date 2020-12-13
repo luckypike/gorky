@@ -1,5 +1,4 @@
 export { default as Intro } from './01_Intro/Intro'
-export { default as Img } from './02_Img/Img'
 export { default as Radiators } from './03_Radiators/Radiators'
 export { default as Road } from './04_Road/Road'
 export { default as Build } from './05_Build/Build'
