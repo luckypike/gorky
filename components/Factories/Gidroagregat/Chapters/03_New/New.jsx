@@ -15,7 +15,7 @@ const New = () => {
             <Image src="/images/gidroagregat/img.jpg" layout="fill" />
 
             <figcaption>
-              К 1940 году на терри- тории завода был готов только один корпус — остальные строились
+              К 1940 году на территории завода был готов только один корпус — остальные строились
             </figcaption>
           </figure>
         </MainImage>
