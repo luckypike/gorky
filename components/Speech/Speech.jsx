@@ -16,6 +16,7 @@ const Speech = ({ title, author, children }) => {
             <>
               <strong>
                 {author.name}
+                {author.name.slice(-1) !== ':' && ':'}
               </strong>
               <br />
             </>

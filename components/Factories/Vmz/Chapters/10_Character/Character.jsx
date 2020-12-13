@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonImage } from '../../../../'
 
 import styles from './Character.module.css'
 
@@ -14,19 +14,6 @@ const Character = () => {
           <p>
             Сталеварение не женская работа, однако женщины Выксы пришли на
             завод, чтобы заменить ушедших на фронт мужчин.
-          </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/vmz/10/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
             В отдел кадров Выксунского металлургического завода с первых дней
             войны стали поступать заявления о приеме на работу выксунских
             домохозяек. С июля по сентябрь 1941 года на ВМЗ пришло 795 женщин,
@@ -40,11 +27,11 @@ const Character = () => {
             фронт, другие оставались работать в больницах и госпиталях. На
             территории Выксы находилось 12 эвакуированных госпиталей.
           </p>
-        </CommonText>
+        </MainText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/vmz/10/1.jpg" layout="fill" />
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/vmz/10/2.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>

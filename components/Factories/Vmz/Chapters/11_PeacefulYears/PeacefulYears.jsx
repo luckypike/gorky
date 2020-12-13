@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonImage } from '../../../../'
 
 import styles from './PeacefulYears.module.css'
 
@@ -11,19 +11,8 @@ const PeacefulYears = () => {
     <div className={styles.root}>
       <div className={styles.page}>
         <MainText title="В мирные годы">
-          <p>После войны ВМЗ вернулся к выпуску гражданской продукции.</p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/vmz/11/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
+            После войны ВМЗ вернулся к выпуску гражданской продукции.
             В 1947 году предприятие стало выпускать столько же труб и стального
             проката, сколько до войны, а в 1948-м вернулось к довоенным объемам
             производства стали. В 1970–1980 годы завод фактически получил второе
@@ -36,13 +25,19 @@ const PeacefulYears = () => {
             крупнейших производителей нефтегазовых труб и железнодорожных колес
             в стране.
           </p>
-        </CommonText>
+        </MainText>
 
         <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/vmz/11/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        {/* <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/vmz/11/2.jpg" layout="fill" />
           </figure>
-        </CommonImage>
+        </CommonImage> */}
       </div>
     </div>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainImage, MainText, CommonText, CommonImages, CommonImage } from '../../../../'
 
 import styles from './Modernization.module.css'
 
@@ -10,6 +10,12 @@ const Modernization = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <MainImage>
+          <figure className={classNames(styles.img, styles.intro)}>
+            <Image src="/images/vmz/img.jpg" layout="fill" />
+          </figure>
+        </MainImage>
+
         <MainText title="Десятилетка модернизации">
           <p>
             Так получилось, что руководство одного из старейших в стране
@@ -17,21 +23,6 @@ const Modernization = () => {
             году, Выксунского металлургического завода (ВМЗ), проводя
             модернизацию в 1930-е годы, подготовило его к работе в военных
             условиях.
-          </p>
-        </MainText>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/vmz/3/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
             В тот период в оснащение завода было вложено 20 млн руб. На эти
             средства обновили доменное производство, построили новые
             мартеновский и трубный цехи, капитально обновили старомартеновский
@@ -46,16 +37,18 @@ const Modernization = () => {
             броневых сталей. Их выпуск с того времени был налажен на ВМЗ, а с
             1938 года заказов на броневые стали поступало все больше.
           </p>
-        </CommonText>
+        </MainText>
 
-        <CommonImage>
+        <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/vmz/3/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
 
-      <div className={styles.page}>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/vmz/3/2.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
+
         <CommonText>
           <p>
             В 1939 году по выпуску сварных труб размером 3,8–5,0 дюйма
@@ -74,8 +67,8 @@ const Modernization = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/vmz/3/3.jpg" layout="fill" />
           </figure>
         </CommonImage>

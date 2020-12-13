@@ -1,14 +1,8 @@
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .img {
   composes: ari from "../../../../Images.module.css";
 
   &.main {
-    padding-top: calc(945 / 1419 * 100%);
+    padding-top: calc(980 / 1420 * 100%);
   }
 
   &._1 {
@@ -20,16 +14,12 @@
   }
 
   &._3 {
-    padding-top: calc(1024 / 1420 * 100%);
+    padding-top: calc(980 / 1420 * 100%);
   }
 }
 
 .page {
   composes: page from "../../../../Factory/Factory.module.css";
-}
-
-.fpi {
-  align-items: center;
 }
 
 .vrezka {
