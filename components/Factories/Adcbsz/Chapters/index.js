@@ -1,5 +1,4 @@
 export { default as Intro } from './01_Intro/Intro'
-export { default as Img } from './02_Img/Img'
 export { default as GlassGiant } from './03_GlassGiant/GlassGiant'
 export { default as Hardening } from './04_Hardening/Hardening'
 export { default as Tablets } from './05_Tablets/Tablets'

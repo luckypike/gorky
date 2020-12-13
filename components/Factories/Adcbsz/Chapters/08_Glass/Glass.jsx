@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonImage } from '../../../../'
 
 import styles from './Glass.module.css'
 
@@ -10,6 +10,16 @@ const Glass = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/adcbsz/8/1.jpg" layout="fill" />
+
+            <figcaption>
+              Первый советский послевоенный автомобиль представительского класса ЗИС-110 тоже комплектовался борскими стеклами
+            </figcaption>
+          </figure>
+        </CommonImage>
+
         <MainText title="Стекло — в мир!">
           <p>
             С победой завод вернулся к производству оконного стекла. Коллективу
@@ -22,19 +32,7 @@ const Glass = () => {
             выпускать ежемесячно до 500 кв. м. Впоследствии все главные новинки
             Горьковского автозавода комплектовались борскими стеклами.
           </p>
-        </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/adcbsz/8/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Самым значительным достижением борских стеклоделов в первые
             послевоенные годы не только в масштабе самого предприятия, но и для
@@ -48,13 +46,17 @@ const Glass = () => {
             автомобильного и полированного стекла, оснащенный по последнему
             слову техники. Завод является частью AGC Group.
           </p>
+        </MainText>
 
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/adcbsz/8/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/adcbsz/8/2.jpg" layout="fill" />
+
+            <figcaption>
+              Для новинки Горьковского автозавода, легкового автомобиля «Победа», требовалось особое полированное стекло
+            </figcaption>
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

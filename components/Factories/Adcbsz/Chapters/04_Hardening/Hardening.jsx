@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonImages, Columns } from '../../../../'
 
 import styles from './Hardening.module.css'
 
@@ -21,19 +21,7 @@ const Hardening = () => {
             бронеавтомобилей, а также Военно-морскому флоту, который нуждался в
             оптических стеклах для сигнальной части маяков и боевых кораблей.
           </p>
-        </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/adcbsz/4/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Оптические стекла завод на Моховых Горах выпускал и раньше. И уже
             изготавливал из триплекса защитные и отражательные стекла для
@@ -48,37 +36,51 @@ const Hardening = () => {
             (закалку) такого стекла. Ни кадров, ни оборудования для этих
             процессов на заводе не было.
           </p>
+        </MainText>
 
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/adcbsz/4/2.jpg" layout="fill" />
+        <CommonImages>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/adcbsz/4/2.jpg" layout="fill" />
+          </figure>
+
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/adcbsz/4/3.jpg" layout="fill" />
+
+            <figcaption>
+              Комплект переднего лобового остекления военных самолетов набирался из пяти деталей
+            </figcaption>
+          </figure>
+        </CommonImages>
+
+        <Columns
+          left={(
+            <figure className={classNames(styles.img, styles.main)}>
+              <Image src="/images/adcbsz/4/1.jpg" layout="fill" />
+
+              <figcaption>
+                Сталинитом, то есть прочным, как сталь, назвали пуленепробиваемое стекло для самолетов и танков
+              </figcaption>
             </figure>
-          </CommonImage>
-        </CommonText>
-      </div>
+          )}
 
-      <div className={styles.page}>
-        <CommonText>
-          <p>
-            В первые же месяцы войны предприятию пришлось в сжатые сроки
-            переориентировать производство. По решению властей на предприятие
-            прибыли главный инженер Константиновского стекольного завода
-            А.П. Патенко, ставший главным инженером борского завода, а также
-            специалисты с других родственных предприятий из Гомеля и Ленинграда,
-            имевшие опыт по закалке стекла. Из Гомеля привезли часть
-            оборудования. Сотрудники Государственного научно-исследовательского
-            института стекла на месте участвовали в инженерных изысканиях.
-            В результате за короткий срок борские стеклоделы впервые в мировой
-            практике освоили на машинах вертикального вытягивания производство
-            сверхутолщенного 35-мм стекла.
-          </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._2)}>
-              <Image src="/images/adcbsz/4/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
+          right={(
+            <div>
+              <p>
+                В первые же месяцы войны предприятию пришлось в сжатые сроки
+                переориентировать производство. По решению властей на предприятие
+                прибыли главный инженер Константиновского стекольного завода
+                А.П. Патенко, ставший главным инженером борского завода, а также
+                специалисты с других родственных предприятий из Гомеля и Ленинграда,
+                имевшие опыт по закалке стекла. Из Гомеля привезли часть
+                оборудования. Сотрудники Государственного научно-исследовательского
+                института стекла на месте участвовали в инженерных изысканиях.
+                В результате за короткий срок борские стеклоделы впервые в мировой
+                практике освоили на машинах вертикального вытягивания производство
+                сверхутолщенного 35-мм стекла.
+              </p>
+            </div>
+          )}
+        />
       </div>
     </div>
   )

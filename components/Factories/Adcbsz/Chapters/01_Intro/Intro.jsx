@@ -1,4 +1,5 @@
 import React from 'react'
+import cn from 'classnames'
 
 import styles from '../../../../Intro.module.css'
 
@@ -6,7 +7,7 @@ export default function Intro () {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <div>
+        <div className={styles.header}>
           <h1 className={styles.title}>
             Горьковский механизированный стеклозавод имени М. Горького
           </h1>
@@ -18,9 +19,7 @@ export default function Intro () {
 
         <div className={styles.items}>
           <div className={styles.item}>
-            <div className={styles.digit}>Главный</div>
-
-            <div className={styles.rd}>поставщик</div>
+            <div className={cn(styles.digit, styles.txt)}>Главный поставщик</div>
 
             <div className={styles.what}>
               броневого стекла для самолетов, танков и автомобилей Великой
@@ -29,9 +28,7 @@ export default function Intro () {
           </div>
 
           <div className={styles.item}>
-            <div className={styles.digit}>Единственный</div>
-
-            <div className={styles.rd}>производитель</div>
+            <div className={cn(styles.digit, styles.txt)}>Единственный производитель</div>
 
             <div className={styles.what}>сигнальных маячных линз для Военно-морского флота в годы войны</div>
           </div>
