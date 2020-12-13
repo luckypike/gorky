@@ -1,5 +1,4 @@
 export { default as Intro } from './01_Intro/Intro'
-export { default as Img } from './02_Img/Img'
 export { default as Unique } from './03_Unique/Unique'
 export { default as Backlog } from './04_Backlog/Backlog'
 export { default as United } from './05_United/United'

@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, Columns } from '../../../../'
 
 import styles from './Backlog.module.css'
 
@@ -10,30 +10,34 @@ const Backlog = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <MainText title="Боевой задел">
-          <p>
-            Проектная мощность цеха синильной кислоты солевым методом составляла
-            5 тыс. т в год, однако из-за нехватки сырья завод выпускал около
-            половины этого объема. Тем не менее снаряжение зажигательных и
-            химических авиабомб регулярно наращивалось. Авиахимбомбы ХАБ-100,
-            ХАБ-200 и ХАБ-500 и химические снаряды ствольной и реактивной
-            артиллерии АХС-76, МХ-13 и МХ-31 снаряжали в цехах N№ 3, 4, 19 и 24.
-            Из приказа комиссара химической промышленности СССР следует, что
-            завод № 148 снаряжал артхимические снаряды калибром 76 мм ипритом,
-            который шифровался как «вещество Р-74». К июню 1942 года завод
-            должен был выпускать до 120 тыс. штук таких снарядов в месяц. Для
-            организации производства станки на завод «Рулон» поставлялись с
-            Челябинского тракторного завода.
-          </p>
-        </MainText>
-      </div>
+        <MainText title="Боевой задел" />
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/dzorg/4/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
+        <Columns
+          left={(
+            <figure className={classNames(styles.img, styles.main)}>
+              <Image src="/images/dzorg/4/2.jpg" layout="fill" />
+            </figure>
+          )}
+
+          right={(
+            <div>
+              <p>
+                Проектная мощность цеха синильной кислоты солевым методом составляла
+                5 тыс. т в год, однако из-за нехватки сырья завод выпускал около
+                половины этого объема. Тем не менее снаряжение зажигательных и
+                химических авиабомб регулярно наращивалось. Авиахимбомбы ХАБ-100,
+                ХАБ-200 и ХАБ-500 и химические снаряды ствольной и реактивной
+                артиллерии АХС-76, МХ-13 и МХ-31 снаряжали в цехах N№ 3, 4, 19 и 24.
+                Из приказа комиссара химической промышленности СССР следует, что
+                завод № 148 снаряжал артхимические снаряды калибром 76 мм ипритом,
+                который шифровался как «вещество Р-74». К июню 1942 года завод
+                должен был выпускать до 120 тыс. штук таких снарядов в месяц. Для
+                организации производства станки на завод «Рулон» поставлялись с
+                Челябинского тракторного завода.
+              </p>
+            </div>
+          )}
+        />
       </div>
 
       <div className={styles.page}>
@@ -52,22 +56,21 @@ const Backlog = () => {
             контактному методу отравляющего вещества «Розамин» (синильной
             кислоты), которое было выполнено
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/dzorg/4/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/dzorg/4/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        {/* <CommonImage>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/dzorg/4/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
+        </CommonImage> */}
       </div>
+
     </div>
   )
 }

@@ -3,7 +3,6 @@ import React from 'react'
 import { Factory } from '../../components'
 import {
   Intro,
-  Img,
   Unique,
   Backlog,
   United,
@@ -13,30 +12,23 @@ import {
   FirstTime
 } from '../../components/Factories/Dzorg/Chapters'
 
-import styles from './index.module.css'
-
 const Dzorg = () => {
   return (
     <Factory>
-      <div className={styles.root}>
-          <Intro />
+      <Intro />
+      <Unique />
 
-          <Img />
+      <Backlog />
 
-          <Unique />
+      <United />
 
-          <Backlog />
+      <Armor />
 
-          <United />
+      <Secrets />
 
-          <Armor />
+      <Zverev />
 
-          <Secrets />
-
-          <Zverev />
-
-          <FirstTime />
-      </div>
+      <FirstTime />
     </Factory>
   )
 }

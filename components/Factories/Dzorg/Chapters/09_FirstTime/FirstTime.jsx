@@ -18,29 +18,24 @@ const FirstTime = () => {
             основе метано-водородной фракции и природного газа наладили
             производство синильной кислоты, из которой с использованием окиси
             этилена делали мономеры акрилового ряда.
-          </p>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/dzorg/9/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonText>
-          <p>
             В 1960–1970 годах на предприятии освоили выпуск метакрилатных
             депрессорных и загущающих присадок к маслам, эмульсий для кожевенной
             и лакокрасочной промышленностей. По производству акрилатов и
             метакрилатов завод был ведущим в СССР. Почти все продукты,
             выпускавшиеся заводом, производились в стране впервые.
           </p>
-        </CommonText>
-      </div>
+        </MainText>
 
-      <div className={styles.page}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/dzorg/9/2.jpg" layout="fill" />
+
+            <figcaption>
+              Строительство новых корпусов завода «Рулон». 1948 год
+            </figcaption>
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Основной специализацией завода, который 1 октября 1966 года стал
@@ -58,13 +53,17 @@ const FirstTime = () => {
             Основной специализацией завода оставалось производство органического
             стекла для авиации
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/dzorg/9/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/dzorg/9/1.jpg" layout="fill" />
+
+            <figcaption>
+              Теплостойкое и высокопрочное оргстекло завода использовали для кабин пилотов на высокоскоростных МиГах
+            </figcaption>
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )
