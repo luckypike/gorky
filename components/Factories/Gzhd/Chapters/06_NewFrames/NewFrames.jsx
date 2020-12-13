@@ -21,12 +21,10 @@ const NewFrames = () => {
             ранее мужскими профессиями.
           </p>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
         <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/gzhd/6/2.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gzhd/6/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
 
@@ -44,9 +42,13 @@ const NewFrames = () => {
             Подруги и сестры! В такие дни оставаться вне общего дела нельзя.
           </p>
         </CommonText>
-      </div>
 
-      <div className={styles.page}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/gzhd/6/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Оружие победы над наглым и вероломным врагом куется в труде. Идите
@@ -59,12 +61,6 @@ const NewFrames = () => {
             барака, рядом с которыми работали пошивочная и сапожная мастерские.
           </p>
         </CommonText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/gzhd/6/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
       </div>
     </div>
   )

@@ -1,27 +1,17 @@
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .img {
   composes: ari from "../../../../Images.module.css";
 
   &.main {
-    padding-top: calc(1258 / 2028 * 100%);
+    padding-top: calc(1350 / 2028 * 100%);
   }
 
   &._1 {
-    padding-top: calc(712 / 1014 * 100%);
+    padding-top: calc(1350 / 2028 * 100%);
   }
 }
 
 .page {
   composes: page from "../../../../Factory/Factory.module.css";
-}
-
-.fpi {
-  align-items: center;
 }
 
 .vrezka {

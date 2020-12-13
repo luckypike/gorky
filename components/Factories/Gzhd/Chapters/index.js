@@ -1,5 +1,4 @@
 export { default as Intro } from './01_Intro/Intro'
-export { default as Img } from './02_Img/Img'
 export { default as StrategicMove } from './03_StrategicMove/StrategicMove'
 export { default as Military } from './04_Military/Military'
 export { default as Faster } from './05_Faster/Faster'
