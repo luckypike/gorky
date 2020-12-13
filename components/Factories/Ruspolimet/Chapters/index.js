@@ -1,5 +1,4 @@
 export { default as Intro } from './01_Intro/Intro'
-export { default as Img } from './02_Img/Img'
 export { default as Heritage } from './03_Heritage/Heritage'
 export { default as LastMorning } from './04_LastMorning/LastMorning'
 export { default as ForYourself } from './05_ForYourself/ForYourself'

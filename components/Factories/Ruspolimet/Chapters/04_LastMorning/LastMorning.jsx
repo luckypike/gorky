@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, CommonImages } from '../../../../'
 
 import styles from './LastMorning.module.css'
 
@@ -10,25 +10,16 @@ const LastMorning = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/ruspolimet/4/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <MainText title="Последнее мирное утро">
           <p>
             Начало войны застало многих сотрудников КМЗ на строительстве трассы
             Муром — Кулебаки — Арзамас.
-          </p>
-        </MainText>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/ruspolimet/4/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
             Ветеран труда КМЗ А.Я. Рабинович (работал мастером инструментального
             цеха, начальником механического и термического цехов, с 1961-го по
             1979 гг. — директор КМЗ) вспоминает, что начало этого дня было
@@ -50,20 +41,18 @@ const LastMorning = () => {
             раскупить все продукты. Остались только хомуты и другая конская
             сбруя».
           </p>
-        </CommonText>
-      </div>
+        </MainText>
 
-      <div className={styles.page}>
-        <CommonText>
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
+        <CommonImages>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/ruspolimet/4/1.jpg" layout="fill" />
+          </figure>
+
+          <figure className={classNames(styles.img, styles._1)}>
               <Image src="/images/ruspolimet/4/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </CommonText>
-      </div>
+          </figure>
+        </CommonImages>
 
-      <div className={styles.page}>
         <CommonText>
           <p>
             Электрик Кулебакского металлургического завода Н.И. Сочнев играл в
@@ -76,12 +65,6 @@ const LastMorning = () => {
             повторил „Мать его в дребодан!..“».
           </p>
         </CommonText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/ruspolimet/4/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
       </div>
     </div>
   )

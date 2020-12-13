@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainImage, MainText, CommonText, CommonImages } from '../../../../'
 
 import styles from './Heritage.module.css'
 
@@ -10,6 +10,18 @@ const Heritage = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <MainImage>
+          <figure className={classNames(styles.img, styles.intro)}>
+            <Image src="/images/ruspolimet/img.jpg" layout="fill" />
+          </figure>
+        </MainImage>
+
+        {/* <MainImage>
+          <figure className={classNames(styles.img, styles.intro)}>
+            <Image src="/images/ruspolimet/img.jpg" layout="fill" />
+          </figure>
+        </MainImage> */}
+
         <MainText title="Наследие братьев Струве">
           <p>
             Кулебакский металлургический завод (КМЗ) был основан помещиком
@@ -19,17 +31,17 @@ const Heritage = () => {
             инженерам и предпринимателям братьям Струве в XIX веке.
           </p>
         </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
+        <CommonImages>
+          <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/ruspolimet/3/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
 
-      <div className={styles.page}>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/ruspolimet/3/2.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
+
         <CommonText>
           <p>
             К 1930-м годам основной продукцией предприятия стали бандажи —
@@ -50,14 +62,7 @@ const Heritage = () => {
             слиткоразрезной пролет в бандажепрокатном цехе.
           </p>
         </CommonText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/ruspolimet/3/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
       </div>
-      {/* <Gallery image={main}/> */}
     </div>
   )
 }
