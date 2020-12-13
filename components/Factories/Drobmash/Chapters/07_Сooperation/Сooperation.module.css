@@ -1,9 +1,3 @@
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .img {
   height: 100%;
   composes: ari from "../../../../Images.module.css";
@@ -16,10 +10,6 @@
   &._1 {
     padding-top: calc(946 / 1014 * 100%);
   }
-}
-
-.fpi {
-  align-items: center;
 }
 
 .page {

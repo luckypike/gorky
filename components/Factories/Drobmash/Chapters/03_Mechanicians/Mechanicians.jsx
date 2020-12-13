@@ -1,6 +1,8 @@
 import React from 'react'
+import classNames from 'classnames'
+import Image from 'next/image'
 
-import { MainText, CommonText } from '../../../../'
+import { MainText, CommonText, MainImage, CommonImage } from '../../../../'
 
 import styles from './Mechanicians.module.css'
 
@@ -8,6 +10,12 @@ const Mechanicians = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <MainImage>
+          <figure className={classNames(styles.img, styles.intro)}>
+            <Image src="/images/drobmash/img.jpg" layout="fill" />
+          </figure>
+        </MainImage>
+
         <MainText title="Машиностроители в центре металлургии">
           <p>
             Завод по производству дробильно-размольного оборудования (ДРО) в
@@ -16,8 +24,13 @@ const Mechanicians = () => {
             ввести в эксплуатацию.
           </p>
         </MainText>
-      </div>
-      <div className={styles.page}>
+
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/drobmash/3/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Потребности в дробильно-размольном оборудовании были очень высокими:
