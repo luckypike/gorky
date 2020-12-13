@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, CommonImages } from '../../../../'
 
 import styles from './Rotation.module.css'
 
@@ -18,16 +18,6 @@ const Rotation = () => {
             Г.М. Заславского.
           </p>
 
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/gidroagregat/4/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Бас-Дубов и Заславский — известные разработчки винтов для боевых
             самолетов. Они работали на московском заводе № 28, который долгое
@@ -40,16 +30,18 @@ const Rotation = () => {
             также ОКБ-3 Н.Г. Никифорова. Никифоров был назначен главным
             конструктором завода № 467.
           </p>
-        </CommonText>
+        </MainText>
 
-        <CommonImage>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gidroagregat/4/1.jpg" layout="fill" />
+
+            <figcaption>
+              Истребители Ла-5 оснащались реверсивными винтами, улучшающими торможение
+            </figcaption>
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p>
             Московские специалисты проработали в городе Павлово около года:
@@ -84,22 +76,30 @@ const Rotation = () => {
             премию
           </p>
         </CommonText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
         <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/gidroagregat/4/2.jpg" layout="fill" />
+
+            <figcaption>
+              Первые павловские винты ВИШ-105 в декабре 1941 года получили самолеты ЛаГГ-3
+            </figcaption>
+          </figure>
+        </CommonImage>
+
+        <CommonImages>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/gidroagregat/4/3.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/gidroagregat/4/4.jpg" layout="fill" />
+
+            <figcaption>
+              В производственную цепочку для выпуска ВИШ-105 были включены крупнейшие предприятия Горьковской области
+            </figcaption>
           </figure>
-        </CommonImage>
+        </CommonImages>
       </div>
     </div>
   )

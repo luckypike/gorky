@@ -19,16 +19,16 @@ const Adaptation = () => {
             выпускали электрокары-грузоподъемники, дверные врезные замки и
             наборы кухонных ножей, чугунную посуду.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/gidroagregat/8/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/gidroagregat/8/2.jpg" layout="fill" />
+
+            <figcaption>Один из первых послевоенных заказов завод № 467 получил на производство винтов для бомбардировщика Ту-4</figcaption>
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Варианты загрузки мощностей искал новый директор — бывший главный
@@ -55,6 +55,8 @@ const Adaptation = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gidroagregat/8/1.jpg" layout="fill" />
+
+            <figcaption>Разработанные в 1946 году винты выпускали вплоть до 1960 года</figcaption>
           </figure>
         </CommonImage>
       </div>
