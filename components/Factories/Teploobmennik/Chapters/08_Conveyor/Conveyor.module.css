@@ -1,23 +1,13 @@
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .img {
   composes: ari from "../../../../Images.module.css";
 
   &.main {
-    padding-top: calc(1342 / 2014 * 100%);
+    padding-top: calc(654 / 1013 * 100%);
   }
 
   &._1 {
     padding-top: calc(654 / 1013 * 100%);
   }
-}
-
-.fpi {
-  align-items: center;
 }
 
 .page {

@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonImages } from '../../../../'
 
 import styles from './Conveyor.module.css'
 
@@ -17,28 +17,14 @@ const Conveyor = () => {
             ручные давильные и доводочные работы, химическая обработка медных
             сплавов и сталей, листовая штамповка, свободная ковка.
           </p>
-        </MainText>
-      </div>
 
-      <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/teploobmennik/8/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonText>
           <p>
             В мае 1943 года директором завода стал главный инженер В. В. Сычев.
             Под его руководством внедрялись поточно-конвейерные линии и все
             новые производственные процессы. Суточный выпуск продукции достиг
             125 радиаторов.
           </p>
-        </CommonText>
-      </div>
 
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Регулярно перевыполняя план, завод № 469 был в числе передовых
             предприятий отрасли и участвовал во всех всесоюзных соревнованиях.
@@ -57,13 +43,21 @@ const Conveyor = () => {
             радиаторов для самоходной артиллерийской установки СУ-76, радиаторов
             для гусеничных тракторов СХТЗ.
           </p>
-        </CommonText>
+        </MainText>
 
-        <CommonImage>
+        <CommonImages>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/teploobmennik/8/1.jpg" layout="fill" />
+
+            <figcaption>Завод № 469 перевыполнял план и был в числе передовых в отрасли</figcaption>
+          </figure>
+
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/teploobmennik/8/2.jpg" layout="fill" />
+
+            <figcaption>На поточноконвейерных линиях, несмотря на трудоемкость работы, собирали по 125 радиаторов в сутки</figcaption>
           </figure>
-        </CommonImage>
+        </CommonImages>
       </div>
     </div>
   )

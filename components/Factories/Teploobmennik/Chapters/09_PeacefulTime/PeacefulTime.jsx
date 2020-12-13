@@ -19,22 +19,6 @@ const PeacefulTime = () => {
             др.
           </p>
 
-          <CommonImage>
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/teploobmennik/9/2.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/teploobmennik/9/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonText>
           <p>
             В 1945 году завод возглавил В. К. Васильев. При нем заметно возросла
             производительность труда: использовались скоростные методы
@@ -44,10 +28,14 @@ const PeacefulTime = () => {
             тыс.кв.м (общая площадь составила более 16 тыс. кв. м) промышленных
             площадей, введено больше 200 единиц нового оборудования.
           </p>
-        </CommonText>
-      </div>
+        </MainText>
 
-      <div className={styles.page}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/teploobmennik/9/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             В середине 1950-х гг. серьезно возросла номенклатура изделий
