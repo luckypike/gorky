@@ -1,19 +1,9 @@
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .img {
   composes: ari from "../../../../Images.module.css";
 
   &.main {
     padding-top: calc(945 / 2027 * 100%);
   }
-}
-
-.fpi {
-  align-items: center;
 }
 
 .page {

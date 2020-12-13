@@ -1,8 +1,41 @@
-.content {
-  padding: 1rem 2rem;
-  background-color: rgb(var(--grey_color));
+.root {
+  padding: calc(var(--yr) * var(--s4)) var(--xr) calc(var(--yr) * var(--s6));
+  margin-bottom: var(--sb);
+  background-color: rgb(248, 248, 248);
+
+  @media (--s) {
+    padding: calc(var(--yr) * var(--s4)) calc(2 / 13 * 100%) calc(var(--yr) * var(--s6));
+  }
+
+  @media (--l) {
+    padding: calc(var(--yr) * var(--s4)) calc(3 / 13 * 100%) calc(var(--yr) * var(--s6));
+  }
+}
+
+.label {
+  font-family: var(--ff_sans);
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .title {
+  margin: calc(var(--yr) * var(--s2)) 0 0;
+  composes: bt from '../Fonts.module.css';
   color: rgb(var(--hl_color));
+  font-family: var(--ff_sans);
+  text-transform: uppercase;
+}
+
+.desc {
+  margin-top: calc(var(--yr) * var(--s2));
+  font-style: italic;
+
+  & ol {
+    padding: 0;
+    margin: 0;
+
+    & li {
+      margin-bottom: calc(var(--yr) * var(--s2));
+    }
+  }
 }

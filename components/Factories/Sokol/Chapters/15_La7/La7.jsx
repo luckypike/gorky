@@ -5,6 +5,7 @@ import Image from 'next/image'
 import {
   MainText,
   CommonText,
+  CommonImages,
   CommonImage
 } from '../../../../'
 
@@ -14,39 +15,36 @@ const La7 = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/sokol/15/3.jpg" layout="fill" />
+
+            <figcaption>В 1944 году в Горьком собирали до 26 самолетов в сутки</figcaption>
+          </figure>
+        </CommonImage>
+
         <MainText title="Ла-7: крылья победы">
           <p>
             Истребитель Ла-7, поднявшийся в воздух в январе 1944 года, еще
             называют «эталоном Ла-5 1944 года» — самолетом, вобравшим в себя все
             передовые идеи конструкторов завода №21 и рацпредложения того
             времени.
-          </p>
-        </MainText>
-      </div>
-
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sokol/15/4.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/sokol/15/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
             Кроме всех преимуществ Ла-5 в скорости, легкости и маневренности,
             доставшихся и Ла-7, летчики отмечали хороший обзор, просторную
             кабину, удобную ручку управления истребителем, а главным недостатком
             называли жару в кабине.
           </p>
+        </MainText>
 
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sokol/15/4.jpg" layout="fill" />
+
+            <figcaption>Новый истребитель Ла-7 вобрал все передовые конструкторские идеи своего времени</figcaption>
+          </figure>
+        </CommonImage>
+
+        <CommonText>
           <p>
             15 марта 1944 года ГКО приказал с мая начать выпуск нового
             истребителя без снижения достигнутого заводами темпа. То есть
@@ -75,47 +73,25 @@ const La7 = () => {
             было
           </p>
         </CommonText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
+        <CommonImages middle>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/sokol/15/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/sokol/15/2.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
+        </CommonImages>
 
-      <div className={styles.page}>
         <CommonText>
-          <p className={styles.vrezka}>
-            Скорость, легкость, маневренность, хороший обзор, удобное управление
-            — летчики отмечали массу преимуществ нового самолета Ла-7
-          </p>
-
           <p>
             А в апреле 1945 года выяснилось, что во время установки консолей
             крыла одного из истребителей, когда стыковочные отверстия
             центроплана и консолей не совпали, слесарь-сборщик посадил болты
             лонжерона с помощью кувалды.
           </p>
-        </CommonText>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._4)}>
-            <Image src="/images/sokol/15/5.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
 
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Но в большинстве случаев Ла-7 имел значительные преимущества по
             скорости полета, скороподъемности и маневренности перед своим
@@ -128,17 +104,7 @@ const La7 = () => {
             обнаружении самолетов противника независимо от их числа Ла-7
             немедленно принимали бой.
           </p>
-        </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._5)}>
-            <Image src="/images/sokol/15/6.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
           <p>
             За создание истребителя Ла-7 в ноябре 1944 года ОКБ С. А. Лавочкина
             было награждено орденом Ленина, а сам главный конструктор в 1946
@@ -150,11 +116,19 @@ const La7 = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._6)}>
-            <Image src="/images/sokol/15/7.jpg" layout="fill" />
+        <CommonImages>
+          <figure className={classNames(styles.img, styles._4)}>
+            <Image src="/images/sokol/15/5.jpg" layout="fill" />
+
+            <figcaption>В цехе фюзеляжей</figcaption>
           </figure>
-        </CommonImage>
+
+          <figure className={classNames(styles.img, styles._5)}>
+            <Image src="/images/sokol/15/6.jpg" layout="fill" />
+
+            <figcaption>Сварочный участок производства</figcaption>
+          </figure>
+        </CommonImages>
       </div>
     </div>
   )

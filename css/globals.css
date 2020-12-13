@@ -29,6 +29,31 @@ body {
 figure {
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+figcaption {
+  padding: calc(var(--yr) * var(--s5)) var(--xr) calc(var(--yr) * var(--s2));
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: calc(var(--yr) * 2.5);
+  line-height: calc(var(--yr) * 3.25);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  font-style: italic;
+
+  @media (--s) {
+    font-size: 1.3vw;
+    line-height: 1.8vw;
+    padding: calc(var(--xr) * 4) calc(var(--xr) * 2) calc(var(--xr) * 2);
+  }
+
+  @media (--l) {
+    font-size: 1vw;
+    line-height: 1.5vw;
+  }
 }
 
 p {

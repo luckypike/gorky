@@ -1,11 +1,13 @@
 .root {
   display: grid;
   margin-bottom: var(--sb);
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 4vw;
   align-items: start;
+  padding: 0 var(--xr);
+  grid-gap: calc(var(--yr) * var(--s4));
 
   @media (--s) {
+    grid-gap: 4vw;
+    grid-template-columns: 1fr 1fr;
     padding: 0 calc(1 / 13 * 100%);
     font-size: 1.8vw;
     line-height: 3vw;
