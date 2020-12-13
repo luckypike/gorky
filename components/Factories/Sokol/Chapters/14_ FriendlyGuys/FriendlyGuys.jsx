@@ -4,8 +4,7 @@ import Image from 'next/image'
 
 import {
   MainText,
-  CommonText,
-  CommonImage
+  CommonImages
 } from '../../../../'
 
 import styles from './FriendlyGuys.module.css'
@@ -19,19 +18,6 @@ const FriendlyGuys = () => {
             В 1942 году в Горький привезли детей из блокадного Ленинграда. Мест
             в детских домах не было, и директор авиазавода С. И. Агаджанов взял
             их под свою опеку.
-          </p>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sokol/14/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonText>
-          <p>
             Ребят сначала разобрали по семьям, а потом быстро построили
             общежитие и нашли воспитателей. Чтобы решить вопрос с питанием
             детей, их трудоустроили на завод — как сотрудники они могли получить
@@ -42,22 +28,21 @@ const FriendlyGuys = () => {
             бригада, которую назвали «Дружные ребята», вышла на второе место в
             соревновании среди всех комсомольско-молодежных бригад Горького.
           </p>
-        </CommonText>
-      </div>
+        </MainText>
 
-      <div className={styles.page}>
-        <CommonText>
-          <p className={styles.vrezka}>
-            В 1942 году на авиазаводе был разработан специальный технологический
-            процесс и налажен детский конвейер
-          </p>
-        </CommonText>
+        <CommonImages>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sokol/14/2.jpg" layout="fill" />
 
-        <CommonImage>
+            <figcaption>Дети из блокадного Ленинграда работают на конвейере в основном цехе сборки</figcaption>
+          </figure>
+
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/sokol/14/1.jpg" layout="fill" />
+
+            <figcaption>«Дружные ребята» быстро стали одной из лучших молодежных бригад города</figcaption>
           </figure>
-        </CommonImage>
+        </CommonImages>
       </div>
     </div>
   )

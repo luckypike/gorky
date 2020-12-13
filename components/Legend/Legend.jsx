@@ -7,7 +7,7 @@ const Legend = ({ title, children }) => {
   return (
     <div className={styles.root}>
       <div className={styles.content}>
-        <div className={styles.legend}>ЛЕГЕНДЫ</div>
+        <div className={styles.label}>ЛЕГЕНДЫ</div>
         <h2 className={styles.title}>{title}</h2>
         <div className={styles.desc}>{children}</div>
       </div>
