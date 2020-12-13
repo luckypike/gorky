@@ -137,6 +137,10 @@
     background-image: url(../assets/index/images/factories/paz.jpg);
   }
 
+  &.zfs {
+    background-image: url(../assets/index/images/factories/zfs.jpg);
+  }
+
   /* Боеприпасы */
 
   &.sverdlov {

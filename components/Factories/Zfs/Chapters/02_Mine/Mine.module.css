@@ -1,0 +1,23 @@
+.img {
+  composes: ari from "../../../../Images.module.css";
+
+  &.intro {
+    padding-top: calc(1471 / 2027 * 100%);
+  }
+
+  &.main {
+    padding-top: calc(2484 / 1597 * 100%);
+  }
+
+  &._1 {
+    padding-top: calc(1026 / 1365 * 100%);
+  }
+}
+
+.page {
+  composes: page from "../../../../Factory/Factory.module.css";
+}
+
+.vrezka {
+  composes: vrezka from "../../../../Fonts.module.css";
+}

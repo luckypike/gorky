@@ -149,7 +149,7 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/zfs">
               <a>
               Завод фрезерных станков
               </a>
