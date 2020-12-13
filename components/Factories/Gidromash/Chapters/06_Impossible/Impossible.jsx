@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, CommonImages } from '../../../../'
 
 import styles from './Impossible.module.css'
 
@@ -16,24 +16,19 @@ const Impossible = () => {
             2586 человек, в Горьком же приступили к работе лишь 1236 человек.
             Многие остались в Москве в надежде, что там скоро возобновится
             производство.
-          </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/gidromash/6/3.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
             При эвакуации предприятие потеряло основные квалифицированные кадры
             рабочих-станочников — их осталось лишь 45%. На первых порах это
             стало причиной значительных простоев оборудования.
           </p>
+        </MainText>
 
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/gidromash/6/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        <CommonText>
           <p>
             В Горьком коллектив завода пополнился за счет персонала «Гудка
             Октября». Новичков готовили в учебных мастерских, которые открыли на
@@ -74,19 +69,15 @@ const Impossible = () => {
       </div>
 
       <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
+        <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gidromash/6/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/gidromash/6/2.jpg" layout="fill" />
           </figure>
-        </CommonImage>
+        </CommonImages>
       </div>
     </div>
   )

@@ -1,5 +1,4 @@
 export { default as Intro } from './01_Intro/Intro'
-export { default as Img } from './02_Img/Img'
 export { default as Coach } from './03_Coach/Coach'
 export { default as Goodbye } from './04_Goodbye/Goodbye'
 export { default as Beep } from './05_Beep/Beep'

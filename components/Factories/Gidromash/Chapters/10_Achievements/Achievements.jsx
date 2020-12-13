@@ -21,12 +21,14 @@ const Achievements = () => {
             производства такой продукции в 1944 году.
           </p>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
-        <CommonImage>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gidromash/10/1.jpg" layout="fill" />
+
+            <figcaption>
+              Наряду с оборонными в номенклатуре предприятия стали появляться «мирные» изделия
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -45,11 +47,7 @@ const Achievements = () => {
             В послевоенные годы резко сократился оборонзаказ, но заводу удалось
             сохранить специализацию
           </p>
-        </CommonText>
-      </div>
 
-      <div className={styles.page}>
-        <CommonText>
           <p>
             Заметное сокращение оборонного производства сказалось на экономике
             предприятия, и в целом 1945 год стал в его истории одним из самых
@@ -79,6 +77,10 @@ const Achievements = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gidromash/10/2.jpg" layout="fill" />
+
+            <figcaption>
+              Первый в СССР реактивный истребитель МиГ-9 вместо двух передних стоек и хвостового костыля имел носовую управляемую стойку и две опоры
+            </figcaption>
           </figure>
         </CommonImage>
       </div>
