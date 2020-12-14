@@ -253,7 +253,7 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/shipyard">
               <a>
               Окская судоверфь
               </a>

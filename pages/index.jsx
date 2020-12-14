@@ -285,6 +285,14 @@ export default function Home () {
               title="Завод № 645 имени В. И. Ульянова"
               desc="ЗАО «Концерн „Термаль“»"
             />
+
+            <Item
+              href="/shipyard"
+              id="shipyard"
+              img={styles.i32}
+              title="Мордовщиковский судомостостроительный завод № 342"
+              desc="АО «Окская судоверфь»"
+            />
           </div>
         </div>
 
