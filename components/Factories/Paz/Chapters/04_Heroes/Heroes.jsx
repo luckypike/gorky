@@ -61,9 +61,18 @@ const Heroes = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/paz/5/1.jpg" layout="fill" />
+
+            <figcaption>
+              На механическом участке цеха шоферского инструмента
+            </figcaption>
           </figure>
+
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/paz/5/2.jpg" layout="fill" />
+
+            <figcaption>
+              В 1943 году на ЗАТИ было 40 рабочих-многостаночников
+            </figcaption>
           </figure>
         </CommonImages>
 

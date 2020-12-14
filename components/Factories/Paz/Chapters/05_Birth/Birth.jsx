@@ -22,9 +22,13 @@ const Birth = () => {
           </p>
         </MainText>
 
-        <CommonImage>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/paz/6/1.jpg" layout="fill" />
+
+            <figcaption>
+              Первые автобусы под маркой павловского завода — ПАЗ-651 — были собраны на базе автомобиля ГАЗ-51 в августе 1952 года
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -51,9 +55,18 @@ const Birth = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/paz/6/2.jpg" layout="fill" />
+
+            <figcaption>
+              У ЗАТИ был довоенный опыт изготовления автобуса на базе шасси грузовика
+            </figcaption>
           </figure>
+
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/paz/6/3.jpg" layout="fill" />
+
+            <figcaption>
+              Первая производствен- ная программа завода предусматривала выпуск 10 тыс. автобусов в год
+            </figcaption>
           </figure>
         </CommonImages>
       </div>
