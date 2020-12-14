@@ -17,16 +17,18 @@ const F22 = () => {
             предприятия и его главного конструктора — на их работу обратил внимание Сталин. В 1939 году за разработку
             Ф-22 завод был награжден орденом Ленина. В том же году на смену Ф-22 пришла более совершенная Ф-22 УСВ.
           </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/nmz/5/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/nmz/5/1.jpg" layout="fill" />
+
+            <figcaption>
+              Звук выстрела и попадания в цель снаряда пушки Ф-22 слышались почти одновременно
+            </figcaption>
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Ф-22 УСВ (а впоследствии и легендарную ЗИС-3) немецкие солдаты называли Ratsch-Bum. Русские артиллеристы
