@@ -252,6 +252,14 @@ export default function Home () {
             />
 
             <Item
+              href="/gsz"
+              id="gsz"
+              img={styles.i32}
+              title="Городецкий механический завод"
+              desc="ООО «Городецкий судоремонтный завод»"
+            />
+
+            <Item
               href="/termal"
               id="termal"
               img={styles.i32}

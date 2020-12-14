@@ -165,6 +165,10 @@
     background-image: url(../assets/index/images/factories/sormovo_sudo.jpg);
   }
 
+  &.gsz {
+    background-image: url(../assets/index/images/factories/gsz.jpg);
+  }
+
   &.termal {
     background-image: url(../assets/index/images/factories/termal.jpg);
   }
