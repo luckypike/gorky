@@ -218,6 +218,14 @@ export default function Home () {
               title="Горьковский завод № 646 «Красный якорь»"
               desc="АО «Завод „Красный якорь“»"
             />
+
+            <Item
+              href="/nmjk"
+              id="nmjk"
+              img={styles.i32}
+              title="Горьковский жиркомбинат имени С. М. Кирова "
+              desc="АО НМЖК"
+            />
           </div>
         </div>
 

@@ -189,7 +189,7 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/nmjk">
               <a>
               НМЖК
               </a>

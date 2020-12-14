@@ -1,0 +1,35 @@
+.img {
+  composes: ari from '../../../../Images.module.css';
+
+  &.main {
+    padding-top: calc(1368 / 2010 * 100%);
+  }
+
+  &._1 {
+    padding-top: calc(707 / 1035 * 100%);
+  }
+
+  &._2 {
+    padding-top: calc(751 / 943 * 100%);
+  }
+
+  &._3 {
+    padding-top: calc(668 / 1135 * 100%);
+  }
+
+  &._4 {
+    padding-top: calc(2192 / 1368 * 100%);
+  }
+
+  &._5 {
+    padding-top: calc(1004 / 1419 * 100%);
+  }
+}
+
+.page {
+  composes: page from '../../../../Factory/Factory.module.css';
+}
+
+.vrezka {
+  composes: vrezka from '../../../../Fonts.module.css';
+}

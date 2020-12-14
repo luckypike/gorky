@@ -151,6 +151,10 @@
     background-image: url(../assets/index/images/factories/yakor.jpg);
   }
 
+  &.nmjk {
+    background-image: url(../assets/index/images/factories/nmjk.jpg);
+  }
+
   /* Судостроение */
 
   &.sormovo_sudo {
