@@ -147,6 +147,10 @@
     background-image: url(../assets/index/images/factories/sverdlov.jpg);
   }
 
+  &.yakor {
+    background-image: url(../assets/index/images/factories/yakor.jpg);
+  }
+
   /* Судостроение */
 
   &.sormovo_sudo {

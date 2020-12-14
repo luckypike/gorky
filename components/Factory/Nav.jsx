@@ -181,7 +181,7 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/yakor">
               <a>
               Завод «Красный якорь»
               </a>
