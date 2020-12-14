@@ -1,5 +1,4 @@
 export { default as Intro } from './01_Intro/Intro'
-export { default as Img } from './02_Img/Img'
 export { default as QuickStart } from './03_QuickStart/QuickStart'
 export { default as Grabin } from './04_Grabin/Grabin'
 export { default as F22 } from './05_F22/F22'
