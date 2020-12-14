@@ -271,6 +271,14 @@ export default function Home () {
             />
 
             <Item
+              href="/ppk"
+              id="ppk"
+              img={styles.i32}
+              title="Судоремонтный завод «Память Парижской Коммуны»"
+              desc="АО «Судоремонтный завод „Память Парижской Коммуны“»"
+            />
+
+            <Item
               href="/termal"
               id="termal"
               img={styles.i32}

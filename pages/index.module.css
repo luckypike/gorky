@@ -177,6 +177,10 @@
     background-image: url(../assets/index/images/factories/ssk.jpg);
   }
 
+  &.ppk {
+    background-image: url(../assets/index/images/factories/ppk.jpg);
+  }
+
   &.termal {
     background-image: url(../assets/index/images/factories/termal.jpg);
   }

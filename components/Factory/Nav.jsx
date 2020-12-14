@@ -237,7 +237,7 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/ppk">
               <a>
               Завод «Память Парижской Коммуны»
               </a>
