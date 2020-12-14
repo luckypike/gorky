@@ -16,27 +16,19 @@ const Oldest = () => {
             мировой войны, эвакуирован в Нижний Новгород. В годы гражданской войны завод выпускал бронепоезда и выполнял
             их ремонт. С 1922 года завод получил новое название — «Двигатель Революции». Это был крупнейший в стране
             производитель дизельных двигателей, а до 1930-х годов — еще и мощный станкостроитель.
-          </p>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/rumo/3/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-        <CommonText>
-          <p>
             Когда в 1931 году рядом был построен Горьковский завод фрезерных станков, аналогичное производство на
             «Двигателе Революции» постепенно сокращалось, и предприятие стало специализироваться на создании новых
             экономичных дизелей. Здесь выпускались судовые установки для завода «Красное Сормово», в том числе
             реверсивные, способные менять направление движения дизели мощностью 400–600 л.с. для подлодок.
           </p>
-        </CommonText>
-      </div>
+        </MainText>
 
-      <div className={styles.page}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/rumo/3/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Кроме того, предприятие стало пионером в создании отечественных газовых двигателей. Новое направление
@@ -50,8 +42,12 @@ const Oldest = () => {
           </p>
         </CommonText>
         <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/rumo/3/2.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/rumo/3/3.jpg" layout="fill" />
+
+            <figcaption>
+              До 1930-х годов «Двигатель Революции» был еще и крупным станкостроителем
+            </figcaption>
           </figure>
         </CommonImage>
       </div>

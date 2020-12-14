@@ -14,21 +14,19 @@ const Сalls = () => {
           <p>
             В результате новых бомбежек производство 120-мм минометов и выпуск снарядов М-8 и М-13 пришлось
             приостановить: пожары уничтожили не только корпуса, но и инструменты и запасы материалов для производства.
-          </p>
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/rumo/8/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonText>
-          <p>
             Все военные годы «Двигатель Революции» восстанавливал свои мощности, при этом по мере сил продолжал
             работать.
           </p>
+
+        </MainText>
+
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/rumo/8/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        <CommonText>
           <p>
             Так, в октябре 1943 года завод получил заказ на выпуск 250-кг фугасных авиабомб. В литейном цехе разработали
             новую технологию отливки мин в кокиль с одинарным разъемом, что позволило повысить производительность труда

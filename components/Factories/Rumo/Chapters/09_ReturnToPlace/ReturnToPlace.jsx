@@ -17,14 +17,17 @@ const ReturnToPlace = () => {
             тыс. л. с., что в 2,5 раза превышало довоенный уровень.
           </p>
         </MainText>
-      </div>
 
-      <div className={styles.page}>
-        <CommonImage>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/rumo/9/1.jpg" layout="fill" />
+
+            <figcaption>
+              Новые 160-мм минометы не имели зарубежных аналогов
+            </figcaption>
           </figure>
         </CommonImage>
+
         <CommonText>
           <p>
             Все новые двигатели направлялись для восстановления наиболее пострадавших районов страны — для

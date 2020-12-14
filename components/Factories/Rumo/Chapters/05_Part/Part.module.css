@@ -1,18 +1,12 @@
-.root {
-  @media (--l) {
-    display: flex;
-  }
-}
-
 .img {
   composes: ari from '../../../../Images.module.css';
 
   &.main {
-    padding-top: calc(829 / 1013 * 100%);
+    padding-top: calc(780 / 1013 * 100%);
   }
 
   &._1 {
-    padding-top: calc(754 / 1013 * 100%);
+    padding-top: calc(780 / 1013 * 100%);
   }
 
   &._2 {
