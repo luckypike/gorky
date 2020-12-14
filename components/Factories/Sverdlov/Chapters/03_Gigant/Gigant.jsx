@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, CommonImages } from '../../../../'
 
 import styles from './Gigant.module.css'
 
@@ -14,57 +14,33 @@ const Gigant = () => {
           <p>
             Решение о строительстве одного из крупнейших в стране оборонных заводов — Нижегородского завода взрывчатых
             веществ — было принято Военным Советом Российской Империи в июле 1915 года, в разгар Первой мировой войны.
-          </p>
-
-          <CommonImage>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/sverdlov/3/1.jpg" layout="fill" />
-            </figure>
-          </CommonImage>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/sverdlov/3/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-        <CommonText>
-          <p>
             На его постройку в селе Растяпине (будущий Дзержинск) было выделено 9,58 млн руб. Проект закона был одобрен
             Госдумой, Госсоветом и утвержден императором Николаем II 27 июня 1916 года, но работа на заводе началась в
             1917 году уже при новой власти. Официально объявлен работающим завод был 1 июля 1918 года.
           </p>
+
           <p>
             Производство было сосредоточено в небольших мастерских, где снаряды снаряжались вручную кустарным способом.
           </p>
+
           <p>
             В 1920-е годы стали строиться первые промышленные цехи завода, в 1922-м он начал производить тротил. В
             ноябре того же года по просьбе коллектива завода ему было присвоено имя первого председателя Всероссийского
             центрального исполнительного комитета Якова Свердлова.
           </p>
-        </CommonText>
-      </div>
+        </MainText>
 
-      <div className={styles.page}>
         <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/sverdlov/3/2.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sverdlov/3/1.jpg" layout="fill" />
+
+            <figcaption>
+              Митинг по окончанию строительства поселка Первомайского при заводе им. Свердлова. 1920-е годы
+            </figcaption>
           </figure>
         </CommonImage>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/sverdlov/3/4.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
-          <p className={styles.vrezka}>
-            Сотрудники заводской лаборатории наладили непрерывный метод получения тротила высокого качества
-          </p>
           <p>
             В 1930-е годы развитие предприятия шло очень активно, оборудование для расширения и увеличения объемов
             производства поставляли из Франции, Германии, Швеции и Швейцарии, внедрялись первые рационализаторские
@@ -81,6 +57,34 @@ const Gigant = () => {
             них пять химических, которые производили взрывчатые вещества и продукцию мирного назначения.
           </p>
         </CommonText>
+
+        <CommonImages>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/sverdlov/3/3.jpg" layout="fill" />
+
+            <figcaption>
+              Пуск химического цеха. 1922 год
+            </figcaption>
+          </figure>
+
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/sverdlov/3/4.jpg" layout="fill" />
+
+            <figcaption>
+              Пуск азотной мастерской. 1922 год
+            </figcaption>
+          </figure>
+        </CommonImages>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sverdlov/3/2.jpg" layout="fill" />
+
+            <figcaption>
+              Работники механического цеха. 1921 год
+            </figcaption>
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )
