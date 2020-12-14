@@ -173,7 +173,7 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/korund">
               <a>
               «Корунд»
               </a>

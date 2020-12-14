@@ -1,0 +1,8 @@
+export { default as Intro } from './01_Intro/Intro'
+export { default as Birth } from './02_Birth/Birth'
+export { default as Center } from './03_Center/Center'
+export { default as Risk } from './04_Risk/Risk'
+export { default as Ks } from './05_Ks/Ks'
+export { default as Temperature } from './06_Temperature/Temperature'
+export { default as Awards } from './07_Awards/Awards'
+export { default as Plant } from './08_Plant/Plant'

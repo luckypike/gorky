@@ -212,6 +212,14 @@ export default function Home () {
             />
 
             <Item
+              href="/korund"
+              id="korund"
+              img={styles.i32}
+              title="Чернореченский химический завод имени М. И. Калинина"
+              desc="ООО «Корунд»"
+            />
+
+            <Item
               href="/yakor"
               id="yakor"
               img={styles.i32}
