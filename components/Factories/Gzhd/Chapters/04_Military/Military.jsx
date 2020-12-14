@@ -24,6 +24,10 @@ const Military = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gzhd/4/1.jpg" layout="fill" />
+
+            <figcaption>
+              «Живая» блокировка — сигналист на линии Москва — Горький
+            </figcaption>
           </figure>
         </CommonImage>
 

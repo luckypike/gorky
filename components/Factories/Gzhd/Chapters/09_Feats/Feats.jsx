@@ -27,6 +27,10 @@ const Feats = () => {
         <CommonImage congtent>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gzhd/9/1.jpg" layout="fill" />
+
+            <figcaption>
+              Поезд с дровами на пути к Горькому
+            </figcaption>
           </figure>
         </CommonImage>
 

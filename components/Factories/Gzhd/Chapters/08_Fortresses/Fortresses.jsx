@@ -35,22 +35,38 @@ const Fortresses = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gzhd/8/1.jpg" layout="fill" />
+
+            <figcaption>
+              Бронепоезд «Козьма Минин» недалеко от Рембертува — района Варшавы
+            </figcaption>
           </figure>
         </CommonImage>
 
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gzhd/8/4.jpg" layout="fill" />
+
+            <figcaption>
+              Машинисты бронепоезда «Козьма Минин»
+            </figcaption>
           </figure>
 
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/gzhd/8/5.jpg" layout="fill" />
+
+            <figcaption>
+              Реактивная установка М-8-24 «Катюша» на бронепоезде «Козьма Минин»
+            </figcaption>
           </figure>
         </CommonImages>
 
         <CommonImage>
           <figure className={classNames(styles.img, styles._4)}>
             <Image src="/images/gzhd/8/2.jpg" layout="fill" />
+
+            <figcaption>
+              Схема боевого пути 31-го особого дивизиона
+            </figcaption>
           </figure>
         </CommonImage>
 

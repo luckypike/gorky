@@ -25,6 +25,10 @@ const NewFrames = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gzhd/6/1.jpg" layout="fill" />
+
+            <figcaption>
+              Работницы ремонтного депо Кировского железнодорожного узла на фоне запасных частей для вагонов, отправляемых в Сталинград. 1943 год
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -46,6 +50,10 @@ const NewFrames = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gzhd/6/2.jpg" layout="fill" />
+
+            <figcaption>
+              Молодые специалисты на строительстве Волжской рокадной линии. 1942 год
+            </figcaption>
           </figure>
         </CommonImage>
 
