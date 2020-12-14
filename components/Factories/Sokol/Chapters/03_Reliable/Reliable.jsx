@@ -39,6 +39,10 @@ const Reliable = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sokol/3/1.jpg" layout="fill" />
+
+            <figcaption>
+              И-16 — один их первых в мире истребительмоноплан с убирающимися шасси
+            </figcaption>
           </figure>
         </CommonImage>
 

@@ -25,6 +25,10 @@ const FightForSeries = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sokol/6/2.jpg" layout="fill" />
+
+            <figcaption>
+              В 1939–1940 гг. для про- изводства в Горьком рассматривалось несколько проектов истребителей
+            </figcaption>
           </figure>
         </CommonImage>
 

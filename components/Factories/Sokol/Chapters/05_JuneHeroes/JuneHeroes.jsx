@@ -28,6 +28,10 @@ const JuneHeroes = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sokol/5/1.jpg" layout="fill" />
+
+            <figcaption>
+              Первыми героями Советского Союза в войне стали летчики И-16
+            </figcaption>
           </figure>
         </CommonImage>
 

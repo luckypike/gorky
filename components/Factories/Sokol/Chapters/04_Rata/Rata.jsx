@@ -25,6 +25,10 @@ const Rata = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sokol/4/1.jpg" layout="fill" />
+
+            <figcaption>
+              Во время гражданской войны в Испании И-16 впечатляли скоростью и маневренностью
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -43,6 +47,10 @@ const Rata = () => {
         <CommonImages middle>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/sokol/4/2.jpg" layout="fill" />
+
+            <figcaption>
+              Летчики-испытатели П. Стефановский (слева) и С. Супрун первыми оценили боевые качества И-16
+            </figcaption>
           </figure>
 
           <figure className={classNames(styles.img, styles._2)}>
