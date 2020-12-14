@@ -7,7 +7,7 @@ import {
   MainText,
   CommonImage,
   CommonText,
-  VictoryTechnique
+  GunsOfWar
 } from '../../../../'
 
 import styles from './Satellite.module.css'
@@ -19,6 +19,10 @@ const Satellite = () => {
         <MainImage>
           <figure className={classNames(styles.img, styles.intro)}>
             <Image src="/images/paz/img.jpg" layout="fill" />
+
+            <figcaption>
+              Вручение переходящего Красного знамени Наркомата обороны цеху No 1. 1944 год
+            </figcaption>
           </figure>
         </MainImage>
       </div>
@@ -38,6 +42,10 @@ const Satellite = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/paz/3/1.jpg" layout="fill" />
+
+            <figcaption>
+              Советские военнослужащие за ремонтом двигателя грузовика 1944–1945 годы
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -57,7 +65,7 @@ const Satellite = () => {
           </p>
         </CommonText>
 
-        <VictoryTechnique title="Самый массовый «Папаша»">
+        <GunsOfWar title="Самый массовый «Папаша»">
           Пистолет-пулемет Шпагина (ППШ) — самое массовое автоматическое оружие
           Красной Армии во время Великой Отечественной войны. Разработан и пущен
           в серийное производство в 1940 году конструктором Г. С. Шпагиным на
@@ -71,7 +79,7 @@ const Satellite = () => {
           Частично проблему решили вводом менее габаритного секторного магазина
           на 35 патронов. Снят с вооружения в 1960-х, постепенно заменен
           автоматом Калашникова.
-        </VictoryTechnique>
+        </GunsOfWar>
       </div>
     </div>
   )

@@ -23,7 +23,12 @@ const Winter = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/paz/4/2.jpg" layout="fill" />
+
+            <figcaption>
+              Зимой в цехах было так холодно, что костры жгли прямо в помещениях
+            </figcaption>
           </figure>
+
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/paz/4/1.jpg" layout="fill" />
           </figure>
@@ -34,6 +39,10 @@ const Winter = () => {
             <div>
               <figure className={classNames(styles.img, styles._2)}>
                 <Image src="/images/paz/4/3.jpg" layout="fill" />
+
+                <figcaption>
+                  Несмотря на уникальность производства, завод не был защищен от бомбежек
+                </figcaption>
               </figure>
             </div>
           }

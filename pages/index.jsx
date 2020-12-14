@@ -339,7 +339,7 @@ function Item ({ href, title, id, desc, img }) {
         <div className={cn(styles.image, img, styles[id])} />
 
         <div className={styles.dt}>
-          <div className={styles.title}>{title} {delay}</div>
+          <div className={styles.title}>{title}</div>
 
           <div className={styles.desc}>{desc}</div>
         </div>

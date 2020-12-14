@@ -1,5 +1,4 @@
 export { default as Intro } from './01_Intro/Intro'
-export { default as Img } from './02_Img/Img'
 export { default as Oldest } from './03_Oldest/Oldest'
 export { default as Rebuild } from './04_Rebuild/Rebuild'
 export { default as Part } from './05_Part/Part'
