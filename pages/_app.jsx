@@ -67,7 +67,9 @@ export default function App ({ Component, props }) {
   }
 
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true
+    })
   }, [])
 
   return (
