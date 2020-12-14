@@ -13,6 +13,7 @@ const Innovator = () => {
         <MainImage>
           <figure className={classNames(styles.img, styles.intro)}>
             <Image src="/images/yakor/img.jpg" layout="fill" />
+            <figcaption>Рабочие за ковочным прессом. 1934 год</figcaption>
           </figure>
         </MainImage>
       </div>
@@ -35,9 +36,13 @@ const Innovator = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/yakor/3/1.jpg" layout="fill" />
+            <figcaption>
+              На «Красном якоре» устанавливали оборудование иностранного производства, в том числе германской фирмы AEG
+            </figcaption>
           </figure>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/yakor/3/2.jpg" layout="fill" />
+            <figcaption>Электросварочный цепной автомат, который использовался и в военные годы. 1934 год</figcaption>
           </figure>
         </CommonImages>
 

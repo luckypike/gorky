@@ -32,6 +32,9 @@ const Amazons = () => {
             <div>
               <figure className={classNames(styles.img, styles.main)}>
                 <Image src="/images/yakor/6/1.jpg" layout="fill" />
+                <figcaption>
+                  Сборщица-стахановка завода «Красный якорь» У. А. Мартынова, выполняющая нормы на 230%. 1943 год
+                </figcaption>
               </figure>
             </div>
           }

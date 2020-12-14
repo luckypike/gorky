@@ -51,6 +51,10 @@ const Ammunition = () => {
           </figure>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/yakor/5/3.jpg" layout="fill" />
+            <figcaption>
+              Старший техник эскадрильи по вооружению старший сержант Кудрявцев подвешивает реактивные снаряды. Такие
+              производились на заводе «Красный якорь»
+            </figcaption>
           </figure>
         </CommonImages>
       </div>

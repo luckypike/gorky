@@ -22,6 +22,7 @@ const Rationality = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/yakor/7/1.jpg" layout="fill" />
+            <figcaption>Производственное обучение молодежи завода «Красный якорь»</figcaption>
           </figure>
         </CommonImage>
 

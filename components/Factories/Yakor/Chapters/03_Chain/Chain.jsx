@@ -22,6 +22,10 @@ const Chain = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/yakor/4/1.jpg" layout="fill" />
+            <figcaption>
+              Испытание на полигоне автомобиля с цепями противоскольжения, которые производились на заводе «Красный
+              якорь»
+            </figcaption>
           </figure>
         </CommonImage>
 
