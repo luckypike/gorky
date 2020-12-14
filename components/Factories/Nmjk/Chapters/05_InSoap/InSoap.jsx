@@ -49,6 +49,7 @@ const InSoap = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/nmjk/6/1.jpg" layout="fill" />
+            <figcaption>Резка плит мыла на куски, штамповка и укладка в ящики</figcaption>
           </figure>
         </CommonImage>
       </div>

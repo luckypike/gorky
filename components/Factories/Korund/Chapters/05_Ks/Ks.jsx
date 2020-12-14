@@ -25,6 +25,7 @@ const Ks = () => {
             <div>
               <figure className={classNames(styles.img, styles.main)}>
                 <Image src="/images/korund/6/3.jpg" layout="fill" />
+                <figcaption>Советские бойцы отрабатывают учения с зажигательной смесью</figcaption>
               </figure>
             </div>
           }
@@ -81,6 +82,7 @@ const Ks = () => {
             <div>
               <figure className={classNames(styles.img, styles._1)}>
                 <Image src="/images/korund/6/2.jpg" layout="fill" />
+                <figcaption>Бутылка с зажигательной смесью</figcaption>
               </figure>
             </div>
           }
@@ -103,6 +105,10 @@ const Ks = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/korund/6/1.jpg" layout="fill" />
+            <figcaption>
+              Две немецкие тяжелые самоходно-артиллерийские установки «Фердинанд», подбитые и сожженные зажигательной
+              смесью
+            </figcaption>
           </figure>
         </CommonImage>
       </div>

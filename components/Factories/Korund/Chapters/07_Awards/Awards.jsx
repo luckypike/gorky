@@ -27,6 +27,7 @@ const Awards = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/korund/8/1.jpg" layout="fill" />
+            <figcaption>Процесс заливки бутылок зажигательной смесью</figcaption>
           </figure>
         </CommonImage>
 

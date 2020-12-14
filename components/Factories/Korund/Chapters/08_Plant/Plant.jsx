@@ -24,6 +24,7 @@ const Plant = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/korund/9/1.jpg" layout="fill" />
+            <figcaption>Рабочие ЧХЗ возвращаются после смены домой</figcaption>
           </figure>
         </CommonImage>
       </div>

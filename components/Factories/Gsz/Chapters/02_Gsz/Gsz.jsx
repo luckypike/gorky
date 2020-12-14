@@ -13,6 +13,7 @@ const Gsz = () => {
         <MainImage>
           <figure className={classNames(styles.img, styles.intro)}>
             <Image src="/images/gsz/img.jpg" layout="fill" />
+            <figcaption>Механический завод был основан в Городце на базе исправительной колонии</figcaption>
           </figure>
         </MainImage>
       </div>
@@ -41,9 +42,11 @@ const Gsz = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gsz/1.jpg" layout="fill" />
+            <figcaption>Лучшая фронтовая бригада завода в годы войны — бригада токаря Олега Калмина</figcaption>
           </figure>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gsz/2.jpg" layout="fill" />
+            <figcaption>Бригада по добыче торфа и его коксованию</figcaption>
           </figure>
         </CommonImages>
 

@@ -24,6 +24,7 @@ const Products = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/nmjk/5/1.jpg" layout="fill" />
+            <figcaption>Установка «Раймбек» для дистилляции технического глицерина. 1941 год</figcaption>
           </figure>
         </CommonImage>
 
@@ -78,15 +79,18 @@ const Products = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/nmjk/5/2.jpg" layout="fill" />
+            <figcaption>Фильтрация саломаса на фильтрпрессе</figcaption>
           </figure>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/nmjk/5/3.jpg" layout="fill" />
+            <figcaption>Фильтрпрессы для фильтрации саломаса установлены. 1919 год</figcaption>
           </figure>
         </CommonImages>
 
         <CommonImage content>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/nmjk/5/4.jpg" layout="fill" />
+            <figcaption>Цех безреактивного расщепления жиров глицеринового завода</figcaption>
           </figure>
         </CommonImage>
       </div>

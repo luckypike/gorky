@@ -24,6 +24,7 @@ const Risk = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/korund/5/1.jpg" layout="fill" />
+            <figcaption>Аэрофотосъемка Люфтваффе окрестностей Дзержинска, в том числе расположения ЧХЗ</figcaption>
           </figure>
         </CommonImage>
 
@@ -43,6 +44,7 @@ const Risk = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/korund/5/2.jpg" layout="fill" />
+            <figcaption>Цех серной кислоты ЧХЗ. 1930-е годы</figcaption>
           </figure>
         </CommonImage>
 

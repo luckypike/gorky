@@ -26,6 +26,7 @@ const Temperature = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/korund/7/2.jpg" layout="fill" />
+            <figcaption>Красноармеец бросает бутылку с зажигательной смесью во время боев под Сталинградом.</figcaption>
           </figure>
         </CommonImage>
 
@@ -42,6 +43,10 @@ const Temperature = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/korund/7/1.jpg" layout="fill" />
+            <figcaption>
+              Советские бронебойщики с противотанковым однозарядным ружьем системы Дегтярева образца 1941 года и
+              бутылками с зажигательной смесью ведут огонь под Сталинградом.
+            </figcaption>
           </figure>
         </CommonImage>
 

@@ -25,6 +25,7 @@ const Expands = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/nmjk/7/1.jpg" layout="fill" />
+            <figcaption>Главный корпус маргаринового завода перед вводом в эксплуатацию</figcaption>
           </figure>
         </CommonImage>
 
@@ -39,9 +40,11 @@ const Expands = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/nmjk/7/2.jpg" layout="fill" />
+            <figcaption>Линия розлива растительного масла в поллитровые бутылки</figcaption>
           </figure>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/nmjk/7/3.jpg" layout="fill" />
+            <figcaption>Руководители строительства маргаринового завода</figcaption>
           </figure>
         </CommonImages>
       </div>

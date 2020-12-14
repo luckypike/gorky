@@ -13,6 +13,7 @@ const Birth = () => {
         <MainImage>
           <figure className={classNames(styles.img, styles.intro)}>
             <Image src="/images/korund/img.jpg" layout="fill" />
+            <figcaption>Один из цехов Чернореченского химического завода. 1930-е годы</figcaption>
           </figure>
         </MainImage>
       </div>
@@ -55,6 +56,7 @@ const Birth = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/korund/3/1.jpg" layout="fill" />
+            <figcaption>Инициатор стахановского движения ЧХЗ М. И. Боравков. Конец 1920-х годов</figcaption>
           </figure>
         </CommonImage>
 
@@ -78,6 +80,7 @@ const Birth = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/korund/3/2.jpg" layout="fill" />
+            <figcaption>Карбидный цех Чернореченского химического завода. 1931 год</figcaption>
           </figure>
         </CommonImage>
       </div>
