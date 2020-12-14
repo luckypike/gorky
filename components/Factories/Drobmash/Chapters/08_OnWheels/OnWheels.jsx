@@ -38,6 +38,10 @@ const OnWheels = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/drobmash/8/1.jpg" layout="fill" />
+
+            <figcaption>
+              Советский солдат разравнивает дорогу перед легким бронеавтомобилем БА-64, застрявшим после преодоления водной преграды вброд
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -69,6 +73,10 @@ const OnWheels = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/drobmash/8/2.jpg" layout="fill" />
+
+            <figcaption>
+              Колонна советских бронеавтомобилей БА-64 выходит на огневой рубеж южнее Сталинграда. Ноябрь 1942 года
+            </figcaption>
           </figure>
         </CommonImage>
 

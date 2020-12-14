@@ -21,6 +21,10 @@ const WithoutThought = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/drobmash/4/2.jpg" layout="fill" />
+
+            <figcaption>
+              Советский легкий танк Т-60 с десантом проезжает мимо сапера с миноискателем ВИМ-210. 1942 год
+            </figcaption>
           </figure>
 
           <figure className={classNames(styles.img, styles._1)}>

@@ -9,7 +9,10 @@ import {
   ArmoredCar,
   Сooperation,
   OnWheels,
-  PatienceAndWork
+  PatienceAndWork,
+  Change,
+  Weapons,
+  World
 } from '../../components/Factories/Drobmash/Chapters'
 
 const Drobmash = () => {
@@ -23,6 +26,9 @@ const Drobmash = () => {
       <Сooperation />
       <OnWheels />
       <PatienceAndWork />
+      <Change />
+      <Weapons />
+      <World />
     </Factory>
   )
 }

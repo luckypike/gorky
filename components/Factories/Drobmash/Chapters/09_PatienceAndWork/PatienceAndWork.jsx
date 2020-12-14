@@ -32,6 +32,10 @@ const PatienceAndWork = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/drobmash/9/1.jpg" layout="fill" />
+
+            <figcaption>
+              Продуктовая карточка периода Великой Отечественной войны
+            </figcaption>
           </figure>
         </CommonImage>
 

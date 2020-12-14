@@ -24,6 +24,10 @@ const Сooperation = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/drobmash/7/1.jpg" layout="fill" />
+
+            <figcaption>
+              Бригада сборщиков танков для завода «Красное Сормово». 1944 год
+            </figcaption>
           </figure>
         </CommonImage>
 
