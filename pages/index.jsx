@@ -22,18 +22,42 @@ export default function Home () {
     }
   }, [])
 
+  const [windowDimensions, setWindowDimensions] = useState({ width: null, height: null })
+
+  useEffect(() => {
+    const getWindowDimensions = () => {
+      const width = window.innerWidth
+      const height = window.innerHeight
+      return {
+        width,
+        height
+      }
+    }
+
+    const handleResize = () => {
+      setWindowDimensions(getWindowDimensions())
+    }
+
+    window.addEventListener('resize', handleResize)
+    handleResize()
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
     <div className={styles.root}>
-      <div ref={introRef} className={styles.intro}>
-        <div className={styles.text}>
-          <div className={styles.name}>
-            <span>Горький</span> символ победы
+      <div className={styles.cont} style={{ width: '100%', height: `${windowDimensions.height}px` }}>
+        <div ref={introRef} className={styles.intro}>
+          <div className={styles.text}>
+            <div className={styles.name}>
+              <span>Горький</span> символ победы
+            </div>
           </div>
+          <div className={styles.bg} data-depth="0.04">
+            <div className={styles.bgin} />
+          </div>
+          <div className={styles.star} data-depth="0.02" />
         </div>
-        <div className={styles.bg} data-depth="0.04">
-          <div className={styles.bgin} />
-        </div>
-        <div className={styles.star} data-depth="0.02" />
       </div>
 
       <div className={styles.factories}>

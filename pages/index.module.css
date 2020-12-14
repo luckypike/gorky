@@ -1,9 +1,13 @@
 .intro {
   background: #ddd;
-  position: relative;
-  height: 100vh;
+  position: absolute;
+  height: 100%;
   width: 100%;
   overflow: hidden;
+}
+
+.cont {
+  position: relative;
 }
 
 .bg,
@@ -31,21 +35,22 @@
 }
 
 .star {
-  background: url(../assets/index/images/Star.png) no-repeat center 40%;
+  background: url(../assets/index/images/Star.png) no-repeat center 25%;
   z-index: 2;
   background-size: 50vh;
 }
 
 .name {
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
   font-family: var(--ff_sans);
   text-transform: uppercase;
-  font-size: calc(var(--yr) * 15);
-  line-height: calc(var(--yr) * 15);
+  font-size: calc(var(--yr) * 12);
+  line-height: calc(var(--yr) * 13);
   text-align: center;
+  color: #fff;
 
   & span {
     color: rgb(var(--hl_color));

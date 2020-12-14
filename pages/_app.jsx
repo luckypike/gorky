@@ -3,6 +3,7 @@ import Head from 'next/head'
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import AOS from 'aos'
+import { observer } from 'mobx-react-lite'
 
 // import Header from '../components/Header/Header'
 import Loader from '../components/Loader/Loader'
@@ -11,7 +12,7 @@ import useStore from '../stores/useStore'
 import '../css/globals.css'
 import 'aos/dist/aos.css'
 
-export default function App ({ Component, props }) {
+const App = observer(({ Component, props }) => {
   const router = useRouter()
   const appStore = useStore()
 
@@ -55,6 +56,12 @@ export default function App ({ Component, props }) {
     }
   }, [])
 
+  const { nav } = appStore
+
+  useEffect(() => {
+    document.body.classList.toggle('nav-open', nav)
+  }, [nav])
+
   const handleRouteChangeStart = (url) => {
     appStore.setLoaderEnd(false)
     appStore.setLoaderStart(true)
@@ -86,7 +93,7 @@ export default function App ({ Component, props }) {
       <Component { ...props } />
     </>
   )
-}
+})
 
 App.defaultProps = {
   props: undefined
@@ -96,3 +103,5 @@ App.propTypes = {
   Component: PropTypes.func.isRequired,
   props: PropTypes.objectOf(PropTypes.any)
 }
+
+export default App
