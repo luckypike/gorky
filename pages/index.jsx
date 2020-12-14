@@ -59,12 +59,7 @@ export default function Home () {
               delay={300}
             />
 
-            <Item
-              href="/etna"
-              id="etna"
-              title="ГОРЬКОВСКИЙ ЗАВОД «КРАСНАЯ ЭТНА»"
-              desc="АО «Завод „Красная Этна“»"
-            />
+            <Item href="/etna" id="etna" title="ГОРЬКОВСКИЙ ЗАВОД «КРАСНАЯ ЭТНА»" desc="АО «Завод „Красная Этна“»" />
 
             <Item
               href="/drobmash"
@@ -268,6 +263,14 @@ export default function Home () {
             />
 
             <Item
+              href="/ssk"
+              id="ssk"
+              img={styles.i32}
+              title="Городецкая судоверфь"
+              desc="ПАО «Судоремонтно-судостроительная корпорация»"
+            />
+
+            <Item
               href="/termal"
               id="termal"
               img={styles.i32}
@@ -335,7 +338,12 @@ function Item ({ href, title, id, desc, img }) {
 
   return (
     <Link href={href}>
-      <a className={cn([styles.item, styles[id]])} data-aos="fade-up" data-aos-delay={delay} data-aos-duration={duration}>
+      <a
+        className={cn([styles.item, styles[id]])}
+        data-aos="fade-up"
+        data-aos-delay={delay}
+        data-aos-duration={duration}
+      >
         <div className={cn(styles.image, img, styles[id])} />
 
         <div className={styles.dt}>

@@ -173,6 +173,10 @@
     background-image: url(../assets/index/images/factories/gsz.jpg);
   }
 
+  &.ssk {
+    background-image: url(../assets/index/images/factories/ssk.jpg);
+  }
+
   &.termal {
     background-image: url(../assets/index/images/factories/termal.jpg);
   }
