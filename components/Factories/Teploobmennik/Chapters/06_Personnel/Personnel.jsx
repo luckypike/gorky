@@ -43,6 +43,10 @@ const Personnel = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/teploobmennik/6/2.jpg" layout="fill" />
+
+            <figcaption>
+              Завотделом снабжения заводского УКСа попросил разрешить ему ежедневно после основной нагрузки работать еще и у станка
+            </figcaption>
           </figure>
         </CommonImage>
 

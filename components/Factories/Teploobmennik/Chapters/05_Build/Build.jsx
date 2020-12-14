@@ -10,6 +10,16 @@ const Build = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/teploobmennik/5/3.jpg" layout="fill" />
+
+            <figcaption>
+              Производственный корпус No 1 был построен за 15 дней
+            </figcaption>
+          </figure>
+        </CommonImage>
+
         <MainText title="Стройка на пустыре">
           <p>
             Производство эвакуированных предприятий на новом месте часто было
@@ -38,6 +48,10 @@ const Build = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/teploobmennik/5/1.jpg" layout="fill" />
+
+            <figcaption>
+              Для скорейшего запуска производства формально был установлен 12-часовой рабочий день, но в действительности работали круглосуточно
+            </figcaption>
           </figure>
         </CommonImage>
 

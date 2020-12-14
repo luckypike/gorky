@@ -16,6 +16,10 @@ const Growth = () => {
           left={(
             <figure className={classNames(styles.img, styles.main)}>
               <Image src="/images/teploobmennik/7/2.jpg" layout="fill" />
+
+              <figcaption>
+                Летом 1942 года руководство завода No 469 начало поощрять стахановцев-двухсотников
+              </figcaption>
             </figure>
           )}
 

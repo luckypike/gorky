@@ -23,6 +23,10 @@ const Road = () => {
           left={(
             <figure className={classNames(styles.img, styles.main)}>
               <Image src="/images/teploobmennik/4/1.jpg" layout="fill" />
+
+              <figcaption>
+                По заданию Наркомата авиапрома директор завода No 469 В. Смирнов лично прибыл в Горький для решения организационных вопросов
+              </figcaption>
             </figure>
           )}
 

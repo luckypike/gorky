@@ -30,6 +30,10 @@ const Radiators = () => {
           left={(
             <figure className={classNames(styles.img, styles.main)}>
               <Image src="/images/teploobmennik/3/1.jpg" layout="fill" />
+
+              <figcaption>
+                С переходом в Наркомат авиапрома заводу № 469 предписывалось освоение производства радиаторов
+              </figcaption>
             </figure>
           )}
 
