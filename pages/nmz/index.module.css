@@ -1,8 +1,0 @@
-.root {
-  position: relative;
-
-  @media (--l) {
-    display: flex;
-    min-height: 100%;
-  }
-}
