@@ -159,6 +159,10 @@
     background-image: url(../assets/index/images/factories/nmjk.jpg);
   }
 
+  &.kaprolaktam {
+    background-image: url(../assets/index/images/factories/kaprolaktam.jpg);
+  }
+
   /* Судостроение */
 
   &.sormovo_sudo {

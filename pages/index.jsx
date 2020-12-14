@@ -234,6 +234,14 @@ export default function Home () {
               title="Горьковский жиркомбинат имени С. М. Кирова "
               desc="АО НМЖК"
             />
+
+            <Item
+              href="/kaprolaktam"
+              id="kaprolaktam"
+              img={styles.i32}
+              title="Дзержинский Завод № 96"
+              desc="ОАО «Капролактам» (ликвидировано)"
+            />
           </div>
         </div>
 

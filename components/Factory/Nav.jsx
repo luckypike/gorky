@@ -197,7 +197,7 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="#">
+            <Link href="/kaprolaktam">
               <a>
               «Капролактам»
               </a>
