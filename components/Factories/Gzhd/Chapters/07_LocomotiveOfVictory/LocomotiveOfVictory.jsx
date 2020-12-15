@@ -24,6 +24,10 @@ const LocomotiveOfVictory = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gzhd/7/1.jpg" layout="fill" />
+
+            <figcaption>
+              Бронепоезд «Козьма Минин», построенный силами и средствами сотрудников Горьковской железной дороги
+            </figcaption>
           </figure>
         </CommonImage>
 

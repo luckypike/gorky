@@ -13,6 +13,10 @@ const Faster = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gzhd/5/1.jpg" layout="fill" />
+
+            <figcaption>
+              Строительство новой железнодорожной ветки
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -51,10 +55,18 @@ const Faster = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gzhd/5/2.jpg" layout="fill" />
+
+            <figcaption>
+              Трудовые коллективы на железнодорожных путях
+            </figcaption>
           </figure>
 
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/gzhd/5/3.jpg" layout="fill" />
+
+            <figcaption>
+              Инженер-путеец на строительстве новой ветки железной дороги
+            </figcaption>
           </figure>
         </CommonImages>
 

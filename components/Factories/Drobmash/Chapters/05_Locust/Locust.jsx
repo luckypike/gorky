@@ -21,6 +21,10 @@ const Locust = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/drobmash/5/2.jpg" layout="fill" />
+
+            <figcaption>
+              Советские легкие танки Т-60 с десантом на марше
+            </figcaption>
           </figure>
         </CommonImage>
 

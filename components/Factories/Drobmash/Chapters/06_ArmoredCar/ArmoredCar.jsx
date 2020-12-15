@@ -33,6 +33,10 @@ const ArmoredCar = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/drobmash/6/2.jpg" layout="fill" />
+
+            <figcaption>
+              Два немецких солдата рассматривают брошенный советский легкий бронеавтомобиль БА-20-ЖД. 1941 год
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -53,6 +57,10 @@ const ArmoredCar = () => {
           right={(
             <figure className={classNames(styles.img, styles.main)}>
               <Image src="/images/drobmash/6/1.jpg" layout="fill" />
+
+              <figcaption>
+                Выпуску легендарного бронеавтомобиля БА-64 предшествовала наладка производства БА-20
+              </figcaption>
             </figure>
           )}
         />

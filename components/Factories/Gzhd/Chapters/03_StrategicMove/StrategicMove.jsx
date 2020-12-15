@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainImage, MainText, CommonText, CommonImages } from '../../../../'
+import { MainImage, MainText, CommonText, CommonImages, CommonImage } from '../../../../'
 
 import styles from './StrategicMove.module.css'
 
@@ -12,7 +12,11 @@ const StrategicMove = () => {
       <div className={styles.page}>
         <MainImage>
           <figure className={classNames(styles.img, styles.intro)}>
-            <Image src="/images/gzhd/img.jpg" layout="fill" />
+            <Image src="/images/gzhd/3/0.jpg" layout="fill" />
+
+            <figcaption>
+              Здание вокзала Московско-Курской железной дороги, рядом с которым располагался императорский павильон. Конец XIX века.
+            </figcaption>
           </figure>
         </MainImage>
 
@@ -29,13 +33,31 @@ const StrategicMove = () => {
           </p>
         </MainText>
 
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.intro)}>
+            <Image src="/images/gzhd/3/4.jpg" layout="fill" />
+
+            <figcaption>
+              Конечный пункт линии Москва — Нижний Новгород. Конец XIX века.
+            </figcaption>
+          </figure>
+        </CommonImage>
+
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gzhd/3/2.jpg" layout="fill" />
+
+            <figcaption>
+              Двухэтажный корпус вокзала Московско-Курской железной дороги. Вид со стороны путей
+            </figcaption>
           </figure>
 
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gzhd/3/1.jpg" layout="fill" />
+
+            <figcaption>
+              Возле станции Московско-Курской железной дороги
+            </figcaption>
           </figure>
         </CommonImages>
       </div>

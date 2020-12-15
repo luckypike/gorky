@@ -42,10 +42,18 @@ const Roads = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gzhd/11/2.jpg" layout="fill" />
+
+            <figcaption>
+              9 мая 1945 года на Московском вокзале
+            </figcaption>
           </figure>
 
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gzhd/11/1.jpg" layout="fill" />
+
+            <figcaption>
+              Праздничные гуляния в честь Дня Победы в районе Московского вокзала в Горьком
+            </figcaption>
           </figure>
         </CommonImages>
       </div>

@@ -13,6 +13,10 @@ const Mechanicians = () => {
         <MainImage>
           <figure className={classNames(styles.img, styles.intro)}>
             <Image src="/images/drobmash/img.jpg" layout="fill" />
+
+            <figcaption>
+              Автоматчики на броне легкого танка Т-70 пятого гвардейского танкового корпуса
+            </figcaption>
           </figure>
         </MainImage>
 
@@ -28,6 +32,10 @@ const Mechanicians = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/drobmash/3/1.jpg" layout="fill" />
+
+            <figcaption>
+              Строители завода дробильно-размольных машин
+            </figcaption>
           </figure>
         </CommonImage>
 
