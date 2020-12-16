@@ -11,18 +11,6 @@ const Smithy = () => {
     <div className={styles.root}>
       <div className={styles.page}>
         <MainText title="Кузница победы" />
-
-        <CommonImages>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/yakor/9/1.jpg" layout="fill" />
-            <figcaption>Сварочный узел машины немецкой фирмы ZAC</figcaption>
-          </figure>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/yakor/9/2.jpg" layout="fill" />
-            <figcaption>Цех с линиями станковавтоматов по вязке цепей</figcaption>
-          </figure>
-        </CommonImages>
-
         <CommonText>
           <p>
             Спустя 1418 тяжелых дней и ночей наступила победа. На «Красном якоре» царило всеобщее ликование, заводчане
@@ -39,6 +27,17 @@ const Smithy = () => {
             благодарственные письма
           </p>
         </CommonText>
+
+        <CommonImages>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/yakor/9/1.jpg" layout="fill" />
+            <figcaption>Сварочный узел машины немецкой фирмы ZAC</figcaption>
+          </figure>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/yakor/9/2.jpg" layout="fill" />
+            <figcaption>Цех с линиями станковавтоматов по вязке цепей</figcaption>
+          </figure>
+        </CommonImages>
       </div>
     </div>
   )

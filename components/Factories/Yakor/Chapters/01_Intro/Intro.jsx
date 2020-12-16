@@ -7,7 +7,7 @@ export default function Intro () {
     <div className={styles.root}>
       <div className={styles.page}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Горьковский завод № 646 «Красный якорь»</h1>
+          <h1 className={styles.title}>Горьковский завод № 646 {'«Красный якорь»'}</h1>
 
           <p className={styles.desc}>АО «Завод „Красный якорь“»</p>
         </div>
@@ -40,9 +40,7 @@ export default function Intro () {
           </div>
 
           <div className={styles.item}>
-            <div className={styles.digit}>Eдинственный</div>
-
-            <div className={styles.rd}>завод в СССР</div>
+            <div className={styles.digit}>Eдинственный завод в СССР</div>
 
             <div className={styles.what}>
               изготавливавший в первые годы войны цепи противоскольжения для автомобилей и конские минометные вьюки
