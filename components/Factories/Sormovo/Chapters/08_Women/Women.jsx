@@ -5,42 +5,34 @@ import Image from 'next/image'
 import { MainText, CommonImage, Speech } from '../../../../'
 
 import styles from './Women.module.css'
+import CommonText from '../../../../CommonText/CommonText'
 
 const Women = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sormovo/8/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
         <MainText title="Женщины встали к станкам">
           <p>
             Всеобщая мобилизация значительно повлияла на кадровый состав завода.
             Молодые мужчины ушли на фронт, их место заняли ветераны труда, которые
             успели уйти на заслуженный покой.
-          </p>
-
-          <p>
             «Мы, старики, не должны сидеть дома. В грозный и ответственный
             момент у нас еще хватит сил по-боевому работать для своей Родины»,—
             обратился к коллегам ветеран труда И. М. Олимпиев. В первый же год
             на завод вернулись более тысячи ветеранов. К станкам вставали и
             женщины, бывшие прежде домохозяйками, и подростки. Они работали
             крановщицами, пультовщицами, токарями, малярами, формовщицами,
-            осваивали и другие профессии. Чтобы работать быстрее и перевыполнять
-            задания, сормовичи старались усовершенствовать технологии и методы
-            работы. На заводе развернулось движение рационализаторов и
-            изобретателей.
+            осваивали и другие профессии.
           </p>
+        </MainText>
 
-          <p className={styles.vrezka}>
-            За годы войны коллектив завода «Красное Сормово» 33 раза получал
-            переходящее Красное знамя Государственного комитета обороны
-          </p>
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sormovo/8/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
 
+        <CommonText>
           <p>
             Чтобы работать быстрее и перевыполнять задания, сормовичи старались
             усовершенствовать технологии и методы работы. На заводе развернулось
@@ -53,7 +45,12 @@ const Women = () => {
             Государственного комитета обороны. Оно передано заводу на вечное
             хранение.
           </p>
-        </MainText>
+
+          <p className={styles.vrezka}>
+            За годы войны коллектив завода «Красное Сормово» 33 раза получал
+            переходящее Красное знамя Государственного комитета обороны
+          </p>
+        </CommonText>
 
         <Speech
           title="«Пришла на завод в 16 лет»"
@@ -71,6 +68,13 @@ const Women = () => {
           подставку. Продукцию военпреду сдавала с первого предъявления».
         </Speech>
 
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sormovo/8/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
+        {/* TODO: скролл */}
         <div className={styles.images}>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/sormovo/8/3.jpg" layout="fill" />
@@ -81,13 +85,6 @@ const Women = () => {
           </figure>
         </div>
       </div>
-
-        {/* <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/sormovo/8/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage> */}
-
     </div>
   )
 }
