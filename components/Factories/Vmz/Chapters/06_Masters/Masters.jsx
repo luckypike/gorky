@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, Speech, CommonImage } from '../../../../'
+import { MainText, Speech, CommonImage, CommonImages } from '../../../../'
 
 import styles from './Masters.module.css'
 
@@ -23,9 +23,6 @@ const Masters = () => {
             металлургии разработал секретную технологию, по которой спецстали
             начали изготавливать в мартенах. Ведущие инженеры завода обучали
             сталеваров варить броню по-новому.
-          </p>
-
-          <p className={styles.vrezka}>
             В результате напряженной работы план выпуска спецсталей за второе
             полугодие 1941 года завод выполнил на 418,4%, труб — на 623,3%.
           </p>
@@ -57,11 +54,15 @@ const Masters = () => {
           значительное количество металла дополнительно к плану».
         </Speech>
 
-        {/* <CommonImage content>
+        <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/vmz/6/2.jpg" layout="fill" />
           </figure>
-        </CommonImage> */}
+
+          <figure className={classNames(styles.img, styles._4)}>
+            <Image src="/images/vmz/6/4.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
       </div>
     </div>
   )
