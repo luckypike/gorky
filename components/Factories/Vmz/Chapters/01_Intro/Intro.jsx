@@ -15,7 +15,7 @@ const Intro = () => {
 
         <div className={styles.items}>
           <div className={cn(styles.item, styles.s)}>
-            <div className={styles.digit}>Единственный в СССР</div>
+            <div className={cn(styles.digit, styles.txt)}>Единственный в СССР</div>
 
             <div className={styles.what}>
               цех электро­сварных труб действовал на заводе накануне войны
@@ -25,7 +25,7 @@ const Intro = () => {
 
         <div className={styles.items}>
           <div className={cn(styles.item, styles.s)}>
-            <div className={styles.digit}>
+            <div className={cn(styles.digit, styles.txt)}>
               10 танков колонны «выксунский металлург»
             </div>
 

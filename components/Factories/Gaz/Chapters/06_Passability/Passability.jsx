@@ -24,17 +24,6 @@ const Passability = () => {
             выпущено всего 12 машин): завод приступил к выпуску легких танков, а
             ряд его цехов заняли выпуском реактивных мин и иной военной
             продукции.
-          </p>
-        </MainText>
-
-        {/* <CommonImage content>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/gaz/6/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage> */}
-
-        <CommonText>
-          <p>
             ГАЗ-64 серийно выпускался до апреля 1943 года. Всего было
             произведено 672 автомобиля.
           </p>
@@ -44,15 +33,18 @@ const Passability = () => {
             полноприводного ГАЗ-64 — ГАЗ-67 с расширенной колеей. Позже его
             сменил модернизированный ГАЗ-67Б, отличавшийся доработанной ходовой
             частью и усовершенствованной системой зажигания.
-          </p>
-
-          <p>
             ГАЗ-67Б широко использовался как штабной и разведывательный
             автомобиль, перевозчик пехоты и раненых, а также как легкий
             артиллерийский тягач. Всего за годы войны было выпущено 6068
             автомобилей ГАЗ-67 и ГАЗ-67Б.
           </p>
-        </CommonText>
+        </MainText>
+
+        {/* <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/gaz/6/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage> */}
 
         <CommonImage content>
           <figure className={classNames(styles.img, styles._2)}>

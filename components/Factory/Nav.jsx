@@ -1,11 +1,28 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import Link from 'next/link'
 import { observer } from 'mobx-react-lite'
+import { useRouter } from 'next/router'
 
 import useStore from '../../stores/useStore'
 
 import s from './Nav.module.css'
+
+function ActiveLink ({ href, title }) {
+  const router = useRouter()
+
+  return (
+    <Link href={href}>
+      <a className={classNames({ [s.active]: router.pathname === href })}>{title}</a>
+    </Link>
+  )
+}
+
+ActiveLink.propTypes = {
+  href: PropTypes.string,
+  title: PropTypes.string
+}
 
 const Nav = observer(() => {
   const appStore = useStore()
@@ -19,20 +36,15 @@ const Nav = observer(() => {
 
         <ul className={s.factories}>
           <li>
-            <Link href="/gaz">
-              <a>Горьковский автомобильный завод</a>
-            </Link>
+            <ActiveLink
+              href="/gaz"
+              title="Горьковский автомобильный завод"
+            />
           </li>
 
           <li>
             <Link href="/sormovo">
               <a>Завод «Красное Сормово»</a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/etna">
-              <a>Завод «Красная Этна»</a>
             </Link>
           </li>
 
@@ -49,15 +61,23 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="/vmz">
-              <a>Выксунский металлургический завод</a>
+            <ActiveLink
+              href="/vmz"
+              title="Выксунский металлургический завод"
+            />
+          </li>
+
+          <li>
+            <Link href="/etna">
+              <a>Завод «Красная Этна»</a>
             </Link>
           </li>
 
           <li>
-            <Link href="/gzhd">
-              <a>Горьковская железная дорога</a>
-            </Link>
+            <ActiveLink
+              href="/gzhd"
+              title="Горьковская железная дорога"
+            />
           </li>
         </ul>
       </div>

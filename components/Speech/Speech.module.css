@@ -11,6 +11,19 @@
   }
 }
 
+.content {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    height: 100%;
+    left: -2rem;
+    content: '';
+    display: block;
+    border: 1px solid rgb(var(--hl_color));
+  }
+}
+
 .label {
   font-family: var(--ff_sans);
   font-weight: 300;
@@ -21,8 +34,14 @@
   margin: calc(var(--yr) * var(--s2)) 0 0;
   font-family: var(--ff_sans);
   color: rgb(var(--hl_color));
-  composes: h2 from '../Fonts.module.css';
-  text-transform: uppercase;
+  font-weight: normal;
+  font-size: calc(var(--yr) * 5);
+  line-height: calc(var(--yr) * 5);
+
+  @media (--s) {
+    font-size: 2vw;
+    line-height: 2.8vw;
+  }
 }
 
 .text {
