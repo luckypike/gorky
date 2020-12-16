@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { MainText, CommonImage, Speech, Columns } from '../../../../'
 
 import styles from './Ammunition.module.css'
+import CommonText from '../../../../CommonText/CommonText'
 
 const Ammunition = () => {
   return (
@@ -21,12 +22,8 @@ const Ammunition = () => {
 
         <Columns
           left={(
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/sverdlov/4/2.jpg" layout="fill" />
-
-              <figcaption>
-              Инженеры М. И. Фечин и А. М. Коммисаров разработали и внедрили непрерывный механизированный метод заливки снарядов, что повысило их качество и увеличило производительность труда
-              </figcaption>
+            <figure className={classNames(styles.img, styles._1)}>
+              <Image src="/images/sverdlov/4/1.jpg" layout="fill" />
             </figure>
           )}
 
@@ -37,9 +34,6 @@ const Ammunition = () => {
                 улучшение технологических процессов, механизация труда, который в довоенные годы во многих цехах был ручным,
                 применение более эффективных средств производства. По сравнению с довоенным временем мощности по снаряжению
                 боеприпасов выросли на 210%.
-              </p>
-
-              <p>
                 К 1943 году завод им. Свердлова стал одним из крупнейших предприятий Горьковской области и производил до 50%
                 взрывчатых веществ от общего количества, выпускаемого всеми предприятиями Наркомата боеприпасов. К этому
                 времени завод произвел взрывчатых веществ на 940 млн руб., или на 25% больше, чем за 20 довоенных лет,
@@ -48,6 +42,12 @@ const Ammunition = () => {
             </div>
           )}
         />
+
+        <CommonText>
+          <p className={styles.vrezka}>
+            Первая бомба, сброшенная на Берлин в августе 1941 года, была снаряжена на заводе Свердлова
+          </p>
+        </CommonText>
 
         <CommonImage>
           <figure className={classNames(styles.img, styles._3)}>
@@ -79,15 +79,17 @@ const Ammunition = () => {
           )}
 
           right={(
-            <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/sverdlov/4/1.jpg" layout="fill" />
-
-              <figcaption>
-                Технология заливки мин аммотолом также принадлежит инженеру-исследователю завода М. И. Фечину
-              </figcaption>
+            <figure className={classNames(styles.img, styles.main)}>
+              <Image src="/images/sverdlov/4/2.jpg" layout="fill" />
             </figure>
           )}
         />
+
+        {/* <CommonText>
+          <p className={styles.vrezka}>
+            Количество боеприпасов, произведенных заводом Свердлова за пять лет, превысило общие объемы производства всех российских заводов в Первой мировой войне
+          </p>
+        </CommonText> */}
 
         <Speech
           title="«Дисциплина была строгая» "
