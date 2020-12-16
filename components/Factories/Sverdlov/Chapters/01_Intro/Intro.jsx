@@ -1,4 +1,5 @@
 import React from 'react'
+// import cn from 'classnames'
 
 import styles from '../../../../Intro.module.css'
 
@@ -6,7 +7,7 @@ export default function Intro () {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <div>
+        <div className={styles.header}>
           <h1 className={styles.title}>Дзержинский Завод № 80 имени Я. М. Свердлова</h1>
 
           <p className={styles.desc}>ФКП «Завод имени Я. М. Свердлова»</p>
@@ -22,7 +23,7 @@ export default function Intro () {
           </div>
 
           <div className={styles.item}>
-            <div className={styles.digit}>3 000 000 +</div>
+            <div className={styles.digit}>3 МЛН +</div>
 
             <div className={styles.rd}>изделий</div>
 
@@ -32,13 +33,13 @@ export default function Intro () {
 
         <div className={styles.items}>
           <div className={styles.item}>
-            <div className={styles.digit}>5 570 000</div>
+            <div className={styles.digit}>5,6 МЛН</div>
 
             <div className={styles.rd}>авиабомб</div>
           </div>
 
           <div className={styles.item}>
-            <div className={styles.digit}>147 686 000</div>
+            <div className={styles.digit}>147 МЛН</div>
 
             <div className={styles.rd}>снарядов и мин</div>
           </div>
