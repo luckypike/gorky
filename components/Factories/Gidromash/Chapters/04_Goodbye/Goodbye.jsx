@@ -80,6 +80,16 @@ const Goodbye = () => {
           </p>
         </CommonText>
 
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/gidromash/4/1.jpg" layout="fill" />
+
+            <figcaption>
+              В музее предприятия сохранилась справка об эвакуации из Москвы М. А. Радчевского, который работал на заводе с 1930 года
+            </figcaption>
+          </figure>
+        </CommonImage>
+
         <Speech
           title="«Пока работала первая смена, вторая училась военному делу»"
           author={{

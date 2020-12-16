@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { MainText, CommonImage, Speech } from '../../../../'
 
 import styles from './Reliable.module.css'
+import CommonText from '../../../../CommonText/CommonText'
 
 const Reliable = () => {
   return (
@@ -17,7 +18,19 @@ const Reliable = () => {
             авиапредприятий страны — на его долю приходилось 16,5% выпуска
             самолетов в СССР.
           </p>
+        </MainText>
 
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/sokol/3/2.jpg" layout="fill" />
+
+            <figcaption>
+              Фюзеляж И-16 был деревянным, а агрегаты металлическими
+            </figcaption>
+          </figure>
+        </CommonImage>
+
+        <CommonText>
           <p>
             Завод специализировался на производстве истребителей И-16
             конструкции Н.Н. Поликарпова. Первый полет на И-16 в декабре 1933
@@ -34,7 +47,7 @@ const Reliable = () => {
             Первый полет на И-16 в декабре 1933 года совершил летчик-испытатель
             Валерий Чкалов
           </p>
-        </MainText>
+        </CommonText>
 
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>

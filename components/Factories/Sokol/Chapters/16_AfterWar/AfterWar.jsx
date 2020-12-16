@@ -40,16 +40,6 @@ const AfterWar = () => {
           </p>
         </MainText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sokol/16/1.jpg" layout="fill" />
-
-            <figcaption>
-              Самолет Ла-15 — один из первенцев эпохи реактивной авиации
-            </figcaption>
-          </figure>
-        </CommonImage>
-
         <Speech
           title="«Радость, улыбки, поздравления и… слезы»"
           author={{
@@ -67,6 +57,17 @@ const AfterWar = () => {
           родных и близких, о потерях, понесенных нашим народом, нашей
           страной. Дорогой была цена завоеванной нами победы».
         </Speech>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sokol/16/1.jpg" layout="fill" />
+
+            <figcaption>
+              Самолет Ла-15 — один из первенцев эпохи реактивной авиации
+            </figcaption>
+          </figure>
+        </CommonImage>
+
       </div>
     </div>
   )

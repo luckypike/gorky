@@ -33,16 +33,6 @@ const ExceptBread = () => {
           </figure>
         </CommonImage>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/gzhd/10/1.jpg" layout="fill" />
-
-            <figcaption>
-              Здание Дворца культуры им. Ленина, где в годы войны располагался госпиталь
-            </figcaption>
-          </figure>
-        </CommonImage>
-
         <Speech
           title="«Стоял запах крови и дыма»"
           author={{
@@ -60,6 +50,16 @@ const ExceptBread = () => {
           приказ петь в госпитале, что расположился в здании Дворца культуры
           им. Ленина, для раненых. Мы и пели…».
         </Speech>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/gzhd/10/1.jpg" layout="fill" />
+
+            <figcaption>
+              Здание Дворца культуры им. Ленина, где в годы войны располагался госпиталь
+            </figcaption>
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

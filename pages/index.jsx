@@ -83,8 +83,6 @@ export default function Home () {
               delay={300}
             />
 
-            <Item href="/etna" id="etna" title="ГОРЬКОВСКИЙ ЗАВОД «КРАСНАЯ ЭТНА»" desc="АО «Завод „Красная Этна“»" />
-
             <Item
               href="/drobmash"
               id="drobmash"
@@ -105,6 +103,8 @@ export default function Home () {
               title="ВЫКСУНСКИЙ МЕТАЛЛУРГИЧЕСКИЙ ЗАВОД"
               desc="АО «Выксунский металлургический завод»"
             />
+
+            <Item href="/etna" id="etna" title="ГОРЬКОВСКИЙ ЗАВОД «КРАСНАЯ ЭТНА»" desc="АО «Завод „Красная Этна“»" />
 
             <Item
               href="/gzhd"

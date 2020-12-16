@@ -5,17 +5,21 @@
   padding: 0 var(--xr);
   grid-gap: calc(var(--yr) * var(--s4));
 
+  & figure {
+    &:nth-child(n+2) {
+      margin-top: var(--sb);
+    }
+  }
+
   @media (--s) {
     grid-gap: 4vw;
     grid-template-columns: 1fr 1fr;
     padding: 0 calc(1 / 13 * 100%);
-    font-size: 1.8vw;
-    line-height: 3vw;
+    font-size: var(--mfs);
+    line-height: var(--mlh);
   }
 
   @media (--l) {
     padding: 0 calc(2 / 13 * 100%);
-    font-size: 1.3vw;
-    line-height: 2.4vw;
   }
 }

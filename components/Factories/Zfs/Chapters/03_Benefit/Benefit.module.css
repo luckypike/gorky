@@ -2,7 +2,7 @@
   composes: ari from "../../../../Images.module.css";
 
   &.main {
-    padding-top: calc(1900 / 1419 * 100%);
+    padding-top: calc(1780 / 1419 * 100%);
   }
 
   &._1 {

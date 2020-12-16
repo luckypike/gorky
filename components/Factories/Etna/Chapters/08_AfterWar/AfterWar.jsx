@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonImage } from '../../../../'
 
 import styles from './AfterWar.module.css'
 
@@ -19,15 +19,7 @@ const AfterWar = () => {
             поставщиком нормалей для производителей автомобильной техники и
             комплектующих к ней.
           </p>
-        </MainText>
 
-        <CommonImage content>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/etna/8/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonText>
           <p>
             К настоящему времени на «Красной Этне» освоен полный
             производственный цикл: от проектирования до гальванопокрытия и
@@ -35,7 +27,13 @@ const AfterWar = () => {
             собственные инструментальное и станкостроительное производства, две
             исследовательские лаборатории.
           </p>
-        </CommonText>
+        </MainText>
+
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/etna/8/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

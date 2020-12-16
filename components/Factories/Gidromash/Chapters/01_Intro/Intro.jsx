@@ -8,7 +8,7 @@ export default function Intro () {
     <div className={styles.root}>
       <div className={styles.page}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Завод № 119 имени Г. М. Маленкова</h1>
+          <h1 className={styles.title}>{'Завод № 119 имени Г. М. Маленкова'}</h1>
 
           <p className={styles.desc}>НПАО «Гидромаш»</p>
         </div>

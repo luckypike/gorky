@@ -84,16 +84,13 @@ const Defense = () => {
             Первые модификации были неудачными, виновным в этом признали
             конструктора кировского предприятия Семена Гинзбурга. В 1943 году
             его сняли с должности и отправили на фронт. Выпуск СУ-76 прекратили.
-          </p>
-
-          <p>
             Однако необходимость фронта в самоходных установках была острой, и
             народный комиссар танковой промышленности объявил конкурс на лучший
             проект САУ.
           </p>
         </CommonText>
 
-        <CommonImage>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gaz/11/3.jpg" layout="fill" />
           </figure>
@@ -116,13 +113,19 @@ const Defense = () => {
             также продолжилась сборка машин по ленд-лизу — за год на заводе их
             собрали более 12,6 тыс.
           </p>
+
+          <p className={styles.vrezka}>
+            За годы войны в СССР было выпущено 13,7 тыс. СУ-76, из них ГАЗ построил 9,1 тыс.
+          </p>
         </CommonText>
 
-        {/* <CommonImage>
+        <CommonImage>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/gaz/11/5.jpg" layout="fill" />
           </figure>
         </CommonImage>
+
+        {/*
       </div>
 
       <div className={classNames(styles.page, styles.fpi)}>

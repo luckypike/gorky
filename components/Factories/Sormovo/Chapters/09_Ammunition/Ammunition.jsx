@@ -18,9 +18,6 @@ const Ammunition = () => {
             по выпуску снарядов 203-мм и ­107-мм в несколько раз. Для этого
             необходимо было переналадить оборудование и станки. На заводе создали
             отдел боеприпасов.
-          </p>
-
-          <p>
             В начале июля 1941 года бюро Сормовского райкома партии потребовало
             от предприятия «организовать круглосуточную работу на всех
             операциях, в двухдневный срок поставить и смонтировать недостающее
@@ -59,6 +56,12 @@ const Ammunition = () => {
           „Смелому бойцу“, помогали писать письма родным…».
         </Speech>
 
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sormovo/9/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <Columns
           left={(
             <figure className={classNames(styles.img, styles._2)}>
@@ -71,12 +74,6 @@ const Ammunition = () => {
             </figure>
           )}
         />
-
-        {/* <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/sormovo/9/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage> */}
       </div>
     </div>
   )

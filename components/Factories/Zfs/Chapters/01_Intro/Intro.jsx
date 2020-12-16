@@ -16,9 +16,7 @@ export default function Intro () {
 
         <div className={styles.items}>
           <div className={styles.item}>
-            <div className={styles.digit}>Головное предприятие</div>
-
-            <div className={styles.rd}>СССР</div>
+            <div className={styles.digit}>Головное предприятие СССР</div>
 
             <div className={styles.what}>по производству ППШ с 1942 года</div>
           </div>

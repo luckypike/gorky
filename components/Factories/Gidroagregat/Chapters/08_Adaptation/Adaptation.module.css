@@ -3,7 +3,7 @@
   composes: ari from "../../../../Images.module.css";
 
   &.main {
-    padding-top: calc(1249 / 2220 * 100%);
+    padding-top: calc(1249 / 2011 * 100%);
   }
 
   &._1 {

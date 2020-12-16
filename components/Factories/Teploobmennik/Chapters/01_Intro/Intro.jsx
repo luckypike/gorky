@@ -8,7 +8,7 @@ export default function Intro () {
       <div className={styles.page}>
         <div className={styles.header}>
           <h1 className={styles.title}>
-            Государственный Завод № 469 имени М.М. Громова
+            Государственный Завод № 469 {'имени М. М. Громова'}
           </h1>
 
           <p className={styles.desc}>АО ПКО «Теплообменник»</p>
@@ -21,8 +21,9 @@ export default function Intro () {
             <div className={styles.rd}>дней</div>
 
             <div className={styles.what}>
-              восстанавливали в Горьком эвакуированное из Солнечногорска
-              производство
+              восстанавливали в Горьком эвакуированное
+              <br />
+              из Солнечногорска производство
             </div>
           </div>
 
@@ -33,9 +34,7 @@ export default function Intro () {
 
             <div className={styles.what}>выпускал завод в 1943 году</div>
           </div>
-        </div>
 
-        <div className={styles.items}>
           <div className={styles.item}>
             <div className={styles.digit}>250 000 +</div>
 

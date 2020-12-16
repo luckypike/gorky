@@ -46,23 +46,7 @@ const FirstBombing = () => {
             воздуха.
           </p>
         </CommonText>
-      </div>
 
-      <div className={styles.images}>
-        <figure className={classNames(styles.img, styles._1)}>
-          <Image src="/images/gaz/9/2.jpg" layout="fill" />
-        </figure>
-
-        <figure className={classNames(styles.img, styles._2)}>
-          <Image src="/images/gaz/9/3.jpg" layout="fill" />
-        </figure>
-
-        <figure className={classNames(styles.img, styles._3)}>
-          <Image src="/images/gaz/9/4.jpg" layout="fill" />
-        </figure>
-      </div>
-
-      <div className={styles.page}>
         <Speech
           title="«Враг в первую очередь старается поразить автозавод»"
           author={{
@@ -82,7 +66,23 @@ const FirstBombing = () => {
           юго-западного направления, имеет явно неорганизованную систему
           обороны».
         </Speech>
+      </div>
 
+      <div className={styles.images}>
+        <figure className={classNames(styles.img, styles._1)}>
+          <Image src="/images/gaz/9/2.jpg" layout="fill" />
+        </figure>
+
+        <figure className={classNames(styles.img, styles._2)}>
+          <Image src="/images/gaz/9/3.jpg" layout="fill" />
+        </figure>
+
+        <figure className={classNames(styles.img, styles._3)}>
+          <Image src="/images/gaz/9/4.jpg" layout="fill" />
+        </figure>
+      </div>
+
+      <div className={styles.page}>
         <Speech
           title="«Немец вел себя хозяином»"
           author={{

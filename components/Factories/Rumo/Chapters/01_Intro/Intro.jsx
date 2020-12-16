@@ -8,7 +8,7 @@ const Intro = () => {
     <div className={styles.root}>
       <div className={styles.page}>
         <div className={styles.header}>
-          <h1 className={styles.title}>ГОРЬКОВСКИЙ ЗАВОД № 718 «ДВИГАТЕЛЬ РЕВОЛЮЦИИ»</h1>
+          <h1 className={styles.title}>ГОРЬКОВСКИЙ ЗАВОД № 718 {'«ДВИГАТЕЛЬ РЕВОЛЮЦИИ»'}</h1>
 
           <p className={styles.desc}>ОАО РУМО</p>
         </div>
@@ -23,7 +23,7 @@ const Intro = () => {
           </div>
 
           <div className={styles.item}>
-            <div className={cn(styles.digit, styles.txt)}>ВЕДУЩИЙ производитель пушек</div>
+            <div className={cn(styles.digit, styles.txt)}>ВЕДУЩИЙ производитель</div>
 
             <div className={styles.what}>газовых двигателей в СССР</div>
           </div>

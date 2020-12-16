@@ -6,6 +6,7 @@ import {
   MainText,
   CommonText,
   CommonImage,
+  CommonImages,
   Legend
 } from '../../../../'
 
@@ -86,7 +87,7 @@ const La5 = () => {
           </figure>
         </CommonImage>
 
-        <CommonImage content>
+        <CommonImages>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/sokol/11/3.jpg" layout="fill" />
 
@@ -94,9 +95,7 @@ const La5 = () => {
               Новый истребитель Ла-5 имел мощное вооружение
             </figcaption>
           </figure>
-        </CommonImage>
 
-        <CommonImage content>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/sokol/11/4.jpg" layout="fill" />
 
@@ -104,7 +103,7 @@ const La5 = () => {
               20-мм пушки крепились в верхнем секторе передней части фюзеляжа Ла-5
             </figcaption>
           </figure>
-        </CommonImage>
+        </CommonImages>
 
         <Legend title="«Як» на пороге">
           <p>
@@ -130,6 +129,8 @@ const La5 = () => {
             на то, чтобы завершить разработку нового истребителя в Горьком.
           </p>
         </Legend>
+
+        {/* TODO: кальки */}
       </div>
     </div>
   )

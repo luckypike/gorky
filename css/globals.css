@@ -65,7 +65,7 @@ p {
   hyphens: auto;
 
   &:not(:last-child) {
-    margin: 0 0 calc(var(--yr) * var(--s4));
+    margin: 0 0 calc(var(--yr) * var(--s3));
   }
 }
 

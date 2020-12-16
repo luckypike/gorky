@@ -44,6 +44,7 @@ const AfterWar = () => {
           </p>
         </CommonText>
 
+        {/* TODO: Поставить фото телеграммы */}
         <Speech
           title="«Честно трудился все годы войны»"
           author={{

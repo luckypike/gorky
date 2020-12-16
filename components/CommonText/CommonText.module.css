@@ -4,13 +4,11 @@
 
   @media (--s) {
     padding: 0 calc(2 / 13 * 100%);
-    font-size: 1.8vw;
-    line-height: 3vw;
+    font-size: var(--mfs);
+    line-height: var(--mlh);
   }
 
   @media (--l) {
     padding: 0 calc(3 / 13 * 100%);
-    font-size: 1.3vw;
-    line-height: 2.4vw;
   }
 }

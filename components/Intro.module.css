@@ -73,6 +73,11 @@
   animation: fadeInUp var(--duration) var(--t-func) var(--delay) both;
   position: relative;
 
+  @media (--s) {
+    font-size: var(--mfs);
+    line-height: var(--mlh);
+  }
+
   &::after {
     display: block;
     content: "";

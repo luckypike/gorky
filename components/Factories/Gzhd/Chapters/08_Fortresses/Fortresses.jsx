@@ -60,16 +60,6 @@ const Fortresses = () => {
           </figure>
         </CommonImages>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._4)}>
-            <Image src="/images/gzhd/8/2.jpg" layout="fill" />
-
-            <figcaption>
-              Схема боевого пути 31-го особого дивизиона
-            </figcaption>
-          </figure>
-        </CommonImage>
-
         <Speech
           title="«У них нет противника»"
           author={{
@@ -115,6 +105,16 @@ const Fortresses = () => {
               </li>
           </ol>
         </GunsOfWar>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._4)}>
+            <Image src="/images/gzhd/8/2.jpg" layout="fill" />
+
+            <figcaption>
+              Схема боевого пути 31-го особого дивизиона
+            </figcaption>
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

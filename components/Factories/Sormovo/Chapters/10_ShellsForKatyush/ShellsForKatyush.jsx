@@ -16,9 +16,9 @@ const ShellsForKatyush = () => {
           сборке реактивных снарядов М-20 и М-13 для «Катюш».
         </MainText>
 
-        <CommonImage content>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/sormovo/10/1.jpg" layout="fill" />
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sormovo/10/2.jpg" layout="fill" />
           </figure>
         </CommonImage>
 
@@ -35,11 +35,6 @@ const ShellsForKatyush = () => {
             ночное время».
           </p>
 
-          <p className={styles.vrezka}>
-            На «Красном Сормове» собрали 1,5 млн снарядов для «Катюш» и еще
-            столько же других боеприпасов
-          </p>
-
           <p>
             За годы войны на «Красном Сормове» собрали 1,5 млн снарядов для
             «Катюш» и еще столько же других боеприпасов. В отличие от снарядов
@@ -53,11 +48,16 @@ const ShellsForKatyush = () => {
             из-за больших размеров снаряды М-20 можно было запускать только с
             верхних направляющих боевых машин, что вдвое уменьшало вес залпа».
           </p>
+
+          <p className={styles.vrezka}>
+            На «Красном Сормове» собрали 1,5 млн снарядов для «Катюш» и еще
+            столько же других боеприпасов
+          </p>
         </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sormovo/10/2.jpg" layout="fill" />
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sormovo/10/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
 

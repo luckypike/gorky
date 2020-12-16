@@ -19,9 +19,7 @@ const Intro = () => {
           <div className={cn(styles.item)}>
             <div className={styles.digit}>1/3</div>
 
-            <div className={styles.rd}>всех бронекорпусов для</div>
-
-            <div className={styles.rd}>для Т-60</div>
+            <div className={styles.rd}>всех бронекорпусов для для Т-60</div>
 
             <div className={styles.what}>
               произведена на заводе в годы войны
@@ -31,9 +29,7 @@ const Intro = () => {
           <div className={cn(styles.item)}>
             <div className={styles.digit}>1/4</div>
 
-            <div className={styles.rd}>всех бронекорпусов</div>
-
-            <div className={styles.rd}>для Т-70</div>
+            <div className={styles.rd}>всех бронекорпусов для Т-70</div>
 
             <div className={styles.what}>выпущена на заводе в годы войны</div>
           </div>

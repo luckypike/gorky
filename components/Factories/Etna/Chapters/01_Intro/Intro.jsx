@@ -17,7 +17,7 @@ const Intro = () => {
 
         <div className={styles.items}>
           <div className={cn(styles.item, styles.s)}>
-            <div className={styles.digit}>ЧЕТЫРЕ ЗАВОДА</div>
+            <div className={cn(styles.digit, styles.txt)}>ЧЕТЫРЕ ЗАВОДА</div>
 
             <div className={styles.what}>
               эвакуированных из других городов принял завод «Красная Этна» в
@@ -28,7 +28,7 @@ const Intro = () => {
 
         <div className={styles.items}>
           <div className={cn(styles.item, styles.s)}>
-            <div className={styles.digit}>ЕДИНСТВЕННЫЙ ПРОИЗВОДИТЕЛЬ</div>
+            <div className={cn(styles.digit, styles.txt)}>ЕДИНСТВЕННЫЙ ПРОИЗВОДИТЕЛЬ</div>
 
             <div className={styles.what}>
               армейских мотоциклов с коляской в СССР в годы войны

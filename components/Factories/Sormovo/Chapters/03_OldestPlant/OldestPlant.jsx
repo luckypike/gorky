@@ -11,8 +11,8 @@ const OldestPlant = () => {
     <div className={styles.root}>
       <div className={styles.page}>
         <MainImage>
-          <figure className={classNames(styles.img, styles.intro)}>
-            <Image src="/images/sormovo/img.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sormovo/3/2.jpg" layout="fill" />
           </figure>
         </MainImage>
 
@@ -29,10 +29,11 @@ const OldestPlant = () => {
           </p>
         </MainText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/sormovo/3/2.jpg" layout="fill" />
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sormovo/3/1.jpg" layout="fill" />
           </figure>
+
         </CommonImage>
 
         <CommonText>
@@ -52,9 +53,9 @@ const OldestPlant = () => {
           </p>
         </CommonText>
 
-        <CommonImage content>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sormovo/3/1.jpg" layout="fill" />
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.intro)}>
+            <Image src="/images/sormovo/img.jpg" layout="fill" />
           </figure>
         </CommonImage>
 
