@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage, Speech } from '../../../../'
+import { MainText, CommonText, CommonImages, Speech } from '../../../../'
 
 import styles from './Personnel.module.css'
 
@@ -25,22 +25,13 @@ const Personnel = () => {
             декабрь 1942 года рост ударников производства составил 60%,
             стахановцев — 80%.
           </p>
-
-          <p>
-            С начала 1942 года на предприятии создаются ударные фронтовые и
-            комсомольско-молодежные бригады, перевыполняющие нормы на 200–300% и
-            более. Итоги работы таких бригад подводились ежеквартально.
-            Результаты вывешивали на заводской доске показателей.
-          </p>
         </MainText>
 
-        {/* <CommonImage>
+        <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/teploobmennik/6/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>         */}
 
-        <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/teploobmennik/6/2.jpg" layout="fill" />
 
@@ -48,10 +39,14 @@ const Personnel = () => {
               Завотделом снабжения заводского УКСа попросил разрешить ему ежедневно после основной нагрузки работать еще и у станка
             </figcaption>
           </figure>
-        </CommonImage>
+        </CommonImages>
 
         <CommonText>
           <p>
+            С начала 1942 года на предприятии создаются ударные фронтовые и
+            комсомольско-молодежные бригады, перевыполняющие нормы на 200–300% и
+            более. Итоги работы таких бригад подводились ежеквартально.
+            Результаты вывешивали на заводской доске показателей.
             К началу ноября 1942 года на заводе только девять рабочих не
             справлялись с нормой ежедневной выработки, но все они пришли на
             производство меньше двух недель назад и еще не успели в совершенстве
