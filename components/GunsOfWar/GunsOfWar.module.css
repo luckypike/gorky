@@ -30,6 +30,16 @@
   margin-top: calc(var(--yr) * var(--s2));
   font-style: italic;
 
+  @media (--s) {
+    font-size: 1.1vw;
+    line-height: 1.6vw;
+  }
+
+  @media (--s) {
+    font-size: 1.1vw;
+    line-height: 1.6vw;
+  }
+
   & ol {
     padding: 0;
     margin: 0;
