@@ -6,11 +6,11 @@
   }
 
   &._1 {
-    padding-top: calc(676 / 1013 * 100%);
+    padding-top: calc(720 / 1013 * 100%);
   }
 
   &._2 {
-    padding-top: calc(770 / 1014 * 100%);
+    padding-top: calc(720 / 1014 * 100%);
   }
 }
 

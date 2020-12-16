@@ -33,7 +33,7 @@ const We = () => {
           </p>
         </MainText>
 
-        <CommonImage>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/zfs/10/1.jpg" layout="fill" />
           </figure>

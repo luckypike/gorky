@@ -6,8 +6,7 @@ import {
   MainText,
   Columns,
   CommonText,
-  Speech,
-  CommonImage
+  Speech
 } from '../../../../'
 
 import styles from './Benefit.module.css'
@@ -16,20 +15,20 @@ const Benefit = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <MainText title="На благо артиллерии">
-          <p>
-            В первые дни войны ГЗФС столкнулся с тем, что крупная партия станков
-            буквально за сутки была демонтирована и установлена в цехах «Нового
-            Сормова» — артиллерийского 92-го завода. Директор Горьковского
-            завода фрезерных станков Я. М. Рябов с тяжелым сердцем отдавал
-            оборудование, без которого его собственное производство осталось
-            оголенным.
-          </p>
-        </MainText>
+        <MainText title="На благо артиллерии" />
 
         <Columns
-          left={
+         right ={
             <div>
+              <p>
+                В первые дни войны ГЗФС столкнулся с тем, что крупная партия станков
+                буквально за сутки была демонтирована и установлена в цехах «Нового
+                Сормова» — артиллерийского 92-го завода. Директор Горьковского
+                завода фрезерных станков Я. М. Рябов с тяжелым сердцем отдавал
+                оборудование, без которого его собственное производство осталось
+                оголенным.
+              </p>
+
               <p>
                 Но уполномоченный Государственного комитета обороны Г. И.
                 Ивановский был непреклонен. В те годы из двух зол выбрали
@@ -46,7 +45,7 @@ const Benefit = () => {
               </p>
             </div>
           }
-          right={
+          left={
             <div>
               <figure className={classNames(styles.img, styles.main)}>
                 <Image src="/images/zfs/4/1.jpg" layout="fill" />
@@ -55,11 +54,11 @@ const Benefit = () => {
           }
         />
 
-        <CommonImage content>
+        {/* <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/zfs/4/2.jpg" layout="fill" />
           </figure>
-        </CommonImage>
+        </CommonImage> */}
 
         <CommonText>
           <p className={styles.vrezka}>
