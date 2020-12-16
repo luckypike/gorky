@@ -11,9 +11,9 @@ const Birth = () => {
     <div className={styles.root}>
       <div className={styles.page}>
         <MainImage>
-          <figure className={classNames(styles.img, styles.intro)}>
-            <Image src="/images/korund/img.jpg" layout="fill" />
-            <figcaption>Один из цехов Чернореченского химического завода. 1930-е годы</figcaption>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/korund/3/2.jpg" layout="fill" />
+            <figcaption>Карбидный цех Чернореченского химического завода. 1931 год</figcaption>
           </figure>
         </MainImage>
       </div>
@@ -27,20 +27,17 @@ const Birth = () => {
             снабжением армии, принял решение построить завод в селе Растяпине между реками Черной и Окой, рядом с
             дешевым водным путем в центре России. До Нижнего Новгорода — 28 верст (30 км), железнодорожная ветка рядом,
             в семи верстах (7,46 км) — гужевая дорога Москва — Нижний Новгород.
-          </p>
-        </MainText>
-
-        <CommonText>
-          <p>
             Исполнить проект Земгор поручил инженерам братьям Николаю и Василию Ушаковым. Базой для предприятия стал
             эвакуированный из Риги завод «Эльрих и К°».
           </p>
+
           <p>
             В октябре 1916 года было запущено производство серной кислоты мощностью 20 т и азотной кислоты мощностью 9 т
             в сутки — стратегического сырья для выпуска нескольких видов взрывчатых веществ. В 1918 году завод
             национализировали и передали в Государственное объединение волжскокамских заводов под названием
             Чернореченский химический завод.
           </p>
+
           <p>
             В 1920х годах на предприятии построили цех суперфосфатов (минеральных удобрений), велась реконструкция
             предприятия, запускались новые производства. В феврале 1928 года ЧХЗ запустил первое в стране производство
@@ -51,7 +48,7 @@ const Birth = () => {
             производительную и менее трудоемкую. Наладило предприятие и производство карбида (карбид кальция
             используется для сварки).
           </p>
-        </CommonText>
+        </MainText>
 
         <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
@@ -78,9 +75,9 @@ const Birth = () => {
         </CommonText>
 
         <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/korund/3/2.jpg" layout="fill" />
-            <figcaption>Карбидный цех Чернореченского химического завода. 1931 год</figcaption>
+          <figure className={classNames(styles.img, styles.intro)}>
+            <Image src="/images/korund/img.jpg" layout="fill" />
+            <figcaption>Один из цехов Чернореченского химического завода. 1930-е годы</figcaption>
           </figure>
         </CommonImage>
       </div>
