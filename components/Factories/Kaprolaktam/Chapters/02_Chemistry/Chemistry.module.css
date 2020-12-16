@@ -10,11 +10,11 @@
   }
 
   &._1 {
-    padding-top: calc(770 / 1014 * 100%);
+    padding-top: calc(800 / 1014 * 100%);
   }
 
   &._2 {
-    padding-top: calc(830 / 1014 * 100%);
+    padding-top: calc(800 / 1014 * 100%);
   }
 }
 
