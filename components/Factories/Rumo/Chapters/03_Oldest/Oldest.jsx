@@ -10,6 +10,12 @@ const Oldest = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/rumo/3/1.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <MainText title="Старейший дизельный">
           <p>
             Дизелестроительный завод «Фельзер и Ко» был основан в 1874 году в Риге и в 1915 году, во время Первой
@@ -23,12 +29,6 @@ const Oldest = () => {
           </p>
         </MainText>
 
-        <CommonImage content>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/rumo/3/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
         <CommonText>
           <p>
             Кроме того, предприятие стало пионером в создании отечественных газовых двигателей. Новое направление
@@ -41,18 +41,7 @@ const Oldest = () => {
             Горьковское предприятие стало пионером в создании отечественных газовых двигателей
           </p>
         </CommonText>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/rumo/3/3.jpg" layout="fill" />
 
-            <figcaption>
-              До 1930-х годов «Двигатель Революции» был еще и крупным станкостроителем
-            </figcaption>
-          </figure>
-        </CommonImage>
-      </div>
-
-      <div className={styles.page}>
         <Legend title="Конструктор «особого КБ»">
           Отто Николаевич Штеблер (1879 — н/д) — инженер-механик, заведующий конструкторским бюро завода «Двигатель
           Революции» в 1920–30-х гг. В 1926 году с коллективом конструкторов создал первый отечественный
@@ -68,6 +57,16 @@ const Oldest = () => {
           авиационного моторостроения А.А. Шумилин. О. Н. Штеблер был освобожден в 1955 году и сослан в Карагандинскую
           область Казахстана.
         </Legend>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/rumo/3/3.jpg" layout="fill" />
+
+            <figcaption>
+              До 1930-х годов «Двигатель Революции» был еще и крупным станкостроителем
+            </figcaption>
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )
