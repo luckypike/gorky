@@ -15,14 +15,6 @@ const La7 = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <CommonImage content>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sokol/15/4.jpg" layout="fill" />
-
-            <figcaption>Новый истребитель Ла-7 вобрал все передовые конструкторские идеи своего времени</figcaption>
-          </figure>
-        </CommonImage>
-
         <MainText title="Ла-7: крылья победы">
           <p>
             Истребитель Ла-7, поднявшийся в воздух в январе 1944 года, еще
@@ -67,11 +59,23 @@ const La7 = () => {
             центроплана и консолей не совпали, слесарь-сборщик посадил болты
             лонжерона с помощью кувалды.
           </p>
+
+          <p className={styles.vrezka}>
+            Рост объемов производства обеспечивался только увеличением
+            производительности труда: новых площадей, станков и рабочей силы не
+            было
+          </p>
         </CommonText>
 
-        <CommonImages middle>
-          {/* TODO: Выравнять фотки */}
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sokol/15/4.jpg" layout="fill" />
 
+            <figcaption>Новый истребитель Ла-7 вобрал все передовые конструкторские идеи своего времени</figcaption>
+          </figure>
+        </CommonImage>
+
+        <CommonImages middle>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/sokol/15/1.jpg" layout="fill" />
           </figure>
@@ -106,9 +110,7 @@ const La7 = () => {
           </p>
 
           <p className={styles.vrezka}>
-            Рост объемов производства обеспечивался только увеличением
-            производительности труда: новых площадей, станков и рабочей силы не
-            было
+            Скорость, легкость, маневренность, хороший обзор, удобное управление — летчики отмечали массу преимуществ нового самолета Ла-7
           </p>
         </CommonText>
 

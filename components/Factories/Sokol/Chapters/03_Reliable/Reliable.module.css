@@ -1,7 +1,7 @@
 .img {
   composes: ari from "../../../../Images.module.css";
 
-  &.intro {
+  &._2 {
     padding-top: calc(1610 / 2433 * 100%);
   }
 

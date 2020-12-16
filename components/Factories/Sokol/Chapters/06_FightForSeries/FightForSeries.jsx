@@ -75,6 +75,16 @@ const FightForSeries = () => {
             периода».
           </p>
         </Legend>
+
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sokol/6/1.jpg" layout="fill" />
+
+            <figcaption>
+              Новый флагманский самолет должен был сменить И-16
+            </figcaption>
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )
