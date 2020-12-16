@@ -8,7 +8,7 @@ export default function Intro () {
     <div className={styles.root}>
       <div className={styles.page}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Горьковский жиркомбинат имени С. М. Кирова</h1>
+          <h1 className={styles.title}>Горьковский жиркомбинат {'имени С. М. Кирова'}</h1>
 
           <p className={styles.desc}>АО НМЖК</p>
         </div>
@@ -23,25 +23,19 @@ export default function Intro () {
           </div>
 
           <div className={styles.item}>
-            <div className={styles.digit}>Первый</div>
-
-            <div className={styles.rd}>по объему производства</div>
+            <div className={cn(styles.digit, styles.txt)}>Первый по объему производства</div>
 
             <div className={styles.what}>твердого туалетного мыла в России</div>
           </div>
-        </div>
 
-        <div className={styles.items}>
-          <div className={cn(styles.item, styles.s)}>
-            <div className={styles.digit}>Поставщик саломаса</div>
+          <div className={cn(styles.item)}>
+            <div className={cn(styles.digit, styles.txt)}>Поставщик саломаса</div>
 
             <div className={styles.what}>— твердого жира — для осажденного Ленинграда</div>
           </div>
-        </div>
 
-        <div className={styles.items}>
-          <div className={cn(styles.item, styles.s)}>
-            <div className={styles.digit}>Производитель водорода</div>
+          <div className={cn(styles.item)}>
+            <div className={cn(styles.digit, styles.txt)}>Производитель водорода</div>
 
             <div className={styles.what}>для аэростатов горьковской ПВО</div>
           </div>

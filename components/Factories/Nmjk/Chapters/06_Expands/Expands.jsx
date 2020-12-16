@@ -22,21 +22,6 @@ const Expands = () => {
           </p>
         </MainText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/nmjk/7/1.jpg" layout="fill" />
-            <figcaption>Главный корпус маргаринового завода перед вводом в эксплуатацию</figcaption>
-          </figure>
-        </CommonImage>
-
-        <CommonText>
-          <p>
-            Сегодня в группу компаний НМЖК входит перерабатывающий масложировой комбинат в Нижнем Новгороде,
-            маслоэкстракционные заводы в Урюпинске и Сорочинске, элеваторы в Волгоградской, Оренбургской, Самарской,
-            Саратовской областях и в Республике Башкортостан.
-          </p>
-        </CommonText>
-
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/nmjk/7/2.jpg" layout="fill" />
@@ -47,6 +32,21 @@ const Expands = () => {
             <figcaption>Руководители строительства маргаринового завода</figcaption>
           </figure>
         </CommonImages>
+
+        <CommonText>
+          <p>
+            Сегодня в группу компаний НМЖК входит перерабатывающий масложировой комбинат в Нижнем Новгороде,
+            маслоэкстракционные заводы в Урюпинске и Сорочинске, элеваторы в Волгоградской, Оренбургской, Самарской,
+            Саратовской областях и в Республике Башкортостан.
+          </p>
+        </CommonText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/nmjk/7/1.jpg" layout="fill" />
+            <figcaption>Главный корпус маргаринового завода перед вводом в эксплуатацию</figcaption>
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

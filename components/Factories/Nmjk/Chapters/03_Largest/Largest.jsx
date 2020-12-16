@@ -39,7 +39,7 @@ const Largest = () => {
           }
         />
 
-        <CommonImage>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/nmjk/4/2.jpg" layout="fill" />
             <figcaption>Группа работников Горьковского жиркомбината. 1930-е годы</figcaption>
