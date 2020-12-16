@@ -43,21 +43,24 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="/sormovo">
-              <a>Завод «Красное Сормово»</a>
-            </Link>
+            <ActiveLink
+              href="/sormovo"
+              title="Завод «Красное Сормово»"
+            />
           </li>
 
           <li>
-            <Link href="/drobmash">
-              <a>«Дробмаш», Завод корпусов</a>
-            </Link>
+            <ActiveLink
+              href="/drobmash"
+              title="«Дробмаш», Завод корпусов"
+            />
           </li>
 
           <li>
-            <Link href="/ruspolimet">
-              <a>«Русполимет»</a>
-            </Link>
+            <ActiveLink
+              href="/ruspolimet"
+              title="«Русполимет»"
+            />
           </li>
 
           <li>
@@ -68,9 +71,13 @@ const Nav = observer(() => {
           </li>
 
           <li>
-            <Link href="/etna">
-              <a>Завод «Красная Этна»</a>
+            <Link href="/">
+              <a></a>
             </Link>
+            <ActiveLink
+              href="/etna"
+              title="Завод «Красная Этна»"
+            />
           </li>
 
           <li>
@@ -89,51 +96,45 @@ const Nav = observer(() => {
 
         <ul className={s.factories}>
           <li>
-            <Link href="/sokol">
-              <a>
-                Нижегородский авиастроительный завод «Сокол»
-              </a>
-            </Link>
+            <ActiveLink
+              href="/sokol"
+              title="Нижегородский авиастроительный завод «Сокол»"
+            />
           </li>
 
           <li>
-            <Link href="/gidromash">
-              <a>
-              «Гидромаш»
-              </a>
-            </Link>
+            <ActiveLink
+              href="/gidromash"
+              title="«Гидромаш»"
+            />
           </li>
 
           <li>
-            <Link href="/teploobmennik">
-              <a>
-              «Теплообменник»
-              </a>
-            </Link>
+            <ActiveLink
+              href="/teploobmennik"
+              title="«Теплообменник»"
+            />
           </li>
 
           <li>
-            <Link href="/gidroagregat">
-              <a>
-              «Гидроагрегат»
-              </a>
-            </Link>
+            <ActiveLink
+              href="/gidroagregat"
+              title="«Гидроагрегат»"
+            />
           </li>
 
           <li>
-            <Link href="/adcbsz">
-              <a>
-              Борский стекольный завод
-              </a>
-            </Link>
+            <ActiveLink
+              href="/adcbsz"
+              title="Борский стекольный завод"
+            />
           </li>
 
           <li>
-            <Link href="/dzorg">
-              <a>
-              Дзержинское оргстекло
-              </a>
-            </Link>
+            <ActiveLink
+              href="/dzorg"
+              title="Дзержинское оргстекло"
+            />
           </li>
         </ul>
       </div>
@@ -145,35 +146,31 @@ const Nav = observer(() => {
 
         <ul className={s.factories}>
           <li>
-            <Link href="/nmz">
-              <a>
-              Нижегородский машиностроительный завод
-              </a>
-            </Link>
+            <ActiveLink
+              href="/nmz"
+              title="Нижегородский машиностроительный завод"
+            />
           </li>
 
           <li>
-            <Link href="/rumo">
-              <a>
-              РУМО
-              </a>
-            </Link>
+            <ActiveLink
+              href="/rumo"
+              title="РУМО"
+            />
           </li>
 
           <li>
-            <Link href="/paz">
-              <a>
-              Павловский автобусный завод
-              </a>
-            </Link>
+            <ActiveLink
+              href="/paz"
+              title="Павловский автобусный завод"
+            />
           </li>
 
           <li>
-            <Link href="/zfs">
-              <a>
-              Завод фрезерных станков
-              </a>
-            </Link>
+            <ActiveLink
+              href="/zfs"
+              title="Завод фрезерных станков"
+            />
           </li>
         </ul>
       </div>
@@ -185,43 +182,38 @@ const Nav = observer(() => {
 
         <ul className={s.factories}>
           <li>
-            <Link href="/sverdlov">
-              <a>
-              Завод имени Я. М. Свердлова
-              </a>
-            </Link>
+            <ActiveLink
+              href="/sverdlov"
+              title="Завод имени Я. М. Свердлова"
+            />
           </li>
 
           <li>
-            <Link href="/korund">
-              <a>
-              «Корунд»
-              </a>
-            </Link>
+            <ActiveLink
+              href="/korund"
+              title="«Корунд»"
+            />
           </li>
 
           <li>
-            <Link href="/yakor">
-              <a>
-              Завод «Красный якорь»
-              </a>
-            </Link>
+            <ActiveLink
+              href="/yakor"
+              title="Завод «Красный якорь»"
+            />
           </li>
 
           <li>
-            <Link href="/nmjk">
-              <a>
-              НМЖК
-              </a>
-            </Link>
+            <ActiveLink
+              href="/nmjk"
+              title="НМЖК"
+            />
           </li>
 
           <li>
-            <Link href="/kaprolaktam">
-              <a>
-              «Капролактам»
-              </a>
-            </Link>
+            <ActiveLink
+              href="/kaprolaktam"
+              title="«Капролактам»"
+            />
           </li>
         </ul>
       </div>
@@ -233,51 +225,45 @@ const Nav = observer(() => {
 
         <ul className={s.factories}>
           <li>
-            <Link href="/sormovo_sudo">
-              <a>
-              Завод «Красное Сормово»
-              </a>
-            </Link>
+            <ActiveLink
+              href="/sormovo_sudo"
+              title="Завод «Красное Сормово»"
+            />
           </li>
 
           <li>
-            <Link href="/gsz">
-              <a>
-              Городецкий судоремонтный завод
-              </a>
-            </Link>
+            <ActiveLink
+              href="/gsz"
+              title="Городецкий судоремонтный завод"
+            />
           </li>
 
           <li>
-            <Link href="/ssk">
-              <a>
-              Судоремонтно-судостроительная корпорация
-              </a>
-            </Link>
+            <ActiveLink
+              href="/ssk"
+              title="Судоремонтно-судостроительная корпорация"
+            />
           </li>
 
           <li>
-            <Link href="/ppk">
-              <a>
-              Завод «Память Парижской Коммуны»
-              </a>
-            </Link>
+            <ActiveLink
+              href="/ppk"
+              title="Завод «Память Парижской Коммуны»"
+            />
           </li>
 
           <li>
-            <Link href="/termal">
-              <a>
-              Концерн «Термаль»
-              </a>
-            </Link>
+            <ActiveLink
+              href="/termal"
+              title="Концерн «Термаль»"
+            />
           </li>
 
           <li>
-            <Link href="/shipyard">
-              <a>
-              Окская судоверфь
-              </a>
-            </Link>
+            <ActiveLink
+              href="/shipyard"
+              title="Окская судоверфь"
+            />
           </li>
         </ul>
       </div>
@@ -289,27 +275,24 @@ const Nav = observer(() => {
 
         <ul className={s.factories}>
           <li>
-            <Link href="/nitel">
-              <a>
-              Нижегородский телевизионный завод имени В. И. Ленина
-              </a>
-            </Link>
+            <ActiveLink
+              href="/nitel"
+              title="Нижегородский телевизионный завод имени В. И. Ленина"
+            />
           </li>
 
           <li>
-            <Link href="/frunze">
-              <a>
-              Нижегородское научно-производственное объединение имени М. В. Фрунзе
-              </a>
-            </Link>
+            <ActiveLink
+              href="/frunze"
+              title="Нижегородское научно-производственное объединение имени М. В. Фрунзе"
+            />
           </li>
 
           <li>
-            <Link href="/petrovsky">
-              <a>
-              Завод имени Г. И. Петровского
-              </a>
-            </Link>
+            <ActiveLink
+              href="/petrovsky"
+              title="Завод имени Г. И. Петровского"
+            />
           </li>
         </ul>
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage, Speech, CommonImages } from '../../../../'
+import { MainText, CommonText, CommonImage, Speech, Columns } from '../../../../'
 
 import styles from './CityUnderAttack.module.css'
 
@@ -17,9 +17,6 @@ const CityUnderAttack = () => {
             удары наносились в ночь на 5, 6, 7, 8, 10, 13 и 22 июня. Всего в
             налетах участвовало 655 самолетов врага. Из 2,2 тыс. сброшенных бомб
             более 1,5 тыс. поразили объекты автозавода.
-          </p>
-
-          <p>
             Разрушенными оказались более 50 зданий и сооружений, в том числе
             цехи шасси, колесный, монтажный, главный конвейер, кузовной корпус,
             прессовый, кузнечный, литейный, паровозное депо и другие сооружения.
@@ -66,9 +63,6 @@ const CityUnderAttack = () => {
             Погибли 254 жителя района, в том числе передовики и руководители
             ГАЗа, и 28 бойцов противовоздушной обороны. Более 500 человек были
             ранены.
-          </p>
-
-          <p>
             Ущерб от бомбежек был оценен в 191 млн руб. После авиаударов ГКО
             издал распоряжение о начале расследования недостатков
             противовоздушной обороны Горького. 6 июня уволили командующего
@@ -133,15 +127,11 @@ const CityUnderAttack = () => {
           </p>
         </CommonText>
 
-        <CommonImages>
-          <figure className={classNames(styles.img, styles._5)}>
-            <Image src="/images/gaz/12/5.jpg" layout="fill" />
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._4)}>
+            <Image src="/images/gaz/12/4.jpg" layout="fill" />
           </figure>
-
-          <figure className={classNames(styles.img, styles._7)}>
-            <Image src="/images/gaz/12/6.jpg" layout="fill" />
-          </figure>
-        </CommonImages>
+        </CommonImage>
 
         <CommonText>
           <p>
@@ -163,18 +153,26 @@ const CityUnderAttack = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._4)}>
-            <Image src="/images/gaz/12/4.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
+        <Columns
+          left={(
+            <div>
+              <figure className={classNames(styles.img, styles._5)}>
+                <Image src="/images/gaz/12/5.jpg" layout="fill" />
+              </figure>
 
-      {/* <CommonImage>
-        <figure className={classNames(styles.img, styles._6)}>
-          <Image src="/images/gaz/12/1.jpg" layout="fill" />
-        </figure>
-      </CommonImage> */}
+              <figure className={classNames(styles.img, styles._7)}>
+                <Image src="/images/gaz/12/6.jpg" layout="fill" />
+              </figure>
+            </div>
+          )}
+
+          right={(
+          <figure className={classNames(styles.img, styles._6)}>
+            <Image src="/images/gaz/12/1.jpg" layout="fill" />
+          </figure>
+          )}
+        />
+      </div>
     </div>
   )
 }

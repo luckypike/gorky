@@ -24,6 +24,8 @@
   --s6: 12;
   --sb: 6vh;
   --sbb: 3vh;
+  --mfs: 1.28vw;
+  --mlh: 2vw;
 
   @media (--s) {
     --s1: 2;
@@ -32,7 +34,14 @@
     --s4: 8;
     --s5: 12;
     --s6: 16;
-    --sb: 8vh;
+    --sb: 6vh;
     --sbb: 6vh;
+    --mfs: 1.8vw;
+    --mlh: 3vw;
+  }
+
+  @media (--l) {
+    --mfs: 1.28vw;
+    --mlh: 2vw;
   }
 }

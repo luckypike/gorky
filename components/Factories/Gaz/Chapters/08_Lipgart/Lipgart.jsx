@@ -10,6 +10,7 @@ const Lipgart = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
+        {/* TODO: Вставить био */}
         <MainText title="Липгарт">
           <p>
             Андрей Александрович Липгарт проработал на Горьковском автозаводе 20
