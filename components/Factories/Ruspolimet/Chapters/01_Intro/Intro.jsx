@@ -15,7 +15,7 @@ const Intro = () => {
 
         <div className={styles.items}>
           <div className={cn(styles.item, styles.s)}>
-            <div className={styles.digit}>крупнейший смежник</div>
+            <div className={cn(styles.digit, styles.txt)}>крупнейший смежник</div>
 
             <div className={styles.what}>
               «Красного Сормова» и Горьковского автозавода в 1941–1945 годах
@@ -25,7 +25,7 @@ const Intro = () => {
 
         <div className={styles.items}>
         <div className={cn(styles.item, styles.s)}>
-            <div className={styles.digit}>прочная лобовая броня Т-34</div>
+            <div className={cn(styles.digit, styles.txt)}>прочная лобовая броня Т-34</div>
 
             <div className={styles.what}>
               создана конструкторами завода № 178
