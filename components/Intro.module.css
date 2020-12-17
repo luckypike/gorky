@@ -181,8 +181,10 @@
   line-height: calc(var(--yr) * 12);
   color: rgb(var(--hl_color));
   text-transform: uppercase;
+  white-space: nowrap;
 
   &.txt {
+    white-space: normal;
     font-size: calc(var(--yr) * 6);
     line-height: calc(var(--yr) * 7);
 
@@ -198,13 +200,13 @@
   }
 
   @media (--s) {
-    font-size: calc(var(--yr) * 18);
-    line-height: calc(var(--yr) * 18);
+    font-size: calc(var(--yr) * 14);
+    line-height: calc(var(--yr) * 14);
   }
 
   @media (--l) {
-    font-size: calc(var(--yr) * 18 * var(--fs_mod));
-    line-height: calc(var(--yr) * 18 * var(--fs_mod));
+    font-size: calc(var(--yr) * 14 * var(--fs_mod));
+    line-height: calc(var(--yr) * 14 * var(--fs_mod));
   }
 }
 

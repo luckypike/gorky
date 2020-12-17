@@ -26,7 +26,7 @@ const Temperature = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/korund/7/2.jpg" layout="fill" />
-            <figcaption>Красноармеец бросает бутылку с зажигательной смесью во время боев под Сталинградом.</figcaption>
+            <figcaption>Красноармеец бросает бутылку с зажигательной смесью во время боев под Сталинградом</figcaption>
           </figure>
         </CommonImage>
 

@@ -11,12 +11,10 @@ const Coach = () => {
     <div className={styles.root}>
       <div className={styles.page}>
         <MainImage>
-          <figure className={classNames(styles.img, styles.intro)}>
-            <Image src="/images/gidromash/img.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/gidromash/3/1.jpg" layout="fill" />
 
-            <figcaption>
-              Шасси для дальних бомбардировщиков ДБ-3 — еще одно крупносерийное производство завода им. Маленкова
-            </figcaption>
+            <figcaption>У истребителя И-16 появились первые в СССР убирающиеся шасси</figcaption>
           </figure>
         </MainImage>
 
@@ -34,10 +32,12 @@ const Coach = () => {
         </MainText>
 
         <CommonImage content>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/gidromash/3/1.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles.intro)}>
+            <Image src="/images/gidromash/img.jpg" layout="fill" />
 
-            <figcaption>У истребителя И-16 появились первые в СССР убирающиеся шасси</figcaption>
+            <figcaption>
+              Шасси для дальних бомбардировщиков ДБ-3 — еще одно крупносерийное производство завода им. Маленкова
+            </figcaption>
           </figure>
         </CommonImage>
       </div>

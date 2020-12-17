@@ -6,8 +6,8 @@ export default function Intro () {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <div>
-          <h1 className={styles.title}>Горьковский Завод № 112 «Красное Сормово»</h1>
+        <div className={styles.header}>
+          <h1 className={styles.title}>{'Горьковский Завод № 112 «Красное Сормово»'}</h1>
 
           <p className={styles.desc}>ПАО «Завод „Красное Сормово“»</p>
         </div>

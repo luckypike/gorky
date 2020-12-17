@@ -1,3 +1,11 @@
 .page {
   composes: page from "../../../../Factory/Factory.module.css";
 }
+
+.img {
+  composes: ari from "../../../../Images.module.css";
+
+  &._3 {
+    padding-top: calc(2788 / 3992 * 100%);
+  }
+}

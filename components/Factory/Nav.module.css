@@ -43,7 +43,7 @@
   }
 
   & a {
-    transition: transform 0.3s;
+    transition: padding 0.3s;
     display: block;
     position: relative;
     padding-right: 2rem;
@@ -63,7 +63,7 @@
 
     &.active,
     &:hover {
-      transform: translateX(3rem);
+      padding-left: 2rem;
 
       &::before {
         opacity: 1;

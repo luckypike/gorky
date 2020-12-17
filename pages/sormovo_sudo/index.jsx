@@ -3,7 +3,6 @@ import React from 'react'
 import { Factory } from '../../components'
 import {
   Intro,
-  Img,
   DayBefore,
   FirstFight,
   Submarines,
@@ -12,28 +11,16 @@ import {
   Extends
 } from '../../components/Factories/SormovoSudo/Chapters'
 
-import styles from './index.module.css'
-
 const SormovoSudo = () => {
   return (
     <Factory>
-      <div className={styles.root}>
-        <Intro />
-
-        <Img />
-
-        <DayBefore />
-
-        <FirstFight />
-
-        <Submarines />
-
-        <Baby />
-
-        <Stalinici />
-
-        <Extends />
-      </div>
+      <Intro />
+      <DayBefore />
+      <FirstFight />
+      <Submarines />
+      <Baby />
+      <Stalinici />
+      <Extends />
     </Factory>
   )
 }

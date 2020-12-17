@@ -17,22 +17,19 @@ const FirstFight = () => {
             «Щуки» двумя торпедами потопил вражеское судно, которое перевозило артиллерию и танки.
           </p>
         </MainText>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sormovo_sudo/4/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sormovo_sudo/4/2.jpg" layout="fill" />
           </figure>
         </CommonImage>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/sormovo_sudo/4/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p className={styles.vrezka}>
             В 2004 году подорвавшуюся на минах и затонувшую подлодку «Комсомолец» обнаружили финские корабли
@@ -46,9 +43,10 @@ const FirstFight = () => {
             году она была обнаружена финскими кораблями.
           </p>
         </CommonText>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/sormovo_sudo/4/3.jpg" layout="fill" />
+
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/sormovo_sudo/4/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>

@@ -15,17 +15,15 @@ export default function Intro () {
 
         <div className={styles.items}>
           <div className={cn(styles.item, styles.s)}>
-            <div className={styles.digit}>ПЕРВАЯ СУДОВЕРФЬ В СССР</div>
+            <div className={cn(styles.digit, styles.txt)}>ПЕРВАЯ СУДОВЕРФЬ В СССР</div>
 
             <div className={styles.rd}>освоившая крупнотоннажное</div>
 
             <div className={styles.what}>сварное судостроение</div>
           </div>
-        </div>
 
-        <div className={styles.items}>
           <div className={cn(styles.item, styles.s)}>
-            <div className={styles.digit}>ЕДИНСТВЕННЫЙ ПРОИЗВОДИТЕЛЬ</div>
+            <div className={cn(styles.digit, styles.txt)}>ЕДИНСТВЕННЫЙ ПРОИЗВОДИТЕЛЬ</div>
 
             <div className={styles.what}>понтонно-мостовых переправ длявоенных в годы войны и до сих пор </div>
           </div>

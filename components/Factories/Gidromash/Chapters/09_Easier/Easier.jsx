@@ -72,7 +72,7 @@ const Easier = () => {
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/gidromash/9/3.jpg" layout="fill" />
 
-            <figcaption>Унификация стоек шасси для Ла-5 и Як-7 заметно упростила производ- ственный процесс</figcaption>
+            <figcaption>Унификация стоек шасси для Ла-5 и Як-7 заметно упростила производственный процесс</figcaption>
           </figure>
         </CommonImages>
       </div>

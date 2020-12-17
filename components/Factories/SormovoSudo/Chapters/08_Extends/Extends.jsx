@@ -15,27 +15,19 @@ const Extends = () => {
             В послевоенные годы «Красное Сормово» вернулось к гражданскому судостроению. Продолжились работы по
             достройке подлодок, заложенных на предприятии еще в годы войны. Завод приступил к реализации новых проектов
             и развернул крупносерийное строительство подводных лодок проекта 613.
-          </p>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sormovo_sudo/8/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-        <CommonText>
-          <p>
             Их начали разрабатывать в центральном конструкторском бюро № 18 еще в годы войны на замену «Щукам». Чертежи
             были готовы к 1948 году, тогда же первую такую субмарину заложили на «Красном Сормове». В 1950 году ее уже
             спустили на воду. Серия этих подлодок стала самой большой в мире и насчитывала 215 единиц. Больше половины,
             113, построили на «Красном Сормове».
           </p>
-        </CommonText>
-      </div>
+        </MainText>
 
-      <div className={styles.page}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sormovo_sudo/8/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Строительство подводных лодок на предприятии прекратилось в 2005 году. Всего сормовичи выпустили 275 боевых
@@ -43,11 +35,13 @@ const Extends = () => {
             в России судостроительное предприятие.
           </p>
         </CommonText>
+
         <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/sormovo_sudo/8/2.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sormovo_sudo/8/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
+
       </div>
     </div>
   )

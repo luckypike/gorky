@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainImage, MainText } from '../../../../'
+import { MainImage, MainText, CommonImage } from '../../../../'
 
 import styles from './LikeClockwork.module.css'
 
@@ -33,6 +33,13 @@ const LikeClockwork = () => {
             присвоено имя С. М. Кирова.
           </p>
         </MainText>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/nmjk/7/1.jpg" layout="fill" />
+            <figcaption>Главный корпус маргаринового завода перед вводом в эксплуатацию</figcaption>
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )
