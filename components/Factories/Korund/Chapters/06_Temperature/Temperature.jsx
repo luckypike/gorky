@@ -40,16 +40,6 @@ const Temperature = () => {
           </p>
         </CommonText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/korund/7/1.jpg" layout="fill" />
-            <figcaption>
-              Советские бронебойщики с противотанковым однозарядным ружьем системы Дегтярева образца 1941 года и
-              бутылками с зажигательной смесью ведут огонь под Сталинградом.
-            </figcaption>
-          </figure>
-        </CommonImage>
-
         <Speech
           title="«Известное не годится»"
           author={{ name: 'Начальник центральной заводской лаборатории в годы войны Г. М. Стронгин' }}
@@ -63,6 +53,16 @@ const Temperature = () => {
           испытали, когда поняли, что получилось жидкое незамерзающее и самовоспламеняющееся при низких температурах
           вещество».
         </Speech>
+
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/korund/7/1.jpg" layout="fill" />
+            <figcaption>
+              Советские бронебойщики с противотанковым однозарядным ружьем системы Дегтярева образца 1941 года и
+              бутылками с зажигательной смесью ведут огонь под Сталинградом.
+            </figcaption>
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

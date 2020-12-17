@@ -81,17 +81,19 @@ const Products = () => {
             <Image src="/images/nmjk/5/2.jpg" layout="fill" />
             <figcaption>Фильтрация саломаса на фильтрпрессе</figcaption>
           </figure>
-          <figure className={classNames(styles.img, styles._2)}>
-            <Image src="/images/nmjk/5/3.jpg" layout="fill" />
-            <figcaption>Фильтрпрессы для фильтрации саломаса установлены. 1919 год</figcaption>
-          </figure>
-        </CommonImages>
 
-        <CommonImage content>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/nmjk/5/4.jpg" layout="fill" />
             <figcaption>Цех безреактивного расщепления жиров глицеринового завода</figcaption>
           </figure>
+        </CommonImages>
+
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/nmjk/5/3.jpg" layout="fill" />
+            <figcaption>Фильтрпрессы для фильтрации саломаса установлены. 1919 год</figcaption>
+          </figure>
+
         </CommonImage>
       </div>
     </div>

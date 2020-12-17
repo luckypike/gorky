@@ -6,7 +6,7 @@
   }
 
   &._1 {
-    padding-top: calc(707 / 1035 * 100%);
+    padding-top: calc(640 / 1035 * 100%);
   }
 
   &._2 {
@@ -14,11 +14,11 @@
   }
 
   &._3 {
-    padding-top: calc(668 / 1135 * 100%);
+    padding-top: calc(640 / 1035 * 100%);
   }
 
   &._4 {
-    padding-top: calc(2192 / 1368 * 100%);
+    padding-top: calc(1858 / 1368 * 100%);
   }
 
   &._5 {

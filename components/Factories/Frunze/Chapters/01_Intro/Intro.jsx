@@ -9,7 +9,7 @@ const Intro = () => {
       <div className={styles.page}>
         <div className={styles.header}>
           <h1 className={styles.title}>
-            Горьковский Завод № 326 имени М. В. Фрунзе
+            Горьковский Завод № 326 {'имени М. В. Фрунзе'}
           </h1>
 
           <p className={styles.desc}>
@@ -42,8 +42,8 @@ const Intro = () => {
         </div>
 
         <div className={styles.items}>
-          <div className={cn(styles.item, styles.s)}>
-            <div className={styles.digit}>Танковые радиостанции 12-РТ</div>
+          <div className={cn(styles.item)}>
+            <div className={cn(styles.digit, styles.txt)}>Танковые радиостанции 12-РТ</div>
 
             <div className={styles.what}>
               завода им. М. В. Фрунзе в значительной степени определили исход

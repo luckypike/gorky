@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainImage, MainText, Speech, CommonText } from '../../../../'
+import { MainImage, MainText, Speech } from '../../../../'
 
 import styles from './Echelons.module.css'
 
@@ -27,9 +27,7 @@ const Echelons = () => {
             однако уже с сентября предприятие начало свою работу на разрозненных
             площадках.
           </p>
-        </MainText>
 
-        <CommonText>
           <p>
             Основные цехи были сформированы на базе законсервированной мельницы
             № 3 на улице Черниговской, а медночугунный литейный цех размещен в
@@ -37,7 +35,7 @@ const Echelons = () => {
             также располагались на складах Окского речного пароходства и в
             недостроенном здании нагорного промторга.
           </p>
-        </CommonText>
+        </MainText>
 
         <Speech
           title="«Не было ни жалоб, ни малодушия, ни маловерия»"

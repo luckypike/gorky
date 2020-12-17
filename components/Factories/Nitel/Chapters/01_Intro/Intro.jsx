@@ -8,7 +8,7 @@ export default function Intro () {
       <div className={styles.page}>
         <div className={styles.header}>
           <h1 className={styles.title}>
-            Горьковский Завод № 197 имени В. И. Ленина
+            Горьковский Завод № 197 {'имени В. И. Ленина'}
           </h1>
 
           <p className={styles.desc}>
