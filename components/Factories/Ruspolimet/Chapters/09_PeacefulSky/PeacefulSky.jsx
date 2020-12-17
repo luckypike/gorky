@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonImage, CommonImages } from '../../../../'
+import { MainText, CommonImages } from '../../../../'
 
 import styles from './PeacefulSky.module.css'
 
