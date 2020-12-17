@@ -48,11 +48,10 @@ const BM8 = () => {
         />
 
         <CommonImage content>
-          <figure className={classNames(styles.img, styles.main)}>
+          <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/zfs/9/1.jpg" layout="fill" />
           </figure>
-        </CommonImage content>
-        
+        </CommonImage>
       </div>
     </div>
   )
