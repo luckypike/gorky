@@ -83,7 +83,7 @@ const SpecialOrder = () => {
         </Speech>
         
         <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
+          <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/ruspolimet/9/2.jpg" layout="fill" />
           </figure>
         </CommonImage>
