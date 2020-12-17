@@ -28,8 +28,8 @@
 
 .desc {
   margin-top: calc(var(--yr) * var(--s2));
-  text-transform: italic;
-}
+  font-style: italic;
+
 
   @media (--s) {
     font-size: 1.1vw;
