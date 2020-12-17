@@ -47,11 +47,11 @@ const BM8 = () => {
           }
         />
 
-        <CommonImage>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/zfs/9/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
+        </CommonImage content>
         
       </div>
     </div>
