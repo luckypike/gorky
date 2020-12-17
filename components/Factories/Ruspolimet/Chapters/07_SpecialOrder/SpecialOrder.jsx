@@ -81,6 +81,12 @@ const SpecialOrder = () => {
           хозяйство с фермами, с пахотными землями. Более половины общего
           количества рабочих трудились только на подсобных хозяйствах».
         </Speech>
+        
+        <CommonImage>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/ruspolimet/9/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )
