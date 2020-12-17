@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, Speech, CommonImages } from '../../../../'
+import { MainText, Speech, CommonImages, CommonImage } from '../../../../'
 
 import styles from './SpecialOrder.module.css'
 
@@ -81,7 +81,7 @@ const SpecialOrder = () => {
           хозяйство с фермами, с пахотными землями. Более половины общего
           количества рабочих трудились только на подсобных хозяйствах».
         </Speech>
-        
+
         <CommonImage>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/ruspolimet/9/2.jpg" layout="fill" />
