@@ -26,12 +26,6 @@ const PeacefulSky = () => {
           </p>
         </MainText>
 
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/ruspolimet/9/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
         <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/ruspolimet/9/1.jpg" layout="fill" />
