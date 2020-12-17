@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { MainText, CommonText, CommonImage, Speech } from '../../../../'
 
 import styles from './Submarines.module.css'
+import CommonImages from '../../../../CommonImages/CommonImages'
 
 const Submarines = () => {
   return (
@@ -14,26 +15,17 @@ const Submarines = () => {
           <p>
             С началом войны судостроение на «Красном Сормове» прекратилось, все начатые корабли законсервировали. Силы
             рабочих были направлены на производство необходимых фронту танков Т-34 и боеприпасов.
-          </p>
-        </MainText>
-      </div>
-
-      <div className={styles.page}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/sormovo_sudo/5/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
-        <CommonText>
-          <p>
             Лишь в 1942 году завод возобновил производство для ВМФ, расконсервировав задельные корабли, а также заложив
             несколько новых подлодок серии «Малютка».
           </p>
-        </CommonText>
-      </div>
+        </MainText>
 
-      <div className={styles.page}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._3)}>
+            <Image src="/images/sormovo_sudo/5/4.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Главным конструктором по морскому судостроению на заводе «Красное Сормово» был Михаил Исаакович Лернер
@@ -46,27 +38,29 @@ const Submarines = () => {
             «Знак Почета».
           </p>
         </CommonText>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/sormovo_sudo/5/4.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
 
-      <div className={styles.page}>
         <CommonText>
           <p className={styles.vrezka}>
             «Красное Сормово» в годы Великой Отечественной войны стало лидером по производству подлодок в СССР
           </p>
         </CommonText>
-        <CommonImage>
+
+        <CommonImages>
+          <figure className={classNames(styles.img, styles.main)}>
+            <Image src="/images/sormovo_sudo/5/1.jpg" layout="fill" />
+          </figure>
+
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/sormovo_sudo/5/3.jpg" layout="fill" />
           </figure>
-        </CommonImage>
-      </div>
+        </CommonImages>
 
-      <div className={styles.page}>
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sormovo_sudo/5/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
+
         <CommonText>
           <p>
             Завод № 112 «Красное Сормово» в годы Великой Отечественной войны стал лидером по производству подлодок в
@@ -76,41 +70,25 @@ const Submarines = () => {
             XII серии типа «Малютка».
           </p>
         </CommonText>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._5)}>
-            <Image src="/images/sormovo_sudo/5/6.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-      </div>
 
-      <div className={styles.page}>
-        <CommonText>
-          <Speech
-            title="«Чрезвычайно сложная задача»"
-            author={{
-              name: 'Ответственный сдатчик подводных лодок на «Красном Сормове» в годы войны П. Черноверхский:'
-            }}
-          >
-            «Постановлением Государственного комитета обороны СССР на заводе „Красное Сормово“ в 1942 году возобновились
-            строительство и сдача законсервированных подводных лодок серии IX-бис. Для завода это была чрезвычайно
-            сложная задача: с одной стороны, требовалось увеличить выпуск танков Т-34 при явном недостатке кадров, а с
-            другой — необходимо было срочно восстанавливать межотраслевые и внутриотраслевые связи по поставкам
-            лодочного оборудования».
-          </Speech>
-        </CommonText>
         <CommonImage>
           <figure className={classNames(styles.img, styles._4)}>
             <Image src="/images/sormovo_sudo/5/5.jpg" layout="fill" />
           </figure>
         </CommonImage>
-      </div>
 
-      <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/sormovo_sudo/5/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
+        <Speech
+          title="«Чрезвычайно сложная задача»"
+          author={{
+            name: 'Ответственный сдатчик подводных лодок на «Красном Сормове» в годы войны П. Черноверхский:'
+          }}
+        >
+          «Постановлением Государственного комитета обороны СССР на заводе „Красное Сормово“ в 1942 году возобновились
+          строительство и сдача законсервированных подводных лодок серии IX-бис. Для завода это была чрезвычайно
+          сложная задача: с одной стороны, требовалось увеличить выпуск танков Т-34 при явном недостатке кадров, а с
+          другой — необходимо было срочно восстанавливать межотраслевые и внутриотраслевые связи по поставкам
+          лодочного оборудования».
+        </Speech>
       </div>
     </div>
   )
