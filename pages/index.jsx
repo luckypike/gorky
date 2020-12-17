@@ -125,17 +125,15 @@ export default function Home () {
             <Item
               href="/sokol"
               id="sokol"
-              title="ГОРЬКОВСКИЙ АВИА-
-              СТРОИТЕЛЬНЫЙ ЗАВОД No 21
+              title="ГОРЬКОВСКИЙ АВИАСТРОИТЕЛЬНЫЙ ЗАВОД № 21
               ИМЕНИ С. ОРДЖОНИКИДЗЕ"
-              desc="Нижегородский авиастроительный завод «Сокол» — филиал АО «РСК „МиГ“»"
+              desc="Нижегородский авиастроительный завод «Сокол» — филиал АО «РСК „МиГ“»"
             />
 
             <Item
               href="/gidromash"
               id="gidromash"
-              title="ЗАВОД No 119
-              ИМЕНИ Г. М. МАЛЕНКОВА"
+              title="ЗАВОД № 119 ИМЕНИ Г. М. МАЛЕНКОВА"
               desc="НПАО «Гидромаш»"
             />
 
@@ -144,8 +142,8 @@ export default function Home () {
               id="teploobmennik"
               img={styles.i32}
               title="ГОСУДАРСТВЕННЫЙ
-              ЗАВОД No 469
-              ИМЕНИ М. М. ГРОМОВА"
+              ЗАВОД № 469
+              ИМЕНИ М. М. ГРОМОВА"
               desc="АО ПКО «Теплообменник»"
             />
 
@@ -153,7 +151,7 @@ export default function Home () {
               href="/gidroagregat"
               id="gidroagregat"
               img={styles.i54}
-              title="ПАВЛОВСКИЙ ЗАВОД No 467"
+              title="ПАВЛОВСКИЙ ЗАВОД № 467"
               desc="АО «Гидроагрегат»"
             />
 
@@ -170,7 +168,7 @@ export default function Home () {
               id="dzorg"
               img={styles.i32}
               title="ДЗЕРЖИНСКИЙ
-              ЗАВОД No 148 «РУЛОН»"
+              ЗАВОД № 148 «РУЛОН»"
               desc="ОАО «Дзержинское оргстекло»"
             />
           </div>

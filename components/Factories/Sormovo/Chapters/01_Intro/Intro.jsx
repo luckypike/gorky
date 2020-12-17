@@ -35,7 +35,7 @@ export default function Intro () {
 
           <div className={styles.item}>
             <div className={styles.digit}>
-              3 млн.
+              3 000 000
             </div>
 
             <div className={styles.rd}>

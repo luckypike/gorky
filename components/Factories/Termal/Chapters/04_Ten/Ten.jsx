@@ -1,6 +1,8 @@
 import React from 'react'
+import cn from 'classnames'
+import Image from 'next/image'
 
-import { MainText } from '../../../../'
+import { MainText, CommonImage } from '../../../../'
 
 import styles from './Ten.module.css'
 
@@ -20,6 +22,12 @@ const Ten = () => {
           оборудования для судов, железнодорожного транспорта и предприятий
           общественного питания.
         </MainText>
+
+        <CommonImage content>
+          <figure className={cn(styles.img, styles._3)}>
+            <Image src="/images/termal/4/3.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

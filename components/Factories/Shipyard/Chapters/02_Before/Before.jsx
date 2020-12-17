@@ -37,7 +37,7 @@ const Before = () => {
         </CommonImage>
 
         <Columns
-          left={
+          right={
             <div>
               <p>
                 К 1912 году судоверфь была уже
@@ -60,7 +60,7 @@ const Before = () => {
               </p>
             </div>
           }
-          right={
+          left={
             <div>
               <figure className={classNames(styles.img, styles.main)}>
                 <Image src="/images/shipyard/3/2.jpg" layout="fill" />

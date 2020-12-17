@@ -4,6 +4,10 @@
   &.intro {
     padding-top: calc(1222 / 1767 * 100%);
   }
+
+  &.main {
+    padding-top: calc(1270 / 1962 * 100%);
+  }
 }
 
 .page {

@@ -1,6 +1,8 @@
 import React from 'react'
+import cn from 'classnames'
+import Image from 'next/image'
 
-import { MainText } from '../../../../'
+import { MainText, CommonImage } from '../../../../'
 
 import styles from './Chemistry.module.css'
 
@@ -16,6 +18,12 @@ const Chemistry = () => {
             продукции гражданского и военного назначения завод не раз удостаивался правительственных наград.
           </p>
         </MainText>
+
+        <CommonImage content>
+          <figure className={cn(styles.img, styles._1)}>
+            <Image src="/images/sverdlov/7/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

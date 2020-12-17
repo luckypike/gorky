@@ -2,15 +2,15 @@
   composes: ari from "../../../../Images.module.css";
 
   &.main {
-    padding-top: calc(829 / 1013 * 100%);
+    padding-top: calc(770 / 1014 * 100%);
   }
 
   &._1 {
     padding-top: calc(770 / 1014 * 100%);
   }
-  
-   &._2 {
-   padding-top: calc(1021 / 1399 * 100%);
+
+  &._2 {
+    padding-top: calc(1021 / 1399 * 100%);
   }
 }
 

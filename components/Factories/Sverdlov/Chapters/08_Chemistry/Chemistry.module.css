@@ -5,3 +5,11 @@
 .vrezka {
   composes: vrezka from '../../../../Fonts.module.css';
 }
+
+.img {
+  composes: ari from '../../../../Images.module.css';
+
+  &._1 {
+    padding-top: calc(2157 / 3236 * 100%);
+  }
+}

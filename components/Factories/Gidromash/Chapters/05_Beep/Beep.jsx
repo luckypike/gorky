@@ -64,10 +64,6 @@ const Beep = () => {
       </div>
 
       <div className={classNames(styles.page, styles.fpi)}>
-        <CommonImage>
-
-        </CommonImage>
-
         <Columns
           left={(
             <figure className={classNames(styles.img, styles._3)}>
@@ -102,7 +98,7 @@ const Beep = () => {
             <Image src="/images/gidromash/5/2.jpg" layout="fill" />
 
             <figcaption>
-              До войны «Гудок Октя- бря» выпускал станки для бумажной промышленности и литейных цехов
+              До войны «Гудок Октября» выпускал станки для бумажной промышленности и литейных цехов
             </figcaption>
           </figure>
 
