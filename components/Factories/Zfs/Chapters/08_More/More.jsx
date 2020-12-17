@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonImages, CommonImage } from '../../../../'
+import { MainText, CommonImages } from '../../../../'
 
 import styles from './More.module.css'
 
@@ -22,12 +22,6 @@ const More = () => {
             другим предприятиям.
           </p>
         </MainText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles.main)}>
-            <Image src="/images/zfs/9/1.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
 
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>

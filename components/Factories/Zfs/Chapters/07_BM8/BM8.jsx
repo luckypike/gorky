@@ -13,7 +13,7 @@ const BM8 = () => {
         <MainText title="БМ-8: реактивное освоение" />
 
         <Columns
-          left={
+          right={
             <div>
               <p>
                 ГЗФС был включен в состав заводов-смежников Горьковского автозавода
@@ -38,7 +38,7 @@ const BM8 = () => {
               </p>
             </div>
           }
-          right={
+          left={
             <div>
               <figure className={classNames(styles.img, styles.main)}>
                 <Image src="/images/zfs/8/1.jpg" layout="fill" />
@@ -48,8 +48,8 @@ const BM8 = () => {
         />
 
         <CommonImage content>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/zfs/8/2.jpg" layout="fill" />
+          <figure className={classNames(styles.img, styles._2)}>
+            <Image src="/images/zfs/9/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
       </div>

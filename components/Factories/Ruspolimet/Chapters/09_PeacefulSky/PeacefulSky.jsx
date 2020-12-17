@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonImage, CommonImages } from '../../../../'
+import { MainText, CommonImages } from '../../../../'
 
 import styles from './PeacefulSky.module.css'
 
@@ -25,12 +25,6 @@ const PeacefulSky = () => {
             материалов, которое является основным для завода и сегодня.
           </p>
         </MainText>
-
-        <CommonImage>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/ruspolimet/9/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
 
         <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>

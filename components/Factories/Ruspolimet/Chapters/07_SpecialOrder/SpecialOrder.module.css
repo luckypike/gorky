@@ -8,6 +8,10 @@
   &._1 {
     padding-top: calc(770 / 1014 * 100%);
   }
+  
+   &._2 {
+   padding-top: calc(1021 / 1399 * 100%);
+  }
 }
 
 .page {
