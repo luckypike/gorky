@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, Columns, CommonText, CommonImage, CommonImages } from '../../../../'
+import { MainText, Columns, CommonText, CommonImage } from '../../../../'
 
 import styles from './RP12.module.css'
 
@@ -59,18 +59,14 @@ const RP12 = () => {
           </p>
         </CommonText>
 
-        <CommonImages>
+        <CommonImage content>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/frunze/4/1.jpg" layout="fill" />
             <figcaption>
               Телеграмма от Народного комиссариата обороны СССР по вопросу модернизации радиостанции типа 12-РП
             </figcaption>
           </figure>
-          <figure className={classNames(styles.img, styles._3)}>
-            <Image src="/images/frunze/4/3.jpg" layout="fill" />
-            <figcaption>Пехотная радиостанция в полевых условиях </figcaption>
-          </figure>
-        </CommonImages>
+        </CommonImage>
 
         <CommonText>
           <p className={styles.vrezka}>
