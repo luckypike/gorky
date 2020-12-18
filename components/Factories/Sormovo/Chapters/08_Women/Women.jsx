@@ -74,7 +74,6 @@ const Women = () => {
           </figure>
         </CommonImage>
 
-        {/* TODO: скролл */}
         <div className={styles.images}>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/sormovo/8/3.jpg" layout="fill" />

@@ -17,3 +17,7 @@
 .vrezka {
   composes: vrezka from "../../../../Fonts.module.css";
 }
+
+.bio {
+  composes: bio from "../../../../Factory/Factory.module.css";
+}

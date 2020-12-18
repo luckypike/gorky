@@ -95,3 +95,16 @@
     transition: opacity 0.3s;
   }
 }
+
+.bio {
+  align-items: center;
+
+  & > div {
+    &:last-child {
+      border-top: 2px solid rgba(var(--hl_color));
+      border-bottom: 2px solid rgba(var(--hl_color));
+      padding-top: var(--sb);
+      padding-bottom: var(--sb);
+    }
+  }
+}
