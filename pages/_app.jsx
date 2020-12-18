@@ -84,6 +84,8 @@ const App = observer(({ Component, props }) => {
       <Head>
         <title>Горький символ победы</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="/safari-pinned-tab.svg" rel="mask-icon" color="#d63517" />
+        <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&amp;PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
       </Head>
 
