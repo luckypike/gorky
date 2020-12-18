@@ -2,12 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  Speech,
-  CommonText,
-  CommonImages
-} from '../../../../'
+import { MainText, Speech, CommonText, CommonImages } from '../../../../'
 
 import styles from './Trajectory.module.css'
 
@@ -35,9 +30,17 @@ const Trajectory = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/petrovsky/7/1.jpg" layout="fill" />
+            <figcaption>
+              Газета «Сталинский луч» — печатный орган парбюро, замкома и
+              дирекции завода. Номер от 7 ноября 1942 года
+            </figcaption>
           </figure>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/petrovsky/7/2.jpg" layout="fill" />
+            <figcaption>
+              Объяснительная записка о приборе «Обри» (МО-3), предназначенном
+              для самонаводящейся акустической торпеды «С.А.Т»
+            </figcaption>
           </figure>
         </CommonImages>
 
@@ -45,8 +48,8 @@ const Trajectory = () => {
           <p>
             В 1944 году завод продолжил совершенствование «Обри». Приборы
             получили шифры MO-4 и ПЯ («Прибор Янкелевича»). Они позволили
-            добиться еще более точного хода торпеды по заданной траектории.
-            В то же время был модернизирован универсальный прибор для управления
+            добиться еще более точного хода торпеды по заданной траектории. В то
+            же время был модернизирован универсальный прибор для управления
             корабельными и авиационными торпедами всех видов (УО-1). В нем был
             применен совершенно новый принцип управления авиационной высотной
             торпедой. С помощью УО-1 стало возможно регулирование хода торпеды

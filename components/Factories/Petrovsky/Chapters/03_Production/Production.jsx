@@ -2,12 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  Speech,
-  CommonImage,
-  Columns
-} from '../../../../'
+import { MainText, Speech, CommonImage, Columns } from '../../../../'
 
 import styles from './Production.module.css'
 
@@ -18,6 +13,7 @@ const Production = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/petrovsky/4/1.jpg" layout="fill" />
+            <figcaption>В новых цехах в Горьком</figcaption>
           </figure>
         </CommonImage>
 
@@ -28,10 +24,10 @@ const Production = () => {
             <div>
               <p>
                 В довоенное время завод им. Г. И. Петровского изготавливал
-                сложнейшие приборы «Обри» и инерционный ударник (ИУ) для корабельных
-                и авиационных торпед. С прибытием на новое место предприятие
-                получило задание резко расширить линейку приборов для
-                Военно-морского флота.
+                сложнейшие приборы «Обри» и инерционный ударник (ИУ) для
+                корабельных и авиационных торпед. С прибытием на новое место
+                предприятие получило задание резко расширить линейку приборов
+                для Военно-морского флота.
               </p>
 
               <p>
@@ -56,6 +52,9 @@ const Production = () => {
             <div>
               <figure className={classNames(styles.img, styles._1)}>
                 <Image src="/images/petrovsky/4/2.jpg" layout="fill" />
+                <figcaption>
+                  Докладная записка об эвакуации завода и освоении новых изделий
+                </figcaption>
               </figure>
             </div>
           }

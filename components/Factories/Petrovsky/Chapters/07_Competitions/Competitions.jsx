@@ -2,11 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  CommonText,
-  CommonImage
-} from '../../../../'
+import { MainText, CommonText, CommonImage } from '../../../../'
 
 import styles from './Competitions.module.css'
 
@@ -29,6 +25,10 @@ const Competitions = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/petrovsky/8/1.jpg" layout="fill" />
+            <figcaption>
+              Сотрудники завода им. Г. И. Петровского, награжденные за работу в
+              годы войны
+            </figcaption>
           </figure>
         </CommonImage>
 

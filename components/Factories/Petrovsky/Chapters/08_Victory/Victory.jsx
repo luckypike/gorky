@@ -2,10 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  Columns
-} from '../../../../'
+import { MainText, Columns } from '../../../../'
 
 import styles from './Victory.module.css'
 
@@ -28,6 +25,7 @@ const Victory = () => {
             <div>
               <figure className={classNames(styles.img, styles.main)}>
                 <Image src="/images/petrovsky/9/1.jpg" layout="fill" />
+                <figcaption>Орден Трудового Красного Знамени</figcaption>
               </figure>
             </div>
           }

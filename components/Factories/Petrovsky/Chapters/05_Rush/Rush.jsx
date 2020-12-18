@@ -2,12 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  CommonText,
-  CommonImage,
-  Columns
-} from '../../../../'
+import { MainText, CommonText, CommonImage, Columns } from '../../../../'
 
 import styles from './Rush.module.css'
 
@@ -29,6 +24,9 @@ const Rush = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/petrovsky/6/3.jpg" layout="fill" />
+            <figcaption>
+              Работники завода им. Г. И. Петровского в годы войны
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -62,6 +60,9 @@ const Rush = () => {
             <div>
               <figure className={classNames(styles.img, styles._2)}>
                 <Image src="/images/petrovsky/6/2.jpg" layout="fill" />
+                <figcaption>
+                  Из объяснительной записки к годовому отчету завода за 1944 год
+                </figcaption>
               </figure>
             </div>
           }
