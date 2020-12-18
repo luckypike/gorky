@@ -33,7 +33,7 @@ const Smithy = () => {
         </CommonImage>
 
         <Columns
-          left={
+          right={
             <div>
               <p>
                 На них курсанты получали навыки работы в условиях, приближенных
@@ -47,7 +47,7 @@ const Smithy = () => {
               </p>
             </div>
           }
-          right={
+          left={
             <div>
               <figure className={classNames(styles.img, styles._1)}>
                 <Image src="/images/nitel/12/2.jpg" layout="fill" />

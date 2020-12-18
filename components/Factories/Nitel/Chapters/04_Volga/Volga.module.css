@@ -2,11 +2,11 @@
   composes: ari from '../../../../Images.module.css';
 
   &.main {
-    padding-top: calc(1765 / 1368 * 100%);
+    padding-top: calc(1212 / 1400 * 100%);
   }
 
   &._1 {
-    padding-top: calc(830 / 1013 * 100%);
+    padding-top: calc(1212 / 1400 * 100%);
   }
 }
 

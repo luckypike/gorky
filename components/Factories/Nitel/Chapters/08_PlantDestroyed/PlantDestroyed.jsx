@@ -5,7 +5,6 @@ import Image from 'next/image'
 import {
   MainText,
   CommonImage,
-  CommonText,
   Speech
 } from '../../../../'
 
@@ -30,6 +29,11 @@ const PlantDestroyed = () => {
             декабре было выполнено не только задание месяца, но и восполнено
             количество изделий, не выпущенных в ноябре.
           </p>
+
+          <p className={styles.vrezka}>
+            Ситуация после бомбардировки была катастрофическая, но завод
+            простаивал всего три дня
+          </p>
         </MainText>
 
         <CommonImage>
@@ -37,13 +41,6 @@ const PlantDestroyed = () => {
             <Image src="/images/nitel/9/1.jpg" layout="fill" />
           </figure>
         </CommonImage>
-
-        <CommonText>
-          <p className={styles.vrezka}>
-            Ситуация после бомбардировки была катастрофическая, но завод
-            простаивал всего три дня
-          </p>
-        </CommonText>
 
         <Speech
           title="«Это были дни огромного человеческого горя»"

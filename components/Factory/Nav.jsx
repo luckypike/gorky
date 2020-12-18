@@ -14,7 +14,11 @@ function ActiveLink ({ href, title }) {
 
   return (
     <Link href={href}>
-      <a className={classNames({ [s.active]: router.pathname === href })}>{title}</a>
+      <a className={classNames({ [s.active]: router.pathname === href })}>
+        <span>
+          {title}
+        </span>
+      </a>
     </Link>
   )
 }

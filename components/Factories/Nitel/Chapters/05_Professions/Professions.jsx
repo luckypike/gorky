@@ -42,12 +42,6 @@ const Professions = () => {
           }
         />
 
-        <CommonImage content>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/nitel/6/2.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
-
         <CommonText>
           <p className={styles.vrezka}>
             На фронт ушли около 40% рабочих. Их заменили молодежь и
@@ -56,6 +50,12 @@ const Professions = () => {
             уборщицы осваивали профессии токаря, слесаря, фрезеровщика
           </p>
         </CommonText>
+
+        <CommonImage content>
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/nitel/6/2.jpg" layout="fill" />
+          </figure>
+        </CommonImage>
       </div>
     </div>
   )

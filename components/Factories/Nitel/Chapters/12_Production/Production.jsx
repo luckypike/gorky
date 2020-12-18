@@ -5,7 +5,6 @@ import Image from 'next/image'
 import {
   MainText,
   CommonImages,
-  CommonText,
   Columns
 } from '../../../../'
 
@@ -46,6 +45,11 @@ const Production = () => {
                 Красной Армии специальной аппаратурой 21 января 1944 года завод
                 был награжден орденом Ленина.
               </p>
+
+              <p className={styles.vrezka}>
+                С 1941-го по 1945 год завод поставил на фронт 178 тыс. комплектов
+                радиостанций более 50 типов
+              </p>
             </div>
           }
           right={
@@ -65,13 +69,6 @@ const Production = () => {
             <Image src="/images/nitel/13/2.jpg" layout="fill" />
           </figure>
         </CommonImages>
-
-        <CommonText>
-          <p className={styles.vrezka}>
-            С 1941-го по 1945 год завод поставил на фронт 178 тыс. комплектов
-            радиостанций более 50 типов
-          </p>
-        </CommonText>
       </div>
     </div>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage } from '../../../../'
+import { MainText, CommonText, CommonImage, CommonImages } from '../../../../'
 
 import styles from './FirstFight.module.css'
 
@@ -17,12 +17,6 @@ const FirstFight = () => {
             «Щуки» двумя торпедами потопил вражеское судно, которое перевозило артиллерию и танки.
           </p>
         </MainText>
-
-        <CommonImage content>
-          <figure className={classNames(styles.img, styles._1)}>
-            <Image src="/images/sormovo_sudo/4/3.jpg" layout="fill" />
-          </figure>
-        </CommonImage>
 
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
@@ -44,11 +38,15 @@ const FirstFight = () => {
           </p>
         </CommonText>
 
-        <CommonImage content>
+        <CommonImages>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/sormovo_sudo/4/1.jpg" layout="fill" />
           </figure>
-        </CommonImage>
+
+          <figure className={classNames(styles.img, styles._1)}>
+            <Image src="/images/sormovo_sudo/4/3.jpg" layout="fill" />
+          </figure>
+        </CommonImages>
       </div>
     </div>
   )
