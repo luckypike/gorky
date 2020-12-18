@@ -25,6 +25,7 @@ const IsALive = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gaz/13/5.jpg" layout="fill" />
+            <figcaption>Отряд первой медицинской помощи</figcaption>
           </figure>
         </CommonImage>
       </div>
@@ -55,6 +56,10 @@ const IsALive = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gaz/13/1.jpg" layout="fill" />
+            <figcaption>
+              Учащиеся школы № 19 передают на фронт броневик «Автозаводский
+              школьник»
+            </figcaption>
           </figure>
         </CommonImage>
 

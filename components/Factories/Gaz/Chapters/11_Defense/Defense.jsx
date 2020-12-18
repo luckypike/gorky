@@ -20,16 +20,21 @@ const Defense = () => {
             Свердловске и № 38 в Кирове. ГАЗ выпустил почти в пять раз больше
             таких танков, чем оба других завода.
           </p>
-
         </MainText>
 
         <CommonImages middle>
-         <figure className={classNames(styles.img, styles.main)}>
+          <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gaz/11/1.jpg" layout="fill" />
+            <figcaption>
+              Стахановец-инструментальщик Г. Масленников за работой
+            </figcaption>
           </figure>
 
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/gaz/11/2.jpg" layout="fill" />
+            <figcaption>
+              Стахановец комсомолец И. Крацер на рабочем месте
+            </figcaption>
           </figure>
         </CommonImages>
 
@@ -58,6 +63,9 @@ const Defense = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles._6)}>
             <Image src="/images/gaz/11/7.jpg" layout="fill" />
+            <figcaption>
+              Первый легкий танк Т-70 сошел с конвейера в 1942 году
+            </figcaption>
           </figure>
         </CommonImage>
       </div>
@@ -80,8 +88,7 @@ const Defense = () => {
             Окончательно Красная Армия решила отказаться от Т-70 после Курской
             битвы в 1943 году. На базе Т-70 с конца 1942 года уже выпускали
             самоходную установку СУ-76. Ее спроектировали на заводе № 38 в
-            Кирове.
-            Первые модификации были неудачными, виновным в этом признали
+            Кирове. Первые модификации были неудачными, виновным в этом признали
             конструктора кировского предприятия Семена Гинзбурга. В 1943 году
             его сняли с должности и отправили на фронт. Выпуск СУ-76 прекратили.
             Однако необходимость фронта в самоходных установках была острой, и
@@ -93,6 +100,9 @@ const Defense = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gaz/11/3.jpg" layout="fill" />
+            <figcaption>
+              Конструкторы ГАЗа модернизировали СУ-76 под нужды фронта
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -115,13 +125,17 @@ const Defense = () => {
           </p>
 
           <p className={styles.vrezka}>
-            За годы войны в СССР было выпущено 13,7 тыс. СУ-76, из них ГАЗ построил 9,1 тыс.
+            За годы войны в СССР было выпущено 13,7 тыс. СУ-76, из них ГАЗ
+            построил 9,1 тыс.
           </p>
         </CommonText>
 
         <CommonImage>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/gaz/11/5.jpg" layout="fill" />
+            <figcaption>
+              Производство бронеавтомобилей БА-64 на ГАЗе наладили в 1942 году
+            </figcaption>
           </figure>
         </CommonImage>
 

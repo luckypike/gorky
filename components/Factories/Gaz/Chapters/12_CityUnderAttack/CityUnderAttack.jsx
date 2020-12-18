@@ -2,7 +2,13 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage, Speech, Columns } from '../../../../'
+import {
+  MainText,
+  CommonText,
+  CommonImage,
+  Speech,
+  Columns
+} from '../../../../'
 
 import styles from './CityUnderAttack.module.css'
 
@@ -16,17 +22,20 @@ const CityUnderAttack = () => {
             бомбардировке. По данным Центрального архива Министерства обороны,
             удары наносились в ночь на 5, 6, 7, 8, 10, 13 и 22 июня. Всего в
             налетах участвовало 655 самолетов врага. Из 2,2 тыс. сброшенных бомб
-            более 1,5 тыс. поразили объекты автозавода.
-            Разрушенными оказались более 50 зданий и сооружений, в том числе
-            цехи шасси, колесный, монтажный, главный конвейер, кузовной корпус,
-            прессовый, кузнечный, литейный, паровозное депо и другие сооружения.
-            Стратегический завод был практически разрушен.
+            более 1,5 тыс. поразили объекты автозавода. Разрушенными оказались
+            более 50 зданий и сооружений, в том числе цехи шасси, колесный,
+            монтажный, главный конвейер, кузовной корпус, прессовый, кузнечный,
+            литейный, паровозное депо и другие сооружения. Стратегический завод
+            был практически разрушен.
           </p>
         </MainText>
 
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gaz/12/2.jpg" layout="fill" />
+            <figcaption>
+              Немецкая аэрофотосъемка Автозаводского района
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -55,6 +64,9 @@ const CityUnderAttack = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/gaz/12/7.jpg" layout="fill" />
+            <figcaption>
+              Схема попадания авиабомб при налетах вражеских самолетов
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -62,9 +74,8 @@ const CityUnderAttack = () => {
           <p>
             Погибли 254 жителя района, в том числе передовики и руководители
             ГАЗа, и 28 бойцов противовоздушной обороны. Более 500 человек были
-            ранены.
-            Ущерб от бомбежек был оценен в 191 млн руб. После авиаударов ГКО
-            издал распоряжение о начале расследования недостатков
+            ранены. Ущерб от бомбежек был оценен в 191 млн руб. После авиаударов
+            ГКО издал распоряжение о начале расследования недостатков
             противовоздушной обороны Горького. 6 июня уволили командующего
             горьковским корпусным районом ПВО Осипова. 10 июня от должности
             отстранили директора ГАЗа А.М. Лившица. Руководителем завода вновь
@@ -90,6 +101,9 @@ const CityUnderAttack = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/gaz/12/3.jpg" layout="fill" />
+            <figcaption>
+              Главный конвейер был практически разрушен после бомбежек
+            </figcaption>
           </figure>
         </CommonImage>
       </div>
@@ -130,6 +144,9 @@ const CityUnderAttack = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles._4)}>
             <Image src="/images/gaz/12/4.jpg" layout="fill" />
+            <figcaption>
+              Разрушенные литейные цехи и механосборочный корпус
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -154,7 +171,7 @@ const CityUnderAttack = () => {
         </CommonText>
 
         <Columns
-          left={(
+          left={
             <div>
               <figure className={classNames(styles.img, styles._5)}>
                 <Image src="/images/gaz/12/5.jpg" layout="fill" />
@@ -164,13 +181,12 @@ const CityUnderAttack = () => {
                 <Image src="/images/gaz/12/6.jpg" layout="fill" />
               </figure>
             </div>
-          )}
-
-          right={(
-          <figure className={classNames(styles.img, styles._6)}>
-            <Image src="/images/gaz/12/1.jpg" layout="fill" />
-          </figure>
-          )}
+          }
+          right={
+            <figure className={classNames(styles.img, styles._6)}>
+              <Image src="/images/gaz/12/1.jpg" layout="fill" />
+            </figure>
+          }
         />
       </div>
     </div>

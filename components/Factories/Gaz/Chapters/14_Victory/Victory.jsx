@@ -25,6 +25,7 @@ const Victory = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/gaz/14/2.jpg" layout="fill" />
+            <figcaption>Полноразмерный макет будущей «Победы»</figcaption>
           </figure>
         </CommonImage>
       </div>
@@ -47,17 +48,21 @@ const Victory = () => {
           </p>
 
           <p className={styles.vrezka}>
-            Сейчас ГАЗ выпускает легкие и среднетоннажные коммерческие автомобили, занимая более 50% российского рынка. Продукция ГАЗа поставляется в 40 стран мира
+            Сейчас ГАЗ выпускает легкие и среднетоннажные коммерческие
+            автомобили, занимая более 50% российского рынка. Продукция ГАЗа
+            поставляется в 40 стран мира
           </p>
         </CommonText>
 
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/gaz/14/1.jpg" layout="fill" />
+            <figcaption>Первые макеты автомобилей делали из дерева</figcaption>
           </figure>
 
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/gaz/14/3.jpg" layout="fill" />
+            <figcaption>Проектирование «Победы» заняло два года</figcaption>
           </figure>
         </CommonImages>
       </div>
