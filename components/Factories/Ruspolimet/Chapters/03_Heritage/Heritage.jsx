@@ -35,10 +35,17 @@ const Heritage = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/ruspolimet/3/1.jpg" layout="fill" />
+            <figcaption>
+              Машина, доставлявшая рабочих на Кулебакский горный завод. У проход
+              - ной завода. Конец 1920 — начало 1930-х годов
+            </figcaption>
           </figure>
 
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/ruspolimet/3/2.jpg" layout="fill" />
+            <figcaption>
+              Летний ресторан в парке Кулебак. Конец 1920 — начало 1930 годов
+            </figcaption>
           </figure>
         </CommonImages>
 
