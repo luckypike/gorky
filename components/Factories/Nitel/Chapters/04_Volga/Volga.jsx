@@ -26,6 +26,10 @@ const Volga = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/nitel/5/2.jpg" layout="fill" />
+            <figcaption>
+              Радиостанция РАФ «Волга» предназначалась для связи штабов высших
+              войсковых соединений и весила 280 кг
+            </figcaption>
           </figure>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/nitel/5/1.jpg" layout="fill" />

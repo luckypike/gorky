@@ -54,6 +54,9 @@ const Professions = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/nitel/6/2.jpg" layout="fill" />
+            <figcaption>
+              Курсы военной подготовки проходили все сотрудники предприятий
+            </figcaption>
           </figure>
         </CommonImage>
       </div>

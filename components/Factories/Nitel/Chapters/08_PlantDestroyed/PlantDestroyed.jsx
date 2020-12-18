@@ -2,11 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  CommonImage,
-  Speech
-} from '../../../../'
+import { MainText, CommonImage, Speech } from '../../../../'
 
 import styles from './PlantDestroyed.module.css'
 
@@ -39,6 +35,10 @@ const PlantDestroyed = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/nitel/9/1.jpg" layout="fill" />
+            <figcaption>
+              Главный корпус завода, разрушенный во время бомбежки в ноябре 1941
+              года
+            </figcaption>
           </figure>
         </CommonImage>
 

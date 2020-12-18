@@ -30,6 +30,10 @@ const FatalDate = () => {
           </figure>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/nitel/8/2.jpg" layout="fill" />
+            <figcaption>
+              Постановление Горьковского городского комитета обороны об
+              обеспечении восстановительных работ на заводе им. В.И. Ленина.
+            </figcaption>
           </figure>
         </CommonImages>
 

@@ -19,6 +19,10 @@ const Enterprise = () => {
         <MainImage>
           <figure className={classNames(styles.img, styles.intro)}>
             <Image src="/images/nitel/img.jpg" layout="fill" />
+            <figcaption>
+              Строительство нижегородского отделения компании Siemens & Halske
+              началось в 1915 году
+            </figcaption>
           </figure>
         </MainImage>
       </div>
@@ -51,6 +55,9 @@ const Enterprise = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/nitel/3/3.jpg" layout="fill" />
+            <figcaption>
+              В 1917 году новый завод получил разрешение на ввод в эксплуатацию
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -78,6 +85,10 @@ const Enterprise = () => {
             <div>
               <figure className={classNames(styles.img, styles._1)}>
                 <Image src="/images/nitel/3/1.jpg" layout="fill" />
+                <figcaption>
+                  В 1934 году завод укрепил мощность: через Оку к предприятию
+                  протянули электрокабели
+                </figcaption>
               </figure>
             </div>
           }
@@ -89,11 +100,11 @@ const Enterprise = () => {
             П-8), настольные и стенные индуктивные телефонные аппараты,
             репродукторы, динамики и громкоговорители стали поступать во второй
             половине 1920-х годов. Одновременно завод занимался разработкой и
-            производством связных радиостанций.
-            С 1924 до 1929 года нижегородское предприятие выпускало радиодетали,
-            головные телефоны, репродукторы. С начала 1930-х годов стартовал
-            выпуск связных радиостанций, которые позднее состояли на вооружении
-            почти у всех войск.
+            производством связных радиостанций. С 1924 до 1929 года
+            нижегородское предприятие выпускало радиодетали, головные телефоны,
+            репродукторы. С начала 1930-х годов стартовал выпуск связных
+            радиостанций, которые позднее состояли на вооружении почти у всех
+            войск.
           </p>
         </CommonText>
 
@@ -102,6 +113,7 @@ const Enterprise = () => {
             <div>
               <figure className={classNames(styles.img, styles._2)}>
                 <Image src="/images/nitel/3/2.jpg" layout="fill" />
+                <figcaption>Цех сборки репродукторов. 1933 год</figcaption>
               </figure>
             </div>
           }

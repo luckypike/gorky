@@ -2,12 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  CommonImage,
-  Columns,
-  Speech
-} from '../../../../'
+import { MainText, CommonImage, Columns, Speech } from '../../../../'
 
 import styles from './Smithy.module.css'
 
@@ -29,6 +24,10 @@ const Smithy = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/nitel/12/1.jpg" layout="fill" />
+            <figcaption>
+              Курская дуга. Командир батареи лейтенант Н. Ковалев ведет
+              наблюдение и отдает приказы радиотелефонисту. 1943 год
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -51,6 +50,10 @@ const Smithy = () => {
             <div>
               <figure className={classNames(styles.img, styles._1)}>
                 <Image src="/images/nitel/12/2.jpg" layout="fill" />
+                <figcaption>
+                  Выпускницы Горьковской военной школы радиоспециалистов. 1942
+                  год
+                </figcaption>
               </figure>
             </div>
           }

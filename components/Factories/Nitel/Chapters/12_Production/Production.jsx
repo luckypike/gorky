@@ -2,11 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  CommonImages,
-  Columns
-} from '../../../../'
+import { MainText, CommonImages, Columns } from '../../../../'
 
 import styles from './Production.module.css'
 
@@ -47,8 +43,8 @@ const Production = () => {
               </p>
 
               <p className={styles.vrezka}>
-                С 1941-го по 1945 год завод поставил на фронт 178 тыс. комплектов
-                радиостанций более 50 типов
+                С 1941-го по 1945 год завод поставил на фронт 178 тыс.
+                комплектов радиостанций более 50 типов
               </p>
             </div>
           }
@@ -64,9 +60,15 @@ const Production = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/nitel/13/1.jpg" layout="fill" />
+            <figcaption>
+              МГУ-39М: мощная громкоговорящая установка для агитации войск
+            </figcaption>
           </figure>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/nitel/13/2.jpg" layout="fill" />
+            <figcaption>
+              ТПУ-Ф: переговорное устройство для связи экипажа в танке
+            </figcaption>
           </figure>
         </CommonImages>
       </div>

@@ -2,12 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  CommonImage,
-  CommonText,
-  Columns
-} from '../../../../'
+import { MainText, CommonImage, CommonText, Columns } from '../../../../'
 
 import styles from './Dvina.module.css'
 
@@ -36,6 +31,9 @@ const Dvina = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/nitel/4/1.jpg" layout="fill" />
+            <figcaption>
+              Коллектив одного из цехов завода им. В. И. Ленина. 1941 год
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -59,6 +57,10 @@ const Dvina = () => {
             <div>
               <figure className={classNames(styles.img, styles._1)}>
                 <Image src="/images/nitel/4/2.jpg" layout="fill" />
+                <figcaption>
+                  Радиостанция РСБ «Двина» и ее модификации были универсальными:
+                  монтировались в самолетах, машинах, танках
+                </figcaption>
               </figure>
             </div>
           }

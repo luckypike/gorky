@@ -2,12 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  CommonImage,
-  CommonText,
-  Columns
-} from '../../../../'
+import { MainText, CommonImage, CommonText, Columns } from '../../../../'
 
 import styles from './Director.module.css'
 
@@ -31,6 +26,10 @@ const Director = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/nitel/14/5.jpg" layout="fill" />
+            <figcaption>
+              Митинг вручения Красного знамени Государственного комитета обороны
+              на заводе им. В.И. Ленина. 1946 год
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -55,6 +54,10 @@ const Director = () => {
             <div>
               <figure className={classNames(styles.img, styles._4)}>
                 <Image src="/images/nitel/14/4.jpg" layout="fill" />
+                <figcaption>
+                  Красное знамя Государственного комитета обороны на заводе им.
+                  В.И. Ленина. 1946 год
+                </figcaption>
               </figure>
             </div>
           }
@@ -65,6 +68,10 @@ const Director = () => {
             <div>
               <figure className={classNames(styles.img, styles._1)}>
                 <Image src="/images/nitel/14/1.jpg" layout="fill" />
+                <figcaption>
+                  Регулировщица монтажно-телевизионного цеха завода им. В.И.
+                  Ленина
+                </figcaption>
               </figure>
             </div>
           }
@@ -99,6 +106,10 @@ const Director = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/nitel/14/2.jpg" layout="fill" />
+            <figcaption>
+              Орден Ленина, который получил НИТЕЛ за образцовое выполнение
+              заданий правительства
+            </figcaption>
           </figure>
         </CommonImage>
       </div>

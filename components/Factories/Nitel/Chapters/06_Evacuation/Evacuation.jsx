@@ -2,11 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import {
-  MainText,
-  Columns,
-  Speech
-} from '../../../../'
+import { MainText, Columns, Speech } from '../../../../'
 
 import styles from './Evacuation.module.css'
 
@@ -62,6 +58,11 @@ const Evacuation = () => {
             <div>
               <figure className={classNames(styles.img, styles.main)}>
                 <Image src="/images/nitel/7/1.jpg" layout="fill" />
+                <figcaption>
+                  Секретная телеграмма директору завода № 197 по вопросу
+                  электроаппаратуры для неконтактного взрывателя со
+                  стабилизатором для торпед
+                </figcaption>
               </figure>
             </div>
           }

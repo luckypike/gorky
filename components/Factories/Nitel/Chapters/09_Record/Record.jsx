@@ -29,6 +29,9 @@ const Record = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/nitel/10/2.jpg" layout="fill" />
+            <figcaption>
+              Коллектив одного из цехов завода им. В. И. Ленина
+            </figcaption>
           </figure>
         </CommonImage>
 
@@ -63,6 +66,10 @@ const Record = () => {
             <div>
               <figure className={classNames(styles.img, styles._1)}>
                 <Image src="/images/nitel/10/1.jpg" layout="fill" />
+                <figcaption>
+                  Орган парткома, дирекции и завкома завода им. В. И. Ленина
+                  «Ленинец». Выпуск №107 за 25 июля 1941 год
+                </figcaption>
               </figure>
             </div>
           }
