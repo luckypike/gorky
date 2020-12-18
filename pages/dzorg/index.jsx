@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Unique,
@@ -29,6 +29,13 @@ const Dzorg = () => {
       <Zverev />
 
       <FirstTime />
+
+      <NextFactory
+        href="/nmz"
+        id="nmz"
+        title="Горьковский машино­строительный Завод № 92 имени И. В. Сталина"
+        desc="АО «Нижегородский машиностроительный завод»"
+      />
     </Factory>
   )
 }

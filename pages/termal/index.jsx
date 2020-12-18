@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Plant,
@@ -15,6 +15,13 @@ const Termal = () => {
       <Plant />
       <Wars />
       <Ten />
+
+      <NextFactory
+        href="/shipyard"
+        id="shipyard"
+        title="Мордовщиковский судомостостроительный завод № 342"
+        desc="АО «Окская судоверфь»"
+      />
     </Factory>
   )
 }

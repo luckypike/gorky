@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   StrategicMove,
@@ -27,6 +27,12 @@ const Gzhd = () => {
       <Feats />
       <ExceptBread />
       <Roads />
+      <NextFactory
+        href="/sokol"
+        title="ГОРЬКОВСКИЙ АВИАСТРОИТЕЛЬНЫЙ ЗАВОД № 21
+        ИМЕНИ С. ОРДЖОНИКИДЗЕ"
+        desc="Нижегородский авиастроительный завод «Сокол» — филиал АО «РСК „МиГ“»"
+      />
     </Factory>
   )
 }

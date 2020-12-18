@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   GlassGiant,
@@ -21,6 +21,14 @@ const Adcbsz = () => {
       <Fuel />
       <WomenFront />
       <Glass />
+
+      <NextFactory
+        href="/dzorg"
+        id="dzorg"
+        title="ДЗЕРЖИНСКИЙ
+        ЗАВОД № 148 «РУЛОН»"
+        desc="ОАО «Дзержинское оргстекло»"
+      />
     </Factory>
   )
 }

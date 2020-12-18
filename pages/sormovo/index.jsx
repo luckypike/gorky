@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 
 import {
   Intro,
@@ -37,6 +37,12 @@ export default function Sormovo () {
       <ShellsForKatyush />
 
       <AfterWar />
+
+      <NextFactory
+        href="/drobmash"
+        title="ВЫКСУНСКИЙ ЗАВОД ДРОБИЛЬНО-РАЗМОЛЬНОГО ОБОРУДОВАНИЯ"
+        desc="ЗАО «Дробмаш», АО «Завод корпусов»"
+      />
     </Factory>
   )
 }

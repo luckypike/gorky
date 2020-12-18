@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   QuickStart,
@@ -31,6 +31,13 @@ const Nmz = () => {
       <Economy />
       <Rear />
       <Victory />
+
+      <NextFactory
+        href="/rumo"
+        id="rumo"
+        title="ГОРЬКОВСКИЙ ЗАВОД № 718 «ДВИГАТЕЛЬ РЕВОЛЮЦИИ»"
+        desc="ОАО РУМО"
+      />
     </Factory>
   )
 }

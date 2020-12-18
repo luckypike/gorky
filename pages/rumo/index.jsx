@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Oldest,
@@ -23,6 +23,13 @@ const Rumo = () => {
       <Masking />
       <Сalls />
       <ReturnToPlace />
+
+      <NextFactory
+        href="/paz"
+        id="paz"
+        title="Павловский завод автотракторного инструмента имени А. А. Жданова"
+        desc="ООО «Павловский автобусный завод»"
+      />
     </Factory>
   )
 }

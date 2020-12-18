@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Before,
@@ -13,6 +13,13 @@ const Shipyard = () => {
       <Intro />
       <Before />
       <Crossing />
+
+      <NextFactory
+        href="/nitel"
+        id="nitel"
+        title="Горьковский Завод № 197 имени В. И. Ленина"
+        desc="ПАО «Нижегородский телевизионный завод имени В. И. Ленина»"
+      />
     </Factory>
   )
 }

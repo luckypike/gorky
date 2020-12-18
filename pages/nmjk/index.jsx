@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   LikeClockwork,
@@ -19,6 +19,13 @@ const Nmjk = () => {
       <Products />
       <InSoap />
       <Expands />
+
+      <NextFactory
+        href="/kaprolaktam"
+        id="kaprolaktam"
+        title="Дзержинский Завод № 96"
+        desc="ОАО «Капролактам» (ликвидировано)"
+      />
     </Factory>
   )
 }

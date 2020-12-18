@@ -232,6 +232,10 @@
   composes: bt from '../components/Fonts.module.css';
 }
 
+.h1 {
+  composes: h2 from '../components/Fonts.module.css';
+}
+
 .factories {
   padding-top: calc(var(--yr) * 10);
 }
@@ -318,4 +322,23 @@
 
 .dt {
   padding: 0 calc(var(--xr) * 1);
+}
+
+.about {
+  padding: 0 calc(var(--xr) * 1);
+  margin-bottom: var(--sb);
+  display: grid;
+  grid-gap: 8vh calc(1 / 13 * 100%);
+
+  @media (--s) {
+    padding: calc(var(--yr) * 10) calc(1 / 13 * 100%);
+  }
+
+  @media (--l) {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    & .txt {
+      grid-column: 1 / span 2;
+    }
+  }
 }
