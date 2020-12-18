@@ -19,6 +19,7 @@ const Mine = () => {
         <MainImage>
           <figure className={classNames(styles.img, styles.intro)}>
             <Image src="/images/zfs/img.jpg" layout="fill" />
+            <figcaption>Конвейер сборки серийных станков</figcaption>
           </figure>
         </MainImage>
       </div>

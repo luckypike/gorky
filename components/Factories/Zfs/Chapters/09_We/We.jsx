@@ -36,6 +36,10 @@ const We = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/zfs/10/1.jpg" layout="fill" />
+            <figcaption>
+              Возложение цветов к обелиску воинам-станкозаводцам, отдавшим жизнь
+              за Родину в 1941–1945 годах, 9 Мая 1986 года
+            </figcaption>
           </figure>
         </CommonImage>
       </div>

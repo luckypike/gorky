@@ -26,9 +26,15 @@ const More = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/zfs/9/2.jpg" layout="fill" />
+            <figcaption>
+              Рабочие Горьковского завода фрезерных станков
+            </figcaption>
           </figure>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/zfs/9/3.jpg" layout="fill" />
+            <figcaption>
+              Цех Горьковского завода фрезерных станков, 1976 год
+            </figcaption>
           </figure>
         </CommonImages>
       </div>
