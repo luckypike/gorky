@@ -19,6 +19,9 @@ const ShellsForKatyush = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sormovo/10/2.jpg" layout="fill" />
+            <figcaption>
+              Завод был головным предприятием по сборке снарядов для «Катюш»
+            </figcaption>
           </figure>
         </CommonImage>
 

@@ -2,7 +2,13 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainText, CommonText, CommonImage, Speech, CommonImages } from '../../../../'
+import {
+  MainText,
+  CommonText,
+  CommonImage,
+  Speech,
+  CommonImages
+} from '../../../../'
 
 import styles from './Reworking.module.css'
 
@@ -22,17 +28,26 @@ const Reworking = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/sormovo/7/3.jpg" layout="fill" />
+            <figcaption>Испытательный танковый полигон</figcaption>
           </figure>
         </CommonImage>
 
         <CommonImages>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sormovo/7/1.jpg" layout="fill" />
+            <figcaption>
+              Колонна танков Т-34-85 195-го отдельного танкового батальона 95-й
+              танковой бригады движется по лесной дороге в ходе операции
+              «Багратион». Июль 1944 года
+            </figcaption>
           </figure>
 
           <figure className={classNames(styles.img, styles._1)}>
-              <Image src="/images/sormovo/7/2.jpg" layout="fill" />
-            </figure>
+            <Image src="/images/sormovo/7/2.jpg" layout="fill" />
+            <figcaption>
+              Мойка танка Т-34-85 после испытаний — наркомовского пробега
+            </figcaption>
+          </figure>
         </CommonImages>
       </div>
 

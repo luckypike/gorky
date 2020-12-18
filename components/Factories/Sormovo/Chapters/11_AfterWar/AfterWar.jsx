@@ -20,6 +20,10 @@ const AfterWar = () => {
         <CommonImage>
           <figure className={classNames(styles.img, styles.main)}>
             <Image src="/images/sormovo/11/1.jpg" layout="fill" />
+            <figcaption>
+              После войны в Нижегородском кремле установили танк Т-34-85,
+              который участвовал в освобождении Вены
+            </figcaption>
           </figure>
         </CommonImage>
 
