@@ -2,7 +2,13 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import { MainImage, MainText, CommonText, CommonImages, CommonImage } from '../../../../'
+import {
+  MainImage,
+  MainText,
+  CommonText,
+  CommonImages,
+  CommonImage
+} from '../../../../'
 
 import styles from './Modernization.module.css'
 
@@ -13,6 +19,7 @@ const Modernization = () => {
         <MainImage>
           <figure className={classNames(styles.img, styles.intro)}>
             <Image src="/images/vmz/img.jpg" layout="fill" />
+            <figcaption>Выкса. Верхний завод. XIX век</figcaption>
           </figure>
         </MainImage>
 
@@ -22,9 +29,8 @@ const Modernization = () => {
             металлургических предприятий, основанного братьями Баташевыми в 1757
             году, Выксунского металлургического завода (ВМЗ), проводя
             модернизацию в 1930-е годы, подготовило его к работе в военных
-            условиях.
-            В тот период в оснащение завода было вложено 20 млн руб. На эти
-            средства обновили доменное производство, построили новые
+            условиях. В тот период в оснащение завода было вложено 20 млн руб.
+            На эти средства обновили доменное производство, построили новые
             мартеновский и трубный цехи, капитально обновили старомартеновский
             цех. В результате две мартеновские печи ВМЗ оказались самыми мощными
             в Горьковской области, а цех электросварных труб — единственным в
@@ -42,10 +48,17 @@ const Modernization = () => {
         <CommonImages>
           <figure className={classNames(styles.img, styles._1)}>
             <Image src="/images/vmz/3/1.jpg" layout="fill" />
+            <figcaption>
+              Вид на цехи Выксунского металлургического завода — одного из
+              старейших в России
+            </figcaption>
           </figure>
 
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/vmz/3/2.jpg" layout="fill" />
+            <figcaption>
+              В 1930-е годы активно велось строительство новых цехов ВМЗ
+            </figcaption>
           </figure>
         </CommonImages>
 
@@ -70,6 +83,9 @@ const Modernization = () => {
         <CommonImage content>
           <figure className={classNames(styles.img, styles._3)}>
             <Image src="/images/vmz/3/3.jpg" layout="fill" />
+            <figcaption>
+              Строительство новомартеновского цеха ВМЗ. 1931 год
+            </figcaption>
           </figure>
         </CommonImage>
       </div>
