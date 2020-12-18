@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   CombatAttachment,
@@ -21,6 +21,12 @@ const Etna = () => {
       <MachinesAndPeople />
       <Сreativity />
       <AfterWar />
+      <NextFactory
+        href="/gzhd"
+        id="gzhd"
+        title="ГОРЬКОВСКАЯ ЖЕЛЕЗНАЯ ДОРОГА"
+        desc="Горьковская железная дорога — филиал ОАО РЖД"
+      />
     </Factory>
   )
 }

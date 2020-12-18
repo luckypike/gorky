@@ -21,3 +21,13 @@
   visibility: hidden;
   opacity: 0;
 }
+
+.loader {
+  background: url(../../assets/puff.svg) center no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 88px;
+  height: 88px;
+  transform: translate(-50%, -50%);
+}

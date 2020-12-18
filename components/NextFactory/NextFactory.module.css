@@ -1,0 +1,52 @@
+.a {
+  background: rgb(var(--hl_color));
+  color: #fff;
+  display: block;
+  padding: var(--sb) var(--xr);
+
+  @media (--s) {
+    padding: var(--sb) calc(2 / 13 * 100%);
+  }
+
+  @media (--l) {
+    padding: var(--sb) calc(3 / 13 * 100%);
+  }
+}
+
+.title {
+  margin-top: 1.5rem;
+  composes: h1 from "../Fonts.module.css";
+}
+
+.next {
+  margin-top: var(--sb);
+  font-family: var(--ff_sans);
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (--s) {
+    grid-template-columns: 2fr 5fr;
+  }
+
+  & svg {
+    display: block;
+    height: 19px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -9px;
+  }
+
+  & .arrow {
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s;
+  }
+}
+
+.a:hover {
+  & .arrow {
+    transform: translateX(2rem);
+  }
+}

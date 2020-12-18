@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Coach,
@@ -25,6 +25,13 @@ const Gidromash = () => {
       <Quality />
       <Easier />
       <Achievements />
+
+      <NextFactory
+        href="/teploobmennik"
+        id="teploobmennik"
+        title="ГОСУДАРСТВЕННЫЙ ЗАВОД № 469ИМЕНИ М. М. ГРОМОВА"
+        desc="АО ПКО «Теплообменник»"
+      />
     </Factory>
   )
 }

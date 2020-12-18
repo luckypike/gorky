@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Chemistry,
@@ -19,6 +19,13 @@ const Kaprolaktam = () => {
       <Weapon />
       <Cooperation />
       <Farewell />
+
+      <NextFactory
+        href="/sormovo_sudo"
+        id="sormovo_sudo"
+        title="Горьковский Завод № 112 «Красное Сормово»"
+        desc="ПАО «Завод „Красное Сормово“»"
+      />
     </Factory>
   )
 }

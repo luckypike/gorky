@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Innovator,
@@ -23,6 +23,13 @@ const Yakor = () => {
       <Rationality />
       <Force />
       <Smithy />
+
+      <NextFactory
+        href="/nmjk"
+        id="nmjk"
+        title="Горьковский жиркомбинат имени С. М. Кирова "
+        desc="АО НМЖК"
+      />
     </Factory>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Mine,
@@ -33,6 +33,13 @@ const Zfs = () => {
       <More />
 
       <We />
+
+      <NextFactory
+        href="/sverdlov"
+        id="sverdlov"
+        title="ДЗЕРЖИНСКИЙ ЗАВОД № 80 ИМЕНИ Я. М. СВЕРДЛОВА"
+        desc="ФКП «Завод имени Я. М. Свердлова»"
+      />
     </Factory>
   )
 }

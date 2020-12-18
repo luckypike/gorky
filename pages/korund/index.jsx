@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Birth,
@@ -23,6 +23,13 @@ const Korund = () => {
       <Temperature />
       <Awards />
       <Plant />
+
+      <NextFactory
+        href="/yakor"
+        id="yakor"
+        title="Горьковский завод № 646 «Красный якорь»"
+        desc="АО «Завод „Красный якорь“»"
+      />
     </Factory>
   )
 }

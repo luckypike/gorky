@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   First,
@@ -25,6 +25,13 @@ const Frunze = () => {
       <Help />
       <Contribution />
       <Destiny />
+
+      <NextFactory
+        href="/petrovsky"
+        id="petrovsky"
+        title="Горьковский Завод № 215 имени Г. И. Петровского"
+        desc="ПАО «Завод имени Г. И. Петровского»"
+      />
     </Factory>
   )
 }

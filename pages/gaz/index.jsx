@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 
 import {
   Intro,
@@ -46,6 +46,12 @@ const Gaz = () => {
       <IsALive />
 
       <Victory />
+
+      <NextFactory
+        href="/sormovo"
+        title="Завод № 112 «Красное Сормово»"
+        desc="ПАО «Завод “Красное Сормово”»"
+      />
     </Factory>
   )
 }

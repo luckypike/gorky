@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Modernization,
@@ -27,6 +27,7 @@ const Vmz = () => {
       <Defense />
       <Character />
       <PeacefulYears />
+      <NextFactory href="/etna" id="etna" title="ГОРЬКОВСКИЙ ЗАВОД «КРАСНАЯ ЭТНА»" desc="АО «Завод „Красная Этна“»" />
     </Factory>
   )
 }

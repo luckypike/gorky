@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   DayBefore,
@@ -21,6 +21,13 @@ const SormovoSudo = () => {
       <Baby />
       <Stalinici />
       <Extends />
+
+      <NextFactory
+        href="/gsz"
+        id="gsz"
+        title="Городецкий механический завод"
+        desc="ООО «Городецкий судоремонтный завод»"
+      />
     </Factory>
   )
 }

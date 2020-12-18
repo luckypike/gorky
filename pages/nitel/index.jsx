@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Enterprise,
@@ -45,6 +45,13 @@ const Nitel = () => {
       <Production />
 
       <Director />
+
+      <NextFactory
+        href="/frunze"
+        id="frunze"
+        title="Горьковский Завод № 326 имени М. В. Фрунзе"
+        desc="ПАО «Нижегородское НПО имени М. В. Фрунзе»"
+      />
     </Factory>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   New,
@@ -21,6 +21,14 @@ const Gidroagregat = () => {
       <Screws />
       <Personnel />
       <Adaptation />
+
+      <NextFactory
+        href="/adcbsz"
+        id="adcbsz"
+        title="ГОРЬКОВСКИЙ МЕХАНИЗИРОВАННЫЙ СТЕКЛОЗАВОД
+        ИМЕНИ М. ГОРЬКОГО"
+        desc="ОАО «Эй Джи Си Борский стекольный завод»"
+      />
     </Factory>
   )
 }

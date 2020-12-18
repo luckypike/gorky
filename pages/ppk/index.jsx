@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Factory } from '../../components'
+import { Factory, NextFactory } from '../../components'
 import {
   Intro,
   Winter,
@@ -13,6 +13,13 @@ const Ppk = () => {
       <Intro />
       <Winter />
       <Cars />
+
+      <NextFactory
+        href="/termal"
+        id="termal"
+        title="Завод № 645 имени В. И. Ульянова"
+        desc="ЗАО «Концерн „Термаль“»"
+      />
     </Factory>
   )
 }

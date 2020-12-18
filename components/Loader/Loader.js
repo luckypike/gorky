@@ -12,7 +12,7 @@ const Loader = observer(() => {
   return (
     <>
       <div className={cn(styles.root, { [styles.start]: appStore.loaderStart, [styles.end]: appStore.loaderEnd })}>
-
+        <div className={styles.loader} />
       </div>
     </>
   )
