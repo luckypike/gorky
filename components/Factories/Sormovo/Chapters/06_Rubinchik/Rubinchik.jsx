@@ -28,19 +28,22 @@ const Rubinchik = () => {
           </p>
         </MainText>
 
-        {/* TODO: Поправить био */}
-
         <Columns
+          className={styles.bio}
+
           left={
             <div>
-            <figure className={classNames(styles.img, styles.main)}>
-              <Image src="/images/sormovo/6/2.jpg" layout="fill" />
-            </figure>
+              <figure className={classNames(styles.img, styles.main)}>
+                <Image src="/images/sormovo/6/2.jpg" layout="fill" />
+              </figure>
             </div>
           }
+
           right={
             <div>
               <p>
+                Рубинчик Ефим Эммануилович (1903–1991)
+                <br />
                 С 1927 по 1938 год находился на партийной работе в Москве. С 1940 года
                 — директор Коломенского завода. В 1942 году возглавил завод «Красное
                 Сормово». С 1955 по 1957 год руководил Горьковским заводом имени

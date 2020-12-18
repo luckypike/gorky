@@ -4,9 +4,9 @@ import cn from 'classnames'
 
 import styles from './Columns.module.css'
 
-const Columns = ({ left, right, content }) => {
+const Columns = ({ left, right, content, className }) => {
   return (
-    <div className={cn(styles.root, { [styles.content]: content })}>
+    <div className={cn(className, styles.root, { [styles.content]: content })}>
       <div>
         {left}
       </div>
@@ -19,6 +19,7 @@ const Columns = ({ left, right, content }) => {
 }
 
 Columns.propTypes = {
+  className: PropTypes.string,
   left: PropTypes.node,
   right: PropTypes.node,
   content: PropTypes.bool
