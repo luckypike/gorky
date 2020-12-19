@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import AOS from 'aos'
 import { observer } from 'mobx-react-lite'
+import { YMInitializer } from 'react-yandex-metrika'
 
 // import Header from '../components/Header/Header'
 import Loader from '../components/Loader/Loader'
@@ -92,7 +93,8 @@ const App = observer(({ Component, props }) => {
       {/* <Header /> */}
 
       <Loader />
-      <Component { ...props } />
+      <Component {...props} />
+      <YMInitializer accounts={[70643914]} options={{ webvisor: true, clickmap: true, trackLinks: true, accurateTrackBounce: true }} version="2" />
     </>
   )
 })
