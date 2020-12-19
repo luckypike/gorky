@@ -79,14 +79,25 @@ const App = observer(({ Component, props }) => {
     })
   }, [])
 
+  const desc = 'Горький. Символ Победы: о вкладе предприятий Горьковской области в победу в Великой Отечественной войне'
+
   return (
     <>
       <Head>
-        <title>Горький символ победы</title>
+
         <link rel="icon" href="/favicon.ico" />
         <link href="/safari-pinned-tab.svg" rel="mask-icon" color="#d63517" />
         <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&amp;PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+
+        <title>{appStore.siteName}</title>
+        <meta name="description" content={desc}></meta>
+
+        <meta property="og:url" content="/gaz" key="ogurl" />
+        <meta property="og:image" content="/og.jpg" key="ogimage" />
+        <meta property="og:site_name" content={appStore.siteName} key="ogsitename" />
+        <meta property="og:title" content={appStore.siteName} key="ogtitle" />
+        <meta property="og:description" content={desc} key="ogdesc" />
       </Head>
 
       {/* <Header /> */}

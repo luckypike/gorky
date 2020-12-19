@@ -4,6 +4,7 @@ class AppStore {
   nav = false
   loaderStart = false
   loaderEnd = false
+  siteName = 'Горький. Символ Победы.'
 
   constructor () {
     makeAutoObservable(this)
