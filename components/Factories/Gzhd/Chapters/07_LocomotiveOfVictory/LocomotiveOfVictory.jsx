@@ -10,7 +10,7 @@ const LocomotiveOfVictory = () => {
   return (
     <div className={styles.root}>
       <div className={styles.page}>
-        <MainText title="31­й особый: локомотив победы">
+        <MainText title="31-­й особый: локомотив победы">
           <p>
             Самоотверженно сражались с противником и совершили много боевых
             подвигов бронепоезда «Козьма Минин» и «Илья Муромец», построенные
