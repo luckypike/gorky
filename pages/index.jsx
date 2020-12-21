@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import cn from 'classnames'
 import Parallax from 'parallax-js'
 import Link from 'next/link'
+import Image from 'next/image'
 
 // import useStore from '../stores/useStore'
 import { Factory } from '../components'
@@ -448,6 +449,14 @@ export default function Home () {
                   Людмила Веселова
                 </p>
               </div>
+            </div>
+
+            <div className={styles.logo}>
+              <p>
+                Благодарим за помощь
+              </p>
+
+              <Image src="/images/about/logos.png" width="1500" height="550" />
             </div>
           </div>
         </div>

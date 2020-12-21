@@ -325,7 +325,7 @@
 }
 
 .about {
-  padding: var(--sb) calc(var(--xr) * 1);
+  padding: var(--sb) calc(var(--xr) * 1) 0;
   display: grid;
   grid-gap: calc(var(--yr) * var(--s3)) calc(1 / 13 * 100%);
   border-top: 2px solid rgb(var(--hl_color));
@@ -337,5 +337,17 @@
 
   @media (--l) {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.logo {
+  padding: var(--sb) calc(var(--xr) * 1);
+
+  & > div {
+    max-width: 700px !important;
+  }
+
+  @media (--s) {
+    padding: calc(var(--yr) * 10) calc(1 / 13 * 100%);
   }
 }
