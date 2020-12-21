@@ -10,7 +10,7 @@ const Intro = () => {
         <div className={styles.header}>
           <h1 className={styles.title}>ГОРЬКОВСКИЙ ЗАВОД № 718 {'«ДВИГАТЕЛЬ РЕВОЛЮЦИИ»'}</h1>
 
-          <p className={styles.desc}>ОАО РУМО</p>
+          <p className={styles.desc}>АО РУМО</p>
         </div>
 
         <div className={styles.items}>

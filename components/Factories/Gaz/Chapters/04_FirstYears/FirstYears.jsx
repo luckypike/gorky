@@ -63,8 +63,8 @@ const FirstYears = () => {
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/gaz/4/4.jpg" layout="fill" />
             <figcaption>
-              Мужчины ушли на фронт, работать на заводе остались жен - щины. На
-              фото — бри - гада кузнецов
+              Мужчины ушли на фронт, работать на заводе остались женщины. На
+              фото — бригада кузнецов
             </figcaption>
           </figure>
         </CommonImage>

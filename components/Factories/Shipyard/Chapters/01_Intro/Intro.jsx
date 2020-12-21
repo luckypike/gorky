@@ -17,9 +17,7 @@ export default function Intro () {
           <div className={cn(styles.item, styles.s)}>
             <div className={cn(styles.digit, styles.txt)}>ПЕРВАЯ СУДОВЕРФЬ В СССР</div>
 
-            <div className={styles.rd}>освоившая крупнотоннажное</div>
-
-            <div className={styles.what}>сварное судостроение</div>
+            <div className={styles.what}>освоившая крупнотоннажное сварное судостроение</div>
           </div>
 
           <div className={cn(styles.item, styles.s)}>

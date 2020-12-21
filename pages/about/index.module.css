@@ -1,0 +1,8 @@
+.page {
+  composes: page from "../../components/Factory/Factory.module.css";
+  margin: calc(var(--yr) * var(--s5) * 2) 0;
+}
+
+.h1 {
+  composes: h1 from "../../components/Fonts.module.css";
+}

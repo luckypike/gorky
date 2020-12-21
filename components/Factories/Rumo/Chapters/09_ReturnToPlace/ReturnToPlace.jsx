@@ -23,7 +23,7 @@ const ReturnToPlace = () => {
             <Image src="/images/rumo/9/1.jpg" layout="fill" />
 
             <figcaption>
-              Новые 160-мм минометы не имели зарубежных аналогов
+              В мирное время «Двигатель Революции» вернулся к основному профилю — дизелестроению
             </figcaption>
           </figure>
         </CommonImage>

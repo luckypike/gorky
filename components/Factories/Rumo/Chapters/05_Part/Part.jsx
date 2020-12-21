@@ -73,8 +73,7 @@ const Part = () => {
           <figure className={classNames(styles.img, styles._2)}>
             <Image src="/images/rumo/5/1.jpg" layout="fill" />
             <figcaption>
-              В праздничный день пер - вую полосу заводская многотиражка посвя -
-              тила женским рекордам
+              В праздничный день первую полосу заводская многотиражка посвятила женским рекордам
             </figcaption>
           </figure>
         </CommonImage>
