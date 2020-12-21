@@ -108,19 +108,3 @@
     }
   }
 }
-
-.index {
-  background: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  & .back,
-  & .name {
-    display: none;
-  }
-
-  & .menu {
-    top: 20px;
-  }
-}

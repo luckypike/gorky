@@ -34,13 +34,6 @@ const Nav = observer(() => {
   return (
     <nav className={classNames(s.root, { [s.active]: appStore.nav })}>
       <div>
-        <div className={s.about}>
-          <ActiveLink
-            href="/about"
-            title="О проекте"
-          />
-        </div>
-
         <div className={s.section}>
           Боевые машины
         </div>

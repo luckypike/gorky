@@ -7,9 +7,9 @@ import { observer } from 'mobx-react-lite'
 import Nav from './Nav'
 import useStore from '../../stores/useStore'
 
-import styles from './Factory.module.css'
+import styles from './Layout.module.css'
 
-const Factory = observer(({ children, index }) => {
+const Factory = observer(({ children }) => {
   const appStore = useStore()
 
   const handleMenuClick = () => {
@@ -18,7 +18,7 @@ const Factory = observer(({ children, index }) => {
 
   return (
     <div className={styles.root}>
-      <header className={cn(styles.header, { [styles.index]: index })}>
+      <header className={styles.header}>
         <div>
           <Link href="/">
             <a className={styles.back}>
@@ -59,8 +59,7 @@ const Factory = observer(({ children, index }) => {
 })
 
 Factory.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.bool
+  children: PropTypes.node
 }
 
 export default Factory
