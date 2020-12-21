@@ -54,7 +54,7 @@ const Reliable = () => {
             <Image src="/images/sokol/3/1.jpg" layout="fill" />
 
             <figcaption>
-              И-16 — один их первых в мире истребительмоноплан с убирающимися шасси
+              И-16 — один их первых в мире истребителей-монопланов с убирающимися шасси
             </figcaption>
           </figure>
         </CommonImage>
